@@ -23,10 +23,7 @@ SOFTWARE.
 
 *****************************************************************************
 NOTE from Alex Eidt:
-All lines of code (or fragments) from Kamil Jiwa's repository 'uw-course-catalog' used in this
-script are marked with a '#KJ' comment at the far right end of the line.
-'uw-course-catalog' repository on GitHub: https://github.com/kjiwa/uw-course-catalog
-'Kamil Jiwa' on GitHub:                   https://github.com/kjiwa
+
 """
 
 # Creates a tsv file containing course data for each UW Campus
@@ -39,11 +36,11 @@ from bs4 import BeautifulSoup as Soup
 from tqdm import tqdm
 
 
-CAMPUSES = {                                                                                #KJ
-    'Bothell': 'http://www.washington.edu/students/crscatb/',                               #KJ
-    'Seattle': 'http://www.washington.edu/students/crscat/',                                #KJ
-    'Tacoma': 'http://www.washington.edu/students/crscatt/'                                 #KJ
-}                                                                                           #KJ
+CAMPUSES = {                                                                                
+    'Bothell': 'http://www.washington.edu/students/crscatb/',                               
+    'Seattle': 'http://www.washington.edu/students/crscat/',                                
+    'Tacoma': 'http://www.washington.edu/students/crscatt/'                                 
+}                                                                                           
 
 
 # Replaces all occurances of un-numbered courses in the given course description
@@ -100,13 +97,14 @@ def get_credits(description):
 # Otherwise returns an empty String
 # 'description': The course description
 prereq_regex = re.compile(r';|:|and either|and one of')
+not_offered = re.compile(r'[Nn]ot open to students')
 def get_requisites(description, type):
-    if type not in description:                                                             #KJ
-        return ''                                                                           #KJ   
-    parts = description.split('Offered:')[0].split(type)                                    #KJ
+    if type not in description:                                                             
+        return ''                                                                              
+    parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]                               
     POI = ''
-    if 'permission of' in parts[1].lower(): POI = 'POI'                        
-    required = prereq_regex.split(parts[1].split('(')[0])
+    if 'permission of' in parts.lower(): POI = 'POI'                        
+    required = prereq_regex.split(parts.split('(')[0])
     result = ''
 
     def remove_unnessecary(course_sub):
@@ -171,10 +169,12 @@ def get_requisites(description, type):
     result = re.sub(r',\d&', ',&', result)
     if result[0] in '1234567890':
         result = result[1:]
+    result = result.replace('.C', '')
+    result = result.replace('.', ',')
     result = result.replace(',;', ';').replace(';,', ';')
     result = re.sub(r';+', ';', result)
     result = re.sub(r',+', ',', result)
-    result = result.replace(' ', '').strip(';').strip(',').strip('\"').strip('.')
+    result = result.replace(' ', '').strip(';').strip(',').strip('\"').strip('.').strip('\\').strip('n').strip('&')
     return ','.join(list(dict.fromkeys(result.split(','))))
 
 
@@ -182,9 +182,9 @@ def get_requisites(description, type):
 # Otherwise returns an empty String
 # 'description': The course description
 def get_offered(description):
-    if 'Offered:' not in description:                                                       #KJ
-        return ''                                                                           #KJ
-    check_parts = description.split('Offered: ')[1]                                         #KJ
+    if 'Offered:' not in description:                                                       
+        return ''                                                                           
+    check_parts = description.split('Offered: ')[1]                                         
     parts = check_parts.split(';')[1] if ';' in check_parts else check_parts
     parts = re.sub(r'([A-Z& ]+\s?\d+)', '', parts)
     result = []
@@ -200,12 +200,12 @@ def get_offered(description):
 # Otherwise returns an empty String
 # 'description': The course description
 def get_jointly(description):
-    if 'jointly with' not in description:                                                   #KJ
+    if 'jointly with' not in description:                                                   
         return ''
-    parts = description.split('jointly with ')[1].split(';')                                #KJ
+    parts = description.split('jointly with ')[1].split(';')                                
     course = ''
     for course_option in list(filter(('').__ne__, parts)):
-        reqcrss = [crs.strip() for crs in re.findall(r'([A-Z& ]+\s?\d+)', course_option)]     #KJ
+        reqcrss = [crs.strip() for crs in re.findall(r'([A-Z& ]+\s?\d+)', course_option)]     
         course += ','.join(reqcrss)                                                         
         course += ';'
     course = course.replace(',;', ';')
@@ -224,9 +224,32 @@ def get_credit_types(description):
 # Returns the course name
 # Otherwise returns an empty String
 # 'description': The course description
-def get_name(description):
+def get_name(description, number):
     match = re.search(r'[^\(]+', description)
-    return re.sub(r'([A-Z& ]+\s?\d+)', '', match.group(0)).strip() if match else ''
+    return match.group(0).split(number.replace('&', ''))[1].strip() if match else ''
+
+
+# Removes instructor names from description
+# 'description': The course description
+# 'credit_type': The credit types for the course
+def extract_description(description, credit_type):
+    description = description.split(')')[1]
+    if '' not in credit_type:
+        description = description.split(credit_type)[1]
+    match = re.search(r'[A-Z]{2,}[a-z]+', description)
+    if match:
+        found = match.group(0)
+        description = description.split(found)[1]
+        match_match = re.search(r'[A-Z][a-z]+', found)
+        if match_match:
+            description = '{} {}'.format(match_match.group(0), description.strip())
+    else:
+        match = re.search(r'[A-Z][a-z]+[A-Z]', description)
+        if match:
+            found = match.group(0)
+            description = description.split(found)[1]
+            description = '{}{}'.format(found[-1], description)
+    return description
 
 
 # Returns a list of all the information for the given course in the 'description'
@@ -235,15 +258,15 @@ def get_name(description):
 # 'number': The course number
 # 'description': The course description
 def get_course_data(campus, department, number, description):
-    functions = [get_name, get_credits, get_credit_types, get_offered, get_jointly]
+    functions = [get_credits, get_credit_types, get_offered, get_jointly]
     description = description.split('View course details in MyPlan:')[0]
     description = complete_description(description)
-    data = [campus, department, number]
+    data = [campus, department, number, get_name(description, number)]
     for function in functions:
         data.append(function(description))
     data.append(get_requisites(description, 'Prerequisite:'))
     data.append(get_requisites(description, "Co-requisite"))
-    data.append(description)
+    data.append(extract_description(description, data[5]))
     return data
 
 

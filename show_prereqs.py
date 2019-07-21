@@ -51,8 +51,6 @@ def check_files():
 # Returns a dictionary of all course ID's with their information
 def read_file(campus):
     all_courses = {}
-    to_delete = ['MATH098', 'MATH103', 'MATH102', 'MATH100', 'MATH109', 'MATH120',
-                 'CHEM110']
     try:
         with open('{}\\{}\\{}.tsv'.format(course_files_dir, 'TSV', campus), mode='r') as file:
             reader = csv.reader(file, delimiter='\t')
@@ -61,9 +59,6 @@ def read_file(campus):
                     all_courses['{0[1]}{0[2]}'.format(course)] = {
                         column_names[i]: course[i] for i in range(len(column_names))
                     }
-        for course in to_delete:
-            if course in all_courses:
-                del all_courses[course]  
     except (FileExistsError, FileNotFoundError) as e:
         print(e)
         return {}
@@ -76,6 +71,13 @@ def read_file(campus):
 # 'course': The course in question
 # 'indent': The indentation level for each prerequisite course
 def show_prerequisites(course_dict, courses_taken, course, indent):
+
+    def find_and(req):
+        for course in req:
+            if '&&' in course:
+                return course
+        return ''
+
     if course is not '' and course in course_dict and course not in courses_taken:  
         check = course_dict[course]['Prerequisites'].split(';')
         for req in check:
@@ -96,15 +98,6 @@ def show_prerequisites(course_dict, courses_taken, course, indent):
                         show_prerequisites(course_dict, courses_taken, reqcourse, indent + '|   ')
                 if len(check) > 1 and len(list_reqs) > 1:
                     print(indent.replace('|   ', '', 1))
-
-
-# Returns the course group that is split by '&&'
-# 'req': The list of course groups
-def find_and(req):
-    for course in req:
-        if '&&' in course:
-            return course
-    return ''
 
 
 # Asks the user if their transcript should be scanned in to remove classes from the class
@@ -172,4 +165,7 @@ def start():
         more = input('Continue? (y/n): ').lower()
 
 
-start()
+#start()
+for key, value in read_file('Total').items():
+    if value['Prerequisites'] is not '':
+        print(value['Prerequisites'])

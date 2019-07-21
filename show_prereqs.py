@@ -149,7 +149,6 @@ def write_json(all_courses, mode_type, campus):
 # Campus and the course they would like to search for
 def start():
     check_files()
-    print('Creating JSON Files for {} UW Campuses...'.format(str(list(CAMPUSES.keys()))[1:-1].replace("'", '')))
     for num, campus in enumerate(CAMPUSES.keys(), start=1):
         print(campus)
     campus = ''
@@ -165,7 +164,4 @@ def start():
         more = input('Continue? (y/n): ').lower()
 
 
-#start()
-for key, value in read_file('Total').items():
-    if value['Prerequisites'] is not '':
-        print(value['Prerequisites'])
+start()

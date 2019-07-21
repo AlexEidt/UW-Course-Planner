@@ -48,7 +48,7 @@
         "Department Name": "TACCT",
         "Description": "Concepts and principles of financial accounting. Analysis of controversies and problems related to the measurement of enterprise income and asset and liability valuation. Prerequisite: either a minimum grade of 2.5 in T ACCT 210; a minimum grade of 2.5 in T ACCT 220; and a mimimum grade of 2.5 in T ACCT 230, or a minimum grade of 2.5 in ACCTG 215 and a minimum grade of 2.5 in ACCTG 225.",
         "Offered with": "",
-        "Prerequisites": "TACCT210;TACCT220;&&TACCT230,,ACCTG215&&ACCTG225",
+        "Prerequisites": "TACCT210;TACCT220;TACCT230,ACCTG215&&ACCTG225",
         "Quarters Offered": ""
     },
     "TACCT302": {
@@ -321,7 +321,7 @@
         "Department Name": "TACCT",
         "Description": "Concepts and principles of financial accounting. Analysis of controversies and problems related to the measurement of enterprise income and asset and liability valuation. Prerequisite: A minimum grade of 2.7 in T ACCT 503",
         "Offered with": "",
-        "Prerequisites": "ATACCT503",
+        "Prerequisites": "TACCT503",
         "Quarters Offered": ""
     },
     "TACCT505": {
@@ -334,7 +334,7 @@
         "Department Name": "TACCT",
         "Description": "Concepts and principles of financial accounting. Analysis of controversies and problems related to the measurement of enterprise income and asset and liability valuation. Prerequisite: A minimum grade of 2.7 in T ACCT 504.",
         "Offered with": "",
-        "Prerequisites": "ATACCT504",
+        "Prerequisites": "TACCT504",
         "Quarters Offered": ""
     },
     "TACCT506": {
@@ -347,7 +347,7 @@
         "Department Name": "TACCT",
         "Description": "Focuses on the development and use of cost data for external reporting and internal planning. Students examine cost accounting theory and procedures involving cost determination, analysis, and control through the application of such skills as allocations, budgeting, job order and process costing, quantification of various business processes. Prerequisite: A minimum grade of 2.7 in T ACCT 503.",
         "Offered with": "",
-        "Prerequisites": "ATACCT503",
+        "Prerequisites": "TACCT503",
         "Quarters Offered": ""
     },
     "TACCT507": {
@@ -360,7 +360,7 @@
         "Department Name": "TACCT",
         "Description": "Intensive introduction to the attest function in society today. Analyzes the environment, the process, and the report of the public auditor. Examines potential extensions of the attest function. Prerequisite: A minimum grade of 2.7 in T ACCT 503",
         "Offered with": "",
-        "Prerequisites": "ATACCT503",
+        "Prerequisites": "TACCT503",
         "Quarters Offered": ""
     },
     "TACCT508": {
@@ -373,7 +373,7 @@
         "Department Name": "TACCT",
         "Description": "Covers US Federal income taxation for individuals, including compliance requirements and the role of taxation in personal decisions. Topics include: wage, business and investment income; personal and personal business deductions; and property transactions. Prerequisite: Minimum grade of 2.7 in T ACCT 503.",
         "Offered with": "",
-        "Prerequisites": "MTACCT503",
+        "Prerequisites": "TACCT503",
         "Quarters Offered": ""
     },
     "TACCT509": {
@@ -1738,7 +1738,7 @@
         "Department Name": "TBECON",
         "Description": "Applies tools of intermediate microeconomic theory to issues of particular interest to business students. Topics include market processes, consumer theory, firm behavior in competitive and imperfectly competitive markets, product pricing, and strategic behavior. Prerequisite: minimum grade of 2.5 in TMATH 124, MATH 112, or MATH 124 or grade of 1.7 in T BUS 301.",
         "Offered with": "",
-        "Prerequisites": "TMATH124,MATH112,,MATH124,TBUS301",
+        "Prerequisites": "TMATH124,MATH112,MATH124,TBUS301",
         "Quarters Offered": ""
     },
     "TBECON421": {
@@ -1751,7 +1751,7 @@
         "Department Name": "TBECON",
         "Description": "Focuses on the use of intermediate economic theory to understand how financial markets are affected by macroeconomic variables. Specific emphasis is placed on international markets and how to assess the impact of difference macroeconomic policies. Prerequisite: either a minimum grade of 1.7 in T BUS 301, or a minimum grade of 2.5 in MATH 112, TMATH 122, TMATH 124, or MATH 124; and a minimum grade of 2.0 in TBECON 221, TECON 201, or ECON 201.",
         "Offered with": "",
-        "Prerequisites": "TBUS301,MATH112,TMATH122,TMATH124,MATH124;&&TBECON221,TECON201,,ECON201",
+        "Prerequisites": "TBUS301,MATH112,TMATH122,TMATH124,MATH124;TBECON221,TECON201,ECON201",
         "Quarters Offered": ""
     },
     "TBECON422": {
@@ -1777,7 +1777,7 @@
         "Department Name": "TBECON",
         "Description": "Examines the economic role of modern financial institutions and their relationship to the money and capital markets of developed economies. Includes the financial system, the Federal Reserve System, monetary policy, international financial relationships, and interest rate theory. Prerequisite: Minimum grade of 2.5 in TMATH 124, MATH 112, or MATH 124 or 1.7 in TBUS 301.",
         "Offered with": "",
-        "Prerequisites": "MTMATH124,MATH112,MATH124,TBUS301",
+        "Prerequisites": "TMATH124,MATH112,MATH124,TBUS301",
         "Quarters Offered": ""
     },
     "TBGEN111": {
@@ -1803,7 +1803,7 @@
         "Department Name": "TBGEN",
         "Description": "Introduces the major principles and practices utilized in basic statistical analysis. Focuses on descriptive statistics, inferential statistics, probabilistic reasoning, correlation, regression, and hypothesis testing. Prerequisite: either TMATH 098 or minimum score of 35 on ACC-CL placement test.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,35",
+        "Prerequisites": "TMATH098",
         "Quarters Offered": ""
     },
     "TBGEN210": {
@@ -1855,7 +1855,7 @@
         "Department Name": "TBGEN",
         "Description": "Provides an understanding for making informed personal financial decisions on consumption, savings, budgets, investments, insurance, retirement, wealth creation and estate planning. Effective personal financial management is essential to meet lifetime financial goals. Students will identify their personal financial goals, and make financial decisions that will help them achieve those goals. Prerequisite: either TMATH 098, or a minimum score of 35 on ACC-CL placement test or a minimum score of 250 on the ACCQAS.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,35,250",
+        "Prerequisites": "TMATH098",
         "Quarters Offered": ""
     },
     "TBGEN312": {
@@ -2141,7 +2141,7 @@
         "Department Name": "TBIOL",
         "Description": "Acquaints students with microorganisms and their activities. Topics include microbial cell structure and function, metabolism, microbial genetics, and the role of microorganisms in disease, immunity, and other applied areas. Gateway to upper-division courses in biomedical sciences. Prerequisite: minimum grade of 1.5 in TESC 140 or T BIOL 140; minimum grade of 1.7 in TESC 161 or T CHEM 162. Cannot be taken for credit if credit received in TBIOMD 301.",
         "Offered with": "",
-        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162.C,TBIOMD301",
+        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162,C,TBIOMD301",
         "Quarters Offered": ""
     },
     "TBIOL302": {
@@ -2219,7 +2219,7 @@
         "Department Name": "TBIOL",
         "Description": "Explores the structure, ecology, and evolution of terrestrial arthropods, focusing primarily on insects important to agriculture, conservation, medicine, and public health, and sustainable approaches to pest control. Prerequisite: minimum grade of 1.5 in T BIOL 120. Cannot be taken for credit if credit received in TESC 440.",
         "Offered with": "",
-        "Prerequisites": "TBIOL120.C,TESC440.\n",
+        "Prerequisites": "TBIOL120,C,TESC440,\n",
         "Quarters Offered": ""
     },
     "TBIOL312": {
@@ -2284,7 +2284,7 @@
         "Department Name": "TBIOL",
         "Description": "Introduces core concepts of epidemiology and the application and interpretation of quantitative methods to investigate health outcomes in human populations through case studies, contemporary examples, and published literature. Prerequisite: TMATH 110. Cannot be taken for credit if credit received for TBIOMD 350.",
         "Offered with": "",
-        "Prerequisites": "TMATH110,TBIOMD350,TBIOMD350.\n",
+        "Prerequisites": "TMATH110,TBIOMD350,\n",
         "Quarters Offered": ""
     },
     "TBIOL362": {
@@ -2349,7 +2349,7 @@
         "Department Name": "TBIOL",
         "Description": "Explores current research on threats to biodiversity, and effective approaches to its preservation. Analyze primary literature and conduct independent lab and field exercises. Prerequisite: TBIOL 340. Cannot be taken for credit if credit received for TESC 332.",
         "Offered with": "",
-        "Prerequisites": "TBIOL340,TESC332,TESC332.\n",
+        "Prerequisites": "TBIOL340,TESC332,\n",
         "Quarters Offered": ""
     },
     "TBIOL436": {
@@ -2466,7 +2466,7 @@
         "Department Name": "TBIOMD",
         "Description": "Introduces students to requirements of professional medical, dental, veterinary, and pharmacy school. Explores key issues in healthcare, and exposes students to potential career pathways in preparation for completing the pre-medical/dental/veterinary/pharmacy (pre-MVDP",
         "Offered with": "",
-        "Prerequisites": "TESC199,TESC199.C",
+        "Prerequisites": "TESC199",
         "Quarters Offered": ""
     },
     "TBIOMD201": {
@@ -2609,7 +2609,7 @@
         "Department Name": "TBUS",
         "Description": "Examines the profession of management and nature of organizations. Focuses on the key managerial functions and organizational processes needed to plan, organize, lead and control contemporary organizations. Activities provide opportunities to improve communication, strategic planning, teamwork, social responsibility, ethical decision making, and professional capacities. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS301": {
@@ -2635,7 +2635,7 @@
         "Department Name": "TBUS",
         "Description": "Focuses on oral and written communication skills in an organizational environment. Provides opportunities to communicate clearly and concisely in writing, make persuasive presentations, negotiate effectively, listen to the ideas and opinions of others, provide and receive constructive feedback, explore new communication technologies, and understand the impact that globalization has on organizational communication. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS320": {
@@ -2648,7 +2648,7 @@
         "Department Name": "TBUS",
         "Description": "Introduces the major principles and practices that are used by marketing managers in analyzing marketing problems and developing appropriate solutions. Examines how marketing operates within the global, social, and economic environment. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431,ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS330": {
@@ -2661,7 +2661,7 @@
         "Department Name": "TBUS",
         "Description": "Introduces techniques that managers use to locate, organize, distribute, and use information for decision making and strategic advantage. Addresses tools for managing information, including computer hardware, software, telecommunication networks, and various information system components. Includes a computer laboratory component in which students address organizational and managerial information requirements. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS350": {
@@ -2687,7 +2687,7 @@
         "Department Name": "TBUS",
         "Description": "Examines policy making and the role of strategy in the general management of a business organization. Students will learn strategy formulation, implementation, and application in complex situations. Prerequisite: Minimum grade of 1.7 in T BUS 300; T BUS 301; T BUS 310; T BUS 320; and T BUS 350. T BUS 330, or T ACCT 330 may be taken concurrently with T BUS 400.",
         "Offered with": "",
-        "Prerequisites": "MTBUS300;TBUS301;TBUS310;TBUS320;TBUS350,TACCT330,TACCT330TBUS400",
+        "Prerequisites": "TBUS300;TBUS301;TBUS310;TBUS320;TBUS350,TACCT330,TACCT330TBUS400",
         "Quarters Offered": ""
     },
     "TBUS468": {
@@ -2700,7 +2700,7 @@
         "Department Name": "TBUS",
         "Description": "Provides opportunity to gain experience in a business organization to apply and experience concepts taught in the traditional classroom. Develops links between the community and the classroom. Prerequisite: Any three of T BUS 300, T BUS 301, T BUS 310, T BUS 320, T BUS 330, T BUS 350, or T ACCT 330. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "ATBUS300,TBUS301,TBUS310,TBUS320,TBUS330,TBUS350,TACCT330,TACCT330.C",
+        "Prerequisites": "ATBUS300,TBUS301,TBUS310,TBUS320,TBUS330,TBUS350,TACCT330",
         "Quarters Offered": ""
     },
     "TBUS469": {
@@ -2869,7 +2869,7 @@
         "Department Name": "TBUS",
         "Description": "Provides an opportunity to work independently exploring specific business topics in greater depth. The students must develop a research proposal and make arrangements with a faculty member to supervise the project prior to course registration. Prerequisite: Tacoma MBA student and permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TBUS570": {
@@ -3025,7 +3025,7 @@
         "Department Name": "TCES",
         "Description": "Ds ",
         "Offered with": "",
-        "Prerequisites": "TCES230;TCES312",
+        "Prerequisites": "TCES230&&TCES312",
         "Quarters Offered": ""
     },
     "TCES372": {
@@ -3038,7 +3038,7 @@
         "Department Name": "TCES",
         "Description": "Covers the general features of computation systems, including an introduction to processor architecture, instruction sets, assembly programming, cache and memory architecture, debug monitors, and translation from higher level languages to machine language. Prerequisite: minimum grade of 2.0 in both TCES 230 and TCES 203.",
         "Offered with": "",
-        "Prerequisites": "&&TCES230&&TCES203",
+        "Prerequisites": "TCES230&&TCES203",
         "Quarters Offered": ""
     },
     "TCES380": {
@@ -3090,7 +3090,7 @@
         "Department Name": "TCES",
         "Description": "Covers digital integrated circuit manufacturing process; design rules; diodes; MOS(FET",
         "Offered with": "",
-        "Prerequisites": "&&TCES230&&TCES312",
+        "Prerequisites": "TCES230&&TCES312",
         "Quarters Offered": ""
     },
     "TCES425": {
@@ -3142,7 +3142,7 @@
         "Department Name": "TCES",
         "Description": "Teaches how to control motors and other physical actuators by delving into their theories of operation. Examines automatic control theory and provides experience using computers to control devices. Requires team projects in the laboratory. Prerequisite: a minimum grade of 2.0 in each of TCES 310; TCES 312; and TCES 330.",
         "Offered with": "",
-        "Prerequisites": "&&TCES310;TCES312;TCES330",
+        "Prerequisites": "TCES310;TCES312;TCES330",
         "Quarters Offered": ""
     },
     "TCES460": {
@@ -3155,7 +3155,7 @@
         "Department Name": "TCES",
         "Description": "Guides integration of knowledge learned in prior courses in preparation for completion of the senior project in TCES 482. Covers the analysis, design, and prototyping of an embedded control application. Prerequisite: minimum grade of 2.0 in each of TCES 420; TCES 430; and TCES 455.",
         "Offered with": "",
-        "Prerequisites": "&&TCES420;TCES430;TCES455",
+        "Prerequisites": "TCES420;TCES430;TCES455",
         "Quarters Offered": ""
     },
     "TCES461": {
@@ -4845,7 +4845,7 @@
         "Department Name": "TCRIM",
         "Description": "Examines the interaction between ethics and criminal justice practice, including application of ethical theory to criminal justice issues. Topics include ethical response to police brutality and corruption in criminal justice systems, development of professional identity, and promotion of professional conduct. Prerequisite: a minimum grade of 2.0 in T CRIM 371; and a minimum grade of  2.0 in TSOCWF 390.",
         "Offered with": "",
-        "Prerequisites": "TCRIM371;&&TSOCWF390",
+        "Prerequisites": "TCRIM371;TSOCWF390",
         "Quarters Offered": ""
     },
     "TCRIM450": {
@@ -5040,7 +5040,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces programming fundamentals for students with no prior programming experience. Includes design and implementation of small programs using algorithmic thinking, problem solving and program structures. Prerequisite: a minimum grade of 2.0 in either TMATH 116, TMATH 120, or MATH 120, a score of 120-180 on MPT-AS test, or a score of 2 on AP MATH exam (AB or BC",
         "Offered with": "",
-        "Prerequisites": "TMATH116,TMATH120,MATH120,120,2",
+        "Prerequisites": "TMATH116,TMATH120,MATH120",
         "Quarters Offered": ""
     },
     "TCSS142": {
@@ -5053,7 +5053,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces the design and implementation of procedural programs. Includes an introduction to program structure, data types, arrays, recursion and objects. Prior experience in programming is expected. Prerequisite: a minimum grade of 2.0 in either TMATH 116, TMATH 120, TMATH 121, or MATH 120, a score of 120-180 on MPT-AS test, or 2 on AP Computer Science exam A. Offered: AWSp.",
         "Offered with": "",
-        "Prerequisites": "TMATH116,TMATH120,TMATH121,MATH120,120,2",
+        "Prerequisites": "TMATH116,TMATH120,TMATH121,MATH120",
         "Quarters Offered": "A,W,Sp"
     },
     "TCSS143": {
@@ -5235,7 +5235,7 @@
         "Department Name": "TCSS",
         "Description": "Develops student understanding of how compliers translate high level programming languages into assembly language. Includes specifying programming language syntax, building data structures, generating assembly code, and implementing a complier for a small high-level language. Prerequisite: minimum grade of 2.0 in both TCSS 342 and TCSS 371.",
         "Offered with": "",
-        "Prerequisites": "&&TCSS342&&TCSS371",
+        "Prerequisites": "TCSS342&&TCSS371",
         "Quarters Offered": ""
     },
     "TCSS422": {
@@ -5248,7 +5248,7 @@
         "Department Name": "TCSS",
         "Description": "Examines the fundamental concepts of operating systems and how they function. Includes process management, file systems, concurrency, inter-process communication, graphical interfaces, and security. Prerequisite: minimum grade of 2.0 in TCSS 372; and minimum grade of 2.0 in TCSS 380.",
         "Offered with": "",
-        "Prerequisites": "TCSS372;&&TCSS380",
+        "Prerequisites": "TCSS372;TCSS380",
         "Quarters Offered": ""
     },
     "TCSS430": {
@@ -5469,7 +5469,7 @@
         "Department Name": "TCSS",
         "Description": "Study and comparison of several programming languages in regards to data structures, operations, notation, and control. Examines programming paradigms, implementation strategies, programming environments, and programming style. Prerequisite: minimum grade of 2.0 in both TCSS 342 and TCSS 333.",
         "Offered with": "",
-        "Prerequisites": "&&TCSS342&&TCSS333",
+        "Prerequisites": "TCSS342&&TCSS333",
         "Quarters Offered": ""
     },
     "TCSS481": {
@@ -5755,7 +5755,7 @@
         "Department Name": "TCSS",
         "Description": "Examines a variety of techniques to perform data analytics and their extensions to big data infrastructure. Students will be able to identify mathematical foundations of data analytics, data analyses algorithms and tools. Introduces big data infrastructure, distributed computational paradigm, and distributed data analytics algorithms. Prerequisite: minimum grade of 3.0 in TCSS 343 and TCSS 445 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "TCSS343&&TCSS445,",
+        "Prerequisites": "TCSS343&&TCSS445",
         "Quarters Offered": ""
     },
     "TCSS552": {
@@ -5872,7 +5872,7 @@
         "Department Name": "TCSS",
         "Description": "Evaluates spatial databases, and focuses on their applications in Geographic Information Systems (GIS",
         "Offered with": "",
-        "Prerequisites": "TCS343,",
+        "Prerequisites": "TCS343",
         "Quarters Offered": ""
     },
     "TCSS569": {
@@ -6054,7 +6054,7 @@
         "Department Name": "TCSS",
         "Description": "Examines current graduate-level topics and issues associated with computing and software systems. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TCSS592": {
@@ -6145,7 +6145,7 @@
         "Department Name": "TCSS",
         "Description": "Examines current topics and issues associated with computing and software systems. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TCSS700": {
@@ -6925,7 +6925,7 @@
         "Department Name": "TEDLD",
         "Description": "Sp S.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
     },
     "TEDLD602": {
@@ -7380,7 +7380,7 @@
         "Department Name": "TEDSP",
         "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. Offered: jointly with T EDUC 592.",
         "Offered with": "TEDUC592",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TEDSP594": {
@@ -8069,7 +8069,7 @@
         "Department Name": "TEDUC",
         "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. Offered: jointly with T EDSP 592.",
         "Offered with": "TEDSP592",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TEDUC599": {
@@ -8134,7 +8134,7 @@
         "Department Name": "TEE",
         "Description": "Examines concepts of Vector Analysis, Electrostatic and Magnetostatic Fields, Time-Varying Electromagnetic Fields, and Maxwell Equations, plane wave propagation, guided waves, and Radiation and Antennas. Prerequisite: minimum grade of 2.0 in both TEE 315 and TCES 310.",
         "Offered with": "",
-        "Prerequisites": "&&TEE315&&TCES310",
+        "Prerequisites": "TEE315&&TCES310",
         "Quarters Offered": ""
     },
     "TEE341": {
@@ -9187,7 +9187,7 @@
         "Department Name": "TFILM",
         "Description": "Explores the practice of film criticism through intensive reading and discussion of films and through writing and peer reviewing. Builds and understanding of the differences between film reviewing and criticism, and the importance of audience, style and approach. Prerequisite: One 300 or 400 level film class.",
         "Offered with": "",
-        "Prerequisites": "O300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TFILM481": {
@@ -9629,7 +9629,7 @@
         "Department Name": "TGEOS",
         "Description": "Examines different volcanic landscapes through comparative geologic field investigations and explores how geologic processes relate to local culture and history. Prerequisite: minimum 2.0 grade in either T CORE 101, TWRT 112, or TWRT 121.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121",
+        "Prerequisites": "E101,TWRT112,TWRT121",
         "Quarters Offered": ""
     },
     "TGEOS335": {
@@ -11241,7 +11241,7 @@
         "Department Name": "THLEAD",
         "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course. Offered: jointly with T NURS 403.",
         "Offered with": "TNURS403",
-        "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110,100",
+        "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110",
         "Quarters Offered": ""
     },
     "THLEAD405": {
@@ -12151,7 +12151,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised independent study, readings and special projects for graduate students. Topics vary. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TIAS596": {
@@ -12164,7 +12164,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised internships for graduate students. Internships and projects vary. Prerequisite: permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TIAS598": {
@@ -12177,7 +12177,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised readings for graduate students. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TIAS599": {
@@ -12190,7 +12190,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised research for graduate students. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TIAS605": {
@@ -12216,7 +12216,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised thesis for graduate students. Prerequisite: permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TINFO110": {
@@ -12489,7 +12489,7 @@
         "Department Name": "TINFO",
         "Description": "Examines design and implementation methods of TCP/IP internetworks. Demonstrates techniques for connecting computers in a network and connecting separate networks to form an inter-network. Investigates bridging and switching concepts as well as routing protocols and algorithms. Prerequisite: minimum grade of 2.0 in both T INFO 220 and T INFO 250. Instructors: Bai, Chung, Wilson",
         "Offered with": "",
-        "Prerequisites": "&&TINFO220&&TINFO250",
+        "Prerequisites": "TINFO220&&TINFO250",
         "Quarters Offered": ""
     },
     "TINFO452": {
@@ -12788,7 +12788,7 @@
         "Department Name": "TINST",
         "Description": "Study of the process of developing a product or service in the field of computing and software systems, preparing a plan for commercialization, and implementing that plan. Prerequisite: either TCSS 360 or T INST 310; may not be repeated after achieving a minimum grade of 2.0.",
         "Offered with": "",
-        "Prerequisites": "TCSS360,TINST310;",
+        "Prerequisites": "TCSS360,TINST310",
         "Quarters Offered": ""
     },
     "TINST490": {
@@ -13828,7 +13828,7 @@
         "Department Name": "TMATH",
         "Description": "Intermediate algebra equivalent to third semester of high school algebra. Extra tuition required. Prerequisite: either elementary algebra, a score of 70-120 on the ACC-AL placement test, or a score of 0-34 on the ACC-CL placement test.",
         "Offered with": "",
-        "Prerequisites": "70,0",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TMATH105": {
@@ -13867,7 +13867,7 @@
         "Department Name": "TMATH",
         "Description": "Addresses introductory statistical concepts and analysis in modern society. Includes descriptive statistics, graphical displays of data, the normal distribution, data collection, probability, elements of statistical inference, hypothesis testing, and linear regression and correlation. Practical examples used to demonstrate statistical concepts. Prerequisite: either TMATH 098, TMATH 124, MATH 124, a score of 35-79 on ACC-CL placement test, or a minimum score of 237 on the ACC-AAF placement test.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,TMATH124,MATH124,35,237",
+        "Prerequisites": "TMATH098,TMATH124,MATH124",
         "Quarters Offered": ""
     },
     "TMATH115": {
@@ -13880,7 +13880,7 @@
         "Department Name": "TMATH",
         "Description": "Introduces the concept of a function, its notation, and prepares student to work with piece-wise, exponential, logarithmic, polynomial, and rational functions. Emphasizes computational skills, graph reading, and problem solving. One of a two-part series. Maximum of 10 credits from TMATH 115, TMATH 116, and TMATH 120 may be counted. Prerequisite: either a minimum grade of 2.0 in TMATH 098, a score of 35-79 on the ACC-CL placement test, or a minimum score of 237 on the ACC-AAF placement test.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,35,237",
+        "Prerequisites": "TMATH098",
         "Quarters Offered": ""
     },
     "TMATH116": {
@@ -13893,7 +13893,7 @@
         "Department Name": "TMATH",
         "Description": "Continues studying the concept of a function, its notation, and trigonometric and inverse trigonometric functions. Introduces parametrized curves, polar coordinates, and complex numbers. Emphasizes computational skills, graph reading, and problem solving techniques. Second of a two-part series. Maximum of 10 credits from TMATH 115, TMATH 116, and TMATH 120 may be counted. Prerequisite: either a minimum grade of 2.0 in TMATH 115, or a minimum score of 263 on the ACC-AAF placement test.",
         "Offered with": "",
-        "Prerequisites": "TMATH115,263",
+        "Prerequisites": "TMATH115",
         "Quarters Offered": ""
     },
     "TMATH120": {
@@ -13906,7 +13906,7 @@
         "Department Name": "TMATH",
         "Description": "Examines polynomial, rational, exponential, and trigonometric functions. Cannot be taken for credit if credit earned in TMATH 121. Prerequisite: either a minimum grade of 2.0 in TMATH 098, a score of 42-120 on the ACC-CL placement test, or a minimum score of 263 on the ACC-AAF placement test; recommended: co-requisite of TMATH 158.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,42,263;TMATH158",
+        "Prerequisites": "TMATH098;TMATH158",
         "Quarters Offered": ""
     },
     "TMATH124": {
@@ -13919,7 +13919,7 @@
         "Department Name": "TMATH",
         "Description": "First quarter in calculus of functions of a single variable. Emphasizes differential calculus. Emphasizes applications and problem solving using the tools of calculus. Cannot be taken for credit if credit earned in TMATH 122. Prerequisite: a minimum grade of 2.0 in either TMATH 116 or TMATH 120, a score of 68% on MPT-A placement test, a score of 75% on MATHEC placement test, or a score of 2 on AP test. ; recommended: co-requisite of TMATH 159.",
         "Offered with": "",
-        "Prerequisites": "TMATH116,TMATH120,68,75,2;TMATH159",
+        "Prerequisites": "TMATH116,TMATH120,75;TMATH159",
         "Quarters Offered": ""
     },
     "TMATH125": {
@@ -13932,7 +13932,7 @@
         "Department Name": "TMATH",
         "Description": "Second quarter in the calculus of functions of a single variable. Emphasizes integral calculus. Emphasizes applications and problem solving using the tools of calculus. Prerequisite: either 2.0 in TMATH 124, score 3 on AB advanced placement test, or score of 3 on BC advanced placement test.",
         "Offered with": "",
-        "Prerequisites": "TMATH124,3",
+        "Prerequisites": "TMATH124",
         "Quarters Offered": ""
     },
     "TMATH126": {
@@ -14140,7 +14140,7 @@
         "Department Name": "TMATH",
         "Description": "Investigates regression models with applications; including multiple linear regression, model selection, residual analysis, variable transformations and categorical data. Studies may also include generalized linear models, nonlinear regression, matrix formulation, and mixed models. Prerequisite: Minimum of 2.0 in TMATH 210 and TMATH 124, or minimum of 2.0 in TMATH 390.",
         "Offered with": "",
-        "Prerequisites": "MTMATH210&&TMATH124,TMATH390",
+        "Prerequisites": "TMATH210&&TMATH124,TMATH390",
         "Quarters Offered": ""
     },
     "TMATH412": {
@@ -14218,7 +14218,7 @@
         "Department Name": "TMATH",
         "Description": "Introduces concept of Complex numbers; Power series and Complex functions; Mobius transformations; Riemann sphere; Cauchy-Riemann equations; Complex differentiation and integration; Residue theorem; Cauchy integral formula; Conformal mapping. Prerequisite: Minimum grade of 2.0 in TMATH 300 or TMATH 324.",
         "Offered with": "",
-        "Prerequisites": "MTMATH300,TMATH324",
+        "Prerequisites": "TMATH300,TMATH324",
         "Quarters Offered": ""
     },
     "TMATH450": {
@@ -14257,7 +14257,7 @@
         "Department Name": "TMATH",
         "Description": "Provides opportunity for a mathematical internship in the public or private sector with the supervision of a faculty member in mathematics or a related discipline. Prerequisite: minimum grade of 2.0 in each of TMATH 300, TMATH 307, TMATH 308, and TMATH 324. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "&&TMATH300&&TMATH307&&TMATH308&&TMATH324",
+        "Prerequisites": "TMATH300&&TMATH307&&TMATH308&&TMATH324",
         "Quarters Offered": ""
     },
     "TMATH498": {
@@ -14309,7 +14309,7 @@
         "Department Name": "TMGMT",
         "Description": "Explores the impact of the changing legal environment on managerial decision making and issues that business managers confront to establish appropriate managerial strategies to function effectively and develop compliance guidelines. Utilizes specific tools to access legal resources for proactively recognizing, framing, and analyzing opportunities and problems and developing situations. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,ENGL131",
+        "Prerequisites": "E101,TWRT112,ENGL131",
         "Quarters Offered": ""
     },
     "TMGMT420": {
@@ -14400,7 +14400,7 @@
         "Department Name": "TMGMT",
         "Description": "Introduces nonprofit board membership and governance. Students serve as apprentices with nonprofit organizations and act as nonvoting board members. Provides experiences in gathering and assessing information and materials related to nonprofit governance practices. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131. Offered: W.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,ENGL131",
+        "Prerequisites": "E101,TWRT112,ENGL131",
         "Quarters Offered": "W"
     },
     "TMGMT466": {
@@ -14621,7 +14621,7 @@
         "Department Name": "TMKTG",
         "Description": "Examines the modern way to sell from the Manager's perspective. Managing will be looked at from the perspective of managing down (sales staff",
         "Offered with": "",
-        "Prerequisites": "TBUS300;&&TBUS320",
+        "Prerequisites": "TBUS300;TBUS320",
         "Quarters Offered": ""
     },
     "TMKTG450": {
@@ -15011,7 +15011,7 @@
         "Department Name": "TNURS",
         "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course. Offered: jointly with THLEAD 403.",
         "Offered with": "THLEAD403",
-        "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110,100",
+        "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110",
         "Quarters Offered": ""
     },
     "TNURS407": {
@@ -18651,7 +18651,7 @@
         "Department Name": "TSPAN",
         "Description": "CAPE placement exam.\n",
         "Offered with": "",
-        "Prerequisites": "TSPAN101,TSPAN121,176",
+        "Prerequisites": "TSPAN101,TSPAN121",
         "Quarters Offered": ""
     },
     "TSPAN103": {
@@ -18664,7 +18664,7 @@
         "Department Name": "TSPAN",
         "Description": "CAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN102,TSPAN110,TSPAN122,226",
+        "Prerequisites": "TSPAN102,TSPAN110,TSPAN122",
         "Quarters Offered": ""
     },
     "TSPAN199": {
@@ -18690,7 +18690,7 @@
         "Department Name": "TSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either TSPAN 103, TSPAN 123, TSPAN 134, score of 276-325 on WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN103,TSPAN123,TSPAN134,276",
+        "Prerequisites": "TSPAN103,TSPAN123,TSPAN134",
         "Quarters Offered": ""
     },
     "TSPAN202": {
@@ -18703,7 +18703,7 @@
         "Department Name": "TSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either TSPAN 201 or score of 326-375 on WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN201,326",
+        "Prerequisites": "TSPAN201",
         "Quarters Offered": ""
     },
     "TSPAN203": {
@@ -18716,7 +18716,7 @@
         "Department Name": "TSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either TSPAN 202, TSPAN 210, or score of 376-450 on WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN202,TSPAN210,376",
+        "Prerequisites": "TSPAN202,TSPAN210",
         "Quarters Offered": ""
     },
     "TSPAN210": {
@@ -18729,7 +18729,7 @@
         "Department Name": "TSPAN",
         "Description": "Merges SPAN 201 and SPAN 202. Designed to build listening, speaking, reading, and writing skills and to expand knowledge of culture and literature of the Spanish-speaking world. Combines classroom experience with accelerated Web-enhanced activities provided through Spain's Instituto Cervantes. Prerequisite: either TSPAN 103, TSPAN 123, or TSPAN 134 or score of 276-375 on WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN103,TSPAN123,TSPAN134,276",
+        "Prerequisites": "TSPAN103,TSPAN123,TSPAN134",
         "Quarters Offered": ""
     },
     "TSPAN299": {
@@ -18755,7 +18755,7 @@
         "Department Name": "TSPAN",
         "Description": "Reviews Spanish grammar structures and vocabulary to develop students' capacity to understand and express themselves in Spanish with more accuracy. Helps students master concepts required for advance reading, writing, and oral proficiency. Prerequisite: either TSPAN 203,TSPAN9,5 credits of a TSPAN 300-level or higher course, or score of 451 or higher on the WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300,451",
+        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300",
         "Quarters Offered": ""
     },
     "TSPAN302": {
@@ -18768,7 +18768,7 @@
         "Department Name": "TSPAN",
         "Description": "Emphasizes oral proficiency and listening comprehension using film, television, music, journalistic, and literary texts as a way to understand linguistic and cultural diversity within the Spanish-speaking world. Prerequisite: either TSPAN 203,TSPAN9,5 credits of a TSPAN 300-level or higher course, or score of 451 or higher on the WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300,451",
+        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300",
         "Quarters Offered": ""
     },
     "TSPAN303": {
@@ -18781,7 +18781,7 @@
         "Department Name": "TSPAN",
         "Description": "Develops writing skills for a wide variety of purposes, with activities to build vocabulary and strengthen knowledge of grammar. Includes pre-writing exercises, peer-editing and revision of texts, plus introduction to translation. Prerequisite: either TSPAN 203,TSPAN9,5 credits of a TSPAN 300-level or higher course, or score of 451 or higher on WebCAPE placement exam.",
         "Offered with": "",
-        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300,451",
+        "Prerequisites": "TSPAN203,TSPAN9,TSPAN300",
         "Quarters Offered": ""
     },
     "TSPAN315": {
@@ -18794,7 +18794,7 @@
         "Department Name": "TSPAN",
         "Description": "Develops Spanish language skills (reading, writing, speaking, and listening",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN335": {
@@ -18820,7 +18820,7 @@
         "Department Name": "TSPAN",
         "Description": "Explores issues impacting Latino/a communities in Tacoma and beyond, while enabling students to use and improve Spanish language skills in practical contexts. In Spanish and requires 16 hours of community engagement with a local organization. Prerequisite: 5 credits of Spanish language at 300 level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN348": {
@@ -18833,7 +18833,7 @@
         "Department Name": "TSPAN",
         "Description": "Offers students the opportunity to develop their Spanish-language writing, speaking, reading, and listening skills while also learning how to carry out different kinds of research, design research projects, and produce a variety of written texts. Prerequisite: minimum of 5 credits of Spanish language at 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN351": {
@@ -18846,7 +18846,7 @@
         "Department Name": "TSPAN",
         "Description": "Introduces techniques of literary analysis, as applied to examples of narrative, poetry, and theater from Spain, Spanish American, and U.S. Latino culture. Taught in Spanish. Prerequisite: minimum of 5 credits of Spanish language at 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN352": {
@@ -18859,7 +18859,7 @@
         "Department Name": "TSPAN",
         "Description": "Acquaints students with different approaches to cultural studies, using key notions of elite, mass and folk culture of Spanish-speaking societies and examples. Topics include globalization/ modernization vs. tradition; transculturation vs. assimilation; community; family and tradition; gender and race; class. Taught in Spanish. Prerequisite: minimum of 5 credits of Spanish language at 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN361": {
@@ -18872,7 +18872,7 @@
         "Department Name": "TSPAN",
         "Description": "Familiarizes students with important trends in cinema and culture in Mexico through the analysis and study of representative films, directors, and cultural movements. Taught in Spanish. Prerequisite: TSPAN 351 or TSPAN 352; and one other 300- or 400-level Spanish course.",
         "Offered with": "",
-        "Prerequisites": "TSPAN351,TSPAN352;300",
+        "Prerequisites": "TSPAN351,TSPAN352",
         "Quarters Offered": ""
     },
     "TSPAN371": {
@@ -18885,7 +18885,7 @@
         "Department Name": "TSPAN",
         "Description": "Analyzes significant trends in the Hispanic Caribbean through literature and other forms of cultural production, including art, music, folklore, and film. Taught in Spanish. Prerequisite: either one 300-level TSPAN course, or one 400-level TSPAN course",
         "Offered with": "",
-        "Prerequisites": "00,400",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN374": {
@@ -18898,7 +18898,7 @@
         "Department Name": "TSPAN",
         "Description": "Introduces students to the cinema of the Spanish-speaking world and explores films within various national contexts. Explores issues related to politics, social change, gender, class, and ethnicity. Taught in Spanish. Prerequisite: minimum of 5 credits of Spanish language at 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN376": {
@@ -18911,7 +18911,7 @@
         "Department Name": "TSPAN",
         "Description": "Examines cultural and aesthetic issues related to specific Hispanic film directors. Explores issues of cultural identity as it relates to gender, race, and socio-economic status. Taught in Spanish. Prerequisite: minimum of 5 credits of Spanish language at 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN388": {
@@ -18924,7 +18924,7 @@
         "Department Name": "TSPAN",
         "Description": "Focuses on contemporary literature by U.S.-based Chicana/o, Puerto Rican, Cuban American, and Dominican American authors from the 1960s to the present with attention to hybrid culture(s",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN393": {
@@ -18963,7 +18963,7 @@
         "Department Name": "TSPAN",
         "Description": "Promotes higher level proficiency in spoken and written Spanish. Examines regional differences, formal and informal styles of communication, cultural notions related to specific speech patterns, and social interactions. Develops idiomatic knowledge of the language. Taught in Spanish. Prerequisite: minimum of 10 credits of Spanish language at the 300-level or higher.",
         "Offered with": "",
-        "Prerequisites": "S300",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TSPAN430": {
@@ -18989,7 +18989,7 @@
         "Department Name": "TSPAN",
         "Description": "Analyzes novels, short stories, poetry, testimony, drama, and essays by contemporary Hispanic women writers. Includes themes such as dictatorship, political and sexual repression, gender constructions, colonialism, racism, class issues, etc. Taught in Spanish. Prerequisite: TSPAN 351 or TSPAN 352; and one other 300- or 400-level Spanish course.",
         "Offered with": "",
-        "Prerequisites": "TSPAN351,TSPAN352;300",
+        "Prerequisites": "TSPAN351,TSPAN352",
         "Quarters Offered": ""
     },
     "TSPAN464": {
@@ -19002,7 +19002,7 @@
         "Department Name": "TSPAN",
         "Description": "Analyzes significant trends in Mexican culture through literature and other forms of cultural production, including art, music, folklore, and film/television/print media. Taught in Spanish. Prerequisite: TSPAN 351 or TSPAN 352; and one other 300- or 400-level Spanish course.",
         "Offered with": "",
-        "Prerequisites": "TSPAN351,TSPAN352;300",
+        "Prerequisites": "TSPAN351,TSPAN352",
         "Quarters Offered": ""
     },
     "TSPAN480": {
@@ -19015,7 +19015,7 @@
         "Department Name": "TSPAN",
         "Description": "Analyzes significant historical, social, and political events in contemporary Spain through literature and other forms of cultural production, including art, music, dance, and film. Taught in Spanish. Cannot be taken for credit if credit earned in T HISP 490. Prerequisite: TSPAN 351 or TSPAN 352; and one other 300- or 400-level Spanish course.",
         "Offered with": "",
-        "Prerequisites": "TSPAN351,TSPAN352;300",
+        "Prerequisites": "TSPAN351,TSPAN352",
         "Quarters Offered": ""
     },
     "TSPAN496": {
@@ -19769,7 +19769,7 @@
         "Department Name": "TURB",
         "Description": "Examines specific issues of interest in a seminar-style learning environment. Topics include issues in urban geography, cultural anthropology, urban sociology, community development, urban political economy, planning theory, environmental equity, and critical policy studies that are significant to the growth and development of cities Prerequisite: T URB 101; T URB 102; AND T URB 220",
         "Offered with": "",
-        "Prerequisites": "TURB101;TURB102;ANDTURB220",
+        "Prerequisites": "TURB101;TURB102;TURB220",
         "Quarters Offered": ""
     },
     "TURB494": {
@@ -19990,7 +19990,7 @@
         "Department Name": "TWRT",
         "Description": "Helps improve academic writing skills by focusing on students' own writing practices. Teaches reading skills to comprehend and analyze complex texts, review and analyze grammar structures as they appear in academic writing, and build advanced vocabulary. Prerequisite: either TWRT 120, TWRT 121, or TCORE 101; must be taken concurrently . Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "TWRT120,TWRT121,TCORE101",
+        "Prerequisites": "TWRT120,TWRT121,E101",
         "Quarters Offered": ""
     },
     "TWRT112": {
@@ -20055,7 +20055,7 @@
         "Department Name": "TWRT",
         "Description": "Focuses on writing critical analyses of texts in the arts and sciences. Emphasizes close reading, critical thinking, and developing well-supported arguments as well as advanced library research skills. Stresses managing the writing process so that good work can be produced within given time constraints. Prepares students for upper-division writing tasks. Prerequisite: minimum 2.0 grade in either TWRT 112, TWRT 121, T CORE 101, or ENGL 131.",
         "Offered with": "",
-        "Prerequisites": "TWRT112,TWRT121,TCORE101,ENGL131",
+        "Prerequisites": "TWRT112,TWRT121,E101,ENGL131",
         "Quarters Offered": ""
     },
     "TWRT270": {
@@ -20120,7 +20120,7 @@
         "Department Name": "TWRT",
         "Description": "Teaches objective-oriented and audience-centered communication for the workplace, while focusing on key genres of technical communication - reports, proposals, manual, and document design - essential for success in the professional world. Prerequisite: a minimum grade of 2.0 in either T CORE 101, TWRT 112, TWRT 121, or TWRT 211.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211",
         "Quarters Offered": ""
     },
     "TWRT292": {
@@ -20133,7 +20133,7 @@
         "Department Name": "TWRT",
         "Description": "Explores how design and technology are shaped by social, political, cultural and material forces and can create barriers and contribute to social change, inequality and equity. Examines technology as a tool of oppression or liberation in regards to identity categories and difference--ability, ethnicity, race, age, class, gender, and sexuality. Prerequisite: Either TCORE 101, TWRT 112, TWRT 121, TWRT 211, ENGL 131, or ENGL 141.",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,ENGL131,ENGL141",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,ENGL131,ENGL141",
         "Quarters Offered": ""
     },
     "TWRT311": {
@@ -20146,7 +20146,7 @@
         "Department Name": "TWRT",
         "Description": "Investigates current theories and practices of writing pedagogy, emphasizing the pedagogical assumptions of individual instruction. Students learn to respond constructively to writers and to texts. They also gain expertise as writers and teachers. Required for students who wish to work in the Writing Center. Prerequisite: minimum grade of 2.0 in TWRT 112, TWRT 121, or T CORE 101.",
         "Offered with": "",
-        "Prerequisites": "TWRT112,TWRT121,,TCORE101",
+        "Prerequisites": "TWRT112,TWRT121,TC,E101",
         "Quarters Offered": ""
     },
     "TWRT330": {
@@ -20185,7 +20185,7 @@
         "Department Name": "TWRT",
         "Description": "Introduces a critical perspective on comics and builds skills in creative writing and rhetoric studies. Focuses on theory and craft, providing a lens for interpretation and application, employing workshops for students to create (and revise",
         "Offered with": "",
-        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,ENGL131",
+        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,ENGL131",
         "Quarters Offered": ""
     },
     "TWRT350": {

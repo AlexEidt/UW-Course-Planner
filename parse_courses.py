@@ -100,7 +100,9 @@ prereq_regex = re.compile(r';|:|and either|and one of')
 not_offered = re.compile(r'[Nn]ot open to students')
 def get_requisites(description, type):
     if type not in description:                                                             
-        return ''                                                                              
+        return ''       
+    description = description.replace('AND', 'and').replace('OR', 'or').replace('Minimum', 'minimum')  
+    description = description.replace('A minimum', 'a minimum')                                                                     
     parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]                               
     POI = ''
     if 'permission of' in parts.lower(): POI = 'POI'                        
@@ -119,6 +121,12 @@ def get_requisites(description, type):
             resulting += join_char.join(list(filter(('').__ne__, reqcrs)))
             resulting += split_char
         return resulting
+
+    def filter_result(result):
+        result = result.replace(' ', '').strip(';').strip(',').strip('\"').strip('.').strip('\\').strip('n').strip('&')
+        result = re.sub(r';+', ';', result)
+        result = re.sub(r',+', ',', result)
+        return result
 
     for course in required:
         if 'either' in course or 'Either' in course:
@@ -158,24 +166,26 @@ def get_requisites(description, type):
             result += ','
         result += ';'
     result += ',{}'.format(POI)
-    result = result.replace(',;', ';').replace(';,', ';')
-    result = result.replace(';&&', ';').replace('&&;', ';')
-    result = result.replace(',&&', ',').replace('&&,', ',')
-    result = re.sub(r';+', ';', result)
-    result = re.sub(r',+', ',', result)
-    result = re.sub(r';\d,', ';', result)
-    result = re.sub(r',\d,', ',', result)
-    result = re.sub(r';\d&', ';&', result)
-    result = re.sub(r',\d&', ',&', result)
+    result_replace = [[',;', ';'], [';,', ';'], [';&&', ';'], ['&&;', ';'], [',&&', ','], ['&&,', ',']]
+    for check in result_replace:
+        result = result.replace(check[0], check[1])
+    result_regex = [[r';+', ';'], [r',+', ','], [r';\d,', ';'], [r',\d,', ','], [r';\d&', ';&'], 
+                    [r',\d&', ',&'], [r',\.?[A-Z]?;', ';'], [r',\d+,?', ','], [r',\d+;', ';'],
+                    [r';\d+;', ';']]
+    for check in result_regex:
+        result = re.sub(check[0], check[1], result)
     if result[0] in '1234567890':
         result = result[1:]
-    result = result.replace('.C', '')
-    result = result.replace('.', ',')
-    result = result.replace(',;', ';').replace(';,', ';')
-    result = re.sub(r';+', ';', result)
-    result = re.sub(r',+', ',', result)
-    result = result.replace(' ', '').strip(';').strip(',').strip('\"').strip('.').strip('\\').strip('n').strip('&')
-    return ','.join(list(dict.fromkeys(result.split(','))))
+    result_replace_2 = [['.C', ''], ['/-', ''], ['.', ','], [',;', ';'], [';,', ';']]
+    for check in result_replace_2:
+        result = result.replace(check[0], check[1])
+    result = filter_result(result)
+    result = filter_result(result)
+    result = filter_result(result)
+    for check in result_replace:
+        result = result.replace(check[0], check[1])
+    result = ','.join(list(dict.fromkeys(result.split(','))))
+    return result if len(result) > 4 else ''
 
 
 # Returns the Quarters that the course is offered if there are any

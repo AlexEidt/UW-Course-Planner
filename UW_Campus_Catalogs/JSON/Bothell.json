@@ -503,7 +503,7 @@
         "Department Name": "BBIO",
         "Description": "First quarter of biochemistry covering macromolecules, including proteins and enzymes. Includes chemical structure of biological molecules and their interactions, how cells synthesize and degrade biological molecules, and how these activities are organized. Emphasizes how biochemical processes interrelate. Prerequisite: either both B BIO 200 and B CHEM 237, or B CHEM 239. Instructors: White Offered: jointly with B CHEM 364; A.",
         "Offered with": "BCHEM364",
-        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239.I",
+        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I",
         "Quarters Offered": "A"
     },
     "BBIO365": {
@@ -529,7 +529,7 @@
         "Department Name": "BBIO",
         "Description": "Prerequisite : Minimum 2.0 in B BIO 364 or B CHEM 364. Offered: jointly with B CHEM 366.",
         "Offered with": "BCHEM366",
-        "Prerequisites": "MBBIO364,BCHEM364",
+        "Prerequisites": "BBIO364,BCHEM364",
         "Quarters Offered": ""
     },
     "BBIO370": {
@@ -1738,7 +1738,7 @@
         "Department Name": "BBUS",
         "Description": " (5",
         "Offered with": "",
-        "Prerequisites": "BBUS441;&&BBUS483",
+        "Prerequisites": "BBUS441;BBUS483",
         "Quarters Offered": ""
     },
     "BBUS489": {
@@ -2375,7 +2375,7 @@
         "Department Name": "BCHEM",
         "Description": "Covers atomic nature of matter, chemical reactions, stoichiometry, solution chemistry, atomic theory, chemical bonding, molecular geometry and structure. First of a three-quarter sequence for science and engineering majors. Prerequisite: either minimum grade of 2.0 in B CHEM 139, or minimum grade of 2.5 in one of the following: B MATH 122, B MATH 123, MATH 120, STMATH 124, MATH 124, STMATH 125, MATH 125, STMATH 126, or MATH 126, or a score of 145-153 on the MPT-AS assessment test, or a score of 151 or higher on the MPT-GS assessment; recommended: High School Chemistry. Offered: AW.",
         "Offered with": "",
-        "Prerequisites": "BCHEM139,2;BMATH122,BMATH123,MATH120,STMATH124,MATH124,STMATH125,MATH125,STMATH126,MATH126",
+        "Prerequisites": "BCHEM139;BMATH122,BMATH123,MATH120,STMATH124,MATH124,STMATH125,MATH125,STMATH126,MATH126",
         "Quarters Offered": "A,W"
     },
     "BCHEM144": {
@@ -2388,7 +2388,7 @@
         "Department Name": "BCHEM",
         "Description": "Laboratory experience designed to complement the knowledge gained in B CHEM 143. Emphasizes collection and analysis of laboratory results in a well prepared laboratory notebook. Prerequisite: minimum grade of 2.0 in B CHEM 143, which may be taken concurrently. Offered: AW.",
         "Offered with": "",
-        "Prerequisites": "BCHEM143,",
+        "Prerequisites": "BCHEM143",
         "Quarters Offered": "A,W"
     },
     "BCHEM153": {
@@ -2414,7 +2414,7 @@
         "Department Name": "BCHEM",
         "Description": "Laboratory experience designed to complement the knowledge gained in B CHEM 153. Continued emphasis placed on quality results with the addition of writing sections of a standard lab report. Prerequisite: minimum grade of 2.0 in B CHEM 144; minimum grade of 2.0 in B CHEM 153, which may be taken concurrently. Offered: WSp.",
         "Offered with": "",
-        "Prerequisites": "BCHEM144;BCHEM153,",
+        "Prerequisites": "BCHEM144;BCHEM153",
         "Quarters Offered": "W,Sp"
     },
     "BCHEM157": {
@@ -2453,7 +2453,7 @@
         "Department Name": "BCHEM",
         "Description": "Laboratory experience designed to complement the knowledge gained in B CHEM 163. Continued emphasis placed on quality results with the writing of standard lab reports. Prerequisite: minimum grade of 2.0 in B CHEM 154; minimum grade of 2.0 in B CHEM 163, which may be taken concurrently. Offered: SpS.",
         "Offered with": "",
-        "Prerequisites": "BCHEM154;BCHEM163,",
+        "Prerequisites": "BCHEM154;BCHEM163",
         "Quarters Offered": "Sp,S"
     },
     "BCHEM237": {
@@ -2518,7 +2518,7 @@
         "Department Name": "BCHEM",
         "Description": "Preparations and qualitative organic analysis. Designed to be taken with B CHEM 239. Prerequisite: minimum grade of 1.7 in both B CHEM 238 and B CHEM 241; B CHEM 239, which may be taken concurrently.",
         "Offered with": "",
-        "Prerequisites": "&&BCHEM238&&BCHEM241;BCHEM239",
+        "Prerequisites": "BCHEM238&&BCHEM241;BCHEM239",
         "Quarters Offered": ""
     },
     "BCHEM293": {
@@ -2622,7 +2622,7 @@
         "Department Name": "BCHEM",
         "Description": "First quarter of biochemistry covering macromolecules, including proteins and enzymes. Includes chemical structure of biological molecules and their interactions, how cells synthesize and degrade biological molecules, and how these activities are organized. Emphasizes how biochemical processes interrelate. Prerequisite: either both B BIO 200 and B CHEM 237, or B CHEM 239. Instructors: White Offered: jointly with B BIO 364; A.",
         "Offered with": "BBIO364",
-        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239.I",
+        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I",
         "Quarters Offered": "A"
     },
     "BCHEM365": {
@@ -2648,7 +2648,7 @@
         "Department Name": "BCHEM",
         "Description": "Prerequisite : Minimum 2.0 in B BIO 364 or B CHEM 364. Offered: jointly with B BIO 366.",
         "Offered with": "BBIO366",
-        "Prerequisites": "MBBIO364,BCHEM364",
+        "Prerequisites": "BBIO364,BCHEM364",
         "Quarters Offered": ""
     },
     "BCHEM375": {
@@ -2765,7 +2765,7 @@
         "Department Name": "BCHEM",
         "Description": "Introduction to the research methods used in chemistry and covers such topics as hypothesis formation, literature review, proposal writing, method of development, and data analysis. Writing intensive course that prepares students for B CHEM 496. Prerequisite: minimum grade of 2.0 in each of B CHEM 239, B CHEM 242, and B CHEM 315.",
         "Offered with": "",
-        "Prerequisites": "&&BCHEM239&&BCHEM242&&BCHEM315",
+        "Prerequisites": "BCHEM239&&BCHEM242&&BCHEM315",
         "Quarters Offered": ""
     },
     "BCHEM496": {
@@ -2895,7 +2895,7 @@
         "Department Name": "BCLIM",
         "Description": "Comprehensive introduction to the science of the atmosphere and climate systems including: composition and structure of the atmosphere; atmospheric physics; thermodynamic processes; solar and terrestrial radiation; atmospheric dynamics and large-scale circulation; and climate processes and dynamics. Prerequisite: minimum grade of 2.0 in each of B CUSP 124; B CUSP 125; B PHYS 121; and B PHYS 122. Instructors: Jaffe, Salathe Offered: A.",
         "Offered with": "",
-        "Prerequisites": "&&BCUSP124;BCUSP125;BPHYS121;BPHYS122",
+        "Prerequisites": "BCUSP124;BCUSP125;BPHYS121;BPHYS122",
         "Quarters Offered": "A"
     },
     "BCLIM320": {
@@ -3077,7 +3077,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: B CORE 115, B CORE 116, or B CORE 117 Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BCORE115,BCORE116,BCORE117",
+        "Prerequisites": "E115,E116,E117",
         "Quarters Offered": "Sp"
     },
     "BCORE119": {
@@ -3090,7 +3090,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: B CORE 115, B CORE 116, or B CORE 117 Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BCORE115,BCORE116,BCORE117",
+        "Prerequisites": "E115,E116,E117",
         "Quarters Offered": "Sp"
     },
     "BCORE120": {
@@ -3103,7 +3103,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: either B CORE 115, B CORE 116, or B CORE 117. Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BCORE115,BCORE116,BCORE117",
+        "Prerequisites": "E115,E116,E117",
         "Quarters Offered": "Sp"
     },
     "BCORE133": {
@@ -5664,7 +5664,7 @@
         "Department Name": "BEE",
         "Description": "Introduction to power electronics. Topics covered include characterization of power semiconductor devices, design of magnetic components and filters, analysis and design of ac-to-dc, dc-to-dc and dc-to-ac power converters. Applications in power supplies are presented. Theoretical concepts and analyses are augmented by simulations and lab projects. Prerequisite: Minimum grade of 2.0 in BEE 331 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "MBEE331",
+        "Prerequisites": "BEE331",
         "Quarters Offered": ""
     },
     "BEE451": {
@@ -5690,7 +5690,7 @@
         "Department Name": "BEE",
         "Description": "Theory of transmission lines and microwave network analysis techniques are sued to design passive microwave devices. Topics include operational properties of active microwave circuits, antennas, and electromagnetic waves. RF, microwave RADAR and remote sensing systems. Prerequisite: minimum grade of 2.5 in B EE 361, B EE 331, or B EE 332.",
         "Offered with": "",
-        "Prerequisites": "BEE361,BEE331,,BEE332",
+        "Prerequisites": "BEE361,BEE331,BEE332",
         "Quarters Offered": ""
     },
     "BEE455": {
@@ -5703,7 +5703,7 @@
         "Department Name": "BEE",
         "Description": "Introduction to electrical machines and drives. Topics covered include principles and analyses of electromechanical systems including dc, synchronous and induction machines, both motors and generators. Control strategies for the different machine types are presented. Theoretical concepts are augmented by simulation tools and lab projects. Prerequisite: Minimum grade of 2.0 in BEE 233 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "MBEE233",
+        "Prerequisites": "BEE233",
         "Quarters Offered": ""
     },
     "BEE477": {
@@ -5716,7 +5716,7 @@
         "Department Name": "BEE",
         "Description": "Basic power system analytical concepts, three-phase systems, impedance, steady-state network analysis, normalization, transmission lines, transformers, and synchronous machines. Prerequisite: minimum grade of 1.5 in B EE 233. Instructors: Ghofrani",
         "Offered with": "",
-        "Prerequisites": "BEE233.I",
+        "Prerequisites": "BEE233,I",
         "Quarters Offered": ""
     },
     "BEE478": {
@@ -5755,7 +5755,7 @@
         "Department Name": "BEE",
         "Description": "Focuses on understanding a broad variety of sensor technologies and their application as systems in everyday use. Provides both a foundation to move into a particular area of sensor technology and also a means to apply appropriate sensors for particular applications. Prerequisite: minimum grade of 1.5 in both B EE 235 and B EE 331.",
         "Offered with": "",
-        "Prerequisites": "&&BEE235&&BEE331",
+        "Prerequisites": "BEE235&&BEE331",
         "Quarters Offered": ""
     },
     "BEE486": {
@@ -5794,7 +5794,7 @@
         "Department Name": "BEE",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "&&BEE332&&BEE371&&BEE425",
+        "Prerequisites": "BEE332&&BEE371&&BEE425",
         "Quarters Offered": "A,W,Sp"
     },
     "BEE496": {
@@ -5807,7 +5807,7 @@
         "Department Name": "BEE",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "BEE495.I",
+        "Prerequisites": "BEE495,I",
         "Quarters Offered": "A,W,Sp"
     },
     "BEE498": {
@@ -6119,7 +6119,7 @@
         "Department Name": "BEE",
         "Description": "Introduction to power electronics. Topics covered include characterization of power semiconductor devices, design of magnetic components and filters, analysis and design of ac-to-dc, dc-to-dc and dc-to-ac power converters. Applications in power supplies are presented. Theoretical concepts and analyses are augmented by simulations and lab projects. Prerequisite: Minimum grade of 2.0 in BEE 331 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "MBEE331",
+        "Prerequisites": "BEE331",
         "Quarters Offered": ""
     },
     "BEE551": {
@@ -6171,7 +6171,7 @@
         "Department Name": "BEE",
         "Description": "Introduction to electrical machines and drives. Topics covered include principles and analyses of electromechanical systems including dc, synchronous and induction machines, both motors and generators. Control strategies for the different machine types are presented. Theoretical concepts are augmented by simulation tools and lab projects. Prerequisite: Minimum grade of 2.0 in BEE 233 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "MBEE233",
+        "Prerequisites": "BEE233",
         "Quarters Offered": ""
     },
     "BEE571": {
@@ -6288,7 +6288,7 @@
         "Department Name": "BENGR",
         "Description": "Properties of metals, ceramics, polymers, and composites in relation to their internal subatomic, microscopic, and macroscopic structures. Incorporates materials testing, analysis of failure, and engineering of materials to achieve desired function and performance. Prerequisite: a minimum grade of 2.0 in B CHEM 143; and a minimum grade of 2.0 in B CHEM 144. Offered: AW.",
         "Offered with": "",
-        "Prerequisites": "BCHEM143;&&BCHEM144",
+        "Prerequisites": "BCHEM143;BCHEM144",
         "Quarters Offered": "A,W"
     },
     "BENGR321": {
@@ -6301,7 +6301,7 @@
         "Department Name": "BENGR",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "BME222;&&BENGR320,",
+        "Prerequisites": "BME222;BENGR320",
         "Quarters Offered": "A,W,Sp"
     },
     "BES301": {
@@ -7575,7 +7575,7 @@
         "Department Name": "BHS",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "BHS201.C/-",
+        "Prerequisites": "BHS201,C",
         "Quarters Offered": "A,W,Sp"
     },
     "BHS300": {
@@ -11878,7 +11878,7 @@
         "Department Name": "BJAPAN",
         "Description": "Elementary speaking, listening, reading, and writing skills in modern Japanese. Prerequisite: either BJAPAN 112 or score of 21-40 on JP 100A placement test. Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BJAPAN112,21,JP100",
+        "Prerequisites": "BJAPAN112,JP100",
         "Quarters Offered": "Sp"
     },
     "BJAPAN211": {
@@ -12047,7 +12047,7 @@
         "Department Name": "BMATH",
         "Description": "Introduces functions and their multiple representations. Explores linear, quadratic, polynomial, and rational functions. Emphasis on conceptual understanding, application, and symbolic manipulation skill throughout the course. Prerequisite: either a minimum grade of 2.5 in B MATH 121, or a score of 147-150 on the MPT-GSA assessment test.  Offered: AWSp.",
         "Offered with": "",
-        "Prerequisites": "BMATH121,147",
+        "Prerequisites": "BMATH121",
         "Quarters Offered": "A,W,Sp"
     },
     "BMATH123": {
@@ -12060,7 +12060,7 @@
         "Department Name": "BMATH",
         "Description": "Continuation of the study of functions. Explores exponential, logarithmic, trigonometric and inverse trigonometric functions. Emphasis will be placed on conceptual understanding, application, and symbolic manipulation skill throughout the course. Prerequisite: minimum grade of 2.5 in B MATH 122, a score of 145-153 on the MPT-AS assessment test, a score of 151 or higher on the MPT-GS assessment Offered: AWSpS.",
         "Offered with": "",
-        "Prerequisites": "BMATH122,,145-153MPT-AS,151,MPT-GS",
+        "Prerequisites": "BMATH122,145-153MPT-AS,151,MPT-GS",
         "Quarters Offered": "A,W,Sp,S"
     },
     "BMATH127": {
@@ -12086,7 +12086,7 @@
         "Department Name": "BMATH",
         "Description": "Introduction to differential and integral calculus using real world applications drawn from life and social sciences, and business. Conceptual and algebraic definitions of continuity, limits, with an emphasis on polynomial, exponential, and logarithmic functions. Statement and applications of the fundamental theorem of calculus. Prerequisite: either a minimum grade of 2.0 in B MATH 123, or a score of 154-163 on the MPT-AS assessment test. Offered: AWSpS.",
         "Offered with": "",
-        "Prerequisites": "BMATH123,154",
+        "Prerequisites": "BMATH123",
         "Quarters Offered": "A,W,Sp,S"
     },
     "BMATH215": {
@@ -12203,7 +12203,7 @@
         "Department Name": "BME",
         "Description": "Introduction to fluid properties, hydrostatics, momentum transfer in internal and external fluid flow, analysis of fluid flow systems, and fluid dynamics. Prerequisite: minimum grade of 1.7 in B ME 331; and minimum grade of 1.7 in STMATH 324 Offered: W.",
         "Offered with": "",
-        "Prerequisites": "BME331;&&STMATH324",
+        "Prerequisites": "BME331;STMATH324",
         "Quarters Offered": "W"
     },
     "BME333": {
@@ -12229,7 +12229,7 @@
         "Department Name": "BME",
         "Description": "Weekly lab experiments designed to introduce students to the basics of experimentation, instrumentation, data collection and analysis, error analysis, report writing, and teamwork skills. Topics will include fluid mechanics and heat transfer. Prerequisite: minimum grade of 1.7 in B ME 331; minimum grade of 1.7 in B ME 332; and minimum grade of 1.7 in B ME 333 Offered: A.",
         "Offered with": "",
-        "Prerequisites": "BME331;BME332;&&BME333",
+        "Prerequisites": "BME331;BME332;BME333",
         "Quarters Offered": "A"
     },
     "BME341": {
@@ -12242,7 +12242,7 @@
         "Department Name": "BME",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "BENGR320;&&BME223",
+        "Prerequisites": "BENGR320;BME223",
         "Quarters Offered": "W,Sp"
     },
     "BME342": {
@@ -12268,7 +12268,7 @@
         "Department Name": "BME",
         "Description": "Covers dynamic system modeling (mechanical, electrical, fluid, and thermos systems",
         "Offered with": "",
-        "Prerequisites": "&&BME342&&BME315",
+        "Prerequisites": "BME342&&BME315",
         "Quarters Offered": ""
     },
     "BME345": {
@@ -12294,7 +12294,7 @@
         "Department Name": "BME",
         "Description": "Fundamentals of electrical circuits and components, and their application in motors, generators, and other machinery used in industrial applications. Includes laboratory. Prerequisite: minimum grade of 1.7 in both STMATH 126 and B PHYS 122. Offered: A.",
         "Offered with": "",
-        "Prerequisites": "&&STMATH126&&BPHYS122",
+        "Prerequisites": "STMATH126&&BPHYS122",
         "Quarters Offered": "A"
     },
     "BME431": {
@@ -12307,7 +12307,7 @@
         "Department Name": "BME",
         "Description": "Covers underlying physics of diagnostic and therapeutic ultrasound systems and their physical effects. Estimates important ultrasound parameters using numerical simulations, algebraic techniques, and laboratory-based measurements. Prerequisite: minimum grade of 2.0 in both B ENGR 310 and B PHYS 123.",
         "Offered with": "",
-        "Prerequisites": "&&BENGR310&&BPHYS123",
+        "Prerequisites": "BENGR310&&BPHYS123",
         "Quarters Offered": ""
     },
     "BME432": {
@@ -12333,7 +12333,7 @@
         "Department Name": "BME",
         "Description": "Explores advanced topics in thermodynamics, heat transfer, and fluid mechanics, including but not limited to HVAC, combustion, compressible fluid mechanics, advanced power generation, computational methods, and renewable energy. Prerequisite: Prerequisites: Minimum grade of 2.0 in B ME 333; recommended: B ME 333",
         "Offered with": "",
-        "Prerequisites": "MBME333;BME333",
+        "Prerequisites": "BME333;BME333",
         "Quarters Offered": ""
     },
     "BME435": {
@@ -12372,7 +12372,7 @@
         "Department Name": "BME",
         "Description": "Introduction to fundamental concepts of ocean sciences and engineering through project-based activities. Topics include Hydrostatistics, Hydrodynamics, Ocean Sensors, Underwater Acoustics, Sonar, Marine Geology, Ocean Vehicles, Marine Ecosystem, Marine Mammals, Energy, Pollution and Policy. Prerequisite: Minimum grade of 2.0 in  B ENGR 310 \n",
         "Offered with": "",
-        "Prerequisites": "MBENGR310",
+        "Prerequisites": "BENGR310\n",
         "Quarters Offered": ""
     },
     "BME460": {
@@ -12398,7 +12398,7 @@
         "Department Name": "BME",
         "Description": "Examines the responsibilities of the engineer in the ethical application of technology in diverse, interconnected, and global societies. Historical and contemporary cases are used to probe socio-cultural implications of engineering practice and the role of engineers in local, national, and global development. Prerequisite: minimum grade of 2.0 in both STMATH 126 and B PHYS 121.",
         "Offered with": "",
-        "Prerequisites": "&&STMATH126&&BPHYS121",
+        "Prerequisites": "STMATH126&&BPHYS121",
         "Quarters Offered": ""
     },
     "BME482": {
@@ -12424,7 +12424,7 @@
         "Department Name": "BME",
         "Description": "Supports Mechanical Engineering majors in beginning their preparation for the Fundamentals of Engineering (FE",
         "Offered with": "",
-        "Prerequisites": "BME343.C/-",
+        "Prerequisites": "BME343,C",
         "Quarters Offered": ""
     },
     "BME493": {
@@ -12476,7 +12476,7 @@
         "Department Name": "BME",
         "Description": "Small-team project targeting the building phase of open-ended design problems in Mechanical Engineering. May be undertaken as part of an industrial internship with direct supervision of the ME faculty and sponsor. May involve students of complementary disciplines. Prerequisite: B ME 495 and minimum cumulative GPA of 2.0. Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BME495;2",
+        "Prerequisites": "BME495",
         "Quarters Offered": "Sp"
     },
     "BME498": {
@@ -12879,7 +12879,7 @@
         "Department Name": "BNURS",
         "Description": "Includes the theoretical rationale for curriculum development and study of curricular problems in nursing in relation to the elements of the curriculum as described in a curricular design. Prerequisite: permission of program.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "BNURS512": {
@@ -12892,7 +12892,7 @@
         "Department Name": "BNURS",
         "Description": "For graduate students preparing for faculty or staff development positions in nursing. Theory and principles of evaluation. Instruments to appraise clinical nursing performance developed as part of course requirements. Prerequisite: graduate standing or permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "BNURS513": {
@@ -13373,7 +13373,7 @@
         "Department Name": "BPHYS",
         "Description": "Provides introduction to the science of cosmology. Topics include mathematical descriptions of the expanding universe, the big bang, the cosmic microwave background, and early universe. Prerequisite: minimum grade of 2.0 in both B PHYS 221 and B PHYS 222.",
         "Offered with": "",
-        "Prerequisites": "&&BPHYS221&&BPHYS222",
+        "Prerequisites": "BPHYS221&&BPHYS222",
         "Quarters Offered": ""
     },
     "BPHYS317": {
@@ -13399,7 +13399,7 @@
         "Department Name": "BPHYS",
         "Description": "Covers electrostatics, including Gauss' law, the electric field, electric potential, conductors, and dielectric media. The first course in a three-quarter sequence covering electromagnetic theory. Prerequisite: a minimum grade of 2.0 in B PHYS 122; and either a minimum grade of 2.0 in STMATH 324, or a minimum 2.0 grade in MATH 324.",
         "Offered with": "",
-        "Prerequisites": "BPHYS122;STMATH324,,MATH324",
+        "Prerequisites": "BPHYS122;STMATH324,MATH324",
         "Quarters Offered": ""
     },
     "BPHYS322": {
@@ -13464,7 +13464,7 @@
         "Department Name": "BPHYS",
         "Description": "Covers statistical mechanics and quantum statistics. Prerequisite: Minimum 2.0 in B PHYS 224; either B PHYS 324 or PHYS 324, which may be taken concurrently.",
         "Offered with": "",
-        "Prerequisites": "MBPHYS224;BPHYS324,PHYS324",
+        "Prerequisites": "BPHYS224;BPHYS324,PHYS324",
         "Quarters Offered": ""
     },
     "BPHYS431": {
@@ -13477,7 +13477,7 @@
         "Department Name": "BPHYS",
         "Description": "Key circuit analysis principles will be introduced which will help the students analyze a variety of discrete analog dc and ac circuits which would use diodes, bipolar junction transistors, and operational amplifiers. Students will solve the circuits analytically, and then test their answers by simulating the circuits using Multisim in the laboratory. The students will then proceed to build these circuits and test them. Prerequisite: minimum grade of 2.0 in B PHYS 231.",
         "Offered with": "",
-        "Prerequisites": "BPHYS231.\n",
+        "Prerequisites": "BPHYS231,\n",
         "Quarters Offered": ""
     },
     "BPHYS432": {
@@ -13750,7 +13750,7 @@
         "Department Name": "BPOLST",
         "Description": "Provides an overview of the major literatures in organization theory and management. Focuses on developing managerial skills: supervising subordinates, building a team, mapping stakeholders, and problem-spotting, with special attention to program evaluation methods and approaches, including logic models, participatory approaches, and quantitative methods. Prerequisite: minimum grade of 2.7 in BPOLST 500, BPOLST 502, and BPOLST 503.",
         "Offered with": "",
-        "Prerequisites": "BPOLST500,BPOLST502,&&BPOLST503",
+        "Prerequisites": "BPOLST500,BPOLST502,BPOLST503",
         "Quarters Offered": ""
     },
     "BPOLST515": {
@@ -13984,7 +13984,7 @@
         "Department Name": "BSPAN",
         "Description": "Sp .",
         "Offered with": "",
-        "Prerequisites": "BSPAN101,16,SP100",
+        "Prerequisites": "BSPAN101,SP100",
         "Quarters Offered": "W,Sp"
     },
     "BSPAN103": {
@@ -13997,7 +13997,7 @@
         "Department Name": "BSPAN",
         "Description": "Methods and objectives are primarily oral-aural. Prerequisite: either B SPAN 102 or score of 45-69 on SP100A placement test. Offered: Sp.",
         "Offered with": "",
-        "Prerequisites": "BSPAN102,45,SP100",
+        "Prerequisites": "BSPAN102,SP100",
         "Quarters Offered": "Sp"
     },
     "BSPAN196": {
@@ -14023,7 +14023,7 @@
         "Department Name": "BSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either B SPAN 103, score of 70-100 on SP100A placement test, minimum score of 51 on SP TL placement test, or score of 0-75 on SP200A placement test.",
         "Offered with": "",
-        "Prerequisites": "BSPAN103,70,SP100,51,SP200",
+        "Prerequisites": "BSPAN103,SP100,SP200",
         "Quarters Offered": ""
     },
     "BSPAN202": {
@@ -14036,7 +14036,7 @@
         "Department Name": "BSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either BSPAN 201 or score of 76-145 on SP200A placement test.",
         "Offered with": "",
-        "Prerequisites": "BSPAN201,76,SP200",
+        "Prerequisites": "BSPAN201,SP200",
         "Quarters Offered": ""
     },
     "BSPAN203": {
@@ -14049,7 +14049,7 @@
         "Department Name": "BSPAN",
         "Description": "Intensive practice in speaking, reading, and writing. Review of Spanish grammar. Oral practice based on literary and cultural readings. Prerequisite: either B SPAN 202, or score of 146-165 on SP200A placement test.",
         "Offered with": "",
-        "Prerequisites": "BSPAN202,146,SP200",
+        "Prerequisites": "BSPAN202,SP200",
         "Quarters Offered": ""
     },
     "BSPAN216": {
@@ -14166,7 +14166,7 @@
         "Department Name": "BST",
         "Description": "Develop written and verbal scientific communication skills that are essential for success in a scientific career. Create multiple products including a scientific paper, research funding proposal, and content for online media. Prerequisite: Minimum 2.0 grade in B WRIT 134. Offered: AWSp.",
         "Offered with": "",
-        "Prerequisites": "MBWRIT134",
+        "Prerequisites": "BWRIT134",
         "Quarters Offered": "A,W,Sp"
     },
     "BST381": {
@@ -14400,7 +14400,7 @@
         "Department Name": "CSS",
         "Description": "Transition from basic programming skills to a rigorous process of software development. Familiarization with higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting",
         "Offered with": "",
-        "Prerequisites": "CSS161,CSS142,,CSE142.C-;CSSSKL143",
+        "Prerequisites": "CSS161,CSS142,CSE142,C-;CSSSKL143",
         "Quarters Offered": ""
     },
     "CSS173": {
@@ -14530,7 +14530,7 @@
         "Department Name": "CSS",
         "Description": "Survey of computer systems concepts to provide context and understanding for teachers creating K-12 courseware. Includes issues, tradeoffs, and solutions of computer systems, including data structures, networks, databases, human computer interactions, software engineering, and cybersecurity. Non-CSS majors only. Prerequisite: minimum grade of 2.7 in CSS 161; minimum grade of 2.0 in CSS 211. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "CSS161;CSS211.C/-",
+        "Prerequisites": "CSS161;CSS211,C",
         "Quarters Offered": ""
     },
     "CSS310": {
@@ -15635,7 +15635,7 @@
         "Department Name": "CSS",
         "Description": "Special topics in computer science and software engineering. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "CSS593": {
@@ -15648,7 +15648,7 @@
         "Department Name": "CSS",
         "Description": "Students apply their knowledge and skills related to cybersecurity engineering in a culminated capstone project. Prerequisite: minimum grade of 2.7 in each of CSS 514, CSS 517, CSS 519, CSS 527, CSS 537, CSS 577, and CSS 578.",
         "Offered with": "",
-        "Prerequisites": "&&CSS514&&CSS517&&CSS519&&CSS527&&CSS537&&CSS577&&CSS578",
+        "Prerequisites": "CSS514&&CSS517&&CSS519&&CSS527&&CSS537&&CSS577&&CSS578",
         "Quarters Offered": ""
     },
     "CSS595": {
@@ -15934,7 +15934,7 @@
         "Department Name": "ELCBUS",
         "Description": "Explores creative, integrative approaches to conflict resolution. Includes bargaining games, role-plays, cases, issues in conflict management, interpersonal influence processes, ethical implications of bargaining problems, and persona negotiating styles. Equivalent to B BUS 462. Prerequisite: minimum grade of 1.7 in both ELCBUS 300 and ELCBUS 320.",
         "Offered with": "",
-        "Prerequisites": "&&ELCBUS300&&ELCBUS320",
+        "Prerequisites": "ELCBUS300&&ELCBUS320",
         "Quarters Offered": ""
     },
     "ELCBUS441": {
@@ -16103,7 +16103,7 @@
         "Department Name": "ELCBUS",
         "Description": "Focuses on identification, analysis, and resolution of managerial problems; creation and implementation of management policies in business organizations; and revision of policies over time. Prerequisite: a minimum grade of 1.7 in each of ELCBUS 300; ELCBUS 320; ELCBUS 340; and ELCBUS 350.",
         "Offered with": "",
-        "Prerequisites": "&&ELCBUS300;ELCBUS320;ELCBUS340;ELCBUS350",
+        "Prerequisites": "ELCBUS300;ELCBUS320;ELCBUS340;ELCBUS350",
         "Quarters Offered": ""
     },
     "ELCBUS482": {
@@ -16155,7 +16155,7 @@
         "Department Name": "ELCBUS",
         "Description": " (5",
         "Offered with": "",
-        "Prerequisites": "ELCBUS400;&&ELCBUS483",
+        "Prerequisites": "ELCBUS400;ELCBUS483",
         "Quarters Offered": ""
     },
     "ELCBUS497": {
@@ -16285,7 +16285,7 @@
         "Department Name": "STMATH",
         "Description": "Studies the development of differential calculus, starting with limits, continuity, and the definition of derivative. Emphasizes differentiation techniques and their applications. Prerequisite: a minimum grade of 2.5 in either B MATH 123 or MATH 120, or a score of 154-163 on the MPT-AS placement test, or a minimum score of 2 on AP MAB exam.  Offered: AWSpS.",
         "Offered with": "",
-        "Prerequisites": "BMATH123,MATH120,154,2",
+        "Prerequisites": "BMATH123,MATH120",
         "Quarters Offered": "A,W,Sp,S"
     },
     "STMATH125": {
@@ -16298,7 +16298,7 @@
         "Department Name": "STMATH",
         "Description": "Integration theory and techniques with applications in science and engineering. Prerequisite: a minimum grade of 2.0 in either STMATH 124 or MATH 124, or a minimum score of 3 on AP MAB, or a minimum score of 2 on AP MBC exam.  Offered: AWSpS.",
         "Offered with": "",
-        "Prerequisites": "STMATH124,MATH124,2",
+        "Prerequisites": "STMATH124,MATH124",
         "Quarters Offered": "A,W,Sp,S"
     },
     "STMATH126": {
@@ -16311,7 +16311,7 @@
         "Department Name": "STMATH",
         "Description": "Studies sequences and series, including convergence tests and Taylor polynomials and series, as well as the calculus of curves in the plane and space described in polar, parametric, or vector-valued form. Prerequisite: a minimum grade of 2.0 in either STMATH 125 or MATH 125, or a score of 5 on AP MAB exam, or a minimum score of 4 on AP MBC exam. Offered: AWSpS.",
         "Offered with": "",
-        "Prerequisites": "STMATH125,MATH125,4",
+        "Prerequisites": "STMATH125,MATH125",
         "Quarters Offered": "A,W,Sp,S"
     },
     "STMATH300": {
@@ -16324,7 +16324,7 @@
         "Department Name": "STMATH",
         "Description": "Introduces students to mathematical argument and to reading and writing proofs. Develops elementary set theory, examples of relations, functions and operations on functions, the principle of induction, counting techniques, elementary number theory, and combinatorics. Places strong emphasis on methods and practice of problem solving. Prerequisite: minimum grade of 2.0 in STMATH 125, or MATH 125.",
         "Offered with": "",
-        "Prerequisites": "STMATH125,,MATH125",
+        "Prerequisites": "STMATH125,MATH125",
         "Quarters Offered": ""
     },
     "STMATH307": {
@@ -16363,7 +16363,7 @@
         "Department Name": "STMATH",
         "Description": "Covers mathematical aspects of Game Theory, including symmetric and asymmetric games, zero-sum and non-zero-sum games, mixed and pure strategies, equilibria, and strategic moves. Examines examples from several disciplines including anthropology, philosophy, business, social psychology, and biology. Prerequisite: minimum grade of 2.0 in STMATH 124, or MATH 124.",
         "Offered with": "",
-        "Prerequisites": "STMATH124,,MATH124",
+        "Prerequisites": "STMATH124,MATH124",
         "Quarters Offered": ""
     },
     "STMATH324": {
@@ -16376,7 +16376,7 @@
         "Department Name": "STMATH",
         "Description": "Sp S.",
         "Offered with": "",
-        "Prerequisites": "STMATH126,,MATH126",
+        "Prerequisites": "STMATH126,MATH126",
         "Quarters Offered": "A,W,Sp,S"
     },
     "STMATH330": {
@@ -16389,7 +16389,7 @@
         "Department Name": "STMATH",
         "Description": "An introduction to the concepts of financial mathematics, and how they are applied in calculating\npresent and accumulated values for various streams of cash flows, as a basis for future use in: reserving; valuation; pricing; asset/liability management; investment income; capital budgeting; and valuing contingent cash flows. Prerequisite: A minimum grade of 2.0 in STMATH 125; and a minimum grade of 2.0 in  B BUS 220/BIS 200.",
         "Offered with": "",
-        "Prerequisites": "ASTMATH125;&&BBUS220/BIS200",
+        "Prerequisites": "STMATH125;BBUS220/BIS200",
         "Quarters Offered": ""
     },
     "STMATH341": {
@@ -16402,7 +16402,7 @@
         "Department Name": "STMATH",
         "Description": "Stochastic concepts including probabilistic underpinnings of statistics, measures of central tendency, variability, correlation, distributions, sampling, and simulation. Exploratory data analysis including experiments, surveys, measures of association and inferential statistics.  Credit is not given for both STMATH 341 and STMATH 390. Prerequisite: minimum grade of 2.0 in STMATH 124, B MATH 144, or MATH 124.",
         "Offered with": "",
-        "Prerequisites": "STMATH124,BMATH144,,MATH124",
+        "Prerequisites": "STMATH124,BMATH144,MATH124",
         "Quarters Offered": ""
     },
     "STMATH350": {
@@ -16428,7 +16428,7 @@
         "Department Name": "STMATH",
         "Description": "Introduction to methods of discrete mathematics, including topics from graph theory, network flows, and combinatorics. Emphasis on these tools to formulate models and solve problems arising in variety of applications, such as computer science, biology, and management science. Prerequisite: minimum grade of 2.0 in STMATH 308 or MATH 308; and minimum grade of 2.0 in CSE 142, CSS 142, CSS 161, or AMATH 301.",
         "Offered with": "",
-        "Prerequisites": "STMATH308,MATH308;&&CSE142,CSS142,CSS161,,AMATH301",
+        "Prerequisites": "STMATH308,MATH308;CSE142,CSS142,CSS161,AMATH301",
         "Quarters Offered": ""
     },
     "STMATH390": {
@@ -16441,7 +16441,7 @@
         "Department Name": "STMATH",
         "Description": "Covers concepts of probability and statistics; conditional probability, independence, random variable, and distribution functions; descriptive statistics, transformations, sampling errors, confidence intervals, least squares, and maximum likelihood; and exploratory data analysis and interactive computing.  Credit is not given for both STMATH 341 and STMATH 390. Prerequisite: minimum grade of 2.0 in STMATH 324, or MATH 324.",
         "Offered with": "",
-        "Prerequisites": "STMATH324,,MATH324",
+        "Prerequisites": "STMATH324,MATH324",
         "Quarters Offered": ""
     },
     "STMATH392": {
@@ -16467,7 +16467,7 @@
         "Department Name": "STMATH",
         "Description": "Introduction to group theory. Emphasizes examples, including cyclic, dihedral, and symmetric groups. Theoretical concepts include: Cosets and Lagrange's theorem; direct products; homomorphisms, normal subgroups, quotient groups, and the fundamental isomorphism theorems; orders and Cauchy's theorem; and the structure of finitely-generated abelian groups. Prerequisite: minimum grade of 2.0 in STMATH 300 or MATH 300; and minimum grade of 2.0 in STMATH 308 or MATH 308.",
         "Offered with": "",
-        "Prerequisites": "STMATH300,MATH300;&&STMATH308,MATH308",
+        "Prerequisites": "STMATH300,MATH300;STMATH308,MATH308",
         "Quarters Offered": ""
     },
     "STMATH403": {
@@ -16480,7 +16480,7 @@
         "Department Name": "STMATH",
         "Description": "Introduction to the theory of rings and fields, including ideals, homomorphisms, quotient rings, integral domains and their fields of fractions, polynomial rings, field extensions, vector spaces, geometric constructions via straight-edge and compass, the classification of finite fields, unique factorization domains, and Euclidean domains. Prerequisite: minimum grade of 2.0 in STMATH 402, or MATH 402.",
         "Offered with": "",
-        "Prerequisites": "STMATH402,,MATH402",
+        "Prerequisites": "STMATH402,MATH402",
         "Quarters Offered": ""
     },
     "STMATH405": {
@@ -16493,7 +16493,7 @@
         "Department Name": "STMATH",
         "Description": "Methods and theory for numerically solving systems of equations, both linear and nonlinear. Topics include numerical error, stability and conditioning, root finding, direct and iterative methods for linear systems, linear least squares, eigenvalue problems, and nonlinear systems. Prerequisite: minimum grade of 2.0 in STMATH 308 or MATH 308; and minimum grade of 2.0 in STMATH 126 or MATH 126; and minimum grade of 2.0 in CSS 132, CSS 142, CSE 142, CSS 161, or AMATH 301.",
         "Offered with": "",
-        "Prerequisites": "STMATH308,MATH308;&&STMATH126,MATH126;&&CSS132,CSS142,CSE142,CSS161,,AMATH301",
+        "Prerequisites": "STMATH308,MATH308;STMATH126,MATH126;CSS132,CSS142,CSE142,CSS161,AMATH301",
         "Quarters Offered": ""
     },
     "STMATH406": {
@@ -16506,7 +16506,7 @@
         "Department Name": "STMATH",
         "Description": "Es . Topics include polynomial and piecewise polynomial interpolation, the Fourier transform, numerical differentiation and integration, and approximate solution of",
         "Offered with": "",
-        "Prerequisites": "STMATH307;STMATH405",
+        "Prerequisites": "STMATH307&&STMATH405",
         "Quarters Offered": ""
     },
     "STMATH407": {
@@ -16519,7 +16519,7 @@
         "Department Name": "STMATH",
         "Description": "Maximize and minimize linear functions subject to constraints consisting of linear equations and inequalities. Define linear optimization models from problem description. Solve linear programming problems using the simplex method. Conduct duality and sensitivity analysis for linear programming. Prerequisite: minimum grade of 2.0 in STMATH 308 or MATH 308; and minimum grade of 2.0 in STMATH 126 or MATH 126; and minimum grade of 2.0 in CSS 132, CSS 142, CSE 142 or AMATH 301.",
         "Offered with": "",
-        "Prerequisites": "STMATH308,MATH308;&&STMATH126,MATH126;&&CSS132,CSS142,CSE142,AMATH301",
+        "Prerequisites": "STMATH308,MATH308;STMATH126,MATH126;CSS132,CSS142,CSE142,AMATH301",
         "Quarters Offered": ""
     },
     "STMATH408": {
@@ -16532,7 +16532,7 @@
         "Department Name": "STMATH",
         "Description": "Maximize and minimize nonlinear functions, constrained and unconstrained; nonlinear programming problems and methods. Topics include: Lagrange multipliers, Kuhn-Tucker conditions, convexity, quadratic programming, steepest-descent method, and Newton and quasi-Newton methods. Prerequisite: minimum grade of 2.0 in STMATH 308 or MATH 308; and minimum grade of 2.0 in STMATH 324 or MATH 324; and minimum grade of 2.0 in STMATH 300; and minimum grade of 2.0 in CSS 132,  CSS 142, CSE 142 or AMATH 301.",
         "Offered with": "",
-        "Prerequisites": "STMATH308,MATH308;&&STMATH324,MATH324;&&STMATH300;&&CSS132,CSS142,CSE142,AMATH301",
+        "Prerequisites": "STMATH308,MATH308;STMATH324,MATH324;STMATH300;CSS132,CSS142,CSE142,AMATH301",
         "Quarters Offered": ""
     },
     "STMATH409": {
@@ -16545,7 +16545,7 @@
         "Department Name": "STMATH",
         "Description": "A mathematically rigorous treatment of vector spaces; linear transformations and matrices; matrix operations and linear systems; determinants; eigenvalues, eigenvectors, and diagonalization; canonical forms; and special matrices including permutation and nonnegative matrices. Prerequisite: minimum grade of 2.0 in each of STMATH 300 and STMATH 308; recommended: STMATH 300 and STMATH 308.",
         "Offered with": "",
-        "Prerequisites": "&&STMATH300&&STMATH308;STMATH300;STMATH308",
+        "Prerequisites": "STMATH300&&STMATH308;STMATH300;STMATH308",
         "Quarters Offered": ""
     },
     "STMATH420": {
@@ -16597,7 +16597,7 @@
         "Department Name": "STMATH",
         "Description": "Complex numbers; analytics functions; sequences and series; complex integration; Cauchy integral formula; Taylor and Laurent series; uniform convergence; residue theory; conformal mapping. Prerequisite: Minimum grade of 2.0 in STMATH 300 or MATH 300; and minimum grade of 2.0 in STMATH 324 or MATH 324.",
         "Offered with": "",
-        "Prerequisites": "MSTMATH300,MATH300;&&STMATH324,MATH324",
+        "Prerequisites": "STMATH300,MATH300;STMATH324,MATH324",
         "Quarters Offered": ""
     },
     "STMATH441": {
@@ -16610,7 +16610,7 @@
         "Department Name": "STMATH",
         "Description": "Topological spaces, product spaces, quotient spaces, metric spaces, convergence, continuity, separation and countability axioms, connectedness, and compactness. Prerequisite: Minimum grade of 2.0 in STMATH 424.\n",
         "Offered with": "",
-        "Prerequisites": "MSTMATH424",
+        "Prerequisites": "STMATH424,\n",
         "Quarters Offered": ""
     },
     "STMATH444": {

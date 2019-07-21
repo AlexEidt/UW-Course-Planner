@@ -215,7 +215,7 @@
         "Course Number": "180",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Mendelian genetics, evolution, biodiversity of life forms, ecology, conservation biology. First course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220",
+        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Mendelian genetics, evolution, biodiversity of life forms, ecology, conservation biology. First course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220).",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -228,7 +228,7 @@
         "Course Number": "200",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Metabolism and energetics, structure and function of biomolecules, cell structure and function, animal development. Second course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220",
+        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Metabolism and energetics, structure and function of biomolecules, cell structure and function, animal development. Second course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220). Prerequisite: B BIO 180; either B CHEM 152 or B CHEM 153.",
         "Offered with": "",
         "Prerequisites": "BBIO180;BCHEM152,BCHEM153",
         "Quarters Offered": ""
@@ -241,7 +241,7 @@
         "Course Number": "220",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Animal physiology, plant development and physiology. Final course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220",
+        "Description": "For students intending to take advanced courses in the biological sciences or enroll in pre-professional programs. Animal physiology, plant development and physiology. Final course in a three-quarter series (B BIO 180, B BIO 200, B BIO 220). Prerequisite: B BIO 200.",
         "Offered with": "",
         "Prerequisites": "BBIO200",
         "Quarters Offered": ""
@@ -280,7 +280,7 @@
         "Course Number": "232",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Explores human reproduction, embryonic development, and genetic technology. Explores the increasing use of technology used in reproduction and related issues (e.g. in vitro fertilization, genetic selection of embryos, cloning, stem cells",
+        "Description": "Explores human reproduction, embryonic development, and genetic technology. Explores the increasing use of technology used in reproduction and related issues (e.g. in vitro fertilization, genetic selection of embryos, cloning, stem cells). Offered: jointly with BISSTS 232.",
         "Offered with": "BISSTS232",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -592,7 +592,7 @@
         "Course Number": "383",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Covers principles of bioinformatics. Students develop a working knowledge of computational tools to analyze biological datasets, including DNA and protein sequence databases. Includes topics such as: database searching, sequence alignment (DNA, RNA, and protein",
+        "Description": "Covers principles of bioinformatics. Students develop a working knowledge of computational tools to analyze biological datasets, including DNA and protein sequence databases. Includes topics such as: database searching, sequence alignment (DNA, RNA, and protein), BLAST, phylogeny, evolution, functional genomics, gene expression/microarray analysis, and protein analysis. Offered: jointly with CSS 383.",
         "Offered with": "CSS383",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -605,7 +605,7 @@
         "Course Number": "385",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Examines the ultimate (evolutionary",
+        "Description": "Examines the ultimate (evolutionary) and proximate (mechanistic) causes of animal behavior. Topics are introduced in lecture, explored through student-led discussion of primary literature, and put into action with student collection of behavioral data at the zoo and in the field. Prerequisite: B BIO 220. Offered: W.",
         "Offered with": "",
         "Prerequisites": "BBIO220",
         "Quarters Offered": "W"
@@ -618,7 +618,7 @@
         "Course Number": "390",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Examines selected nervous system diseases and disorders representative of different types of neurological and neuropsychiatric dysfunction. Develops historical perspectives of these conditions to compare with current understanding of the etiology (causation",
+        "Description": "Examines selected nervous system diseases and disorders representative of different types of neurological and neuropsychiatric dysfunction. Develops historical perspectives of these conditions to compare with current understanding of the etiology (causation), underlying mechanisms (structural, pathophysiological, neurochemical), and related treatments. Supports understanding of the process of scientific investigation and involved limitations. Prerequisite: B BIO 220; recommended: B BIO 351 or equivalent.",
         "Offered with": "",
         "Prerequisites": "BBIO220;BBIO351",
         "Quarters Offered": ""
@@ -670,7 +670,7 @@
         "Course Number": "460",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Studies the biology of embryonic development. Covers major features of development of vertebrates and invertebrates. Topics include: morphological features of early development (fertilization, cleavage, gastrulation, establishment of the body plan",
+        "Description": "Studies the biology of embryonic development. Covers major features of development of vertebrates and invertebrates. Topics include: morphological features of early development (fertilization, cleavage, gastrulation, establishment of the body plan), cell determination, pattern formation, molecular biology of early embryos, and introduction to evolutionary developmental biology. Prerequisite: B BIO 360. Instructors: Servetnick Offered: Sp.",
         "Offered with": "",
         "Prerequisites": "BBIO360",
         "Quarters Offered": "Sp"
@@ -683,7 +683,7 @@
         "Course Number": "466",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "Explores evolution using experiments and simple algebraic models, explains processes underlying observed patterns (e.g., evolution of HIV",
+        "Description": "Explores evolution using experiments and simple algebraic models, explains processes underlying observed patterns (e.g., evolution of HIV), predicts outcomes (e.g., health and crop management), and depicts and interprets relationships. Prerequisite: B BIO 180.",
         "Offered with": "",
         "Prerequisites": "BBIO180",
         "Quarters Offered": ""
@@ -1021,7 +1021,7 @@
         "Course Number": "340",
         "Credits": "5",
         "Department Name": "BBUS",
-        "Description": "Examines service and manufacturing processes that deliver value to customers, introduces concepts and tools for critical analysis, emphasizes operating priorities (quality, cost, delivery, flexibility, social responsibility",
+        "Description": "Examines service and manufacturing processes that deliver value to customers, introduces concepts and tools for critical analysis, emphasizes operating priorities (quality, cost, delivery, flexibility, social responsibility) an the underlying factors that support them. Prerequisite: minimum grade of 1.7 in B BUS 310; may not be repeated.",
         "Offered with": "",
         "Prerequisites": "BBUS310",
         "Quarters Offered": ""
@@ -1632,7 +1632,7 @@
         "Course Number": "475",
         "Credits": "5",
         "Department Name": "BBUS",
-        "Description": "Examines topics such as the nature of innovation, technology strategy, organizational and technical capabilities, and new product development processes. Course requirements typically include readings, case analyses, classroom discussion, and research project(s",
+        "Description": "Examines topics such as the nature of innovation, technology strategy, organizational and technical capabilities, and new product development processes. Course requirements typically include readings, case analyses, classroom discussion, and research project(s). Open to Business or CSS students having senior status. Prerequisite: may not be repeated.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -1736,7 +1736,7 @@
         "Course Number": "487",
         "Credits": "5",
         "Department Name": "BBUS",
-        "Description": " (5",
+        "Description": " (5)Integrates the topics covered in the foundational Supply Chain Management courses as well as engage students in topics related to managing and improving supply chains. Analyze a real-world supply chain problem and develop viable solutions. Prerequisite: a minimum grade of 1.7 in  B BUS 441; and a minimum grade of 1.7 in B BUS 483; recommended: Operations management and supply chain management.",
         "Offered with": "",
         "Prerequisites": "BBUS441;BBUS483",
         "Quarters Offered": ""
@@ -1879,7 +1879,7 @@
         "Course Number": "504",
         "Credits": "4",
         "Department Name": "BBUS",
-        "Description": "Considers some of the most important economic aspects of a business enterprise including demand and cost analysis, pricing strategy (including auctions",
+        "Description": "Considers some of the most important economic aspects of a business enterprise including demand and cost analysis, pricing strategy (including auctions), and the economics of information. Highlights the usefulness of game theory. Offered: W.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -1918,7 +1918,7 @@
         "Course Number": "507",
         "Credits": "4",
         "Department Name": "BBUS",
-        "Description": "Synthesizes and extends perspective on global business environment. Demonstrates how choices related to organization and strategy (such as outsourcing and diversification",
+        "Description": "Synthesizes and extends perspective on global business environment. Demonstrates how choices related to organization and strategy (such as outsourcing and diversification) require an understanding of trade theory and policy, differences in national cultures, and international institutions. Prerequisite: B BUS 504; B BUS 505; B BUS 506. Offered: Sp.",
         "Offered with": "",
         "Prerequisites": "BBUS504;BBUS505;BBUS506",
         "Quarters Offered": "Sp"
@@ -1957,7 +1957,7 @@
         "Course Number": "510",
         "Credits": "4",
         "Department Name": "BBUS",
-        "Description": "Explores intangible assets and \"meso\" issues that underpin organizational effectiveness. Topics include organizational phenomena (cultures, structures, routines, capabilities, life cycles",
+        "Description": "Explores intangible assets and \"meso\" issues that underpin organizational effectiveness. Topics include organizational phenomena (cultures, structures, routines, capabilities, life cycles), intellectual capital, and knowledge management (creating, maintaining, and diffusing knowledge). Projects require application of best practices to personally relevant situations. Offered: Sp.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -1970,7 +1970,7 @@
         "Course Number": "512",
         "Credits": "4",
         "Department Name": "BBUS",
-        "Description": "Focuses on major top management decisions, emphasizing how competitive advantage is created and maintained through planning and strategy. Using readings and cases, demonstrates importance in diverse industries of external environments (customers, competitors, science and technology, laws",
+        "Description": "Focuses on major top management decisions, emphasizing how competitive advantage is created and maintained through planning and strategy. Using readings and cases, demonstrates importance in diverse industries of external environments (customers, competitors, science and technology, laws), organizational phenomena (structure, processes, decision making), and an international perspective. Offered: A.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -2737,7 +2737,7 @@
         "Course Number": "493",
         "Credits": "1",
         "Department Name": "BCHEM",
-        "Description": "Covers advanced topics within a particular branch of chemistry (analytical, inorganic, organic, physical, and environmental",
+        "Description": "Covers advanced topics within a particular branch of chemistry (analytical, inorganic, organic, physical, and environmental). Covers topics of current research interest or those in professional demand.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4245,7 +4245,7 @@
         "Course Number": "442",
         "Credits": "5",
         "Department Name": "BEDUC",
-        "Description": "Introduces  curriculum, instruction, and assessment for teaching English for Speakers of Other Languages (ESOL",
+        "Description": "Introduces  curriculum, instruction, and assessment for teaching English for Speakers of Other Languages (ESOL).  Required for ESOL Endorsement. Prerequisite: B EDUC 441",
         "Offered with": "",
         "Prerequisites": "BEDUC441",
         "Quarters Offered": ""
@@ -4440,7 +4440,7 @@
         "Course Number": "480",
         "Credits": "3",
         "Department Name": "BEDUC",
-        "Description": "Introduces three components of preparation to teach in a middle school: adolescent development, the structure of the middle school, and developmentally appropriate curriculum and instruction (designed specifically for middle schoolers",
+        "Description": "Introduces three components of preparation to teach in a middle school: adolescent development, the structure of the middle school, and developmentally appropriate curriculum and instruction (designed specifically for middle schoolers). Recommend for students who are preparing to teach in a middle school or junior high. Offered: Sp.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -4583,7 +4583,7 @@
         "Course Number": "508",
         "Credits": "3",
         "Department Name": "BEDUC",
-        "Description": "Builds an understanding of how young children (ages 4-8",
+        "Description": "Builds an understanding of how young children (ages 4-8) develop literate behaviors, and how teachers can support this development. Explores emergent literacy behaviors, oral language development, building a literate identity, phonemic awareness, decoding, reading comprehension, spelling, and writing.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -5207,7 +5207,7 @@
         "Course Number": "569",
         "Credits": "3",
         "Department Name": "BEDUC",
-        "Description": "Teachers work in a complex web of political relationships, contested values, and competing ideas in schools. Exercises help participants understand teachers' (K-12",
+        "Description": "Teachers work in a complex web of political relationships, contested values, and competing ideas in schools. Exercises help participants understand teachers' (K-12) and policymakers' roles in school politics and develop frameworks from which to base the responsible exercise of autonomy in schools.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -5597,7 +5597,7 @@
         "Course Number": "437",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Introduction to the principles of measuring human vital signals such as blood pressure, heart rate, and respiratory rate. Covers medical imaging techniques (CT, MRI, PET",
+        "Description": "Introduction to the principles of measuring human vital signals such as blood pressure, heart rate, and respiratory rate. Covers medical imaging techniques (CT, MRI, PET) and working principal of clinical ultrasound systems. Students design biomedical signal measurement systems and perform basic biomedical image and signal analysis. Prerequisite: B EE 332.",
         "Offered with": "",
         "Prerequisites": "BEE332",
         "Quarters Offered": ""
@@ -5675,7 +5675,7 @@
         "Course Number": "451",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Develops the basics for microelectromechanical devices (MEMS",
+        "Description": "E major",
         "Offered with": "",
         "Prerequisites": "BEE215;BEE233;BEE331",
         "Quarters Offered": ""
@@ -5896,7 +5896,7 @@
         "Course Number": "507",
         "Credits": "4",
         "Department Name": "BEE",
-        "Description": "Introduces representation and classifications of continuous and discrete time signals. Topics include time domain analysis of Linear Time Invariant (LTI",
+        "Description": "Introduces representation and classifications of continuous and discrete time signals. Topics include time domain analysis of Linear Time Invariant (LTI) systems; Fourier Transform for continuous and discrete-time signals/systems; Laplace-transform and z-transforms, and their application for system analysis. Includes laboratory. Prerequisite: minimum grade of 3.0 in B EE 503.",
         "Offered with": "",
         "Prerequisites": "BEE503",
         "Quarters Offered": ""
@@ -5974,7 +5974,7 @@
         "Course Number": "517",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Introduces fundamental principles of wireless communications. This course is the first of a two-course sequence. Topics include: digital modulation techniques; demodulation and detection of signals in Gaussian channels; principles of cellular communications; characteristics and modeling of wireless channels; bit-error-rate (BER",
+        "Description": "Introduces fundamental principles of wireless communications. This course is the first of a two-course sequence. Topics include: digital modulation techniques; demodulation and detection of signals in Gaussian channels; principles of cellular communications; characteristics and modeling of wireless channels; bit-error-rate (BER) analysis of wireless system in flat-fading channels; and introduction to channel coding (Linear Block Codes). Prerequisite: minimum grade of 2.7 in B EE 510.",
         "Offered with": "",
         "Prerequisites": "BEE510",
         "Quarters Offered": ""
@@ -5987,7 +5987,7 @@
         "Course Number": "518",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Studies underlying theories and practices of advanced techniques of modern wireless communications. This course is the second of a two-course sequence. Covers: Convolutional channel coding and decoding; Intersymbol Interference (ISI",
+        "Description": "Studies underlying theories and practices of advanced techniques of modern wireless communications. This course is the second of a two-course sequence. Covers: Convolutional channel coding and decoding; Intersymbol Interference (ISI) and equalization; CDMA: capacity, data detection and rake receivers; diversity techniques; MIMO: principles, data detection, and capacity; OFDM: receiver architecture, data detection and analysis. Prerequisite: a minimum grade of 2.5 in B EE 517.",
         "Offered with": "",
         "Prerequisites": "BEE517",
         "Quarters Offered": ""
@@ -6000,7 +6000,7 @@
         "Course Number": "520",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Concepts of predictive learning algorithms for supervised and unsupervised learning tasks. Topics include linear models (regression, linear discriminant analysis",
+        "Description": "Concepts of predictive learning algorithms for supervised and unsupervised learning tasks. Topics include linear models (regression, linear discriminant analysis), decision trees, nearest neighbor, Gaussian mixture models, support vector machines, neural networks, Bayesian inferencing, Hidden Markov Models, and clustering. Computer Laboratory in MATLAB and cloud-computing platform. Prerequisite: 2.7 in BEE 510.",
         "Offered with": "",
         "Prerequisites": "BEE510",
         "Quarters Offered": ""
@@ -6091,7 +6091,7 @@
         "Course Number": "545",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Studies complementary metal oxide semiconductor (CMOS",
+        "Description": "Studies complementary metal oxide semiconductor (CMOS) technology by offering circuit analysis, fabrication technology, and characterizations. Introduction to the physics and characters of basic CMOS circuits, the fundamental fabrication technologies for CMOS-based integrated circuits, and measurement characterization for CMOS inverters.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6130,7 +6130,7 @@
         "Course Number": "551",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Develops the basics for microelectromechanical devices and systems including micro-actuators, micro-sensors, and micro-motors, principles of operation, different micromachining techniques (surface and bulk micromachining",
+        "Description": "Develops the basics for microelectromechanical devices and systems including micro-actuators, micro-sensors, and micro-motors, principles of operation, different micromachining techniques (surface and bulk micromachining), IC-derived microfabrication techniques, thin-film technologies as they apply to MEMS.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6156,7 +6156,7 @@
         "Course Number": "554",
         "Credits": "5",
         "Department Name": "BEE",
-        "Description": "Provides a project-based radio frequency (RF",
+        "Description": "Provides a project-based radio frequency (RF) and microwave engineering approach that allows students to design, build, and test various passive RF and microwave circuits on planar printed circuit boards (PCB's) and ceramic substrates. Transmission line theory and Smith charts are used along with network analysis techniques for designing planar passive RF and microwave circuits. Student designs will be tested on a vector network analyzer.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6520,7 +6520,7 @@
         "Course Number": "440",
         "Credits": "5",
         "Department Name": "BES",
-        "Description": "Studies digital image processing and aerial photography interpretation within the context of Geographic Information Systems and Science (GISci",
+        "Description": "Studies digital image processing and aerial photography interpretation within the context of Geographic Information Systems and Science (GISci). Focuses primarily on the use of satellite imagery and aerial photography to study the environment.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6559,7 +6559,7 @@
         "Course Number": "463",
         "Credits": "",
         "Department Name": "BES",
-        "Description": "Student teams prepare proposals in response to requests for proposals (RFPs",
+        "Description": "Student teams prepare proposals in response to requests for proposals (RFPs) from actual clients. Clients may be governments, non-profit organizations, and others. Upon acceptance of the proposal, teams prepare restoration plans. Prerequisite: ESRM 462. Offered: jointly with ESRM 463/T BIOL 463.",
         "Offered with": "ESRM463,TBIOL463",
         "Prerequisites": "ESRM462",
         "Quarters Offered": ""
@@ -7027,7 +7027,7 @@
         "Course Number": "301",
         "Credits": "5",
         "Department Name": "BHLTH",
-        "Description": "Introduction to global health practice that offers a close-up, hands-on, critically-informed, and experiential learning experience either in the form of community based learning projects (CBLR",
+        "Description": "Introduction to global health practice that offers a close-up, hands-on, critically-informed, and experiential learning experience either in the form of community based learning projects (CBLR), or connected online international learning (COIL) opportunities, or both. Examines what global health systems, geographies, and professional roles look like around the world.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7261,7 +7261,7 @@
         "Course Number": "429",
         "Credits": "5",
         "Department Name": "BHLTH",
-        "Description": "Examines the conditions (political, economic, cultural, historical",
+        "Description": "Examines the conditions (political, economic, cultural, historical) that create and sustain disparities in health globally and locally. Critically examines health issues from multiple perspectives, exploring theories and movements of people creating social justice in health within frameworks that are both globally and locally situated.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7365,7 +7365,7 @@
         "Course Number": "440",
         "Credits": "5",
         "Department Name": "BHLTH",
-        "Description": "Intended for students less familiar with military and veteran issues and environments. Addresses the more common mental and physical health issues that are faced by today's veterans (primarily but not exclusively United States military veterans",
+        "Description": "Intended for students less familiar with military and veteran issues and environments. Addresses the more common mental and physical health issues that are faced by today's veterans (primarily but not exclusively United States military veterans), their families, and communities.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7651,7 +7651,7 @@
         "Course Number": "496",
         "Credits": "5",
         "Department Name": "BHS",
-        "Description": "Students participate in fieldwork experiences to explore career options and develop skills in population health practice. Students use critical reflection to synthesize knowledge and experiences from fieldwork and program courses to support their professional development. Prerequisite: BHS 201; either BHS 210 or BHS 310; BHS 300; BHS 302; BHS 305; and BHS 403 (which may be taken concurrently",
+        "Description": "Students participate in fieldwork experiences to explore career options and develop skills in population health practice. Students use critical reflection to synthesize knowledge and experiences from fieldwork and program courses to support their professional development. Prerequisite: BHS 201; either BHS 210 or BHS 310; BHS 300; BHS 302; BHS 305; and BHS 403 (which may be taken concurrently).  Credit/no-credit only.",
         "Offered with": "",
         "Prerequisites": "BHS201;BHS210,BHS310;BHS300;BHS302;BHS305;BHS403",
         "Quarters Offered": ""
@@ -8457,7 +8457,7 @@
         "Course Number": "223",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Introduction to narrative ethnography. Focuses on the making of narrative ethnographic knowledge (observing, asking, listening, analyzing, writing up",
+        "Description": "Introduction to narrative ethnography. Focuses on the making of narrative ethnographic knowledge (observing, asking, listening, analyzing, writing up) through experiential exercises.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -8535,7 +8535,7 @@
         "Course Number": "231",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Introduction to linear algebra (i.e., concepts, tools, and operations related to matrices and vectors",
+        "Description": "Introduction to linear algebra (i.e., concepts, tools, and operations related to matrices and vectors) with emphasis on interdisciplinary applications. Provides an introduction to the mathematical concepts, arguments, and proofs that occur in linear algebra. Prerequisite: BCUSP 124, B MATH 144, or STMATH 124",
         "Offered with": "",
         "Prerequisites": "BCUSP124,BMATH144,STMATH124",
         "Quarters Offered": ""
@@ -9029,7 +9029,7 @@
         "Course Number": "290",
         "Credits": "2",
         "Department Name": "BIS",
-        "Description": "Introduces research practices, methods, and processes in the different (inter",
+        "Description": "Sp .",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -9094,7 +9094,7 @@
         "Course Number": "301",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Examines the form, function, and textual conventions of such narrative forms as (auto",
+        "Description": "Examines the form, function, and textual conventions of such narrative forms as (auto) biography, personal experience narratives, short stories, and novels. Explores literary language useful for discussing narratives, how narratives work for their readers/listeners, and what interpretive tools readers/listeners bring to narratives.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9380,7 +9380,7 @@
         "Course Number": "326",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Explores intersections between race, human space (i.e, perceived, conceived, and lived",
+        "Description": "Explores intersections between race, human space (i.e, perceived, conceived, and lived), and segregation through law, policies, and other institutional practices. Focuses primarily on US locations/cases in historical and comparative perspectives. Topics include spatial control during settler colonization and slavery, Jim Crow segregation, ghettoization, the border, and environmental racism.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9432,7 +9432,7 @@
         "Course Number": "330",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Critical examination of the relationship between three political perspectives (libertarian, liberal and radical",
+        "Description": "Critical examination of the relationship between three political perspectives (libertarian, liberal and radical) and democratic capitalism.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9523,7 +9523,7 @@
         "Course Number": "338",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Studies the nature, structure, and functions of political institutions. Develops a theoretical and empirical analysis of both formal (state and government",
+        "Description": "Studies the nature, structure, and functions of political institutions. Develops a theoretical and empirical analysis of both formal (state and government) and informal (non-state) institutions and actors:",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9575,7 +9575,7 @@
         "Course Number": "342",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Examines the concepts and methods of geographic information systems (GIS",
+        "Description": "Examines the concepts and methods of geographic information systems (GIS) and related elements of spatial analysis and representation. Through projects and lab exercises, student gain basic proficiency in the use of GIS and an interdisciplinary understanding of the applications of GIS.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9601,7 +9601,7 @@
         "Course Number": "344",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Provides intermediate level training in Geographic Information Systems (GIS",
+        "Description": "Provides intermediate level training in Geographic Information Systems (GIS) for the analysis of environmental and spatial data. Emphasizes on the applications of raster and vector modeling to map and analyze geo-spatial phenomena, and proposes solutions to environmental problems. Prerequisite: BIS 342 or equivalent course or instructor's permission.",
         "Offered with": "",
         "Prerequisites": "BIS342",
         "Quarters Offered": ""
@@ -9731,7 +9731,7 @@
         "Course Number": "354",
         "Credits": "5",
         "Department Name": "BIS",
-        "Description": "Study of key figures and intellectual debates of Western modernity, and of major literary movements (romanticism, realism, modernism",
+        "Description": "Study of key figures and intellectual debates of Western modernity, and of major literary movements (romanticism, realism, modernism). Analysis of seminal texts such as Rousseau's Discourse on Inequality, Flaubert's Madame Bovary, Nietzsche's Genealogy of Morals, and Woolf's To the Lighthouse.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11174,7 +11174,7 @@
         "Course Number": "303",
         "Credits": "5",
         "Department Name": "BISGWS",
-        "Description": "Smet, Kari A LerumExplores approaches to knowledge (epistemologies",
+        "Description": "Smet, Kari A LerumExplores approaches to knowledge (epistemologies) and investigative practices (methodologies). Analyzes how feminist theories are translated into cultural practices. Addresses the intersections and tensions within and between feminist theories, including how and where feminist scholars understand and problematize power relations.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11655,7 +11655,7 @@
         "Course Number": "359",
         "Credits": "5",
         "Department Name": "BISSEB",
-        "Description": "Examination of major ethical alternatives (egoism, utilitarianism, hedonism, virtue ethics, relativism, emotivism",
+        "Description": "Examination of major ethical alternatives (egoism, utilitarianism, hedonism, virtue ethics, relativism, emotivism) along with competing visions of the good society (libertarian, communitarian, feminist). Analyzes several contemporary problems, such as legal moralism, affirmative action, euthanasia, capital punishment, corporate responsibility.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11785,7 +11785,7 @@
         "Course Number": "232",
         "Credits": "5",
         "Department Name": "BISSTS",
-        "Description": "Explores human reproduction, embryonic development, and genetic technology. Explores the increasing use of technology used in reproduction and related issues (e.g. in vitro fertilization, genetic selection of embryos, cloning, stem cells",
+        "Description": "Explores human reproduction, embryonic development, and genetic technology. Explores the increasing use of technology used in reproduction and related issues (e.g. in vitro fertilization, genetic selection of embryos, cloning, stem cells). Offered: jointly with B BIO 232.",
         "Offered with": "BBIO232",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -12175,7 +12175,7 @@
         "Course Number": "315",
         "Credits": "5",
         "Department Name": "BME",
-        "Description": "Design, representation, and analysis of three-dimensional objects using computational methods and computer-aided design (CAD",
+        "Description": "Design, representation, and analysis of three-dimensional objects using computational methods and computer-aided design (CAD). Topics include free hand sketching, optimization of design parameters, documentation and communication of design information using appropriate engineering standards and practices. Prerequisite: a minimum grade of 1.5 in B ME 222. Offered: W.",
         "Offered with": "",
         "Prerequisites": "BME222",
         "Quarters Offered": "W"
@@ -12266,7 +12266,7 @@
         "Course Number": "343",
         "Credits": "5",
         "Department Name": "BME",
-        "Description": "Covers dynamic system modeling (mechanical, electrical, fluid, and thermos systems",
+        "Description": "Covers dynamic system modeling (mechanical, electrical, fluid, and thermos systems); linear oscillator analysis (Laplace transforms, Fourier transforms, eigenvalue problems, and modal analysis); performance specifications of feedback control systems; and controller designs for single input single output systems. Includes laboratory experiences. Prerequisite: minimum grade of 1.7 in both B ME 342 and B ME 315.",
         "Offered with": "",
         "Prerequisites": "BME342&&BME315",
         "Quarters Offered": ""
@@ -12344,7 +12344,7 @@
         "Course Number": "435",
         "Credits": "4",
         "Department Name": "BME",
-        "Description": "Fundamentals of heating, ventilation, and air conditioning (HVAC",
+        "Description": "Fundamentals of heating, ventilation, and air conditioning (HVAC) to keep buildings comfortable and healthy for their occupants while minimizing environmental impact. Topics include: properties of air-water mixtures; combustion, refrigeration cycles, heating and cooling load calculations, HVAC equipment, and design of HVAC systems for sustainable buildings. Prerequisite: minimum grade of 2.0 in B ME 333.",
         "Offered with": "",
         "Prerequisites": "BME333",
         "Quarters Offered": ""
@@ -12409,7 +12409,7 @@
         "Course Number": "482",
         "Credits": "5",
         "Department Name": "BME",
-        "Description": "Topics in the professional practice of engineering, including engineering economics; product development; project planning; leadership; management and organization; and legal and regulatory matters. Incorporates review for the Fundamentals of Engineering (FE",
+        "Description": "Topics in the professional practice of engineering, including engineering economics; product development; project planning; leadership; management and organization; and legal and regulatory matters. Incorporates review for the Fundamentals of Engineering (FE) exam required as the first step toward professional licensure. Prerequisite: minimum grade of 1.7 in B ME 481.",
         "Offered with": "",
         "Prerequisites": "BME481",
         "Quarters Offered": ""
@@ -12422,7 +12422,7 @@
         "Course Number": "483",
         "Credits": "2",
         "Department Name": "BME",
-        "Description": "Supports Mechanical Engineering majors in beginning their preparation for the Fundamentals of Engineering (FE",
+        "Description": "Supports Mechanical Engineering majors in beginning their preparation for the Fundamentals of Engineering (FE) Exam, the first step in becoming a licensed Professional Engineer (PE).  Students review the subjects covered on the exam and practice fast-paced problem solving under conditions similar to those of the exam. Prerequisite: a minimum grade of 2.0 in B ME 343. Credit/no-credit only.",
         "Offered with": "",
         "Prerequisites": "BME343,C",
         "Quarters Offered": ""
@@ -12448,7 +12448,7 @@
         "Course Number": "494",
         "Credits": "5",
         "Department Name": "BME",
-        "Description": "Explores non-technical aspects of business relevant to engineering.  Central is assay of the needs of people (as individuals; as members of society",
+        "Description": "Explores non-technical aspects of business relevant to engineering.  Central is assay of the needs of people (as individuals; as members of society) that guide the invention, design and construction of devices, and of businesses, that address those needs. Topics include: needs statements, market analysis, ideation, patenting, business-plan development. Offered: A.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -12708,7 +12708,7 @@
         "Course Number": "430",
         "Credits": "5",
         "Department Name": "BNURS",
-        "Description": "Introduces knowledge and practices that support the implementation of relational leadership in health care contexts. Content emphasizes strategies that: 1",
+        "Description": "Introduces knowledge and practices that support the implementation of relational leadership in health care contexts. Content emphasizes strategies that: 1) enhance personal vision and voice; 2) create commitment; 3) include diverse perspectives; 4) solve problems; 5) resolve conflicts; and 6) accomplish goals.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -12825,7 +12825,7 @@
         "Course Number": "506",
         "Credits": "3",
         "Department Name": "BNURS",
-        "Description": "Focuses on expanding student knowledge of pathophysiology, pharmacology, and health assessment beyond the baccalaureate level. Course does not prepare student for independent practice as an Advanced Practice Registered Nurse (APRN",
+        "Description": "Focuses on expanding student knowledge of pathophysiology, pharmacology, and health assessment beyond the baccalaureate level. Course does not prepare student for independent practice as an Advanced Practice Registered Nurse (APRN), but provides advanced understanding of pathophysiology, pharmacological treatment possibilities, advanced health assessment, and reasoning.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -13280,7 +13280,7 @@
         "Course Number": "221",
         "Credits": "5",
         "Department Name": "BPHYS",
-        "Description": "Covers Newtonian dynamics, planetary orbits, drag forces, energy, oscillators, chaos theory, and more. Some emphasis placed on Lagrangian and Hamiltonian dynamics. Prerequisite: B PHYS 123; STMATH 126; and STMATH 307 (which may be taken concurrently",
+        "Description": "Covers Newtonian dynamics, planetary orbits, drag forces, energy, oscillators, chaos theory, and more. Some emphasis placed on Lagrangian and Hamiltonian dynamics. Prerequisite: B PHYS 123; STMATH 126; and STMATH 307 (which may be taken concurrently)",
         "Offered with": "",
         "Prerequisites": "BPHYS123;STMATH126;STMATH307",
         "Quarters Offered": ""
@@ -13293,7 +13293,7 @@
         "Course Number": "222",
         "Credits": "5",
         "Department Name": "BPHYS",
-        "Description": "Provides an introduction to the theories of relativity and quantum mechanics. Covers topics such as atomic physics, solid state/condensed matter physics, and nuclear physics. Prerequisite: minimum grade of 2.0 in B PHYS 123; and STMATH 307 (which may be taken concurrently",
+        "Description": "Provides an introduction to the theories of relativity and quantum mechanics. Covers topics such as atomic physics, solid state/condensed matter physics, and nuclear physics. Prerequisite: minimum grade of 2.0 in B PHYS 123; and STMATH 307 (which may be taken concurrently).",
         "Offered with": "",
         "Prerequisites": "BPHYS123;STMATH307",
         "Quarters Offered": ""
@@ -14138,7 +14138,7 @@
         "Course Number": "205",
         "Credits": "3",
         "Department Name": "BST",
-        "Description": "Many women feel outside of science, technology, engineering, and mathematics (STEM",
+        "Description": "Many women feel outside of science, technology, engineering, and mathematics (STEM) fields and continue to be underrepresented in these fields. This class explores challenges experienced by diverse women in STEM fields, and multiple strategies to surmount those challenges. Upon completion of the course, students will have acquired tools needed to persevere and succeed as they pursue a career in the STEM fields.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14359,7 +14359,7 @@
         "Course Number": "132",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Introduces programming concepts within social, mathematical, and technological context.  Topics include programming fundamentals (control structures, data types, functions, etc.",
+        "Description": "Introduces programming concepts within social, mathematical, and technological context.  Topics include programming fundamentals (control structures, data types, functions, etc.), computer organization, algorithmic thinking, introductory software engineering concepts, and social and professional issues.  Engineering applications are emphasized.  A computer language used in engineering practice is used for instruction.  Co-requisite: CSSSKL 132.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14372,7 +14372,7 @@
         "Course Number": "133",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Transition from basic programming skills to a rigorous process of software development.  Familiarization wit higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting",
+        "Description": "Transition from basic programming skills to a rigorous process of software development.  Familiarization wit higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting).  Emphasizes connection between algorithmic thought and implementation.  Engineering applications are emphasized. Co-requisite: CSSSKL 133. Prerequisite: a minimum grade of 2.0 in CSS 132.",
         "Offered with": "",
         "Prerequisites": "CSS132",
         "Quarters Offered": ""
@@ -14385,7 +14385,7 @@
         "Course Number": "142",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Introduces programming concepts within social, cultural, scientific, mathematical, and technological context. Topics include programming fundamentals (control structures, data types and representation, operations, functions and parameters",
+        "Description": "Introduces programming concepts within social, cultural, scientific, mathematical, and technological context. Topics include programming fundamentals (control structures, data types and representation, operations, functions and parameters), computer organization, algorithmic thinking, introductory software engineering concepts (specifications, design, testing), and social and professional issues. Co-requisite: CSSSKL 142.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14398,7 +14398,7 @@
         "Course Number": "143",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Transition from basic programming skills to a rigorous process of software development. Familiarization with higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting",
+        "Description": "Transition from basic programming skills to a rigorous process of software development. Familiarization with higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting). Emphasizes connection between algorithmic thought and implementation. Prerequisite: minimum grade of 2.7 in CSS 161, CSS 142, or CSE 142. Co-requisite: CSSSKL 143.",
         "Offered with": "",
         "Prerequisites": "CSS161,CSS142,CSE142,C-;CSSSKL143",
         "Quarters Offered": ""
@@ -14541,7 +14541,7 @@
         "Course Number": "310",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Provides theoretical and practical introduction to information assurance and cyber security (IAC",
+        "Description": "Provides theoretical and practical introduction to information assurance and cyber security (IAC). Includes methods and practices for securing information and information systems. Covers how vulnerabilities arise, recognizing evolving threats, and mitigating them. Explores the role of risk analysis, information privacy, accountability, and policy.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14580,7 +14580,7 @@
         "Course Number": "340",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Extends the principles of programming and discrete math (e.g., programming languages, recursion, sorting, computational complexity, mathematical induction, logic concepts, set theory, hash tables, etc.",
+        "Description": "Extends the principles of programming and discrete math (e.g., programming languages, recursion, sorting, computational complexity, mathematical induction, logic concepts, set theory, hash tables, etc.) and applies them to the development, analysis, and implementation of data structures and efficient software. Prerequisite: minimum grade of 2.5 in either CSS 133, CSS 143, CSE 143, CSS 162; and minimum grade of 2.5 in either STMATH 124 or MATH 124.",
         "Offered with": "",
         "Prerequisites": "CSS133,CSS143,CSE143,CSS162;STMATH124,MATH124",
         "Quarters Offered": ""
@@ -14671,7 +14671,7 @@
         "Course Number": "383",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Covers principles of bioinformatics. Students develop a working knowledge of computational tools to analyze biological datasets, including DNA and protein sequence databases. Includes topics such as: database searching, sequence alignment (DNA, RNA, and protein",
+        "Description": "Covers principles of bioinformatics. Students develop a working knowledge of computational tools to analyze biological datasets, including DNA and protein sequence databases. Includes topics such as: database searching, sequence alignment (DNA, RNA, and protein), BLAST, phylogeny, evolution, functional genomics, gene expression/microarray analysis, and protein analysis. Offered: jointly with B BIO 383.",
         "Offered with": "BBIO383",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14749,7 +14749,7 @@
         "Course Number": "415",
         "Credits": "1",
         "Department Name": "CSS",
-        "Description": "Explores emerging topics and unique subjects in information assurance and cybersecurity (IAC",
+        "Description": "Explores emerging topics and unique subjects in information assurance and cybersecurity (IAC) not otherwise covered in the IAC curriculum. Prerequisite: either CSS 310, INFO 310, or T INFO 310.",
         "Offered with": "",
         "Prerequisites": "CSS310,INFO310,TINFO310",
         "Quarters Offered": ""
@@ -14840,7 +14840,7 @@
         "Course Number": "436",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Pragmatic, program-oriented overview of cloud computing covering key cloud technologies and components which enable and constitute the cloud (such as virtualization, compute, storage, network, and security",
+        "Description": "Sp .",
         "Offered with": "",
         "Prerequisites": "CSS430,CSS432",
         "Quarters Offered": "W,Sp"
@@ -14879,7 +14879,7 @@
         "Course Number": "451",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Introduces practical and popular three-dimensional (3-D",
+        "Description": "Introduces practical and popular three-dimensional (3-D) graphic algorithms. Examines modeling (how to build 3-D objects), animation (how to describe the motion of objects), and rendering (how to generate images of 3-D objects in animation). Prerequisite: CSS 342; and STMATH 125 or MATH 125",
         "Offered with": "",
         "Prerequisites": "CSS342;STMATH125,MATH125",
         "Quarters Offered": ""
@@ -15061,7 +15061,7 @@
         "Course Number": "485",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Ns ",
+        "Description": "Ns ), including vision, motor control, learning, data analysis. Topics include ANN architectures, algorithms: perceptrons, Widrow-Hoff, backpropagation, Hebbian networks. Prerequisite: CSS 343; may not be repeated.",
         "Offered with": "",
         "Prerequisites": "CSS343",
         "Quarters Offered": ""
@@ -15360,7 +15360,7 @@
         "Course Number": "535",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Us and GPUs",
+        "Description": "Us and GPUs), data, algorithms, and application domains.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15776,7 +15776,7 @@
         "Course Number": "301",
         "Credits": "5",
         "Department Name": "ELCBUS",
-        "Description": "Examines statistical methods useful in modeling business problems. Topics include exploratory data analysis and the visual representation of data, probability distributions, statistical inference (sampling theory, estimation, hypothesis testing",
+        "Description": "Examines statistical methods useful in modeling business problems. Topics include exploratory data analysis and the visual representation of data, probability distributions, statistical inference (sampling theory, estimation, hypothesis testing), and multiple regression models. Concepts illustrated through case problems and the intensive sue of statistical software.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15841,7 +15841,7 @@
         "Course Number": "340",
         "Credits": "5",
         "Department Name": "ELCBUS",
-        "Description": "Examines service and manufacturing processes that deliver value to customers, introduces concepts and tools for critical analysis, and emphasizes operating priorities (quality, cost, delivery, flexibility, social responsibility",
+        "Description": "Examines service and manufacturing processes that deliver value to customers, introduces concepts and tools for critical analysis, and emphasizes operating priorities (quality, cost, delivery, flexibility, social responsibility) including the underlying factors that support them. Prerequisite: minimum grade of 1.7 in ELCBUS 310.",
         "Offered with": "",
         "Prerequisites": "ELCBUS310",
         "Quarters Offered": ""
@@ -16153,7 +16153,7 @@
         "Course Number": "487",
         "Credits": "5",
         "Department Name": "ELCBUS",
-        "Description": " (5",
+        "Description": " (5)Integrates the topics covered in the foundational Supply Chain Management courses as well as engage students in topics related to managing and improving supply chains. Analyze a real-world supply chain problem and develop viable solutions. Prerequisite: a minimum grade of 1.7 in ELCBUS 400; and a minimum grade of 1.7 in ELCBUS 483; recommended: Operations management and supply chain management",
         "Offered with": "",
         "Prerequisites": "ELCBUS400;ELCBUS483",
         "Quarters Offered": ""
@@ -16699,7 +16699,7 @@
         "Course Number": "499",
         "Credits": "1",
         "Department Name": "STMATH",
-        "Description": "Undergraduate research project agreed upon by student and a mathematics faculty member. This course is intended to produce a quality research artifact (e.g., a poster presentation, a research article, a conference presentation, etc.",
+        "Description": "Undergraduate research project agreed upon by student and a mathematics faculty member. This course is intended to produce a quality research artifact (e.g., a poster presentation, a research article, a conference presentation, etc.). Cannot be taken for credit if credit received for either MATH 399 or MATH 499.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""

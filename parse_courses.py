@@ -243,7 +243,7 @@ def get_name(description, number):
 # 'description': The course description
 # 'credit_type': The credit types for the course
 def extract_description(description, credit_type):
-    description = description.split(')')[1]
+    description = description.split(')', 1)[1]
     if '' not in credit_type:
         description = description.split(credit_type)[1]
     match = re.search(r'[A-Z]{2,}[a-z]+', description)

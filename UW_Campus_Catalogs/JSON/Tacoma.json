@@ -7,7 +7,7 @@
         "Course Number": "210",
         "Credits": "5",
         "Department Name": "TACCT",
-        "Description": "Introduces accounting concepts within the context of financial business decisions. Presents an overview of the role of accounting in the financial community and business operations. Emphasizes the external use of financial accounting for fiscal decision-making. Offered: A.",
+        "Description": "Introduces accounting concepts within the context of financial business decisions. Presents an overview of the role of accounting in the financial community and business operations. Emphasizes the external use of financial accounting for fiscal decision-making. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -20,7 +20,7 @@
         "Course Number": "220",
         "Credits": "5",
         "Department Name": "TACCT",
-        "Description": "Introduces accounting processes that produce financial accounting reports including the balance sheet, income statement and statement of cash flows. Emphasizes how to gather, calculate, and organize accounting information into standardized reports based on the generally accepted accounting principles. Prerequisite: T ACCT 210. Offered: W.",
+        "Description": "Introduces accounting processes that produce financial accounting reports including the balance sheet, income statement and statement of cash flows. Emphasizes how to gather, calculate, and organize accounting information into standardized reports based on the generally accepted accounting principles. Prerequisite: T ACCT 210. ",
         "Offered with": "",
         "Prerequisites": "TACCT210",
         "Quarters Offered": "W"
@@ -33,7 +33,7 @@
         "Course Number": "230",
         "Credits": "5",
         "Department Name": "TACCT",
-        "Description": "Provides an introduction to management accounting concepts in the context of business decisions. Explores management accounting's roles in the decision making process and how managers and other internal uses rely on the information to make better business decisions that benefit an organization. Prerequisite: T ACCT 220 or ACCTG 215. Offered: Sp.",
+        "Description": "Provides an introduction to management accounting concepts in the context of business decisions. Explores management accounting's roles in the decision making process and how managers and other internal uses rely on the information to make better business decisions that benefit an organization. Prerequisite: T ACCT 220 or ACCTG 215. ",
         "Offered with": "",
         "Prerequisites": "TACCT220,ACCTG215",
         "Quarters Offered": "Sp"
@@ -2412,7 +2412,7 @@
         "Course Number": "462",
         "Credits": "2",
         "Department Name": "TBIOL",
-        "Description": "First of a three-course capstone sequence in restoration ecology. Students review and assess project plans and installations. Class meets with members of previous capstone classes to review their projects. Offered: jointly with BES 462/ESRM 462.",
+        "Description": "First of a three-course capstone sequence in restoration ecology. Students review and assess project plans and installations. Class meets with members of previous capstone classes to review their projects.",
         "Offered with": "BES462,ESRM462",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -2425,7 +2425,7 @@
         "Course Number": "463",
         "Credits": "",
         "Department Name": "TBIOL",
-        "Description": "Student teams prepare proposals in response to requests for proposals (RFPs) from actual clients. Clients may be governments, non-profit organizations, and others. Upon acceptance of the proposal, teams prepare restoration plans. Prerequisite: ESRM 462. Offered: jointly with BES 463/ESRM 463.",
+        "Description": "Student teams prepare proposals in response to requests for proposals (RFPs) from actual clients. Clients may be governments, non-profit organizations, and others. Upon acceptance of the proposal, teams prepare restoration plans. Prerequisite: ESRM 462.",
         "Offered with": "BES463,ESRM463",
         "Prerequisites": "ESRM462",
         "Quarters Offered": ""
@@ -2438,7 +2438,7 @@
         "Course Number": "464",
         "Credits": "",
         "Department Name": "TBIOL",
-        "Description": "Teams take a restoration plan developed in ESRM 463 and complete the installation. Team participation may include supervision of volunteers. Teams prepare management guidelines for the client and conduct a training class for their use. Prerequisite: ESRM 463. Offered: jointly with BES 464/ESRM 464.",
+        "Description": "Teams take a restoration plan developed in ESRM 463 and complete the installation. Team participation may include supervision of volunteers. Teams prepare management guidelines for the client and conduct a training class for their use. Prerequisite: ESRM 463.",
         "Offered with": "BES464,ESRM464",
         "Prerequisites": "ESRM463",
         "Quarters Offered": ""
@@ -2828,7 +2828,7 @@
         "Course Number": "512",
         "Credits": "4",
         "Department Name": "TBUS",
-        "Description": "Examines selected topics from literature to identify the structure of healthcare systems; need and access to care; availability and organization of health resources; and quality assessment and improvement. Identifies contemporary policy issues as case studies; and examines the strengths and weaknesses of healthcare system. Offered: S.",
+        "Description": "Examines selected topics from literature to identify the structure of healthcare systems; need and access to care; availability and organization of health resources; and quality assessment and improvement. Identifies contemporary policy issues as case studies; and examines the strengths and weaknesses of healthcare system. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "S"
@@ -2854,7 +2854,7 @@
         "Course Number": "530",
         "Credits": "4",
         "Department Name": "TBUS",
-        "Description": "Examines essential topics in operations management, including operations strategy and planning; process and service design; supply chain and inventory management; quality management and statistical quality control; and forecasting and scheduling. Emphasizes concepts and skills essential for operations management in manufacturing and service firms from a strategic, operational, and analytic perspective. Offered: W.",
+        "Description": "Examines essential topics in operations management, including operations strategy and planning; process and service design; supply chain and inventory management; quality management and statistical quality control; and forecasting and scheduling. Emphasizes concepts and skills essential for operations management in manufacturing and service firms from a strategic, operational, and analytic perspective. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -2958,7 +2958,7 @@
         "Course Number": "215",
         "Credits": "5",
         "Department Name": "TCES",
-        "Description": "Introduction to electrical engineering. Basic circuit and systems concepts. Mathematical models of components. Kirchoff's laws. Resistors, sources, capacitors, inductors, and operational amplifiers. Solution of first and second order linear differential equations associated with basic circuit forms. Prerequisite: a minimum grade of 2.0 in TMATH 126; a minimum grade of 2.0 in T PHYS 122. Offered: Sp.",
+        "Description": "Introduction to electrical engineering. Basic circuit and systems concepts. Mathematical models of components. Kirchoff's laws. Resistors, sources, capacitors, inductors, and operational amplifiers. Solution of first and second order linear differential equations associated with basic circuit forms. Prerequisite: a minimum grade of 2.0 in TMATH 126; a minimum grade of 2.0 in T PHYS 122. ",
         "Offered with": "",
         "Prerequisites": "TMATH126;TPHYS122",
         "Quarters Offered": "Sp"
@@ -2971,7 +2971,7 @@
         "Course Number": "230",
         "Credits": "5",
         "Department Name": "TCES",
-        "Description": "Examines Boolean algebra and logic simplification, design of combined logic for decoders and multiplexers, and design of sequential devices including registers, and counters. Analysis of devices for logic networks including, three-state, CMOS, programmable logic devices. Uses tools for schematic capture and circuit simulations. Introduction to state machines. Laboratory required. Prerequisite: Minimum grade of 2.0 in either TCSS 142 or TCES 201; minimum grade of 2.0 in TMATH 126. Offered: A.",
+        "Description": "Examines Boolean algebra and logic simplification, design of combined logic for decoders and multiplexers, and design of sequential devices including registers, and counters. Analysis of devices for logic networks including, three-state, CMOS, programmable logic devices. Uses tools for schematic capture and circuit simulations. Introduction to state machines. Laboratory required. Prerequisite: Minimum grade of 2.0 in either TCSS 142 or TCES 201; minimum grade of 2.0 in TMATH 126.",
         "Offered with": "",
         "Prerequisites": "TCSS142,TCES201;TMATH126",
         "Quarters Offered": "A"
@@ -2984,7 +2984,7 @@
         "Course Number": "279",
         "Credits": "2",
         "Department Name": "TCES",
-        "Description": "Introduces new technology in 3D modeling, printing, laser cutting, and electronic fabrication. Students learn to fabricate engineering prototypes by building small scale artifacts. Credit/no-credit only. Offered: AWSp.",
+        "Description": "Introduces new technology in 3D modeling, printing, laser cutting, and electronic fabrication. Students learn to fabricate engineering prototypes by building small scale artifacts. Credit/no-credit only.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -2997,7 +2997,7 @@
         "Course Number": "310",
         "Credits": "5",
         "Department Name": "TCES",
-        "Description": "Extends circuit analysis technique to include dependent sources, power calculations, network topology, natural and forced response for RLC circuits, complex frequency, poles and zeros. Introduces Fourier series and Fourier, Laplace and z-transforms. Analyzes filters with z-transforms and difference equations. Prerequisite: a minimum grade of 2.0 either TCES 215 or E E 215. Offered: AWSpS.",
+        "Description": "Extends circuit analysis technique to include dependent sources, power calculations, network topology, natural and forced response for RLC circuits, complex frequency, poles and zeros. Introduces Fourier series and Fourier, Laplace and z-transforms. Analyzes filters with z-transforms and difference equations. Prerequisite: a minimum grade of 2.0 either TCES 215 or E E 215.",
         "Offered with": "",
         "Prerequisites": "TCES215,EE215",
         "Quarters Offered": "A,W,Sp,S"
@@ -3010,7 +3010,7 @@
         "Course Number": "312",
         "Credits": "5",
         "Department Name": "TCES",
-        "Description": "Physics, characteristics, applications, analysis, and design of circuits using semiconductor diodes and field-effect transistors with an emphasis on large-signal behavior and digital logic circuits. Introduction to operational amplifiers, frequency analysis and response, and filters. Prerequisite: a minimum grade of 2.0 in either TCES 215 or E E 215. Offered: W.",
+        "Description": "Physics, characteristics, applications, analysis, and design of circuits using semiconductor diodes and field-effect transistors with an emphasis on large-signal behavior and digital logic circuits. Introduction to operational amplifiers, frequency analysis and response, and filters. Prerequisite: a minimum grade of 2.0 in either TCES 215 or E E 215. ",
         "Offered with": "",
         "Prerequisites": "TCES215,EE215",
         "Quarters Offered": "W"
@@ -4284,7 +4284,7 @@
         "Course Number": "100",
         "Credits": "2",
         "Department Name": "TCORE",
-        "Description": "Sp .",
+        "Description": "Introduction to interdisciplinarity and to academic problem-solving. Focuses on critical inquiry, collaborative study, peer review, and active learning. Credit/no-credit only. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -4297,7 +4297,7 @@
         "Course Number": "101",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces principles of argument, critical thinking, and analytical readings, and writing and research skill needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing. Linked to another core curriculum course in the humanities, social sciences, or natural sciences. Offered: AWSp.",
+        "Description": "Introduces principles of argument, critical thinking, and analytical readings, and writing and research skill needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing. Linked to another core curriculum course in the humanities, social sciences, or natural sciences.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -4310,7 +4310,7 @@
         "Course Number": "102",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in environmental science, including geology, chemistry, biology, oceanography, and ecology. Offered: A.",
+        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in environmental science, including geology, chemistry, biology, oceanography, and ecology.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -4323,7 +4323,7 @@
         "Course Number": "103",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the social sciences, including sociology, anthropology, psychology, politics, and global studies. Offered: A.",
+        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the social sciences, including sociology, anthropology, psychology, politics, and global studies.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -4336,7 +4336,7 @@
         "Course Number": "104",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the humanities (art, history, literature, philosophy). Includes readings, films, performances, and exhibits. Offered: A.",
+        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the humanities (art, history, literature, philosophy). Includes readings, films, performances, and exhibits.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -4349,7 +4349,7 @@
         "Course Number": "110",
         "Credits": "2",
         "Department Name": "TCORE",
-        "Description": "Sp .",
+        "Description": "Focuses on issues of educational inequity and college access. Prepares students to work with youth by critically examining the educational and psychological literature on first-generation college students. ",
         "Offered with": "TUNIV110",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -4401,7 +4401,7 @@
         "Course Number": "122",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum from multiple and interdisciplinary perspectives. Emphasizes learning in the sciences, including biology, health, computer science, geology, physics, chemistry, and ecology. Offered: Sp.",
+        "Description": "Introduces students to university work by focusing on a core curriculum from multiple and interdisciplinary perspectives. Emphasizes learning in the sciences, including biology, health, computer science, geology, physics, chemistry, and ecology.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -4414,7 +4414,7 @@
         "Course Number": "123",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the social sciences, including psychology, urban studies, geography, sociology, social welfare, and political science. Offered: Sp.",
+        "Description": "Introduces students to university work by focusing on a core curriculum theme from multiple and interdisciplinary perspectives. Emphasizes learning in the social sciences, including psychology, urban studies, geography, sociology, social welfare, and political science.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -4427,7 +4427,7 @@
         "Course Number": "124",
         "Credits": "5",
         "Department Name": "TCORE",
-        "Description": "Introduces students to university work by focusing on a core curriculum from multiple and interdisciplinary perspectives. Emphasizes learning in the humanities, including literature, music, art, philosophy, and history. Offered: Sp.",
+        "Description": "Introduces students to university work by focusing on a core curriculum from multiple and interdisciplinary perspectives. Emphasizes learning in the humanities, including literature, music, art, philosophy, and history.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -4583,7 +4583,7 @@
         "Course Number": "361",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Examines the intersection of mental health, substance use, and the criminal justice system. Focuses on the interaction of mental health and criminal justice practice. Explores the prevalence of mental health and substance use and best practices for treatment. Offered: jointly with TSOCWF 361.",
+        "Description": "Examines the intersection of mental health, substance use, and the criminal justice system. Focuses on the interaction of mental health and criminal justice practice. Explores the prevalence of mental health and substance use and best practices for treatment.",
         "Offered with": "TSOCWF361",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4609,7 +4609,7 @@
         "Course Number": "363",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Examines the criminalization of immigration in the United States and globally and the ways in which social institutions have implemented immigration policies. Analyzes the unintended consequences of criminalizing policies and practices.  Explores psychosocial effects on the lives of diverse immigrants, their families, and ethnic minority communities. Offered: jointly with TSOCWF 363.",
+        "Description": "Examines the criminalization of immigration in the United States and globally and the ways in which social institutions have implemented immigration policies. Analyzes the unintended consequences of criminalizing policies and practices.  Explores psychosocial effects on the lives of diverse immigrants, their families, and ethnic minority communities.",
         "Offered with": "TSOCWF363",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4700,7 +4700,7 @@
         "Course Number": "374",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Examines domestic and international human trafficking, recruitment, and control methodologies. Considers labor and sexual exploitation and examines existing laws and services to combat trafficking. Analyzes the role of demand in perpetuating trafficking and the victims' trauma. Applies best practice solutions. Offered: jointly with TSOCWF 374.",
+        "Description": "Examines domestic and international human trafficking, recruitment, and control methodologies. Considers labor and sexual exploitation and examines existing laws and services to combat trafficking. Analyzes the role of demand in perpetuating trafficking and the victims' trauma. Applies best practice solutions.",
         "Offered with": "TSOCWF374",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4752,7 +4752,7 @@
         "Course Number": "427",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Examines disproportionate representation of people of color in the child welfare, criminal justice, economic, education, health, juvenile justice, and mental health systems. Focuses on how each of these systems interacts with the criminal justice system where disproportionality is a particularly serious problem. Offered: jointly with TSOCWF 427.",
+        "Description": "Examines disproportionate representation of people of color in the child welfare, criminal justice, economic, education, health, juvenile justice, and mental health systems. Focuses on how each of these systems interacts with the criminal justice system where disproportionality is a particularly serious problem.",
         "Offered with": "TSOCWF427",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4765,7 +4765,7 @@
         "Course Number": "428",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Develops understanding of sex crimes and the people who commit them. Addresses the theoretical explanations of, and policies regarding treatment for offenders. Analyzes laws related to sex offenders, their constitutional legitimacy, and the difficulty in balancing offender and community rights. Offered: jointly with TSOCWF 428.",
+        "Description": "Develops understanding of sex crimes and the people who commit them. Addresses the theoretical explanations of, and policies regarding treatment for offenders. Analyzes laws related to sex offenders, their constitutional legitimacy, and the difficulty in balancing offender and community rights.",
         "Offered with": "TSOCWF428",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4778,7 +4778,7 @@
         "Course Number": "430",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Examines the impact of parental incarceration on the psychological, social, physical, and biological development of children. Focuses on issues of loss, trauma, attachment, and ways to address such issues. Offered: jointly with TSOCWF 430.",
+        "Description": "Examines the impact of parental incarceration on the psychological, social, physical, and biological development of children. Focuses on issues of loss, trauma, attachment, and ways to address such issues.",
         "Offered with": "TSOCWF430",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4791,7 +4791,7 @@
         "Course Number": "433",
         "Credits": "5",
         "Department Name": "TCRIM",
-        "Description": "Provides an overview of victimology and teaches practice skills for working with victims of crime and their families. Examines the efficacy and application of interventions that try to alleviate the impact of crime on victims, facilitate victims' mental health recovery, and assist in system navigation. Offered: jointly with TSOCWF 433.",
+        "Description": "Provides an overview of victimology and teaches practice skills for working with victims of crime and their families. Examines the efficacy and application of interventions that try to alleviate the impact of crime on victims, facilitate victims' mental health recovery, and assist in system navigation.",
         "Offered with": "TSOCWF433",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -4921,7 +4921,7 @@
         "Course Number": "530",
         "Credits": "5",
         "Department Name": "TCSL",
-        "Description": "Applies and combines information assurance concepts, processes, and skills to solve information assurance and cybersecurity case studies. Offered: A.",
+        "Description": "Applies and combines information assurance concepts, processes, and skills to solve information assurance and cybersecurity case studies. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -4947,7 +4947,7 @@
         "Course Number": "550",
         "Credits": "5",
         "Department Name": "TCSL",
-        "Description": "Studies the technologies of information security policies, standards, and procedures. Topics include: security policy design and incident response; and tools and techniques to defend against, react to, and recover from a cyber-attack. Covers cryptographic methods including public and private key algorithms and their applications on confidentiality, authentication, and data integrity. Offered: Sp.",
+        "Description": "Studies the technologies of information security policies, standards, and procedures. Topics include: security policy design and incident response; and tools and techniques to defend against, react to, and recover from a cyber-attack. Covers cryptographic methods including public and private key algorithms and their applications on confidentiality, authentication, and data integrity. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -4973,7 +4973,7 @@
         "Course Number": "570",
         "Credits": "5",
         "Department Name": "TCSL",
-        "Description": "Studies how organization approaches technology decisions, including consideration of specific security requirements and goals that technology investments must address in support of the organization's mission. Explores how technology investments reduce the cost and complexity of managing and operation an information infrastructure while maintaining appropriate levels of cybersecurity. Offered: A.",
+        "Description": "Studies how organization approaches technology decisions, including consideration of specific security requirements and goals that technology investments must address in support of the organization's mission. Explores how technology investments reduce the cost and complexity of managing and operation an information infrastructure while maintaining appropriate levels of cybersecurity. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -5051,7 +5051,7 @@
         "Course Number": "142",
         "Credits": "5",
         "Department Name": "TCSS",
-        "Description": "Introduces the design and implementation of procedural programs. Includes an introduction to program structure, data types, arrays, recursion and objects. Prior experience in programming is expected. Prerequisite: a minimum grade of 2.0 in either TMATH 116, TMATH 120, TMATH 121, or MATH 120, a score of 120-180 on MPT-AS test, or 2 on AP Computer Science exam A. Offered: AWSp.",
+        "Description": "Introduces the design and implementation of procedural programs. Includes an introduction to program structure, data types, arrays, recursion and objects. Prior experience in programming is expected. Prerequisite: a minimum grade of 2.0 in either TMATH 116, TMATH 120, TMATH 121, or MATH 120, a score of 120-180 on MPT-AS test, or 2 on AP Computer Science exam A.",
         "Offered with": "",
         "Prerequisites": "TMATH116,TMATH120,TMATH121,MATH120",
         "Quarters Offered": "A,W,Sp"
@@ -5064,7 +5064,7 @@
         "Course Number": "143",
         "Credits": "5",
         "Department Name": "TCSS",
-        "Description": "Develops fundamental concepts and techniques for analysis, design, and implementation of computer programs using an object-oriented language. Includes recursive techniques, use of abstract data types (ADTs), and introduction to simple data structures. Prerequisite: a minimum grade of 2.0 in either TCSS 142 or CSE 142. Offered: AWSp.",
+        "Description": "Develops fundamental concepts and techniques for analysis, design, and implementation of computer programs using an object-oriented language. Includes recursive techniques, use of abstract data types (ADTs), and introduction to simple data structures. Prerequisite: a minimum grade of 2.0 in either TCSS 142 or CSE 142.",
         "Offered with": "",
         "Prerequisites": "TCSS142,CSE142",
         "Quarters Offered": "A,W,Sp"
@@ -6039,7 +6039,7 @@
         "Course Number": "588",
         "Credits": "5",
         "Department Name": "TCSS",
-        "Description": "Covers applications of computational techniques in various biological applications, including sequence analysis, systems biology, personalized medicine, and drug discovery. Focuses on machine learning methods in mining big data sources in biology. No background in biology is required. Prerequisite: TCSS 343. Offered: Sp.",
+        "Description": "Covers applications of computational techniques in various biological applications, including sequence analysis, systems biology, personalized medicine, and drug discovery. Focuses on machine learning methods in mining big data sources in biology. No background in biology is required. Prerequisite: TCSS 343. ",
         "Offered with": "",
         "Prerequisites": "TCSS343",
         "Quarters Offered": "Sp"
@@ -6117,7 +6117,7 @@
         "Course Number": "597",
         "Credits": "1",
         "Department Name": "TCSS",
-        "Description": "Sp .",
+        "Description": "Discusses recent developments in the modeling analysis, security, and control of cyber-physical systems. Primarily consists of reading papers, surveying the latest hardware/software implementation methods and tools developed for cyber physical systems. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -6158,7 +6158,7 @@
         "Department Name": "TCSS",
         "Description": "Provides an opportunity to demonstrate comprehensive knowledge in CSS. Completes a research project led by a CSS graduate faculty advisor. Prerequisite: TCSS 543; TCSS 558; TCSS 598; permission of instructor required",
         "Offered with": "",
-        "Prerequisites": "TCSS543;TCSS558;TCSS598;POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TCSS701": {
@@ -6184,7 +6184,7 @@
         "Department Name": "TCSS",
         "Description": "Provides an opportunity to demonstrate comprehensive knowledge in CSS. Develops a significant design and implementation project led by a CSS faculty graduate advisor. Prerequisite: TCSS 543; TCSS 558; TCSS 598; permission of instructor required.",
         "Offered with": "",
-        "Prerequisites": "TCSS543;TCSS558;TCSS598;POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TECON101": {
@@ -6338,7 +6338,7 @@
         "Course Number": "361",
         "Credits": "5",
         "Department Name": "TECON",
-        "Description": "Explores the most important economic challenges facing China today. Combines lecture with site visits and interactions with local business leaders and policymakers, allowing students the opportunity to study the Chinese economy with firsthand knowledge of experts living and working in China today. Offered: S.",
+        "Description": "Explores the most important economic challenges facing China today. Combines lecture with site visits and interactions with local business leaders and policymakers, allowing students the opportunity to study the Chinese economy with firsthand knowledge of experts living and working in China today.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "S"
@@ -6637,7 +6637,7 @@
         "Course Number": "570",
         "Credits": "5",
         "Department Name": "TEDLD",
-        "Description": "Focuses on applying theories and associated research support of leadership behaviors. Examines effectiveness of leaders as change agents related to organization communication, motivation, and empowerment. Discusses strategies for establishing vision as wells as addressing ethical challenges. Offered: S.",
+        "Description": "Focuses on applying theories and associated research support of leadership behaviors. Examines effectiveness of leaders as change agents related to organization communication, motivation, and empowerment. Discusses strategies for establishing vision as wells as addressing ethical challenges. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "S"
@@ -6650,7 +6650,7 @@
         "Course Number": "571",
         "Credits": "5",
         "Department Name": "TEDLD",
-        "Description": "Focuses on ways educational leaders apply systems thinking to organizations, policy advocacy, and team building. Offered: A.",
+        "Description": "Focuses on ways educational leaders apply systems thinking to organizations, policy advocacy, and team building. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -6663,7 +6663,7 @@
         "Course Number": "572",
         "Credits": "5",
         "Department Name": "TEDLD",
-        "Description": "Focuses on the effects of social, historical, and cultural factors on educational leadership and student achievement. Critically analyzes plans and practices to foster culturally-responsive organizations that ensure optimal learning outcomes for all students. Offered: W.",
+        "Description": "Focuses on the effects of social, historical, and cultural factors on educational leadership and student achievement. Critically analyzes plans and practices to foster culturally-responsive organizations that ensure optimal learning outcomes for all students. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -6676,7 +6676,7 @@
         "Course Number": "573",
         "Credits": "5",
         "Department Name": "TEDLD",
-        "Description": "Focuses on conceptual foundation for understanding current research and theoretical directions in learning, motivation, and instruction related to diverse educational settings. Evaluates leadership research, theory, and practice related to effective, high quality instruction. Offered: jointly with TEDNUR 573.",
+        "Description": "Focuses on conceptual foundation for understanding current research and theoretical directions in learning, motivation, and instruction related to diverse educational settings. Evaluates leadership research, theory, and practice related to effective, high quality instruction. ",
         "Offered with": "TEDNUR573",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6689,7 +6689,7 @@
         "Course Number": "574",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Emphasizes the role of evaluation for the purpose of improving programs, instruction, and student learning. Focuses on the establishment of ongoing evaluation for internal and external stakeholders. Offered: jointly with TEDNUR 574; W.",
+        "Description": "Emphasizes the role of evaluation for the purpose of improving programs, instruction, and student learning. Focuses on the establishment of ongoing evaluation for internal and external stakeholders. ",
         "Offered with": "TEDNUR574",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -6741,7 +6741,7 @@
         "Course Number": "581",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Overview of applied educational research and systematic inquiry, framing problems of practice, and the role of critique in analysis of theory, evidence, and ethics. Focuses on research in educational leadership, diversity, accountability, and instruction. Offered: S.",
+        "Description": "Overview of applied educational research and systematic inquiry, framing problems of practice, and the role of critique in analysis of theory, evidence, and ethics. Focuses on research in educational leadership, diversity, accountability, and instruction. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "S"
@@ -6754,7 +6754,7 @@
         "Course Number": "582",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Focuses on qualitative and quantitative approaches in applied research. Offered: A.",
+        "Description": "Focuses on qualitative and quantitative approaches in applied research. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -6806,7 +6806,7 @@
         "Course Number": "587",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Focuses on current issues in curriculum leadership at the national, state, and local levels, targeting the need for coherent, articulated approaches to student learning at various academic levels and disciplines. Addresses challenges of curriculum, evaluation, and program implementation. Offered: jointly with TEDNUR 587.",
+        "Description": "Focuses on current issues in curriculum leadership at the national, state, and local levels, targeting the need for coherent, articulated approaches to student learning at various academic levels and disciplines. Addresses challenges of curriculum, evaluation, and program implementation. ",
         "Offered with": "TEDNUR587",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6819,7 +6819,7 @@
         "Course Number": "588",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Focuses on development of systems for supervision and evaluation of instruction that directly connects to learning. Examines established and emerging models of evidence-based best practice in faculty and staff supervision and evaluation for instructional improvement. Offered: jointly with TEDNUR 588.",
+        "Description": "Focuses on development of systems for supervision and evaluation of instruction that directly connects to learning. Examines established and emerging models of evidence-based best practice in faculty and staff supervision and evaluation for instructional improvement. ",
         "Offered with": "TEDNUR588",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6832,7 +6832,7 @@
         "Course Number": "589",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Provides practical experiences where students analyze and apply knowledge related to crisis management systems essential to health and safety of employees and students. Offered: jointly with TEDNUR 589.",
+        "Description": "Provides practical experiences where students analyze and apply knowledge related to crisis management systems essential to health and safety of employees and students. ",
         "Offered with": "TEDNUR589",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6897,7 +6897,7 @@
         "Course Number": "595",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Sp .",
+        "Description": "Focuses on school district leader roles in establishing effective central management and the integration of special programs. Applies approaches to improve central district systems and student learning for traditionally underserved populations. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -6910,7 +6910,7 @@
         "Course Number": "596",
         "Credits": "3",
         "Department Name": "TEDLD",
-        "Description": "Sp S.",
+        "Description": "Focuses on the history and practice of school board governance and the extent to which governance models contribute to equitable outcomes for students.  Includes the analyses of models of board governance, district-level evaluation systems, and how school boards evaluate superintendents. Required for students earning Washington State Initial Superintendent or Washington State initial Program Administrator Certification. Credit/no-credit only. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -6923,7 +6923,7 @@
         "Course Number": "600",
         "Credits": "1",
         "Department Name": "TEDLD",
-        "Description": "Sp S.",
+        "Description": "Faculty-supervised independent study or readings in areas of educational leadership of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -6936,7 +6936,7 @@
         "Course Number": "602",
         "Credits": "1",
         "Department Name": "TEDLD",
-        "Description": "Focuses on educational leadership development dealing with actual problems of practice in the work environment, including problem analysis and solution generation. Includes competencies required by professional organizations for certification purposes. Offered: jointly with TEDNUR 602.",
+        "Description": "Focuses on educational leadership development dealing with actual problems of practice in the work environment, including problem analysis and solution generation. Includes competencies required by professional organizations for certification purposes. ",
         "Offered with": "TEDNUR602",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6949,7 +6949,7 @@
         "Course Number": "801",
         "Credits": "",
         "Department Name": "TEDLD",
-        "Description": "Sp S.",
+        "Description": "D in Educational Leadership dissertation in practice as a structured inquiry process investigating a critical problem of practice. Credit/no-credit only. ",
         "Offered with": "TEDNUR801",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -6962,7 +6962,7 @@
         "Course Number": "802",
         "Credits": "1",
         "Department Name": "TEDLD",
-        "Description": "Sp .",
+        "Description": "Under the guidance of the instructor, students meet in discipline specific groups to share and discuss the challenges and progress of their respective dissertation in practice work, providing insight, accountability, and support for one another. Credit/no-credit only. ",
         "Offered with": "TEDNUR802",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -6975,7 +6975,7 @@
         "Course Number": "573",
         "Credits": "5",
         "Department Name": "TEDNUR",
-        "Description": "Focuses on conceptual foundation for understanding current research and theoretical directions in learning, motivation, and instruction related to diverse educational settings. Evaluates leadership research, theory, and practice related to effective, high quality instruction. Offered: jointly with T EDLD 573.",
+        "Description": "Focuses on conceptual foundation for understanding current research and theoretical directions in learning, motivation, and instruction related to diverse educational settings. Evaluates leadership research, theory, and practice related to effective, high quality instruction. ",
         "Offered with": "TEDLD573",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -6988,7 +6988,7 @@
         "Course Number": "574",
         "Credits": "3",
         "Department Name": "TEDNUR",
-        "Description": "Emphasizes the role of evaluation for the purpose of improving programs, instruction, and student learning. Focuses on the establishment of ongoing evaluation for internal and external stakeholders. Offered: jointly with T EDLD 574; W.",
+        "Description": "Emphasizes the role of evaluation for the purpose of improving programs, instruction, and student learning. Focuses on the establishment of ongoing evaluation for internal and external stakeholders. ",
         "Offered with": "TEDLD574",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -7001,7 +7001,7 @@
         "Course Number": "587",
         "Credits": "3",
         "Department Name": "TEDNUR",
-        "Description": "Focuses on current issues in curriculum leadership at the national, state, and local levels, targeting the need for coherent, articulated approaches to student learning at various academic levels and disciplines. Addresses challenges of curriculum, evaluation, and program implementation. Offered: jointly with T EDLD 587.",
+        "Description": "Focuses on current issues in curriculum leadership at the national, state, and local levels, targeting the need for coherent, articulated approaches to student learning at various academic levels and disciplines. Addresses challenges of curriculum, evaluation, and program implementation. ",
         "Offered with": "TEDLD587",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7014,7 +7014,7 @@
         "Course Number": "588",
         "Credits": "3",
         "Department Name": "TEDNUR",
-        "Description": "Focuses on development of systems for supervision and evaluation of instruction that directly connects to learning. Examines established and emerging models of evidence-based best practice in faculty and staff supervision and evaluation for instructional improvement. Offered: jointly with T EDLD 588.",
+        "Description": "Focuses on development of systems for supervision and evaluation of instruction that directly connects to learning. Examines established and emerging models of evidence-based best practice in faculty and staff supervision and evaluation for instructional improvement. ",
         "Offered with": "TEDLD588",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7027,7 +7027,7 @@
         "Course Number": "589",
         "Credits": "3",
         "Department Name": "TEDNUR",
-        "Description": "Provides practical experiences where students analyze and apply knowledge related to crisis management systems essential to health and safety of employees and students. Offered: jointly with T EDLD 589.",
+        "Description": "Provides practical experiences where students analyze and apply knowledge related to crisis management systems essential to health and safety of employees and students. ",
         "Offered with": "TEDLD589",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7040,7 +7040,7 @@
         "Course Number": "602",
         "Credits": "1",
         "Department Name": "TEDNUR",
-        "Description": "Focuses on educational leadership development dealing with actual problems of practice in the work environment, including problem analysis and solution generation. Includes competencies required by professional organizations for certification purposes. Offered: jointly with T EDLD 602.",
+        "Description": "Focuses on educational leadership development dealing with actual problems of practice in the work environment, including problem analysis and solution generation. Includes competencies required by professional organizations for certification purposes. ",
         "Offered with": "TEDLD602",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7053,7 +7053,7 @@
         "Course Number": "801",
         "Credits": "",
         "Department Name": "TEDNUR",
-        "Description": "Sp S.",
+        "Description": "D in Educational Leadership dissertation in practice as a structured inquiry process investigating a critical problem of practice. Credit/no-credit only. ",
         "Offered with": "TEDLD801",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -7066,7 +7066,7 @@
         "Course Number": "802",
         "Credits": "1",
         "Department Name": "TEDNUR",
-        "Description": "Sp .",
+        "Description": "Under the guidance of the instructor, students meet in discipline specific groups to share and discuss the challenges and progress of their respective dissertation in practice work, providing insight, accountability, and support for one another. Credit/no-credit only. ",
         "Offered with": "TEDLD802",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -7144,7 +7144,7 @@
         "Course Number": "541",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Utilizes theory, research, and validated methods for designing literacy instruction. Focuses on effective teaching for beginning and struggling readers. Includes instructional design, assessment, and monitoring progress with additional attention to reading in special education contexts. Offered: jointly with T EDUC 541.",
+        "Description": "Utilizes theory, research, and validated methods for designing literacy instruction. Focuses on effective teaching for beginning and struggling readers. Includes instructional design, assessment, and monitoring progress with additional attention to reading in special education contexts. ",
         "Offered with": "TEDUC541",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7157,7 +7157,7 @@
         "Course Number": "542",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "For teachers of at-risk/mainstreamed students. Focuses on how a well-managed classroom and school environment supports students' personal growth and promotes academic success. Examines alternative delivery systems and strategies for meeting individual needs. Offered: jointly with T EDUC 542.",
+        "Description": "For teachers of at-risk/mainstreamed students. Focuses on how a well-managed classroom and school environment supports students' personal growth and promotes academic success. Examines alternative delivery systems and strategies for meeting individual needs. ",
         "Offered with": "TEDUC542",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7170,7 +7170,7 @@
         "Course Number": "543",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Utilizes theory, research, and validated methods for designing effective mathematics instruction for academic interventions and support for students struggling in mathematics. Includes instructional design, assessment, and monitoring progress with additional attention to math learning in special education contexts. Offered: jointly with T EDUC 543.",
+        "Description": "Utilizes theory, research, and validated methods for designing effective mathematics instruction for academic interventions and support for students struggling in mathematics. Includes instructional design, assessment, and monitoring progress with additional attention to math learning in special education contexts. ",
         "Offered with": "TEDUC543",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7274,7 +7274,7 @@
         "Course Number": "556",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Prepares teacher to meet the social and emotional needs of primary and secondary students. Provides in-depth exploration of theory and practice including evidence-based assessment and supports across the universal, targeted, and intensive levels of prevention. Geared toward teachers interested in working with students who lack critical skills necessary for resiliency. Offered: jointly with T EDUC 556; Sp.",
+        "Description": "Prepares teacher to meet the social and emotional needs of primary and secondary students. Provides in-depth exploration of theory and practice including evidence-based assessment and supports across the universal, targeted, and intensive levels of prevention. Geared toward teachers interested in working with students who lack critical skills necessary for resiliency. ",
         "Offered with": "TEDUC556",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -7287,7 +7287,7 @@
         "Course Number": "583",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Focus on research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. Offered: jointly with T EDUC 583; W.",
+        "Description": "Focus on research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. ",
         "Offered with": "TEDUC583",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -7300,7 +7300,7 @@
         "Course Number": "584",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Focuses on continued induction for beginning teachers including reviewing the research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. Offered: jointly with T EDUC 584; Sp.",
+        "Description": "Focuses on continued induction for beginning teachers including reviewing the research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. ",
         "Offered with": "TEDUC584",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -7341,7 +7341,7 @@
         "Department Name": "TEDSP",
         "Description": "Culminating classroom internship in assigned public school classrooms under University supervision with accompanying guided inquiry into the nature and social context of teaching and learning. Experiences in the site placements focus on synthesis of planning, management, teaching and assessment of the learning environment. Prerequisite: T EDSP 588 or permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "TEDSP588;POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TEDSP590": {
@@ -7365,7 +7365,7 @@
         "Course Number": "591",
         "Credits": "1",
         "Department Name": "TEDSP",
-        "Description": "Offered: jointly with T EDUC 591.",
+        "Description": "",
         "Offered with": "TEDUC591",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7378,7 +7378,7 @@
         "Course Number": "592",
         "Credits": "1",
         "Department Name": "TEDSP",
-        "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. Offered: jointly with T EDUC 592.",
+        "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "TEDUC592",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7508,7 +7508,7 @@
         "Course Number": "485",
         "Credits": "5",
         "Department Name": "TEDUC",
-        "Description": "Hands -on look at NGOs and schools in an under-resourced and struggling township located in South Africa. Critical exposure to, and examination of, the role and challenges of organizations attempting to lead community development and education efforts within a globalized, new democracy which itself struggles with post-apartheid racism and inequities. Credit/no-credit only. Offered: jointly with T URB 485.",
+        "Description": "Hands -on look at NGOs and schools in an under-resourced and struggling township located in South Africa. Critical exposure to, and examination of, the role and challenges of organizations attempting to lead community development and education efforts within a globalized, new democracy which itself struggles with post-apartheid racism and inequities. Credit/no-credit only.",
         "Offered with": "TURB485",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7547,7 +7547,7 @@
         "Course Number": "492",
         "Credits": "5",
         "Department Name": "TEDUC",
-        "Description": "Examines the application of urban education in non-school settings. Analyzes community cultural wealth, community organizing strategies, and community education efforts through 40 hours of directed participatory observation in a community or organization-informed setting (including non-profits, community centers, libraries, afterschool programs, museums, or other community spaces or programs). Offered: AWSp.",
+        "Description": "Examines the application of urban education in non-school settings. Analyzes community cultural wealth, community organizing strategies, and community education efforts through 40 hours of directed participatory observation in a community or organization-informed setting (including non-profits, community centers, libraries, afterschool programs, museums, or other community spaces or programs).",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -7781,7 +7781,7 @@
         "Course Number": "541",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "Utilizes theory, research, and validated methods for designing literacy instruction. Focuses on effective teaching for beginning and struggling readers. Includes instructional design, assessment, and monitoring progress with additional attention to reading in special education contexts. Offered: jointly with T EDSP 541.",
+        "Description": "Utilizes theory, research, and validated methods for designing literacy instruction. Focuses on effective teaching for beginning and struggling readers. Includes instructional design, assessment, and monitoring progress with additional attention to reading in special education contexts. ",
         "Offered with": "TEDSP541",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7794,7 +7794,7 @@
         "Course Number": "542",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "For teachers of at-risk/mainstreamed students. Focuses on how a well-managed classroom and school environment supports students' personal growth and promotes academic success. Examines alternative delivery systems and strategies for meeting individual needs. Offered: jointly with T EDSP 542.",
+        "Description": "For teachers of at-risk/mainstreamed students. Focuses on how a well-managed classroom and school environment supports students' personal growth and promotes academic success. Examines alternative delivery systems and strategies for meeting individual needs. ",
         "Offered with": "TEDSP542",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7807,7 +7807,7 @@
         "Course Number": "543",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "Utilizes theory, research, and validated methods for designing effective mathematics instruction for academic interventions and support for students struggling in mathematics. Includes instructional design, assessment, and monitoring progress with additional attention to math learning in special education contexts. Offered: jointly with T EDSP 543.",
+        "Description": "Utilizes theory, research, and validated methods for designing effective mathematics instruction for academic interventions and support for students struggling in mathematics. Includes instructional design, assessment, and monitoring progress with additional attention to math learning in special education contexts. ",
         "Offered with": "TEDSP543",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7872,7 +7872,7 @@
         "Course Number": "556",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "Prepares teacher to meet the social and emotional needs of primary and secondary students. Provides in-depth exploration of theory and practice including evidence-based assessment and supports across the universal, targeted, and intensive levels of prevention. Geared toward teachers interested in working with students who lack critical skills necessary for resiliency. Offered: jointly with T EDSP 556; Sp.",
+        "Description": "Prepares teacher to meet the social and emotional needs of primary and secondary students. Provides in-depth exploration of theory and practice including evidence-based assessment and supports across the universal, targeted, and intensive levels of prevention. Geared toward teachers interested in working with students who lack critical skills necessary for resiliency. ",
         "Offered with": "TEDSP556",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -7976,7 +7976,7 @@
         "Course Number": "583",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "Focus on research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. Offered: jointly with T EDSP 583; W.",
+        "Description": "Focus on research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. ",
         "Offered with": "TEDSP583",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -7989,7 +7989,7 @@
         "Course Number": "584",
         "Credits": "3",
         "Department Name": "TEDUC",
-        "Description": "Focuses on continued induction for beginning teachers including reviewing the research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. Offered: jointly with T EDSP 584; Sp.",
+        "Description": "Focuses on continued induction for beginning teachers including reviewing the research supporting and reflection on the evaluation criteria for Washington State teachers. Credit/no-credit only. ",
         "Offered with": "TEDSP584",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -8054,7 +8054,7 @@
         "Course Number": "591",
         "Credits": "1",
         "Department Name": "TEDUC",
-        "Description": "Offered: jointly with T EDSP 591.",
+        "Description": "",
         "Offered with": "TEDSP591",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -8067,7 +8067,7 @@
         "Course Number": "592",
         "Credits": "1",
         "Department Name": "TEDUC",
-        "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. Offered: jointly with T EDSP 592.",
+        "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "TEDSP592",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9510,7 +9510,7 @@
         "Course Number": "440",
         "Credits": "5",
         "Department Name": "TGEOG",
-        "Description": "Introduction to political geography from the perspective of political economy and the politics of difference. Discusses both critical approaches to human geography and geographical interpretations of the state. Emphasizes spatial dimensions of capitalist development as mediated by urban, national and global politics. Offered: Sp.",
+        "Description": "Introduction to political geography from the perspective of political economy and the politics of difference. Discusses both critical approaches to human geography and geographical interpretations of the state. Emphasizes spatial dimensions of capitalist development as mediated by urban, national and global politics. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -9757,7 +9757,7 @@
         "Course Number": "101",
         "Credits": "2",
         "Department Name": "TGH",
-        "Description": "Introduces students to the key concepts of globalization, the expectations of the Global Honors Program, and the value of an interdisciplinary, globally-engaged education. Provides information and access to student engagement opportunities and campus resources. Offered: A.",
+        "Description": "Introduces students to the key concepts of globalization, the expectations of the Global Honors Program, and the value of an interdisciplinary, globally-engaged education. Provides information and access to student engagement opportunities and campus resources. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -9835,7 +9835,7 @@
         "Course Number": "399",
         "Credits": "3",
         "Department Name": "TGH",
-        "Description": "Sp S.",
+        "Description": "",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -9848,7 +9848,7 @@
         "Course Number": "490",
         "Credits": "2",
         "Department Name": "TGH",
-        "Description": "Methods seminar required for seniors in the Global Honors program who are preparing their senior thesis or project. Prerequisite: T GH 301; T GH 302; T GH 303. Offered: AW.",
+        "Description": "Methods seminar required for seniors in the Global Honors program who are preparing their senior thesis or project. Prerequisite: T GH 301; T GH 302; T GH 303. ",
         "Offered with": "",
         "Prerequisites": "TGH301;TGH302;TGH303",
         "Quarters Offered": "A,W"
@@ -9861,7 +9861,7 @@
         "Course Number": "491",
         "Credits": "1",
         "Department Name": "TGH",
-        "Description": "Corequisite: T GH 494. Credit/no-credit only. Offered: W.",
+        "Description": "Corequisite: T GH 494. Credit/no-credit only. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -9874,7 +9874,7 @@
         "Course Number": "494",
         "Credits": "4",
         "Department Name": "TGH",
-        "Description": "Sp S.",
+        "Description": "Research and completion of a thesis or project approved and supervised by a full-time UWT faculty member on a significant scholarly topic, for students admitted to the Global Honors Program. Prerequisite: T GH 301; T GH 302; T GH 303; T GH 490. ",
         "Offered with": "",
         "Prerequisites": "TGH301;TGH302;TGH303;TGH490",
         "Quarters Offered": "A,W,Sp,S"
@@ -9887,7 +9887,7 @@
         "Course Number": "496",
         "Credits": "5",
         "Department Name": "TGH",
-        "Description": "Sp S.",
+        "Description": "Uses globally-focuses experiential learning projects such as internships, community service to locally-based international or immigrant populations, or realted work intended to develop an appreciation of the processes of globalization. Integrates experience with theoretical understanding of globalization and global citizenship. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -10017,7 +10017,7 @@
         "Course Number": "501",
         "Credits": "5",
         "Department Name": "TGIS",
-        "Description": "Provides a foundation in the tools and techniques that are required to customize and automate geographic information systems. Prepares students to interact with mobile and web-based geospatial data and applications in subsequent courses. Offered: A.",
+        "Description": "Provides a foundation in the tools and techniques that are required to customize and automate geographic information systems. Prepares students to interact with mobile and web-based geospatial data and applications in subsequent courses. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -10030,7 +10030,7 @@
         "Course Number": "502",
         "Credits": "5",
         "Department Name": "TGIS",
-        "Description": "Provides an introduction and overview of the role that geospatial technologies play in contemporary urban and environmental planning scenarios. Focuses on the applications and techniques that are core elements of the graduate program in Geospatial Technologies. Offered: A.",
+        "Description": "Provides an introduction and overview of the role that geospatial technologies play in contemporary urban and environmental planning scenarios. Focuses on the applications and techniques that are core elements of the graduate program in Geospatial Technologies. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -10043,7 +10043,7 @@
         "Course Number": "503",
         "Credits": "5",
         "Department Name": "TGIS",
-        "Description": "Provides a foundation in the tools and techniques that are required to engage in web-based GIS resources. Prepares students to develop customized web-based GIS tools and deploy interactive web-based cartographic assets. Offered: A.",
+        "Description": "Provides a foundation in the tools and techniques that are required to engage in web-based GIS resources. Prepares students to develop customized web-based GIS tools and deploy interactive web-based cartographic assets. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -10056,7 +10056,7 @@
         "Course Number": "504",
         "Credits": "5",
         "Department Name": "TGIS",
-        "Description": "Provides a foundation in the tools and techniques that are required to design, develop, and deploy mobile geospatial applications. Offered: A.",
+        "Description": "Provides a foundation in the tools and techniques that are required to design, develop, and deploy mobile geospatial applications. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -11239,7 +11239,7 @@
         "Course Number": "403",
         "Credits": "3",
         "Department Name": "THLEAD",
-        "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course. Offered: jointly with T NURS 403.",
+        "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course.",
         "Offered with": "TNURS403",
         "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110",
         "Quarters Offered": ""
@@ -11278,7 +11278,7 @@
         "Course Number": "407",
         "Credits": "3",
         "Department Name": "THLEAD",
-        "Description": "Examines how difference, discrimination, marginalization, power, and privilege relate to health , illness, and healthcare. Attends to historical and structural manifestations of oppression and inequity. Addresses health inequities. Offered: jointly with T NURS 407.",
+        "Description": "Examines how difference, discrimination, marginalization, power, and privilege relate to health , illness, and healthcare. Attends to historical and structural manifestations of oppression and inequity. Addresses health inequities.",
         "Offered with": "TNURS407",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11291,7 +11291,7 @@
         "Course Number": "410",
         "Credits": "3",
         "Department Name": "THLEAD",
-        "Description": "Identifies ethical issues relevant to healthcare and the profession of nursing. Identifies, describes, and analyzes multiple ethical perspectives, selected ethical dilemmas relevant to professional practice, the delivery of health care, and the health of individuals and populations. Offered: jointly with T NURS 410.",
+        "Description": "Identifies ethical issues relevant to healthcare and the profession of nursing. Identifies, describes, and analyzes multiple ethical perspectives, selected ethical dilemmas relevant to professional practice, the delivery of health care, and the health of individuals and populations.",
         "Offered with": "TNURS410",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11317,7 +11317,7 @@
         "Course Number": "430",
         "Credits": "1",
         "Department Name": "THLEAD",
-        "Description": "Addresses communication skills, patterns, and practices. Examines nonverbal and verbal modes of communication. Explores communicating in a variety of contexts' pertinent to healthcare; for example, cultural, personal, professional, group, conflict, and leadership. Applies conceptual models in interpersonal processes. Offered: jointly with T NURS 430.",
+        "Description": "Addresses communication skills, patterns, and practices. Examines nonverbal and verbal modes of communication. Explores communicating in a variety of contexts' pertinent to healthcare; for example, cultural, personal, professional, group, conflict, and leadership. Applies conceptual models in interpersonal processes.",
         "Offered with": "TNURS430",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11421,7 +11421,7 @@
         "Course Number": "325",
         "Credits": "5",
         "Department Name": "THLTH",
-        "Description": "Examines various medical and bioethical issues through the lens of literature. Explores the role of technology, illness and culture, and end-of-live issues. Offered: jointly with T LIT 325.",
+        "Description": "Examines various medical and bioethical issues through the lens of literature. Explores the role of technology, illness and culture, and end-of-live issues.",
         "Offered with": "TLIT325",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -11499,7 +11499,7 @@
         "Course Number": "410",
         "Credits": "5",
         "Department Name": "THLTH",
-        "Description": "Explores relationships between environmental issues and people of color and low-income communities from both local and global perspectives. Emphasizes issues of race/ethnicity, socioeconomic status, and policy and politics in environmental equity. Offered: jointly with T URB 410.",
+        "Description": "Explores relationships between environmental issues and people of color and low-income communities from both local and global perspectives. Emphasizes issues of race/ethnicity, socioeconomic status, and policy and politics in environmental equity.",
         "Offered with": "TURB410",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -13098,7 +13098,7 @@
         "Course Number": "496",
         "Credits": "5",
         "Department Name": "TLAW",
-        "Description": "Intern in federal, state and local legal and policy-oriented organizations.  Fulfills Law and Policy major's capstone requirement. Prerequisite: Senior standing; recommended: Designed for graduating seniors. Offered: AWSp.",
+        "Description": "Intern in federal, state and local legal and policy-oriented organizations.  Fulfills Law and Policy major's capstone requirement. Prerequisite: Senior standing; recommended: Designed for graduating seniors.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -13514,7 +13514,7 @@
         "Course Number": "325",
         "Credits": "5",
         "Department Name": "TLIT",
-        "Description": "Examines various medical and bioethical issues through the lens of literature. Explores the role of technology, illness and culture, and end-of-live issues. Offered: jointly with T HLTH 325.",
+        "Description": "Examines various medical and bioethical issues through the lens of literature. Explores the role of technology, illness and culture, and end-of-live issues.",
         "Offered with": "THLTH325",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -13982,7 +13982,7 @@
         "Course Number": "210",
         "Credits": "5",
         "Department Name": "TMATH",
-        "Description": "Investigates intermediate concepts of statistical inference and testing using statistical software for analysis. Includes sampling and experimental design, t-tests, discrete distributions, proportions, ANOVA, regression, transformations, and chi-squared tests. Analyzes datasets from a variety of disciplines such as environmental and social science. Includes critical review of contemporary studies. Prerequisite: minimum grade of 2.0 in TMATH 110 Offered: WSp.",
+        "Description": "Investigates intermediate concepts of statistical inference and testing using statistical software for analysis. Includes sampling and experimental design, t-tests, discrete distributions, proportions, ANOVA, regression, transformations, and chi-squared tests. Analyzes datasets from a variety of disciplines such as environmental and social science. Includes critical review of contemporary studies. Prerequisite: minimum grade of 2.0 in TMATH 110",
         "Offered with": "",
         "Prerequisites": "TMATH110",
         "Quarters Offered": "W,Sp"
@@ -14034,7 +14034,7 @@
         "Course Number": "316",
         "Credits": "5",
         "Department Name": "TMATH",
-        "Description": "Introduces students to fundamental concepts in financial mathematics: compound and simple interest, nominal and effective rates, present and future value, discount rates, force of interest. Covers annuities with both constant and variable cash flows, loans, amortization, loan refinancing, and bonds. Studies may also include term structure of interest rates, spot rates, arbitrage, duration, convexity, and immunization. Prerequisite: minimum grade of 2.0 in TMATH 126 Offered: W.",
+        "Description": "Introduces students to fundamental concepts in financial mathematics: compound and simple interest, nominal and effective rates, present and future value, discount rates, force of interest. Covers annuities with both constant and variable cash flows, loans, amortization, loan refinancing, and bonds. Studies may also include term structure of interest rates, spot rates, arbitrage, duration, convexity, and immunization. Prerequisite: minimum grade of 2.0 in TMATH 126",
         "Offered with": "",
         "Prerequisites": "TMATH126",
         "Quarters Offered": "W"
@@ -14398,7 +14398,7 @@
         "Course Number": "465",
         "Credits": "2",
         "Department Name": "TMGMT",
-        "Description": "Introduces nonprofit board membership and governance. Students serve as apprentices with nonprofit organizations and act as nonvoting board members. Provides experiences in gathering and assessing information and materials related to nonprofit governance practices. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131. Offered: W.",
+        "Description": "Introduces nonprofit board membership and governance. Students serve as apprentices with nonprofit organizations and act as nonvoting board members. Provides experiences in gathering and assessing information and materials related to nonprofit governance practices. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131.",
         "Offered with": "",
         "Prerequisites": "E101,TWRT112,ENGL131",
         "Quarters Offered": "W"
@@ -14411,7 +14411,7 @@
         "Course Number": "466",
         "Credits": "5",
         "Department Name": "TMGMT",
-        "Description": "Examines theories of nonprofit governance related to planning, organization design, leadership, financial management, and culture that are applicable to both nonprofits and businesses. Students apply this knowledge to their continuing apprenticeship experience. Builds skills in teamwork, communication, meeting management, assessment, analysis, and providing feedback. Prerequisite: T MGMT 465. Offered: Sp.",
+        "Description": "Examines theories of nonprofit governance related to planning, organization design, leadership, financial management, and culture that are applicable to both nonprofits and businesses. Students apply this knowledge to their continuing apprenticeship experience. Builds skills in teamwork, communication, meeting management, assessment, analysis, and providing feedback. Prerequisite: T MGMT 465.",
         "Offered with": "",
         "Prerequisites": "TMGMT465",
         "Quarters Offered": "Sp"
@@ -15009,7 +15009,7 @@
         "Course Number": "403",
         "Credits": "3",
         "Department Name": "TNURS",
-        "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course. Offered: jointly with THLEAD 403.",
+        "Description": "Describes the systematic steps of the research process. Introduces approaches, frameworks, and concepts used in investigating healthcare and nursing problems. Emphasizes integration of research findings related to evidence-based healthcare and nursing practice. Prerequisite: either THLEAD 350 or T NURS 350; either T HLTH 305, TMATH 110, or one 100-300 level STAT course.",
         "Offered with": "THLEAD403",
         "Prerequisites": "THLEAD350,TNURS350;THLTH305,TMATH110",
         "Quarters Offered": ""
@@ -15022,7 +15022,7 @@
         "Course Number": "407",
         "Credits": "3",
         "Department Name": "TNURS",
-        "Description": "Examines how difference, discrimination, marginalization, power, and privilege relate to health , illness, and healthcare. Attends to historical and structural manifestations of oppression and inequity. Addresses health inequities. Offered: jointly with THLEAD 407.",
+        "Description": "Examines how difference, discrimination, marginalization, power, and privilege relate to health , illness, and healthcare. Attends to historical and structural manifestations of oppression and inequity. Addresses health inequities.",
         "Offered with": "THLEAD407",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15035,7 +15035,7 @@
         "Course Number": "410",
         "Credits": "3",
         "Department Name": "TNURS",
-        "Description": "Identifies ethical issues relevant to healthcare and the profession of nursing. Identifies, describes, and analyzes multiple ethical perspectives, selected ethical dilemmas relevant to professional practice, the delivery of health care, and the health of individuals and populations. Offered: jointly with THLEAD 410.",
+        "Description": "Identifies ethical issues relevant to healthcare and the profession of nursing. Identifies, describes, and analyzes multiple ethical perspectives, selected ethical dilemmas relevant to professional practice, the delivery of health care, and the health of individuals and populations.",
         "Offered with": "THLEAD410",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15074,7 +15074,7 @@
         "Course Number": "430",
         "Credits": "1",
         "Department Name": "TNURS",
-        "Description": "Addresses communication skills, patterns, and practices. Examines nonverbal and verbal modes of communication. Explores communicating in a variety of contexts' pertinent to healthcare; for example, cultural, personal, professional, group, conflict, and leadership. Applies conceptual models in interpersonal processes. Offered: jointly with THLEAD 430.",
+        "Description": "Addresses communication skills, patterns, and practices. Examines nonverbal and verbal modes of communication. Explores communicating in a variety of contexts' pertinent to healthcare; for example, cultural, personal, professional, group, conflict, and leadership. Applies conceptual models in interpersonal processes.",
         "Offered with": "THLEAD430",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15245,7 +15245,7 @@
         "Department Name": "TNURS",
         "Description": "Survey of concepts, approaches, and tools used to identify health issues and measure health status in select communities, populations, or groups. Covers processes used to lead and conduct assessments and plan programs to address health concerns. Considers policies and other macro-level factors influencing assessment and program planning. Prerequisite: TNURS 557 or permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "TNURS557;POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TNURS527": {
@@ -15295,7 +15295,7 @@
         "Course Number": "550",
         "Credits": "3",
         "Department Name": "TNURS",
-        "Description": "Seminar on role and related professional issues in nursing education. Prerequisite: either NSG 545, B NURS 513, or T NURS 513; either NSG 546, B NURS 511, or T NURS 511. Offered: jointly with B NURS 550/NSG 550.",
+        "Description": "Seminar on role and related professional issues in nursing education. Prerequisite: either NSG 545, B NURS 513, or T NURS 513; either NSG 546, B NURS 511, or T NURS 511. ",
         "Offered with": "BNURS550,NSG550",
         "Prerequisites": "NSG545,BNURS513,TNURS513;NSG546,BNURS511,TNURS511",
         "Quarters Offered": ""
@@ -15388,7 +15388,7 @@
         "Department Name": "TNURS",
         "Description": "Examines health program design, implementation, and evaluation. Explores models of implementation and evaluation. Applies leadership principles towards program implementation and sustainability. Prerequisite: T NURS 557; T NURS 523 or permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "TNURS557;TNURS523;POI",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TNURS590": {
@@ -16322,7 +16322,7 @@
         "Course Number": "425",
         "Credits": "5",
         "Department Name": "TPOLS",
-        "Description": "Explores current social policy issues in the United States, Canada, and Nordic countries from a comparative perspective. Examines history and political structures that influences implementation of social policies. Offered: jointly with TSOCWF 425.",
+        "Description": "Explores current social policy issues in the United States, Canada, and Nordic countries from a comparative perspective. Examines history and political structures that influences implementation of social policies.",
         "Offered with": "TSOCWF425",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -17284,7 +17284,7 @@
         "Course Number": "498",
         "Credits": "1",
         "Department Name": "TPSYCH",
-        "Description": "Allows student to engage in independent, in-depth study of any area of psychology or related interdisciplinary area under faculty supervision. Students develop a reading syllabus, discuss the reading with their advisor, and write and revise an APA-style paper analyzing the readings. Offered: AWSpS.",
+        "Description": "Allows student to engage in independent, in-depth study of any area of psychology or related interdisciplinary area under faculty supervision. Students develop a reading syllabus, discuss the reading with their advisor, and write and revise an APA-style paper analyzing the readings.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -17817,7 +17817,7 @@
         "Course Number": "511",
         "Credits": "3",
         "Department Name": "TSOCW",
-        "Description": "Foundation knowledge and skills for direct practice with individuals, families, and groups. Covers assessment, development of treatment plans based on theory and assessment information, goal-setting skills, and selection of appropriate interventions. Prerequisite: min 2.7 in T SOCW 510. Offered: A.",
+        "Description": "Foundation knowledge and skills for direct practice with individuals, families, and groups. Covers assessment, development of treatment plans based on theory and assessment information, goal-setting skills, and selection of appropriate interventions. Prerequisite: min 2.7 in T SOCW 510. ",
         "Offered with": "",
         "Prerequisites": "TSOCW510",
         "Quarters Offered": "A"
@@ -18194,7 +18194,7 @@
         "Course Number": "202",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Explores the philosophical, spiritual, cultural, and value concepts that undergird helping and altruistic behaviors by individuals and groups in a global society. Service learning is included in explorations of what helping and service mean in daily life and the professional work world. Offered: Sp.",
+        "Description": "Explores the philosophical, spiritual, cultural, and value concepts that undergird helping and altruistic behaviors by individuals and groups in a global society. Service learning is included in explorations of what helping and service mean in daily life and the professional work world.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -18220,7 +18220,7 @@
         "Course Number": "300",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Stresses the origin of social welfare policies, beginning with the Elizabethan Poor Law of 1601. Issues of poverty, as well as development of publicly funded income-maintenance programs, and an understanding of the historical roots of the social work profession are central. Offered: A.",
+        "Description": "Stresses the origin of social welfare policies, beginning with the Elizabethan Poor Law of 1601. Issues of poverty, as well as development of publicly funded income-maintenance programs, and an understanding of the historical roots of the social work profession are central.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -18246,7 +18246,7 @@
         "Course Number": "310",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Introduces fundamental social work practice principles and skills. Examines the National Association of Social Work (NASW) ethical code, multicultural responsiveness, and leading social work practice frameworks. Develops practice skills with individuals and families. Applies concrete skill development with focus on engagement, assessment, planning, contracting, intervention, termination, and introductory practice evaluation. Offered: A.",
+        "Description": "Introduces fundamental social work practice principles and skills. Examines the National Association of Social Work (NASW) ethical code, multicultural responsiveness, and leading social work practice frameworks. Develops practice skills with individuals and families. Applies concrete skill development with focus on engagement, assessment, planning, contracting, intervention, termination, and introductory practice evaluation.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -18259,7 +18259,7 @@
         "Course Number": "311",
         "Credits": "3",
         "Department Name": "TSOCWF",
-        "Description": "Focuses on developing students' knowledge of different approaches to social group work practice. Examines the ways in which specialized knowledge of clients' life conditions, life circumstances, and significant life-events inform social work practice with groups within a generalist framework. Prerequisite: TSOCWF 310. Offered: W.",
+        "Description": "Focuses on developing students' knowledge of different approaches to social group work practice. Examines the ways in which specialized knowledge of clients' life conditions, life circumstances, and significant life-events inform social work practice with groups within a generalist framework. Prerequisite: TSOCWF 310. ",
         "Offered with": "",
         "Prerequisites": "TSOCWF310",
         "Quarters Offered": "W"
@@ -18285,7 +18285,7 @@
         "Course Number": "320",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Current Policy and program developments in the social welfare field. Topics include income maintenance proposals, the emergence of programs to treat specific social dysfunctioning (mental health services) and the growth of a service-oriented society. Required for social welfare majors. Open to non-majors. Offered: W.",
+        "Description": "Current Policy and program developments in the social welfare field. Topics include income maintenance proposals, the emergence of programs to treat specific social dysfunctioning (mental health services) and the growth of a service-oriented society. Required for social welfare majors. Open to non-majors.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -18324,7 +18324,7 @@
         "Course Number": "353",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Provides an overview of persistent and disabling mental illness among adults. Combines classroom and experimental learning. Students learn directly from service providers and consumers the challenges of living with serious mental illness and within health and social welfare system constraints. Offered: AWSpS.",
+        "Description": "Provides an overview of persistent and disabling mental illness among adults. Combines classroom and experimental learning. Students learn directly from service providers and consumers the challenges of living with serious mental illness and within health and social welfare system constraints.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -18337,7 +18337,7 @@
         "Course Number": "354",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Focuses on legal and sociopolitical topics related to sexual orientation and gender identity using social justice and empowerment perspectives. Emphasizes the framing of these topics at the local, national, and global level, and the intersectionality of sexual and gender identity with other aspects of human diversity. Offered: Sp.",
+        "Description": "Focuses on legal and sociopolitical topics related to sexual orientation and gender identity using social justice and empowerment perspectives. Emphasizes the framing of these topics at the local, national, and global level, and the intersectionality of sexual and gender identity with other aspects of human diversity.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -18376,7 +18376,7 @@
         "Course Number": "361",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Examines the intersection of mental health, substance use, and the criminal justice system. Focuses on the interaction of mental health and criminal justice practice. Explores the prevalence of mental health and substance use and best practices for treatment. Offered: jointly with T CRIM 361.",
+        "Description": "Examines the intersection of mental health, substance use, and the criminal justice system. Focuses on the interaction of mental health and criminal justice practice. Explores the prevalence of mental health and substance use and best practices for treatment.",
         "Offered with": "TCRIM361",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18389,7 +18389,7 @@
         "Course Number": "363",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Examines the criminalization of immigration in the United States and globally and the ways in which social institutions have implemented immigration policies. Analyzes the unintended consequences of criminalizing policies and practices.  Explores psychosocial effects on the lives of diverse immigrants, their families, and ethnic minority communities. Offered: jointly with T CRIM 363.",
+        "Description": "Examines the criminalization of immigration in the United States and globally and the ways in which social institutions have implemented immigration policies. Analyzes the unintended consequences of criminalizing policies and practices.  Explores psychosocial effects on the lives of diverse immigrants, their families, and ethnic minority communities.",
         "Offered with": "TCRIM363",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18402,7 +18402,7 @@
         "Course Number": "374",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Examines domestic and international human trafficking, recruitment, and control methodologies. Considers labor and sexual exploitation and examines existing laws and services to combat trafficking. Analyzes the role of demand in perpetuating trafficking and the victims' trauma. Applies best practice solutions. Offered: jointly with T CRIM 374.",
+        "Description": "Examines domestic and international human trafficking, recruitment, and control methodologies. Considers labor and sexual exploitation and examines existing laws and services to combat trafficking. Analyzes the role of demand in perpetuating trafficking and the victims' trauma. Applies best practice solutions.",
         "Offered with": "TCRIM374",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18428,7 +18428,7 @@
         "Course Number": "402",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Focuses on person-in-the environment for individuals and family development across the lifespan. Utilizes developmental and social systems perspectives in seeking to understand and influence human behavior across diverse backgrounds. Addresses dynamics and processes of families, small groups, organizations, and community systems. Required for Social Welfare majors. Offered: A.",
+        "Description": "Focuses on person-in-the environment for individuals and family development across the lifespan. Utilizes developmental and social systems perspectives in seeking to understand and influence human behavior across diverse backgrounds. Addresses dynamics and processes of families, small groups, organizations, and community systems. Required for Social Welfare majors.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A"
@@ -18441,7 +18441,7 @@
         "Course Number": "404",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "History and culture of disadvantaged and oppressed groups served by social welfare generalist practitioners. Offered: Sp.",
+        "Description": "History and culture of disadvantaged and oppressed groups served by social welfare generalist practitioners.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -18454,7 +18454,7 @@
         "Course Number": "405",
         "Credits": "3",
         "Department Name": "TSOCWF",
-        "Description": "Sp .",
+        "Description": "Analyzes field experiences through the lens of social welfare coursework. Examines the impact of systems on client or agency capacity. Engages in skills practice, self-reflection, and group consultation to further development as generalist social workers. Prerequisite: TSOCWF 311. ",
         "Offered with": "",
         "Prerequisites": "TSOCWF311",
         "Quarters Offered": "A,W,Sp"
@@ -18480,7 +18480,7 @@
         "Course Number": "409",
         "Credits": "1",
         "Department Name": "TSOCWF",
-        "Description": "Sp S.",
+        "Description": "Students work individually with a faculty member on a program of study in some designated, substantive area of relevance to social work. May include areas not addressed in the regular curriculum, or more in-depth work in areas of interest. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp,S"
@@ -18506,7 +18506,7 @@
         "Course Number": "415",
         "Credits": "3",
         "Department Name": "TSOCWF",
-        "Description": "Sp .",
+        "Description": "Engages students in generalist social work practice activities at approved social service agencies under the supervision of designated agency personnel. Emphasizes developing breadth of knowledge, perspectives and skills needed for practice with individuals (micro level), families and/or groups (mezzo level), and organizations and/or communities (macro level). Prerequisite: TSOCWF 414. Credit/no-credit only. ",
         "Offered with": "",
         "Prerequisites": "TSOCWF414",
         "Quarters Offered": "A,W,Sp"
@@ -18558,7 +18558,7 @@
         "Course Number": "425",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Explores current social policy issues in the United States, Canada, and Nordic countries from a comparative perspective. Examines history and political structures that influences implementation of social policies. Offered: jointly with TPOL S 425.",
+        "Description": "Explores current social policy issues in the United States, Canada, and Nordic countries from a comparative perspective. Examines history and political structures that influences implementation of social policies.",
         "Offered with": "TPOLS425",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18571,7 +18571,7 @@
         "Course Number": "427",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Examines disproportionate representation of people of color in the child welfare, criminal justice, economic, education, health, juvenile justice, and mental health systems. Focuses on how each of these systems interacts with the criminal justice system where disproportionality is a particularly serious problem. Offered: jointly with T CRIM 427.",
+        "Description": "Examines disproportionate representation of people of color in the child welfare, criminal justice, economic, education, health, juvenile justice, and mental health systems. Focuses on how each of these systems interacts with the criminal justice system where disproportionality is a particularly serious problem.",
         "Offered with": "TCRIM427",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18584,7 +18584,7 @@
         "Course Number": "428",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Develops understanding of sex crimes and the people who commit them. Addresses the theoretical explanations of, and policies regarding treatment for offenders. Analyzes laws related to sex offenders, their constitutional legitimacy, and the difficulty in balancing offender and community rights. Offered: jointly with T CRIM 428.",
+        "Description": "Develops understanding of sex crimes and the people who commit them. Addresses the theoretical explanations of, and policies regarding treatment for offenders. Analyzes laws related to sex offenders, their constitutional legitimacy, and the difficulty in balancing offender and community rights.",
         "Offered with": "TCRIM428",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18597,7 +18597,7 @@
         "Course Number": "430",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Examines the impact of parental incarceration on the psychological, social, physical, and biological development of children. Focuses on issues of loss, trauma, attachment, and ways to address such issues. Offered: jointly with T CRIM 430.",
+        "Description": "Examines the impact of parental incarceration on the psychological, social, physical, and biological development of children. Focuses on issues of loss, trauma, attachment, and ways to address such issues.",
         "Offered with": "TCRIM430",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -18610,7 +18610,7 @@
         "Course Number": "433",
         "Credits": "5",
         "Department Name": "TSOCWF",
-        "Description": "Provides an overview of victimology and teaches practice skills for working with victims of crime and their families. Examines the efficacy and application of interventions that try to alleviate the impact of crime on victims, facilitate victims' mental health recovery, and assist in system navigation. Offered: jointly with T CRIM 433.",
+        "Description": "Provides an overview of victimology and teaches practice skills for working with victims of crime and their families. Examines the efficacy and application of interventions that try to alleviate the impact of crime on victims, facilitate victims' mental health recovery, and assist in system navigation.",
         "Offered with": "TCRIM433",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -19182,7 +19182,7 @@
         "Course Number": "340",
         "Credits": "5",
         "Department Name": "TUDE",
-        "Description": "Introduces students to the importance of public spaces, their typology and design criteria. Learn how to incorporate various theories into their design practice and understand the nature of spatial (re)appropriation and resistance. Discuss community engagement and inclusive design process and practice. Prerequisite: T UDE 260\n Offered: A.",
+        "Description": "Introduces students to the importance of public spaces, their typology and design criteria. Learn how to incorporate various theories into their design practice and understand the nature of spatial (re)appropriation and resistance. Discuss community engagement and inclusive design process and practice. Prerequisite: T UDE 260",
         "Offered with": "",
         "Prerequisites": "TUDE260",
         "Quarters Offered": "A"
@@ -19195,7 +19195,7 @@
         "Course Number": "350",
         "Credits": "5",
         "Department Name": "TUDE",
-        "Description": "Focuses on age-specific urban design considerations, particularly for transportation (all modes) and design of public spaces. Prerequisite: T UDE 340\n Offered: W.",
+        "Description": "Focuses on age-specific urban design considerations, particularly for transportation (all modes) and design of public spaces. Prerequisite: T UDE 340",
         "Offered with": "",
         "Prerequisites": "TUDE340",
         "Quarters Offered": "W"
@@ -19208,7 +19208,7 @@
         "Course Number": "360",
         "Credits": "5",
         "Department Name": "TUDE",
-        "Description": "Focuses on tactical urbanism, helping students acquire skills necessary for short-term/experimental urban interventions projects. Prerequisite: T UDE 350\n Offered: Sp.",
+        "Description": "Focuses on tactical urbanism, helping students acquire skills necessary for short-term/experimental urban interventions projects. Prerequisite: T UDE 350",
         "Offered with": "",
         "Prerequisites": "TUDE350",
         "Quarters Offered": "Sp"
@@ -19221,7 +19221,7 @@
         "Course Number": "440",
         "Credits": "5",
         "Department Name": "TUDE",
-        "Description": "Focuses on neighborhood-level design interventions, allowing students to practice the skills they have acquired in all previous studios. Prerequisite: T UDE 360\n Offered: A.",
+        "Description": "Focuses on neighborhood-level design interventions, allowing students to practice the skills they have acquired in all previous studios. Prerequisite: T UDE 360",
         "Offered with": "",
         "Prerequisites": "TUDE360",
         "Quarters Offered": "A"
@@ -19247,7 +19247,7 @@
         "Course Number": "110",
         "Credits": "2",
         "Department Name": "TUNIV",
-        "Description": "Sp .",
+        "Description": "Focuses on issues of educational inequity and college access. Prepares students to work with youth by critically examining the educational and psychological literature on first-generation college students. ",
         "Offered with": "TCORE110",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -19260,7 +19260,7 @@
         "Course Number": "200",
         "Credits": "2",
         "Department Name": "TUNIV",
-        "Description": "Sp .",
+        "Description": "This course explores technologies of political and social change. The course examines crowd-sourced actions of micro-lending and internet petitions, as well as collectives that operate via the dark web. The student will learn to create online identities as well as articulate the power of social tools for professional good. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W,Sp"
@@ -19637,7 +19637,7 @@
         "Course Number": "410",
         "Credits": "5",
         "Department Name": "TURB",
-        "Description": "Explores relationships between environmental issues and people of color and low-income communities from both local and global perspectives. Emphasizes issues of race/ethnicity, socioeconomic status, and policy and politics in environmental equity. Offered: jointly with T HLTH 410.",
+        "Description": "Explores relationships between environmental issues and people of color and low-income communities from both local and global perspectives. Emphasizes issues of race/ethnicity, socioeconomic status, and policy and politics in environmental equity.",
         "Offered with": "THLTH410",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -19741,7 +19741,7 @@
         "Course Number": "485",
         "Credits": "5",
         "Department Name": "TURB",
-        "Description": "Hands -on look at NGOs and schools in an under-resourced and struggling township located in South Africa. Critical exposure to, and examination of, the role and challenges of organizations attempting to lead community development and education efforts within a globalized, new democracy which itself struggles with post-apartheid racism and inequities. Credit/no-credit only. Offered: jointly with T EDUC 485.",
+        "Description": "Hands -on look at NGOs and schools in an under-resourced and struggling township located in South Africa. Critical exposure to, and examination of, the role and challenges of organizations attempting to lead community development and education efforts within a globalized, new democracy which itself struggles with post-apartheid racism and inequities. Credit/no-credit only.",
         "Offered with": "TEDUC485",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -20014,7 +20014,7 @@
         "Course Number": "120",
         "Credits": "5",
         "Department Name": "TWRT",
-        "Description": "Introduces principles of argument, critical thinking, reflection, analytical reading, writing, and research practices needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing as part of first of a two-course sequence. Credit/no-credit only. Offered: AW.",
+        "Description": "Introduces principles of argument, critical thinking, reflection, analytical reading, writing, and research practices needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing as part of first of a two-course sequence. Credit/no-credit only. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "A,W"
@@ -20027,7 +20027,7 @@
         "Course Number": "121",
         "Credits": "5",
         "Department Name": "TWRT",
-        "Description": "Reinforces and engages more deeply with principles of argument, critical thinking, reflection, analytical reading, writing, and research practices needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing as second part of a two-course sequence. Prerequisite: TWRT 120. Offered: WSp.",
+        "Description": "Reinforces and engages more deeply with principles of argument, critical thinking, reflection, analytical reading, writing, and research practices needed for academic writing. Covers skills for managing the writing process and how to transfer learning to other disciplinary contexts for writing as second part of a two-course sequence. Prerequisite: TWRT 120.",
         "Offered with": "",
         "Prerequisites": "TWRT120",
         "Quarters Offered": "W,Sp"

@@ -56,10 +56,7 @@ def complete_description(description):
                 if y in x: remove.append(y)
         for x in b: a.append(x)
         for x in remove: a.remove(x)
-        result = []
-        for x in a:
-            result.append(x)
-        return result
+        return [x for x in a]
             
     if len(find_one) is not 0:
         find_all = remove_in(find_all, find_one)
@@ -160,8 +157,8 @@ def get_requisites(description, type):
                 if not match: remove.append(x)
                 else: course_list[i] = match.group(0)
             for x in remove: 
-                try: course_list.remove(x)
-                except ValueError: pass
+                if x in course_list:
+                    course_list.remove(x)
             result += ','.join(course_list)
             result += ','
         result += ';'
@@ -174,18 +171,18 @@ def get_requisites(description, type):
                     [r';\d+;', ';']]
     for check in result_regex:
         result = re.sub(check[0], check[1], result)
-    if result[0] in '1234567890':
+    if result[0].isdigit():
         result = result[1:]
     result_replace_2 = [['.C', ''], ['/-', ''], ['.', ','], [',;', ';'], [';,', ';']]
     for check in result_replace_2:
         result = result.replace(check[0], check[1])
     result = filter_result(result)
     result = filter_result(result)
-    result = filter_result(result)
     for check in result_replace:
         result = result.replace(check[0], check[1])
+    result = filter_result(result)
     result = ','.join(list(dict.fromkeys(result.split(','))))
-    return result if len(result) > 4 else ''
+    return result if len(result) > 4 and 'POI' not in result else ''
 
 
 # Returns the Quarters that the course is offered if there are any
@@ -194,7 +191,7 @@ def get_requisites(description, type):
 def get_offered(description):
     if 'Offered:' not in description:                                                       
         return ''                                                                           
-    check_parts = description.split('Offered: ')[1]                                         
+    check_parts = description.split('Offered:')[1]                                         
     parts = check_parts.split(';')[1] if ';' in check_parts else check_parts
     parts = re.sub(r'([A-Z& ]+\s?\d+)', '', parts)
     result = []
@@ -243,6 +240,7 @@ def get_name(description, number):
 # 'description': The course description
 # 'credit_type': The credit types for the course
 def extract_description(description, credit_type):
+    description = description.split('Offered: ')[0]
     description = description.split(')', 1)[1]
     if '' not in credit_type:
         description = description.split(credit_type)[1]

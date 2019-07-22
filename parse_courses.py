@@ -112,7 +112,7 @@ def get_requisites(description, type):
         return ''       
     description = description.replace(' AND ', ' and ').replace(' OR ', ' or ').replace('Minimum', 'minimum')  
     description = description.replace('A minimum', 'a minimum').replace('; or', '/')
-    description = re.sub(r'Cannot be taken for credit if credit received for ([A-Z& ]+\d+)', '', description)
+    description = re.sub(r'[Cc]annot be taken for credit if credit received for ([A-Z& ]+\d+)', '', description)
     description = re.sub(r'of \d?\.\d', '', description)                                                                 
     parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]
     multiple = re.search(r'[A-Z& ]+\d+/[A-Z& ]+\d+/[A-Z& ]+\d+ and', parts)

@@ -166,8 +166,3 @@ def start():
 
 
 start()
-
-with open('Prereqs.txt', mode='w') as prereq:
-    for key, course in read_file('Total').items():
-        if course['Prerequisites'] is not '':
-            prereq.write('{}{}: {}{}'.format(course['Department Name'], course['Course Number'], course['Prerequisites'], '\n'))

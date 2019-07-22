@@ -72,9 +72,9 @@ def read_file(campus):
 # 'indent': The indentation level for each prerequisite course
 def show_prerequisites(course_dict, courses_taken, course, indent):
 
-    def find_and(req):
+    def search_for(req, char):
         for course in req:
-            if '&&' in course:
+            if char in course:
                 return course
         return ''
 
@@ -88,13 +88,14 @@ def show_prerequisites(course_dict, courses_taken, course, indent):
                     if reqcourse is not '':
                         branch = '{}{}'.format(indent, reqcourse)
                         if len(branch.strip()) is not 1 and len(branch.strip().replace('|', '')) is not 0:
-                            if 'CHEM110' not in branch and 'MATH120' not in branch:
-                                if len(list_reqs) <= 1 and not '&&' in req:
-                                    print(branch) 
-                                elif reqcourse in find_and(req.split(',')).split('&&'):
-                                    print('{}&'.format(branch))
-                                else:
-                                    print('{}*'.format(branch))
+                            if len(list_reqs) <= 1 and '&&' not in req and '/' not in req:
+                                print(branch) 
+                            elif reqcourse in search_for(req.split(','), '&&').split('&&'):
+                                print('{}&'.format(branch))
+                            elif reqcourse in search_for(req.split(','), '/').split('/'):
+                                print('{}#'.format(branch))
+                            else:
+                                print('{}*'.format(branch))
                         show_prerequisites(course_dict, courses_taken, reqcourse, indent + '|   ')
                 if len(check) > 1 and len(list_reqs) > 1:
                     print(indent.replace('|   ', '', 1))
@@ -165,3 +166,8 @@ def start():
 
 
 start()
+
+with open('Prereqs.txt', mode='w') as prereq:
+    for key, course in read_file('Total').items():
+        if course['Prerequisites'] is not '':
+            prereq.write('{}{}: {}{}'.format(course['Department Name'], course['Course Number'], course['Prerequisites'], '\n'))

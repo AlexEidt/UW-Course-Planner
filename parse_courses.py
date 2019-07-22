@@ -78,7 +78,8 @@ def complete_description(description):
             number = re.search(r'\d{3}', find_all[i]).group(0)
             for crs in re.findall(r'[A-Z& ]+', find_all[i]):
                 completed.append('{}{}'.format(crs, number))
-            description = description.replace(old, '/'.join(completed), 1)
+            description = description.replace(old, '{}{}'.format(' ', '/'.join(completed)), 1)
+
     find_series_2 = re.findall(r'[A-Z& ]+\d+, ?\d+', description)
     find_series_3 = re.findall(r'[A-Z& ]+\d+, \d+, ?\d+', description)
     find_series_2 = remove_in(find_series_3, find_series_2)
@@ -110,31 +111,39 @@ def get_requisites(description, type):
     if type not in description:                                                             
         return ''       
     description = description.replace(' AND ', ' and ').replace(' OR ', ' or ').replace('Minimum', 'minimum')  
-    description = description.replace('A minimum', 'a minimum')                                                                   
-    parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]                               
+    description = description.replace('A minimum', 'a minimum').replace('; or', '/')
+    description = re.sub(r'Cannot be taken for credit if credit received for ([A-Z& ]+\d+)', '', description)
+    description = re.sub(r'of \d?\.\d', '', description)                                                                 
+    parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]
+    multiple = re.search(r'[A-Z& ]+\d+/[A-Z& ]+\d+/[A-Z& ]+\d+ and', parts)
+    if multiple:
+        parts = parts.replace(multiple.group(0), '{}{}'.format(multiple.group(0)[:-4], ';'), 1)
+    if 'Prerequisite' in type:
+        parts = parts.split('Co-requisite')[0]                         
     POI = ''
-    if 'permission of' in parts.lower(): POI = 'POI'                        
-    required = prereq_regex.split(parts.split('(')[0])
+    if 'permission' in parts.lower(): POI = 'POI' 
+    new_result = []
+    for course in parts.split('(')[0].split(';'):
+        if ', and' in course:
+            new_result.append(course.replace(',', ';'))     
+        else:
+            new_result.append(course)
+    required_course_list = ';'.join(new_result)
+    required = prereq_regex.split(required_course_list)
     result = ''
 
     def remove_unnessecary(course_sub):
         course_sub = re.sub(r'[Ee]ither', '', course_sub)
+        course_sub = re.sub(r'[A-Z][a-z]', '', course_sub)
         course_sub = re.sub(r'[a-z]+', '', course_sub)
-        course_sub = re.sub(r'\d?\.\d', '', course_sub)
         return course_sub
 
     def split_courses(required_list, join_char, split_char, resulting):
         for course_option in required_list:
-            reqcrs = [crs.strip() for crs in re.findall(r'([A-Z& ]+\s?\d+)', course_option)]
+            reqcrs = [crs.strip() for crs in re.findall(r'([A-Z& ]+\d+)', course_option)]
             resulting += join_char.join(list(filter(('').__ne__, reqcrs)))
             resulting += split_char
         return resulting
-
-    def filter_result(result):
-        result = result.replace(' ', '').strip(';').strip(',').strip('\"').strip('.').strip('\\').strip('n').strip('&')
-        result = re.sub(r';+', ';', result)
-        result = re.sub(r',+', ',', result)
-        return result
 
     for course in required:
         if 'either' in course or 'Either' in course:
@@ -164,7 +173,7 @@ def get_requisites(description, type):
             remove = []
             course_list = course.split(',')
             for i, x in enumerate(list(filter(('').__ne__, course_list))):
-                match = re.search(r'[A-Z& ]+\s?\d{3}(&&[A-Z& ]+\s?\d{3})?', x)
+                match = re.search(r'[A-Z& ]+\d+(&&[A-Z& ]+\s?\d{3})?', x)
                 if not match: remove.append(x)
                 else: course_list[i] = match.group(0)
             for x in remove: 
@@ -173,28 +182,38 @@ def get_requisites(description, type):
             result += ','.join(course_list)
             result += ','
         result += ';'
-    result += ',{}'.format(POI)
-    result_replace = [[',;', ';'], [';,', ';'], [';&&', ';'], ['&&;', ';'], [',&&', ','], ['&&,', ',']]
-    for check in result_replace:
-        result = result.replace(check[0], check[1])
-    result_regex = [[r';+', ';'], [r',+', ','], [r';\d,', ';'], [r',\d,', ','], [r';\d&', ';&'], 
-                    [r',\d&', ',&'], [r',\.?[A-Z]?;', ';'], [r',\d+,?', ','], [r',\d+;', ';'],
-                    [r';\d+;', ';']]
-    for check in result_regex:
-        result = re.sub(check[0], check[1], result)
-    if result[0].isdigit():
-        result = result[1:]
-    result_replace_2 = [['.C', ''], ['/-', ''], ['.', ','], [',;', ';'], [';,', ';']]
-    for check in result_replace_2:
-        result = result.replace(check[0], check[1])
-    result = filter_result(result)
-    result = filter_result(result)
-    for check in result_replace:
-        result = result.replace(check[0], check[1])
-    result = filter_result(result)
-    result = ','.join(list(dict.fromkeys(result.split(','))))
-    result = result.replace(':', '')
-    return result if len(result) > 4 and 'POI' not in result else ''
+
+    def extract_course(course_option, split_char):
+        elements = []
+        for next_option in list(filter(('').__ne__, course_option.split(split_char))):
+            match = re.search(r'([A-Z& ]+\d+)', next_option)
+            if match:
+                elements.append(match.group(0))
+        return elements
+
+    semi_colon = []
+    for crs in list(filter(('').__ne__, result.split(';'))):
+        comma = []
+        for option in list(filter(('').__ne__, crs.split(','))):
+            if '/' in option and '&&' not in option:
+                comma.append('/'.join(extract_course(option, '/')))
+            elif '/' not in option and '&&' in option:
+                comma.append('&&'.join(extract_course(option, '&&')))
+            elif '/' in option and '&&' in option:
+                doubleand = []
+                for next_option in list(filter(('').__ne__, option.split('&&'))):
+                    doubleand.append('/'.join(extract_course(next_option, '/')))
+                comma.append('&&'.join(doubleand))
+            else:
+                match = re.search(r'([A-Z& ]+\d+)', option)
+                if match:
+                    comma.append(match.group(0)) 
+        semi_colon.append(','.join(comma))
+    result = ';'.join(list(filter(('').__ne__, semi_colon))).replace(' ', '')
+    result = '{}{}'.format(result, ',{}'.format(POI))
+    result = ','.join(list(dict.fromkeys(result.split(',')))).replace(';&&', ';').strip('&').strip(',')
+    result = ';'.join(list(dict.fromkeys(result.split(';'))))
+    return result.replace(',,', ',')
 
 
 # Returns the Quarters that the course is offered if there are any

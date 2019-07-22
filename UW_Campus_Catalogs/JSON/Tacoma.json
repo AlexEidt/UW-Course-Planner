@@ -1777,7 +1777,7 @@
         "Department Name": "TBECON",
         "Description": "Examines the economic role of modern financial institutions and their relationship to the money and capital markets of developed economies. Includes the financial system, the Federal Reserve System, monetary policy, international financial relationships, and interest rate theory. Prerequisite: Minimum grade of 2.5 in TMATH 124, MATH 112, or MATH 124 or 1.7 in TBUS 301.",
         "Offered with": "",
-        "Prerequisites": "TMATH124,MATH112,MATH124,TBUS301",
+        "Prerequisites": "TMATH124,MATH112,MATH124,1",
         "Quarters Offered": ""
     },
     "TBGEN111": {
@@ -2141,7 +2141,7 @@
         "Department Name": "TBIOL",
         "Description": "Acquaints students with microorganisms and their activities. Topics include microbial cell structure and function, metabolism, microbial genetics, and the role of microorganisms in disease, immunity, and other applied areas. Gateway to upper-division courses in biomedical sciences. Prerequisite: minimum grade of 1.5 in TESC 140 or T BIOL 140; minimum grade of 1.7 in TESC 161 or T CHEM 162. Cannot be taken for credit if credit received in TBIOMD 301.",
         "Offered with": "",
-        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162,C,TBIOMD301",
+        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162,TBIOMD301",
         "Quarters Offered": ""
     },
     "TBIOL302": {
@@ -2219,7 +2219,7 @@
         "Department Name": "TBIOL",
         "Description": "Explores the structure, ecology, and evolution of terrestrial arthropods, focusing primarily on insects important to agriculture, conservation, medicine, and public health, and sustainable approaches to pest control. Prerequisite: minimum grade of 1.5 in T BIOL 120. Cannot be taken for credit if credit received in TESC 440.",
         "Offered with": "",
-        "Prerequisites": "TBIOL120,C,TESC440,\n",
+        "Prerequisites": "TBIOL120,TESC440",
         "Quarters Offered": ""
     },
     "TBIOL312": {
@@ -2271,7 +2271,7 @@
         "Department Name": "TBIOL",
         "Description": "Examines key processes and interactions (e.g. population growth and regulation, competition, predation, symbiosis, and the structure of biological communities) needed to understand basic ecology and its applications. Discussions of ecological theory and data from a variety of habitats are augmented by a required lab section to include field trips, computer simulations, student presentations, and primary literature analysis. Prerequisite: minimum grade of 1.5 in either T BIOL 140 or TESC 140; minimum grade of 1.7 in either T CHEM 162 or TESC 161; minimum grade of 2.0 in either TMATH 110, TMATH 116, or TMATH 120; and TESC 310 or TBIOMD 310 which may be taken concurrently. Cannot be taken for credit if credit received for TESC 340.",
         "Offered with": "",
-        "Prerequisites": "TBIOL140,TESC140;TCHEM162,TESC161;TMATH110,TMATH116,TMATH120;TESC310,TBIOMD310,TESC340",
+        "Prerequisites": "TBIOL140,TESC140;TCHEM162,TESC161;TMATH110,TMATH116,TMATH120;TESC310,TBIOMD310",
         "Quarters Offered": ""
     },
     "TBIOL350": {
@@ -2284,7 +2284,7 @@
         "Department Name": "TBIOL",
         "Description": "Introduces core concepts of epidemiology and the application and interpretation of quantitative methods to investigate health outcomes in human populations through case studies, contemporary examples, and published literature. Prerequisite: TMATH 110. Cannot be taken for credit if credit received for TBIOMD 350.",
         "Offered with": "",
-        "Prerequisites": "TMATH110,TBIOMD350,\n",
+        "Prerequisites": "TMATH110",
         "Quarters Offered": ""
     },
     "TBIOL362": {
@@ -2336,7 +2336,7 @@
         "Department Name": "TBIOL",
         "Description": "Introduces forest ecology, examining forest communities, soils, disturbance and succession, forest pests, and sustainability, emphasizing field sampling and data analysis. Local option (7 credits) includes three required 2-3 day field trips. Off-site option (12 credits) requires one two-week intensive field study plus on-campus meetings. Prerequisite: TESC 310; either TESC 340 or T BIOL 340; TMATH 110. Cannot be taken for credit if credit received for TESC 432.",
         "Offered with": "",
-        "Prerequisites": "TESC310;TESC340,TBIOL340;TMATH110,TESC432",
+        "Prerequisites": "TESC310;TESC340,TBIOL340;TMATH110",
         "Quarters Offered": ""
     },
     "TBIOL434": {
@@ -2349,7 +2349,7 @@
         "Department Name": "TBIOL",
         "Description": "Explores current research on threats to biodiversity, and effective approaches to its preservation. Analyze primary literature and conduct independent lab and field exercises. Prerequisite: TBIOL 340. Cannot be taken for credit if credit received for TESC 332.",
         "Offered with": "",
-        "Prerequisites": "TBIOL340,TESC332,\n",
+        "Prerequisites": "TBIOL340",
         "Quarters Offered": ""
     },
     "TBIOL436": {
@@ -2362,7 +2362,7 @@
         "Department Name": "TBIOL",
         "Description": "Provides students with the fundamental principles of systems biology including network circuitry of genes and proteins that can be used to predict emergent biological phenomena at the larger scale of cells and organisms for multiple applications. Prerequisite: either TESC 121 or T PHYS 121; either TESC 140 or T BIOL 140; either TESC 161 or T CHEM 162; either TESC 380 or T BIOL 304, either of which may be taken concurrently; either TESC 405 or T CHEM 405, either of which may be taken concurrently. Cannot be taken for credit if credit received for TESC 436.",
         "Offered with": "",
-        "Prerequisites": "TESC121,TPHYS121;TESC140,TBIOL140;TESC161,TCHEM162;TESC380,TBIOL304;TESC405,TCHEM405,TESC436",
+        "Prerequisites": "TESC121,TPHYS121;TESC140,TBIOL140;TESC161,TCHEM162;TESC380,TBIOL304;TESC405,TCHEM405",
         "Quarters Offered": ""
     },
     "TBIOL438": {
@@ -2375,7 +2375,7 @@
         "Department Name": "TBIOL",
         "Description": "Examines the structure, function, life histories, ecology, and evolution of major groups of marine invertebrate animals. Lectures, discussions, images, and library research augmented by laboratory work with live organisms whenever possible. Integrates details of biodiversity with issues and concepts from ecology and environmental science. Prerequisite: minimum grade of 1.5 in either TESC 120 or T BIOL 120. Cannot be taken for credit if credit received for TESC 438.",
         "Offered with": "",
-        "Prerequisites": "TESC120,TBIOL120,TESC438",
+        "Prerequisites": "TESC120,TBIOL120",
         "Quarters Offered": ""
     },
     "TBIOL442": {
@@ -2388,7 +2388,7 @@
         "Department Name": "TBIOL",
         "Description": "Explores the natural history and interactions among marine organisms, emphasizing Pacific Northwest intertidal invertebrates. Includes all-day and weekend-long field trips to sites around Puget Sound. Includes topics such as biology of coral reefs, kelp forests, estuaries, marine fisheries, and marine conservation. Prerequisite: TESC 340. Cannot be taken for credit if credit received for TESC 442.",
         "Offered with": "",
-        "Prerequisites": "TESC340,TESC442",
+        "Prerequisites": "TESC340",
         "Quarters Offered": ""
     },
     "TBIOL452": {
@@ -2401,7 +2401,7 @@
         "Department Name": "TBIOL",
         "Description": "Emphasizes hands-on exploration of the natural history and ecology of plants and insects and interactions amongst them. Includes a series of all-day field trips focusing on biological issues relevant to resource management and agricultural production in different sites around Puget Sound. Prerequisite: minimum grade of 1.5 in either TESC 140 or T BIOL 140. Cannot be taken for credit if credit received for TESC 452.",
         "Offered with": "",
-        "Prerequisites": "TESC140,TBIOL140,TESC452",
+        "Prerequisites": "TESC140,TBIOL140",
         "Quarters Offered": ""
     },
     "TBIOL462": {
@@ -2453,7 +2453,7 @@
         "Department Name": "TBIOL",
         "Description": "Explore microbial diversity and the applied effects of microorganisms on the environment and human welfare. Topics include metabolic diversity, ecological interactions, biogeochemistry, microbial habitats, and waste treatment and bioremediation. Prerequisite: either TESC 340 or T BIOL 340. Cannot be taken for credit if credit received for TESC 378.",
         "Offered with": "",
-        "Prerequisites": "TESC340,TBIOL340,TESC378",
+        "Prerequisites": "TESC340,TBIOL340",
         "Quarters Offered": ""
     },
     "TBIOMD199": {
@@ -2466,7 +2466,7 @@
         "Department Name": "TBIOMD",
         "Description": "Introduces students to requirements of professional medical, dental, veterinary, and pharmacy school. Explores key issues in healthcare, and exposes students to potential career pathways in preparation for completing the pre-medical/dental/veterinary/pharmacy (pre-MVDP) program. Prerequisite: Cannot be taken for credit if credit received for TESC 199. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "TESC199",
+        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "TBIOMD201": {
@@ -2687,7 +2687,7 @@
         "Department Name": "TBUS",
         "Description": "Examines policy making and the role of strategy in the general management of a business organization. Students will learn strategy formulation, implementation, and application in complex situations. Prerequisite: Minimum grade of 1.7 in T BUS 300; T BUS 301; T BUS 310; T BUS 320; and T BUS 350. T BUS 330, or T ACCT 330 may be taken concurrently with T BUS 400.",
         "Offered with": "",
-        "Prerequisites": "TBUS300;TBUS301;TBUS310;TBUS320;TBUS350,TACCT330,TACCT330TBUS400",
+        "Prerequisites": "TBUS300;TBUS301;TBUS310;TBUS320;TBUS350,TACCT330",
         "Quarters Offered": ""
     },
     "TBUS468": {
@@ -2700,7 +2700,7 @@
         "Department Name": "TBUS",
         "Description": "Provides opportunity to gain experience in a business organization to apply and experience concepts taught in the traditional classroom. Develops links between the community and the classroom. Prerequisite: Any three of T BUS 300, T BUS 301, T BUS 310, T BUS 320, T BUS 330, T BUS 350, or T ACCT 330. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "ATBUS300,TBUS301,TBUS310,TBUS320,TBUS330,TBUS350,TACCT330",
+        "Prerequisites": "TBUS300,TBUS301,TBUS310,TBUS320,TBUS330,TBUS350,TACCT330",
         "Quarters Offered": ""
     },
     "TBUS469": {
@@ -2869,7 +2869,7 @@
         "Department Name": "TBUS",
         "Description": "Provides an opportunity to work independently exploring specific business topics in greater depth. The students must develop a research proposal and make arrangements with a faculty member to supervise the project prior to course registration. Prerequisite: Tacoma MBA student and permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TBUS570": {
@@ -3356,7 +3356,7 @@
     "TCHEM164": {
         "Areas of Knowledge": "",
         "Campus": "Tacoma",
-        "Co-Requisites": "TCHEM142,TCHEM152,TCHEM162,TESC156",
+        "Co-Requisites": "TCHEM142,TCHEM152,TCHEM162",
         "Course Name": "Chemistry Collaborative Learning Seminar",
         "Course Number": "164",
         "Credits": "1",
@@ -3428,7 +3428,7 @@
         "Department Name": "TCHEM",
         "Description": "Explores basic aquatic environmental chemistry, emphasizing practical applications and real-world problem solving. Includes coverage of acid/base reactions, gas exchange, alkalinity, and reduction/oxidation reactions through lectures, field and laboratory-based exercises, and student research presentations. Prerequisite: minimum grade of 1.5 in TESC 140 or TBIOL 140; minimum grade of 1.7 in TESC 161 or TCHEM 162; minimum grade of 2.0 in TMATH 110; minimum grade of 2.0 in either TMATH 116 or TMATH 120; TESC 310 or TBIOMD 310, which may be taken concurrently. Cannot be taken for credit if credit received for TESC 333.",
         "Offered with": "",
-        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162;TMATH110;TMATH116,TMATH120;TESC310,TBIOMD310,TESC333",
+        "Prerequisites": "TESC140,TBIOL140;TESC161,TCHEM162;TMATH110;TMATH116,TMATH120;TESC310,TBIOMD310",
         "Quarters Offered": ""
     },
     "TCHEM405": {
@@ -3467,7 +3467,7 @@
         "Department Name": "TCHEM",
         "Description": "Focuses on the measurement of pollutant concentrations in various environmental matrices, including soil, water, air, and biological tissues, emphasizing field sampling design and implementation, analytical theory, instrumentation, and methodology. Allows students to gain hands-on experience collecting environmental samples in the field and using modern analytical instrumentation. Prerequisite: TESC 161 or TCHEM 162; T MATH 110. Cannot be taken for credit if credit received for TESC 439.",
         "Offered with": "",
-        "Prerequisites": "TESC161,TCHEM162;TMATH110,TESC439",
+        "Prerequisites": "TESC161,TCHEM162;TMATH110",
         "Quarters Offered": ""
     },
     "TCHIN101": {
@@ -4845,7 +4845,7 @@
         "Department Name": "TCRIM",
         "Description": "Examines the interaction between ethics and criminal justice practice, including application of ethical theory to criminal justice issues. Topics include ethical response to police brutality and corruption in criminal justice systems, development of professional identity, and promotion of professional conduct. Prerequisite: a minimum grade of 2.0 in T CRIM 371; and a minimum grade of  2.0 in TSOCWF 390.",
         "Offered with": "",
-        "Prerequisites": "TCRIM371;TSOCWF390",
+        "Prerequisites": "TCRIM371;2",
         "Quarters Offered": ""
     },
     "TCRIM450": {
@@ -5378,7 +5378,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces methods for supervised and unsupervised machine learning, such as decision trees, random forests, boosted decision trees, logistic regression, neural networks, deep learning, clustering, and association rule mining. Prerequisite: TCSS 343, or permission from instructor.",
         "Offered with": "",
-        "Prerequisites": "TCSS343",
+        "Prerequisites": "TCSS343,POI",
         "Quarters Offered": ""
     },
     "TCSS456": {
@@ -5807,7 +5807,7 @@
         "Department Name": "TCSS",
         "Description": "Focuses on current graduate-level topics and issues associated with machine learning, including theoretical aspects of machine learning techniques as well as hands-on experience in implementing and applying them to real world applications. Prerequisite: either TCSS 555 (or equivalent), or permission from instructor.",
         "Offered with": "",
-        "Prerequisites": "TCSS555",
+        "Prerequisites": "TCSS555,POI",
         "Quarters Offered": ""
     },
     "TCSS558": {
@@ -5950,7 +5950,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces optimal control theories. Reviews the current state of network control efforts for CPS. Studies recent development of control algorithms for CPS. Focuses on approaches to deliver fully distributed control over wireless sensor networks from control theoretic perspective. Prerequisite: TCSS 569, or permission from the instructor.",
         "Offered with": "",
-        "Prerequisites": "TCSS569",
+        "Prerequisites": "TCSS569,POI",
         "Quarters Offered": ""
     },
     "TCSS576": {
@@ -6054,7 +6054,7 @@
         "Department Name": "TCSS",
         "Description": "Examines current graduate-level topics and issues associated with computing and software systems. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TCSS592": {
@@ -6145,7 +6145,7 @@
         "Department Name": "TCSS",
         "Description": "Examines current topics and issues associated with computing and software systems. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TCSS700": {
@@ -6158,7 +6158,7 @@
         "Department Name": "TCSS",
         "Description": "Provides an opportunity to demonstrate comprehensive knowledge in CSS. Completes a research project led by a CSS graduate faculty advisor. Prerequisite: TCSS 543; TCSS 558; TCSS 598; permission of instructor required",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "TCSS543;TCSS558;TCSS598,POI",
         "Quarters Offered": ""
     },
     "TCSS701": {
@@ -6184,7 +6184,7 @@
         "Department Name": "TCSS",
         "Description": "Provides an opportunity to demonstrate comprehensive knowledge in CSS. Develops a significant design and implementation project led by a CSS faculty graduate advisor. Prerequisite: TCSS 543; TCSS 558; TCSS 598; permission of instructor required.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "TCSS543;TCSS558;TCSS598,POI",
         "Quarters Offered": ""
     },
     "TECON101": {
@@ -6925,7 +6925,7 @@
         "Department Name": "TEDLD",
         "Description": "Faculty-supervised independent study or readings in areas of educational leadership of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": "A,W,Sp,S"
     },
     "TEDLD602": {
@@ -7341,7 +7341,7 @@
         "Department Name": "TEDSP",
         "Description": "Culminating classroom internship in assigned public school classrooms under University supervision with accompanying guided inquiry into the nature and social context of teaching and learning. Experiences in the site placements focus on synthesis of planning, management, teaching and assessment of the learning environment. Prerequisite: T EDSP 588 or permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "TEDSP588,POI",
         "Quarters Offered": ""
     },
     "TEDSP590": {
@@ -7380,7 +7380,7 @@
         "Department Name": "TEDSP",
         "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "TEDUC592",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TEDSP594": {
@@ -8069,7 +8069,7 @@
         "Department Name": "TEDUC",
         "Description": "Faculty-supervised independent study or readings in areas of education of special interest or need to the student. Topics vary. Prerequisite: permission of instructor and approved program of study or readings. ",
         "Offered with": "TEDSP592",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TEDUC599": {
@@ -8277,7 +8277,7 @@
         "Department Name": "TEE",
         "Description": "Covers the preparation for conducting the senior project systems analysis and design (TEE481), and implementation, testing, and delivery (TEE482). Includes case studies of engineering projects. Prerequisite: TEE 316 with 2.0 GPA.",
         "Offered with": "",
-        "Prerequisites": "TEE316",
+        "Prerequisites": "TEE3162",
         "Quarters Offered": ""
     },
     "TEE481": {
@@ -8290,7 +8290,7 @@
         "Department Name": "TEE",
         "Description": "Provides guidance to project teams to analyze client needs, develop problem statements, specifications, and plans for implementation of project deliverables. Prerequisite: min 2.0 GPA in TEE 480.",
         "Offered with": "",
-        "Prerequisites": "GPATEE480",
+        "Prerequisites": "GPTEE480",
         "Quarters Offered": ""
     },
     "TEE482": {
@@ -8303,7 +8303,7 @@
         "Department Name": "TEE",
         "Description": "Project teams will implement, rest and deliver project deliverables (product), completing the Senior Design requirement for the degree. Prerequisite: min 2.0 GPA in TEE 481.",
         "Offered with": "",
-        "Prerequisites": "GPATEE481",
+        "Prerequisites": "GPTEE481",
         "Quarters Offered": ""
     },
     "TEE490": {
@@ -9577,7 +9577,7 @@
         "Department Name": "TGEOS",
         "Description": "One week field trip exploring rocks, plate tectonics, and evolution of the region, to include the Puget Sound, Cascades, Columbia Plateau, the Olympic Mountains. Includes rock identification, application of tectonic principles, and interpretation of geologic maps. Prerequisite: TESC 316 or T GEOS 216. Cannot be taken for credit if credit received for TESC 326.",
         "Offered with": "",
-        "Prerequisites": "TESC316,TGEOS216,TESC326",
+        "Prerequisites": "TESC316,TGEOS216",
         "Quarters Offered": ""
     },
     "TGEOS227": {
@@ -9642,7 +9642,7 @@
         "Department Name": "TGEOS",
         "Description": "Introduces students to geomorphology - the study of Earth-surface processes and landforms. Examines basic geomorphic concepts introduced and general landform environments including (fluvial, glacial, coastal, hillslopes, etc.). Prerequisite: either TESC 117, T GEOS 117, TESC 243 or T GEOS 243; either TMATH 120 or TMATH 116. Cannot be taken for credit if credit received for TESC 335.",
         "Offered with": "",
-        "Prerequisites": "TESC117,TGEOS117,TESC243,TGEOS243;TMATH120,TMATH116,TESC335",
+        "Prerequisites": "TESC117,TGEOS117,TESC243,TGEOS243;TMATH120,TMATH116",
         "Quarters Offered": ""
     },
     "TGEOS337": {
@@ -9655,7 +9655,7 @@
         "Department Name": "TGEOS",
         "Description": "Investigates the complex interactions between humans and their geologic environment. Examines environmental aspects of natural hazards, surface processes, geologic resources, and local geology. Required lab section includes hands-on activities, computer activities, student presentations, and field trips. Prerequisite: either TESC 117, T GEOS 117, TESC 241 or T GEOS 241; TESC 310 or TBIOMD 310, which may be taken concurrently. Cannot be taken for credit if credit received for TESC 337.",
         "Offered with": "",
-        "Prerequisites": "TESC117,TGEOS117,TESC241,TGEOS241;TESC310,TBIOMD310,TESC337",
+        "Prerequisites": "TESC117,TGEOS117,TESC241,TGEOS241;TESC310,TBIOMD310",
         "Quarters Offered": ""
     },
     "TGEOS341": {
@@ -9694,7 +9694,7 @@
         "Department Name": "TGEOS",
         "Description": "Examines the physics and chemistry of materials that make up the solid Earth materials in environmental systems. Prerequisite: minimum grade of 2.0 in TESC 117 or TGEOS 117; minimum grade of 1.7 in TESC 151 or TCHEM 152; TMATH 110. Cannot be taken for credit if credit received for TESC 347.",
         "Offered with": "",
-        "Prerequisites": "TESC117,TGEOS117;TESC151,TCHEM152;TMATH110,TESC347",
+        "Prerequisites": "TESC117,TGEOS117;TESC151,TCHEM152;TMATH110",
         "Quarters Offered": ""
     },
     "TGEOS415": {
@@ -9707,7 +9707,7 @@
         "Department Name": "TGEOS",
         "Description": "Detailed and comprehensive analysis of the field of sedimentology including surface processes, sedimentary petrology, sedimentary environments, and stratigraphy. Includes lab and field trips. Prerequisite: either TESC 117, T GEOS 117, TESC 337 or T GEOS 337. Cannot be taken for credit if credit received for TESC 415.",
         "Offered with": "",
-        "Prerequisites": "TESC117,TGEOS117,TESC337,TGEOS337,TESC415",
+        "Prerequisites": "TESC117,TGEOS117,TESC337,TGEOS337",
         "Quarters Offered": ""
     },
     "TGEOS417": {
@@ -9720,7 +9720,7 @@
         "Department Name": "TGEOS",
         "Description": "Field -based knowledge of the geological environment of a specific region and an introduction to geological field techniques. 7 credit offerings are local, requiring in-class and 2 overnight field trips. 12 credit offerings will be based partially off-campus (may include international travel). Prerequisite: TESC 310, which may be taken concurrently; either TESC 117, T GEOS 117, TESC 337 or T GEOS 337. Cannot be taken for credit if credit received for TESC 417.",
         "Offered with": "",
-        "Prerequisites": "TESC310;TESC117,TGEOS117,TESC337,TGEOS337,TESC417",
+        "Prerequisites": "TESC310;TESC117,TGEOS117,TESC337,TGEOS337",
         "Quarters Offered": ""
     },
     "TGEOS419": {
@@ -9733,7 +9733,7 @@
         "Department Name": "TGEOS",
         "Description": "Investigates shallow subsurface geological and environmental features using wave- and potential-based geophysical surveys and physical principles. Prerequisite: TESC 310, which may be taken concurrently; TESC 117 or T GEOS 117; and TESC 121 or T PHYS 121.  Cannot be taken for credit if credit received for TESC 419.",
         "Offered with": "",
-        "Prerequisites": "TESC310;TESC117,TGEOS117;TESC121,TPHYS121,TESC419",
+        "Prerequisites": "TESC310;TESC117,TGEOS117;TESC121,TPHYS121",
         "Quarters Offered": ""
     },
     "TGEOS445": {
@@ -9746,7 +9746,7 @@
         "Department Name": "TGEOS",
         "Description": "Investigates saltwater estuarine systems with a focus on Pacific Northwest water-related issues. Uses intensive field studies to explore various aspects of the physical, chemical, biological and geologic conditions in a range of local saltwater environments in Puget Sound. Prerequisite: TESC 310, which may be taken concurrently. Cannot be taken for credit if credit received for TESC 445.",
         "Offered with": "",
-        "Prerequisites": "TESC310,TESC445",
+        "Prerequisites": "TESC310",
         "Quarters Offered": ""
     },
     "TGH101": {
@@ -12151,7 +12151,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised independent study, readings and special projects for graduate students. Topics vary. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TIAS596": {
@@ -12164,7 +12164,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised internships for graduate students. Internships and projects vary. Prerequisite: permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TIAS598": {
@@ -12177,7 +12177,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised readings for graduate students. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TIAS599": {
@@ -12190,7 +12190,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised research for graduate students. Prerequisite: permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TIAS605": {
@@ -12216,7 +12216,7 @@
         "Department Name": "TIAS",
         "Description": "Faculty-supervised thesis for graduate students. Prerequisite: permission of instructor. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "POI",
         "Quarters Offered": ""
     },
     "TINFO110": {
@@ -13919,7 +13919,7 @@
         "Department Name": "TMATH",
         "Description": "First quarter in calculus of functions of a single variable. Emphasizes differential calculus. Emphasizes applications and problem solving using the tools of calculus. Cannot be taken for credit if credit earned in TMATH 122. Prerequisite: a minimum grade of 2.0 in either TMATH 116 or TMATH 120, a score of 68% on MPT-A placement test, a score of 75% on MATHEC placement test, or a score of 2 on AP test. ; recommended: co-requisite of TMATH 159.",
         "Offered with": "",
-        "Prerequisites": "TMATH116,TMATH120,75;TMATH159",
+        "Prerequisites": "TMATH116,TMATH120;TMATH159",
         "Quarters Offered": ""
     },
     "TMATH125": {
@@ -14257,7 +14257,7 @@
         "Department Name": "TMATH",
         "Description": "Provides opportunity for a mathematical internship in the public or private sector with the supervision of a faculty member in mathematics or a related discipline. Prerequisite: minimum grade of 2.0 in each of TMATH 300, TMATH 307, TMATH 308, and TMATH 324. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "TMATH300&&TMATH307&&TMATH308&&TMATH324",
+        "Prerequisites": "TMATH300;TMATH307;TMATH308;TMATH324",
         "Quarters Offered": ""
     },
     "TMATH498": {
@@ -15245,7 +15245,7 @@
         "Department Name": "TNURS",
         "Description": "Survey of concepts, approaches, and tools used to identify health issues and measure health status in select communities, populations, or groups. Covers processes used to lead and conduct assessments and plan programs to address health concerns. Considers policies and other macro-level factors influencing assessment and program planning. Prerequisite: TNURS 557 or permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "TNURS557,POI",
         "Quarters Offered": ""
     },
     "TNURS527": {
@@ -15388,7 +15388,7 @@
         "Department Name": "TNURS",
         "Description": "Examines health program design, implementation, and evaluation. Explores models of implementation and evaluation. Applies leadership principles towards program implementation and sustainability. Prerequisite: T NURS 557; T NURS 523 or permission of instructor.",
         "Offered with": "",
-        "Prerequisites": "",
+        "Prerequisites": "TNURS557;TNURS523,POI",
         "Quarters Offered": ""
     },
     "TNURS590": {
@@ -15843,7 +15843,7 @@
         "Department Name": "TPHYS",
         "Description": "Presents a unified account of contemporary astronomy beginning with Earth and move outward through our solar system and beyond to the stars of the Milky Way and into the realm of galaxies. Introduces methods and techniques commonly employed in astronomy and their application in astronomical research. Prerequisite: either TMATH 098, TMATH 115, TMATH 116, TMATH 120, MATH 098, MATH 120, or MATH 124. Cannot be taken for credit if credit received for TESC 111.",
         "Offered with": "",
-        "Prerequisites": "TMATH098,TMATH115,TMATH116,TMATH120,MATH098,MATH120,MATH124,TESC111",
+        "Prerequisites": "TMATH098,TMATH115,TMATH116,TMATH120,MATH098,MATH120,MATH124",
         "Quarters Offered": ""
     },
     "TPHYS120": {

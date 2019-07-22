@@ -23,7 +23,18 @@ SOFTWARE.
 
 *****************************************************************************
 NOTE from Alex Eidt:
+Building off the script by Kamil Jiwa, the following changes were made:
 
+    -BeautifulSoup used for web scraping
+    -TSV files created with new data for each course:
+        -Co-requisites
+        -Jointly offered courses
+        -Course Descriptions
+        -Courses offered with that course
+    -All course data written to JSON files as well
+    -Courses split by campus
+    -New system for displaying prerequisite courses using ';', '&&' and ','
+    -Progress bar for parsing
 """
 
 # Creates a tsv file containing course data for each UW Campus
@@ -93,13 +104,13 @@ def get_credits(description):
 # Returns the prerequisite courses for the course if there are any
 # Otherwise returns an empty String
 # 'description': The course description
-prereq_regex = re.compile(r';|:|and either|and one of')
+prereq_regex = re.compile(r';|and either|and one of')
 not_offered = re.compile(r'[Nn]ot open to students')
 def get_requisites(description, type):
     if type not in description:                                                             
         return ''       
-    description = description.replace('AND', 'and').replace('OR', 'or').replace('Minimum', 'minimum')  
-    description = description.replace('A minimum', 'a minimum')                                                                     
+    description = description.replace(' AND ', ' and ').replace(' OR ', ' or ').replace('Minimum', 'minimum')  
+    description = description.replace('A minimum', 'a minimum')                                                                   
     parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]                               
     POI = ''
     if 'permission of' in parts.lower(): POI = 'POI'                        
@@ -107,7 +118,7 @@ def get_requisites(description, type):
     result = ''
 
     def remove_unnessecary(course_sub):
-        course_sub = re.sub(r'(E|e)ither', '', course_sub)
+        course_sub = re.sub(r'[Ee]ither', '', course_sub)
         course_sub = re.sub(r'[a-z]+', '', course_sub)
         course_sub = re.sub(r'\d?\.\d', '', course_sub)
         return course_sub
@@ -182,6 +193,7 @@ def get_requisites(description, type):
         result = result.replace(check[0], check[1])
     result = filter_result(result)
     result = ','.join(list(dict.fromkeys(result.split(','))))
+    result = result.replace(':', '')
     return result if len(result) > 4 and 'POI' not in result else ''
 
 

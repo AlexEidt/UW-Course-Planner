@@ -2609,7 +2609,7 @@
         "Department Name": "TBUS",
         "Description": "Examines the profession of management and nature of organizations. Focuses on the key managerial functions and organizational processes needed to plan, organize, lead and control contemporary organizations. Activities provide opportunities to improve communication, strategic planning, teamwork, social responsibility, ethical decision making, and professional capacities. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS301": {
@@ -2635,7 +2635,7 @@
         "Department Name": "TBUS",
         "Description": "Focuses on oral and written communication skills in an organizational environment. Provides opportunities to communicate clearly and concisely in writing, make persuasive presentations, negotiate effectively, listen to the ideas and opinions of others, provide and receive constructive feedback, explore new communication technologies, and understand the impact that globalization has on organizational communication. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS320": {
@@ -2648,7 +2648,7 @@
         "Department Name": "TBUS",
         "Description": "Introduces the major principles and practices that are used by marketing managers in analyzing marketing problems and developing appropriate solutions. Examines how marketing operates within the global, social, and economic environment. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431,ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS330": {
@@ -2661,7 +2661,7 @@
         "Department Name": "TBUS",
         "Description": "Introduces techniques that managers use to locate, organize, distribute, and use information for decision making and strategic advantage. Addresses tools for managing information, including computer hardware, software, telecommunication networks, and various information system components. Includes a computer laboratory component in which students address organizational and managerial information requirements. Prerequisite: either T CORE 101, TWRT 112, TWRT 121, TWRT 211, TWRT 291, TWRT 331, TWRT 431, ENGL 111, ENGL 121, ENGL 131, ENGL 141, ENGL 182, ENGL 197, ENGL 198, ENGL 199, B WRIT 134, or B WRIT 135.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,TWRT291,TWRT331,TWRT431,ENGL111,ENGL121,ENGL131,ENGL141,ENGL182,ENGL197,ENGL198,ENGL199,BWRIT134,BWRIT135",
         "Quarters Offered": ""
     },
     "TBUS350": {
@@ -9629,7 +9629,7 @@
         "Department Name": "TGEOS",
         "Description": "Examines different volcanic landscapes through comparative geologic field investigations and explores how geologic processes relate to local culture and history. Prerequisite: minimum 2.0 grade in either T CORE 101, TWRT 112, or TWRT 121.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121",
         "Quarters Offered": ""
     },
     "TGEOS335": {
@@ -14309,7 +14309,7 @@
         "Department Name": "TMGMT",
         "Description": "Explores the impact of the changing legal environment on managerial decision making and issues that business managers confront to establish appropriate managerial strategies to function effectively and develop compliance guidelines. Utilizes specific tools to access legal resources for proactively recognizing, framing, and analyzing opportunities and problems and developing situations. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,ENGL131",
+        "Prerequisites": "TCORE101,TWRT112,ENGL131",
         "Quarters Offered": ""
     },
     "TMGMT420": {
@@ -14400,7 +14400,7 @@
         "Department Name": "TMGMT",
         "Description": "Introduces nonprofit board membership and governance. Students serve as apprentices with nonprofit organizations and act as nonvoting board members. Provides experiences in gathering and assessing information and materials related to nonprofit governance practices. Prerequisite: either T CORE 101, TWRT 112, or ENGL 131.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,ENGL131",
+        "Prerequisites": "TCORE101,TWRT112,ENGL131",
         "Quarters Offered": "W"
     },
     "TMGMT466": {
@@ -19990,7 +19990,7 @@
         "Department Name": "TWRT",
         "Description": "Helps improve academic writing skills by focusing on students' own writing practices. Teaches reading skills to comprehend and analyze complex texts, review and analyze grammar structures as they appear in academic writing, and build advanced vocabulary. Prerequisite: either TWRT 120, TWRT 121, or TCORE 101; must be taken concurrently . Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "TWRT120,TWRT121,E101",
+        "Prerequisites": "TWRT120,TWRT121,TCORE101",
         "Quarters Offered": ""
     },
     "TWRT112": {
@@ -20055,7 +20055,7 @@
         "Department Name": "TWRT",
         "Description": "Focuses on writing critical analyses of texts in the arts and sciences. Emphasizes close reading, critical thinking, and developing well-supported arguments as well as advanced library research skills. Stresses managing the writing process so that good work can be produced within given time constraints. Prepares students for upper-division writing tasks. Prerequisite: minimum 2.0 grade in either TWRT 112, TWRT 121, T CORE 101, or ENGL 131.",
         "Offered with": "",
-        "Prerequisites": "TWRT112,TWRT121,E101,ENGL131",
+        "Prerequisites": "TWRT112,TWRT121,TCORE101,ENGL131",
         "Quarters Offered": ""
     },
     "TWRT270": {
@@ -20120,7 +20120,7 @@
         "Department Name": "TWRT",
         "Description": "Teaches objective-oriented and audience-centered communication for the workplace, while focusing on key genres of technical communication - reports, proposals, manual, and document design - essential for success in the professional world. Prerequisite: a minimum grade of 2.0 in either T CORE 101, TWRT 112, TWRT 121, or TWRT 211.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211",
         "Quarters Offered": ""
     },
     "TWRT292": {
@@ -20133,7 +20133,7 @@
         "Department Name": "TWRT",
         "Description": "Explores how design and technology are shaped by social, political, cultural and material forces and can create barriers and contribute to social change, inequality and equity. Examines technology as a tool of oppression or liberation in regards to identity categories and difference--ability, ethnicity, race, age, class, gender, and sexuality. Prerequisite: Either TCORE 101, TWRT 112, TWRT 121, TWRT 211, ENGL 131, or ENGL 141.",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,ENGL131,ENGL141",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,ENGL131,ENGL141",
         "Quarters Offered": ""
     },
     "TWRT311": {
@@ -20146,7 +20146,7 @@
         "Department Name": "TWRT",
         "Description": "Investigates current theories and practices of writing pedagogy, emphasizing the pedagogical assumptions of individual instruction. Students learn to respond constructively to writers and to texts. They also gain expertise as writers and teachers. Required for students who wish to work in the Writing Center. Prerequisite: minimum grade of 2.0 in TWRT 112, TWRT 121, or T CORE 101.",
         "Offered with": "",
-        "Prerequisites": "TWRT112,TWRT121,TC,E101",
+        "Prerequisites": "TWRT112,TWRT121,TCORE101",
         "Quarters Offered": ""
     },
     "TWRT330": {
@@ -20185,7 +20185,7 @@
         "Department Name": "TWRT",
         "Description": "Introduces a critical perspective on comics and builds skills in creative writing and rhetoric studies. Focuses on theory and craft, providing a lens for interpretation and application, employing workshops for students to create (and revise) their own comics. Prerequisite: minimum 2.0 grade in either T CORE 101, TWRT 112, TWRT 121, TWRT 211 or ENGL 131.\n",
         "Offered with": "",
-        "Prerequisites": "E101,TWRT112,TWRT121,TWRT211,ENGL131",
+        "Prerequisites": "TCORE101,TWRT112,TWRT121,TWRT211,ENGL131",
         "Quarters Offered": ""
     },
     "TWRT350": {

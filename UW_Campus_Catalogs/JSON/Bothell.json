@@ -503,7 +503,7 @@
         "Department Name": "BBIO",
         "Description": "First quarter of biochemistry covering macromolecules, including proteins and enzymes. Includes chemical structure of biological molecules and their interactions, how cells synthesize and degrade biological molecules, and how these activities are organized. Emphasizes how biochemical processes interrelate. Prerequisite: either both B BIO 200 and B CHEM 237, or B CHEM 239. Instructors: White",
         "Offered with": "BCHEM364",
-        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I",
+        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I,W",
         "Quarters Offered": "A"
     },
     "BBIO365": {
@@ -2375,7 +2375,7 @@
         "Department Name": "BCHEM",
         "Description": "Covers atomic nature of matter, chemical reactions, stoichiometry, solution chemistry, atomic theory, chemical bonding, molecular geometry and structure. First of a three-quarter sequence for science and engineering majors. Prerequisite: either minimum grade of 2.0 in B CHEM 139, or minimum grade of 2.5 in one of the following: B MATH 122, B MATH 123, MATH 120, STMATH 124, MATH 124, STMATH 125, MATH 125, STMATH 126, or MATH 126, or a score of 145-153 on the MPT-AS assessment test, or a score of 151 or higher on the MPT-GS assessment; recommended: High School Chemistry.",
         "Offered with": "",
-        "Prerequisites": "BCHEM139;BMATH122,BMATH123,MATH120,STMATH124,MATH124,STMATH125,MATH125,STMATH126,MATH126",
+        "Prerequisites": "BCHEM139,BMATH122,BMATH123,MATH120,STMATH124,MATH124,STMATH125,MATH125,STMATH126,MATH126",
         "Quarters Offered": "A,W"
     },
     "BCHEM144": {
@@ -2622,7 +2622,7 @@
         "Department Name": "BCHEM",
         "Description": "First quarter of biochemistry covering macromolecules, including proteins and enzymes. Includes chemical structure of biological molecules and their interactions, how cells synthesize and degrade biological molecules, and how these activities are organized. Emphasizes how biochemical processes interrelate. Prerequisite: either both B BIO 200 and B CHEM 237, or B CHEM 239. Instructors: White",
         "Offered with": "BBIO364",
-        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I",
+        "Prerequisites": "BBIO200&&BCHEM237,BCHEM239,I,W",
         "Quarters Offered": "A"
     },
     "BCHEM365": {
@@ -3077,7 +3077,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: B CORE 115, B CORE 116, or B CORE 117",
         "Offered with": "",
-        "Prerequisites": "E115,E116,E117",
+        "Prerequisites": "BCORE115,BCORE116,BCORE117",
         "Quarters Offered": "Sp"
     },
     "BCORE119": {
@@ -3090,7 +3090,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: B CORE 115, B CORE 116, or B CORE 117",
         "Offered with": "",
-        "Prerequisites": "E115,E116,E117",
+        "Prerequisites": "BCORE115,BCORE116,BCORE117",
         "Quarters Offered": "Sp"
     },
     "BCORE120": {
@@ -3103,7 +3103,7 @@
         "Department Name": "BCORE",
         "Description": "Evaluates progress at the conclusion of the first year through the construction of a portfolio and offers an experiential learning opportunity, either on- or off-campus. Prerequisite: either B CORE 115, B CORE 116, or B CORE 117.",
         "Offered with": "",
-        "Prerequisites": "E115,E116,E117",
+        "Prerequisites": "BCORE115,BCORE116,BCORE117",
         "Quarters Offered": "Sp"
     },
     "BCORE133": {
@@ -5716,7 +5716,7 @@
         "Department Name": "BEE",
         "Description": "Basic power system analytical concepts, three-phase systems, impedance, steady-state network analysis, normalization, transmission lines, transformers, and synchronous machines. Prerequisite: minimum grade of 1.5 in B EE 233. Instructors: Ghofrani",
         "Offered with": "",
-        "Prerequisites": "BEE233,I",
+        "Prerequisites": "BEE233,I,G",
         "Quarters Offered": ""
     },
     "BEE478": {
@@ -5807,7 +5807,7 @@
         "Department Name": "BEE",
         "Description": "Second of a two-course sequence capstone design experience. Individual or small-team project that is representative of the solution to an open-ended design problem in electrical engineering. May be undertaken as part of an industrial internship with direct supervision of the EE faculty and industrial sponsor. Includes many aspects of an industrial research and development product development lifecycle. Prerequisite: minimum grade of 1.5 in B EE 495. Instructors: Berger, Ghirmai ",
         "Offered with": "",
-        "Prerequisites": "BEE495,I",
+        "Prerequisites": "BEE495,I,B,G",
         "Quarters Offered": "A,W,Sp"
     },
     "BEE498": {
@@ -12333,7 +12333,7 @@
         "Department Name": "BME",
         "Description": "Explores advanced topics in thermodynamics, heat transfer, and fluid mechanics, including but not limited to HVAC, combustion, compressible fluid mechanics, advanced power generation, computational methods, and renewable energy. Prerequisite: Prerequisites: Minimum grade of 2.0 in B ME 333; recommended: B ME 333",
         "Offered with": "",
-        "Prerequisites": "BME333;BME333",
+        "Prerequisites": "PBME333;BME333",
         "Quarters Offered": ""
     },
     "BME435": {
@@ -14367,7 +14367,7 @@
     "CSS133": {
         "Areas of Knowledge": "NW, QSR",
         "Campus": "Bothell",
-        "Co-Requisites": "CSSSKL133;CSS132",
+        "Co-Requisites": "CSSSKL133,PCSS132",
         "Course Name": "Computer Programming for Engineers II",
         "Course Number": "133",
         "Credits": "5",
@@ -14400,7 +14400,7 @@
         "Department Name": "CSS",
         "Description": "Transition from basic programming skills to a rigorous process of software development. Familiarization with higher level programming techniques (recursion, generic programming, stacks, queues, trees, searching, and sorting). Emphasizes connection between algorithmic thought and implementation. Prerequisite: minimum grade of 2.7 in CSS 161, CSS 142, or CSE 142. Co-requisite: CSSSKL 143.",
         "Offered with": "",
-        "Prerequisites": "CSS161,CSS142,CSE142,C-;CSSSKL143",
+        "Prerequisites": "CSS161,CSS142,CSE142,C-CSSSKL143",
         "Quarters Offered": ""
     },
     "CSS173": {

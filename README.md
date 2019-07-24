@@ -113,7 +113,7 @@ Make sure to add the `bin` folder of the downloaded Graphviz folder to the end o
 
 ```python
 # --------------------------GRAPHVIZ PATH SETUP-------------------------- #
-os.environ["PATH"] += os.pathsep + [FILE PATH TO GRAPHVIZ FOLDER&#92;&#92;GRAPHVIZ FOLDER NAME&#92;&#92;bin] 
+os.environ["PATH"] += os.pathsep + [FILE PATH TO GRAPHVIZ FOLDER\\GRAPHVIZ FOLDER NAME\\bin] 
 # ----------------------------------------------------------------------- #
 ```
 

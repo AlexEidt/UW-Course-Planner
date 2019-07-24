@@ -44,7 +44,7 @@ import csv
 import time
 import urllib3 as URL
 from bs4 import BeautifulSoup as Soup
-from tqdm import tqdm
+from tqdm import tqdm as AddProgressBar
 
 
 CAMPUSES = {                                                                                
@@ -53,12 +53,20 @@ CAMPUSES = {
     'Tacoma': 'http://www.washington.edu/students/crscatt/'                                 
 }                                                                                           
 
+COLUMN_NAMES = ['Campus', 'Department Name', 'Course Number', 'Course Name', 'Credits',
+                'Areas of Knowledge', 'Quarters Offered', 'Offered with', 
+                'Prerequisites', 'Co-Requisites', 'Description']
 
-# Replaces all occurances of un-numbered courses in the given course description
-# 'description': The course description
+
 def complete_description(description):
-    find_all = re.findall(r'[A-Z& ]+/\s?[A-Z& ]+/\s?[A-Z& ]+\s?\d+', description)
-    find_one = re.findall(r'[A-Z& ]+/\s?[A-Z& ]+\s?\d+', description)
+    """Replaces all occurances of un-numbered courses in the given course description
+    @params
+        'description': The course description
+    Returns 
+        Completed courses in description
+    """
+    find_all = re.findall(r'[A-Z& ]+/[A-Z& ]+/[A-Z& ]+\d+', description)
+    find_one = re.findall(r'[A-Z& ]+/[A-Z& ]+\d+', description)
     
     def remove_in(a, b):
         remove = []
@@ -69,7 +77,7 @@ def complete_description(description):
         for x in remove: a.remove(x)
         return [x for x in a]
             
-    if len(find_one) is not 0:
+    if find_one:
         find_all = remove_in(find_all, find_one)
         for i, x in enumerate(find_all):
             completed = []
@@ -80,8 +88,8 @@ def complete_description(description):
                 completed.append('{}{}'.format(crs, number))
             description = description.replace(old, '{}{}'.format(' ', '/'.join(completed)), 1)
 
-    find_series_2 = re.findall(r'[A-Z& ]+\d+, ?\d+', description)
-    find_series_3 = re.findall(r'[A-Z& ]+\d+, \d+, ?\d+', description)
+    find_series_2 = re.findall(r'[A-Z& ]+\d+, ?\d{3}', description)
+    find_series_3 = re.findall(r'[A-Z& ]+\d+, ?\d{3}, ?\d{3}', description)
     find_series_2 = remove_in(find_series_3, find_series_2)
     for i, series in enumerate(find_series_2):
         find_series_2[i] = series.replace(' ', '')
@@ -94,105 +102,63 @@ def complete_description(description):
     return description
 
 
-# Returns the number of credits for the course if there are any
-# Otherwise returns an empty String
-# 'description': The course description
 def get_credits(description):
-    match = re.search(r'\(\[?\d', description)
-    return int(match.group(0).replace('(', '').replace('[', '')) if match else ''
+    """Gets the number of credits the course is offered at
+    @params
+        'description': The course description
+    Returns 
+        The number of credit offered for the course if there are any, otherwise an empty String
+    """
+    match = re.search(r'\([^\)]+\)', description)
+    return match.group(0)[1:-1] if match else ''
 
 
-# Returns the prerequisite courses for the course if there are any
-# Otherwise returns an empty String
-# 'description': The course description
-prereq_regex = re.compile(r';|and either|and one of')
 not_offered = re.compile(r'[Nn]ot open to students')
 def get_requisites(description, type):
+    """Gets the requisite courses for the given course
+    @params
+        'description': The course description
+        'type': Either 'Prerequisite' or 'Co-Requisite'
+    Returns 
+        The requisite courses. 
+        If type='Prerequisite', courses are separated by ';', '/', '&&', or ','
+    """
     if type not in description:                                                             
         return ''       
-    description = description.replace(' AND ', ' and ').replace(' OR ', ' or ').replace('Minimum', 'minimum')  
-    description = description.replace('A minimum', 'a minimum').replace('; or', '/')
-    description = re.sub(r'[Cc]annot be taken for credit if credit received for ([A-Z& ]+\d+)', '', description)
-    description = re.sub(r'of \d?\.\d', '', description)                                                                 
-    parts = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]
-    multiple = re.search(r'[A-Z& ]+\d+/[A-Z& ]+\d+/[A-Z& ]+\d+ and', parts)
+    description = description.replace(' AND ', ' and ').replace(' OR ', ' or ').replace('; or', '/')
+    description = description.replace('and either', ';').replace('and one of', ';')
+    description = re.sub(r'([Cc]annot|[Mm]ay not) be taken for credit if (credit received for|student has taken)?[A-Z& ]+\d{3}', '', description)
+    description = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]
+    multiple = re.search(r'[A-Z& ]+\d{3}/[A-Z& ]+\d{3}/[A-Z& ]+\d{3} and', description)
     if multiple:
-        parts = parts.replace(multiple.group(0), '{}{}'.format(multiple.group(0)[:-4], ';'), 1)
-    if 'Prerequisite' in type:
-        parts = parts.split('Co-requisite')[0]                         
-    POI = ''
-    if 'permission' in parts.lower(): POI = 'POI' 
+        description = description.replace(multiple.group(0), '{}{}'.format(multiple.group(0)[:-4], ';'), 1)
+    if 'Prerequisite' in type: description = description.split('Co-requisite')[0]                         
+    POI = ',POI' if 'permission' in description.lower() else '' 
     new_result = []
-    for course in parts.split('(')[0].split(';'):
+    for course in description.split('(')[0].split(';'):
         if ', and' in course:
             new_result.append(course.replace(',', ';'))     
         else:
             new_result.append(course)
-    required_course_list = ';'.join(new_result)
-    required = prereq_regex.split(required_course_list)
-    result = ''
+    description = ';'.join(new_result)
 
-    def remove_unnessecary(course_sub):
-        course_sub = re.sub(r'[Ee]ither', '', course_sub)
-        course_sub = re.sub(r'[A-Z][a-z]', '', course_sub)
-        course_sub = re.sub(r'[a-z]+', '', course_sub)
-        return course_sub
-
-    def split_courses(required_list, join_char, split_char, resulting):
-        for course_option in required_list:
-            reqcrs = [crs.strip() for crs in re.findall(r'([A-Z& ]+\d+)', course_option)]
-            resulting += join_char.join(list(filter(('').__ne__, reqcrs)))
-            resulting += split_char
-        return resulting
-
-    for course in required:
-        if 'either' in course or 'Either' in course:
-            if 'with either' in course:
-                with_either = course.split('with either')
-                course = '{}{}{}'.format(with_either[0], '&&', with_either[1].replace('or', '/'))
-            reqs = course.split('or')
-            if 'and' in course:
-                for c in reqs:
-                    c = c.replace('and', '&&').replace(' ', '')
-                    c = remove_unnessecary(c)
-                    result += c
-                    result += ','
-            else:
-                result = split_courses(reqs, ',', ',', result)
-        elif 'both' in course or 'in each of' in course:
-            result = split_courses(course.split('or'), '&&', ',', result)
-        elif 'minimum grade' in course:
-            course = course.replace('and', '&&').replace('or', ',')
-            course = remove_unnessecary(course)
-            result += course
-        elif 'and' in course and 'or' not in course:
-            result = split_courses(course.split('and'), ',', ';', result)
-        else:
-            course = course.replace('and', '&&').replace(' ', '').replace('/', ',').replace('or', ',')
-            course = remove_unnessecary(course)
-            remove = []
-            course_list = course.split(',')
-            for i, x in enumerate(list(filter(('').__ne__, course_list))):
-                match = re.search(r'[A-Z& ]+\d+(&&[A-Z& ]+\s?\d{3})?', x)
-                if not match: remove.append(x)
-                else: course_list[i] = match.group(0)
-            for x in remove: 
-                if x in course_list:
-                    course_list.remove(x)
-            result += ','.join(course_list)
-            result += ','
-        result += ';'
+    if 'with either' in description:
+            with_either = description.split('with either')
+            description = '{}{}{}'.format(with_either[0], '&&', with_either[1].replace('or', '/'))
+    description = description.replace('and', '&&').replace('or', ',')
 
     def extract_course(course_option, split_char):
         elements = []
         for next_option in list(filter(('').__ne__, course_option.split(split_char))):
-            match = re.search(r'([A-Z& ]+\d+)', next_option)
-            if match:
-                elements.append(match.group(0))
+            find_match(next_option, elements)
         return elements
 
+    def find_match(to_match, to_append):
+        match = re.search(r'([A-Z& ]{2,}\d{3})', to_match)
+        if match: to_append.append(match.group(0))
+
     semi_colon = []
-    for crs in list(filter(('').__ne__, result.split(';'))):
+    for crs in list(filter(('').__ne__, description.split(';'))):
         comma = []
         for option in list(filter(('').__ne__, crs.split(','))):
             if '/' in option and '&&' not in option:
@@ -205,26 +171,32 @@ def get_requisites(description, type):
                     doubleand.append('/'.join(extract_course(next_option, '/')))
                 comma.append('&&'.join(doubleand))
             else:
-                match = re.search(r'([A-Z& ]+\d+)', option)
-                if match:
-                    comma.append(match.group(0)) 
-        semi_colon.append(','.join(comma))
+                find_match(option, comma) 
+        semi_colon.append(','.join(list(filter(('').__ne__, comma))))
     result = ';'.join(list(filter(('').__ne__, semi_colon))).replace(' ', '')
-    result = '{}{}'.format(result, ',{}'.format(POI))
-    result = ','.join(list(dict.fromkeys(result.split(',')))).replace(';&&', ';').strip('&').strip(',')
+    result = result.strip(',').strip(';').strip('&').replace(';,', ';')
+    result = '{}{}'.format(result, POI)
+    result = re.sub(r'&{3,}', '', result)
+    result = ','.join(list(filter(('').__ne__, result.split(','))))
+    result = ';'.join(list(filter(('').__ne__, result.split(';'))))
+    result = ','.join(list(dict.fromkeys(result.split(',')))).replace(';&&', ';').strip('&')
     result = ';'.join(list(dict.fromkeys(result.split(';'))))
-    return result.replace(',,', ',')
+    result = result.strip(',').strip(';').strip('&').replace(';,', ';')
+    return result.strip()
 
 
-# Returns the Quarters that the course is offered if there are any
-# Otherwise returns an empty String
-# 'description': The course description
 def get_offered(description):
+    """Gets the quarters the course is offered
+    @params
+        'description': The course description
+    Returns 
+        Quarters offered as comma separated list (A, W, Sp, S)
+    """
     if 'Offered:' not in description:                                                       
         return ''                                                                           
     check_parts = description.split('Offered:')[1]                                         
     parts = check_parts.split(';')[1] if ';' in check_parts else check_parts
-    parts = re.sub(r'([A-Z& ]+\s?\d+)', '', parts)
+    parts = re.sub(r'([A-Z& ]+\d+)', '', parts)
     result = []
     quarters = ['A', 'W', 'Sp', 'S']
     for quarter in quarters:
@@ -234,43 +206,49 @@ def get_offered(description):
     return ','.join(result)
     
 
-# Returns the courses offered jointly with the course if there are any
-# Otherwise returns an empty String
-# 'description': The course description
 def get_jointly(description):
+    """Gets the jointly offered courses for the given course
+    @params
+        'description': The course description
+    Returns 
+        The jointly offered courses as a comma separate list
+    """
     if 'jointly with' not in description:                                                   
         return ''
-    parts = description.split('jointly with ')[1].split(';')                                
-    course = ''
-    for course_option in list(filter(('').__ne__, parts)):
-        reqcrss = [crs.strip() for crs in re.findall(r'([A-Z& ]+\s?\d+)', course_option)]     
-        course += ','.join(reqcrss)                                                         
-        course += ';'
-    course = course.replace(',;', ';')
-    course = re.sub(r';+', ';', course)
-    return course.replace(' ', '').strip(';').strip()                            
+    description = description.split('jointly with ')[1].split(';')[-1]                                
+    return ','.join(re.findall(r'([A-Z& ]+\d+)', description)).replace(' ', '')                         
 
 
-# Returns the credit types offered for the course if there are any
-# Otherwise returns an empty String
-# 'description': The course description
 def get_credit_types(description):
+    """Gets the credit types I&S/DIV/NW/VLPA/QSR for the course
+    @params
+        'description': The course description
+    Returns 
+        The credit types offered for the course if there are any, otherwise an empty String
+    """
     match = re.search(r'((I&S|DIV|NW|VLPA|QSR)(,?\s?/?))+', description)
     return match.group(0).strip() if match else ''
 
 
-# Returns the course name
-# Otherwise returns an empty String
-# 'description': The course description
 def get_name(description, number):
+    """Returns the course name, otherwise returns an empty String
+    @params
+        'description': The course description
+    Returns
+        The course name
+    """
     match = re.search(r'[^\(]+', description)
     return match.group(0).split(number.replace('&', ''))[1].strip() if match else ''
 
 
-# Removes instructor names from description
-# 'description': The course description
-# 'credit_type': The credit types for the course
 def extract_description(description, credit_type):
+    """Removes instructor names from description
+    @params
+        'description': The course description
+        'credit_type': The credit types for the course
+    Returns
+        A description string with all instructor names removed
+    """
     description = description.split('Offered: ')[0]
     description = description.split(')', 1)[1]
     if '' not in credit_type:
@@ -291,12 +269,16 @@ def extract_description(description, credit_type):
     return description
 
 
-# Returns a list of all the information for the given course in the 'description'
-# 'campus': The campus the course is offered
-# 'department': The abbreviated department name that the course is offered in
-# 'number': The course number
-# 'description': The course description
 def get_course_data(campus, department, number, description):
+    """Puts all course data into a list
+    @params
+        'campus': The campus the course is offered
+        'department': The abbreviated department name that the course is offered in
+        'number': The course number
+        'description': The course description
+    Returns 
+        List of all the information for the given course in the 'description'
+    """
     functions = [get_credits, get_credit_types, get_offered, get_jointly]
     description = description.split('View course details in MyPlan:')[0]
     description = complete_description(description)
@@ -309,26 +291,29 @@ def get_course_data(campus, department, number, description):
     return data
 
 
-# Returns a BeautifulSoup object for the given link
-# 'website_link': The website to be web scraped
 def get_web_soup(website_link):
+    """Creates BeautifulSoup for the given website link
+    @params
+        'website_link': The website to be scraped
+    Returns
+        BeautifulSoup object for the given link
+    """
     website = URL.PoolManager()
     source = website.request('GET', website_link)
     return Soup(source.data, features='lxml')
 
 
-# Creates a .tsv file with all the course offered on the given 'campus'
-# 'course_data': BeautifulSoup object with the department list website for the given 'campus'
-# 'campus': The campus to get the courses from
-# 'path': The file path to the directory storing all .tsv files for each campus
 def read_department_courses(course_data, campus, path):
+    """Creates a .tsv file with all the course offered on the given 'campus'
+    @params
+        'course_data': BeautifulSoup object with the department list website for the given 'campus'
+        'campus': The campus to get the courses from
+        'path': The file path to the directory storing all .tsv files for each campus
+    """
     with open('{}\\{}\\{}.tsv'.format(path, 'TSV', campus), mode='w', newline='') as courses:
-        column_names = ['Campus', 'Department Name', 'Course Number', 'Course Name', 'Credits',
-                        'Areas of Knowledge', 'Quarters Offered', 'Offered with', 
-                        'Prerequisites', 'Co-Requisites', 'Description']
-        csv_writer = csv.writer(courses, delimiter='\t')
-        csv_writer.writerow(column_names)
-        for dep_link in tqdm(course_data.find_all('a')):
+        tsv_writer = csv.writer(courses, delimiter='\t')
+        tsv_writer.writerow(COLUMN_NAMES)
+        for dep_link in AddProgressBar(course_data.find_all('a')):
             dep_file = dep_link.get('href')
             if '.html' in dep_file and '/' not in dep_file:
                 file_name = '{}{}'.format(CAMPUSES[campus], dep_file)   
@@ -339,14 +324,16 @@ def read_department_courses(course_data, campus, path):
                     course_number = None
                     if course_ID:
                         department_name = re.sub(r'\d+', '', course_ID).upper()
-                        course_number = re.sub(r'[A-Z]+', '', course_ID.upper())
-                        csv_writer.writerow(get_course_data(campus, department_name, 
+                        course_number = re.sub(r'[A-Z&]+', '', course_ID.upper())
+                        tsv_writer.writerow(get_course_data(campus, department_name, 
                                             course_number, course.get_text()))
 
 
-# Creates a .tsv file for every UW campus
-# 'path': The file path to the directory storing all .tsv files for each campus
 def gather(path):
+    """Creates a .tsv file for every UW campus
+    @params
+        'path': The file path to the directory storing all .tsv files for each campus
+    """
     t1 = time.perf_counter()
     for campus, link in CAMPUSES.items():
         read_department_courses(get_web_soup(link), campus, path)

@@ -8,7 +8,7 @@ import re
 import json
 from datetime import datetime
 from parse_courses import gather, CAMPUSES, COLUMN_NAMES
-from create_tree import create_tree
+from create_tree import create_tree, console_tree
 
 
 course_dir = 'UW_Campus_Catalogs' # Name of Folder with Campus tsv/json files
@@ -82,42 +82,6 @@ def read_file(campus):
     return all_courses
 
 
-def console_tree(course_dict, courses_taken, course, indent):
-    """Recursively prints all the prerequisite courses for the given 'course'
-    @params
-        'course_dict': The dictionary of courses
-        'courses_taken': Courses already taken from the user, scanned in from transcript
-        'course': The course in question
-        'indent': The indentation level for each prerequisite course
-    """
-    def search_for(req, char):
-        for course in req:
-            if char in course:
-                return course
-        return ''
-
-    if course and course in course_dict and course not in courses_taken:  
-        check = course_dict[course]['Prerequisites'].split(';')
-        for req in check:
-            list_reqs = re.compile(r',|&&|/').split(req)
-            if set(list_reqs).isdisjoint(courses_taken):
-                for reqcourse in list_reqs:
-                    if reqcourse:
-                        branch = '{}{}'.format(indent, reqcourse)
-                        if len(branch.strip()) is not 1 and len(branch.strip().replace('|', '')) is not 0:
-                            if len(list_reqs) <= 1 and '&&' not in req and '/' not in req:
-                                print(branch) 
-                            elif reqcourse in search_for(req.split(','), '&&').split('&&'):
-                                print('{}&'.format(branch))
-                            elif reqcourse in search_for(req.split(','), '/').split('/'):
-                                print('{}#'.format(branch))
-                            else:
-                                print('{}*'.format(branch))
-                        console_tree(course_dict, courses_taken, reqcourse, indent + '|   ')
-                if len(check) > 1 and len(list_reqs) > 1:
-                    print(indent.replace('|   ', '', 1))
-
-
 def scan_transcript(course_dict):
     """Asks the user if their transcript should be scanned in to remove classes from the class
        tree that they've already taken.
@@ -164,20 +128,55 @@ def write_json(all_courses, mode_type, campus):
         json.dump(all_courses, json_file, indent=4, sort_keys=True)
 
 
-def select_option(options, prompt):
+def select_option(options, prompt, value=None):
     """Prints the enumerated options to the console and allows the user to choose
     @params
-        'options': The iterable with the options for the user
+        'options': Iterable with the options for the user
         'prompt': The prompt printed to the console
     Returns
         Value selected by user
     """
     dict = {str(c[0]): c[1] for c in list(enumerate(options, start=1))}
     print(str(['{}. {}'.format(key, value) for key, value in dict.items()])[1:-1].replace("'", ''))
-    value = None
     while value not in dict.keys() and value not in dict.values():
         value = input(prompt)
     return value if not value.isdigit() else dict[value]
+
+
+def get_course_data(all_courses, more='y'):
+    """Asks user if they want to get any specific data for a course
+    @params
+        'all_courses': Course dictionary
+    """
+    get_more = input('Search for more specific course data? (y/n): ').lower()
+    if 'y' in get_more:
+        while 'y' in more:
+            course = input('Select course: ').upper().replace(' ', '')
+            option = select_option(COLUMN_NAMES, 'Select course data option: ')
+            if course in all_courses:
+                print(all_courses[course][option])
+            else:
+                print('{} is not a course offered at UW.'.format(course))
+            more = input('Continue searching for more specific course data? (y/n): ').lower()
+
+
+def enter_courses(all_courses, courses_taken, more='y'):
+    """Prompts the user for courses to generate PNG or console prerequisite trees
+    @params
+        'all_courses': Course dictionary
+        'courses_taken': Courses already taken from the user, scanned in from transcript
+    """
+    tree = select_option(['Console', 'PNG', 'Both'], 'Select Prerequisite Tree Type: ')
+    tree_dict = {'Console': [console_tree], 'PNG': [create_tree], 'Both': [console_tree, create_tree]}
+    while 'y' in more:
+        course = input('Enter a Course: ').upper().replace(' ', '')
+        print('****************************************************')
+        if course in all_courses:
+            for function in tree_dict[tree]:
+                function(all_courses, courses_taken, course, '')
+        else:
+            print('{} is not a course offered at UW.'.format(course))
+        more = input('Continue? (y/n): ').lower()
 
 
 def start():
@@ -187,15 +186,7 @@ def start():
     campus = select_option(CAMPUSES.keys(), 'Choose a UW Campus: ')
     all_courses = read_file(campus)
     courses_taken = scan_transcript(all_courses)
-    tree = select_option(['Console', 'PNG', 'Both'], 'Select PreReq Tree Type: ')
-    tree_dict = {'Console': [console_tree], 'PNG': [create_tree], 'Both': [console_tree, create_tree]}
-    more = 'y'
-    while 'y' in more:
-        course = input('Enter a Course: ')
-        print('****************************************************')
-        for function in tree_dict[tree]:
-            function(all_courses, courses_taken, course, '')
-        more = input('Continue? (y/n): ').lower()
+    enter_courses(all_courses, courses_taken)
 
 
 start()

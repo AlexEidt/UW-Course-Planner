@@ -69,10 +69,7 @@ def complete_description(description):
     find_one = re.findall(r'[A-Z& ]+/[A-Z& ]+\d+', description)
     
     def remove_in(a, b):
-        remove = []
-        for x in a: 
-            for y in b: 
-                if y in x: remove.append(y)
+        remove = [y for x in a for y in b if y in x]
         for x in b: a.append(x)
         for x in remove: a.remove(x)
         return [x for x in a]
@@ -81,12 +78,11 @@ def complete_description(description):
         find_all = remove_in(find_all, find_one)
         for i, x in enumerate(find_all):
             completed = []
-            old = find_all[i]
             find_all[i] = x.replace(' ', '')
             number = re.search(r'\d{3}', find_all[i]).group(0)
             for crs in re.findall(r'[A-Z& ]+', find_all[i]):
                 completed.append('{}{}'.format(crs, number))
-            description = description.replace(old, '{}{}'.format(' ', '/'.join(completed)), 1)
+            description = description.replace(x, '{}{}'.format(' ', '/'.join(completed)), 1)
 
     find_series_2 = re.findall(r'[A-Z& ]+\d+, ?\d{3}', description)
     find_series_3 = re.findall(r'[A-Z& ]+\d+, ?\d{3}, ?\d{3}', description)
@@ -147,11 +143,12 @@ def get_requisites(description, type):
             description = '{}{}{}'.format(with_either[0], '&&', with_either[1].replace('or', '/'))
     description = description.replace('and', '&&').replace('or', ',')
 
-    def extract_course(course_option, split_char):
+    def extract(course_option, split_char):
         elements = []
         for next_option in list(filter(('').__ne__, course_option.split(split_char))):
             find_match(next_option, elements)
         return elements
+
 
     def find_match(to_match, to_append):
         match = re.search(r'([A-Z& ]{2,}\d{3})', to_match)
@@ -162,13 +159,11 @@ def get_requisites(description, type):
         comma = []
         for option in list(filter(('').__ne__, crs.split(','))):
             if '/' in option and '&&' not in option:
-                comma.append('/'.join(extract_course(option, '/')))
+                comma.append('/'.join(extract(option, '/')))
             elif '/' not in option and '&&' in option:
-                comma.append('&&'.join(extract_course(option, '&&')))
+                comma.append('&&'.join(extract(option, '&&')))
             elif '/' in option and '&&' in option:
-                doubleand = []
-                for next_option in list(filter(('').__ne__, option.split('&&'))):
-                    doubleand.append('/'.join(extract_course(next_option, '/')))
+                doubleand = ['/'.join(extract(x, '/')) for x in list(filter(('').__ne__, option.split('&&')))]
                 comma.append('&&'.join(doubleand))
             else:
                 find_match(option, comma) 

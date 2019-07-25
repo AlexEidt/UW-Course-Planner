@@ -1,6 +1,7 @@
 # UW Course Tool
 
  Search for any course offered at any one of the three UW Campuses and see a full tree of prerequisites for that course. There is also an option to scan in your transcript as a `.txt` file to eliminate any course in the tree that has already been taken. 
+ Run `main.py` to create prerequisite trees.
 
 ***
 
@@ -83,23 +84,47 @@ CSE143*
 |   CSE142
 ```
 
-***
+### Course Data
 
 Course Data | Description 
 :--- | ---
-**Campus** | The campus the course is offered at
+**Campus** | The campus the course is offered at.
 **Department Name** | The name of the department the course is a part of. Denoted by a series of capital letters with no spaces.
 **Course Number** | The 3 digit number identifying the course.
-**Course Name** | The name of the course
-**Credits** | The number of credits offered for the course. Some courses have variable credits offered/different credit options. Check out the UW's guide for the credit system [here](http://www.washington.edu/students/crscat/glossary.html)
-**Areas of Knowledge** | Areas of Knowledge essentially are credit types. [More Information](https://www.washington.edu/uaa/advising/degree-overview/general-education/)
+**Course Name** | The name of the course.
+**Credits** | The number of credits offered for the course. Some courses have variable credits offered/different credit options. Check out the UW's guide for the credit system [here](http://www.washington.edu/students/crscat/glossary.html).
+**Areas of Knowledge** | Areas of Knowledge essentially are credit types. [More Information](https://www.washington.edu/uaa/advising/degree-overview/general-education/).
 **Quarters Offered** | The quarters of the year the course is offered. **A**utumn, **W**inter, **Sp**ring, **S**ummer.
 **Offered with** | At times, a course may be offered alongside a similar course in a different department. 
 **Prerequisites** | Courses that must be taken in order to take the course. 
 **Co-Requisites** | Courses that must be taken at the same time the desired course is being taken.
-**Description** | The description of the course objectives
+**Description** | The description of the course objectives.
 
 ***
+
+### File Creation
+The prerequisite trees rely on data from `.tsv` files in order to work. `.json` files with course data for each
+UW Campus are also created as well as a `Total.tsv` and `Total.json` file with course data for all campuses. 
+
+The `.tsv` and `.json` files are included in the `UW_Campus_Catalogs` folder.
+
+**TSV** | **JSON**
+:---: | :---:
+[Bothell](UW_Campus_Catalogs/TSV/Bothell.tsv) | [Bothell](UW_Campus_Catalogs/JSON/Bothell.json)
+[Seattle](UW_Campus_Catalogs/TSV/Seattle.tsv) | [Seattle](UW_Campus_Catalogs/JSON/Seattle.json)
+[Tacoma](UW_Campus_Catalogs/TSV/Tacoma.tsv) | [Tacoma](UW_Campus_Catalogs/JSON/Tacoma.json)
+[Total](UW_Campus_Catalogs/TSV/Total.tsv) | [Total](UW_Campus_Catalogs/JSON/Total.json)
+
+
+Upon starting `main.py`, if the `UW_Campus_Catalogs` directory is not present in the directory 
+of the scripts, it will automatically be created and filled with the documents in the table above.
+If the `UW_Campus_Catalogs` directory is present, there will be a prompt asking if the course catalogs
+should be updated:
+
+```python
+Course catalogs were last updated on 2019-07-20 13:14:07
+Would you like to update the Course Catalogs? (y/n):
+```
 
 ### Requirements/Dependencies
 Python 3.7
@@ -108,12 +133,12 @@ Python 3.7
  - bs4          [pip install bs4]
  - Graphviz     [pip install graphviz]
 ```
-In order for the visual representation with Graphviz to work, [Graphviz](https://graphviz.gitlab.io/download/) must be downloaded. Once downloaded go to `create_tree.py` and change the System Path under `GRAPHVIZ PATH SETUP`
+In order for the visual representation with Graphviz to work, [Graphviz](https://graphviz.gitlab.io/download/) must be downloaded. Once downloaded go to `create_tree.py`. and change the System Path under `GRAPHVIZ PATH SETUP`
 Make sure to add the `bin` folder of the downloaded Graphviz folder to the end of the system path.
 
 ```python
 # --------------------------GRAPHVIZ PATH SETUP-------------------------- #
-os.environ["PATH"] += os.pathsep + [FILE PATH TO GRAPHVIZ FOLDER&#92;&#92;GRAPHVIZ FOLDER NAME&#92;&#92;bin] 
+os.environ["PATH"] += os.pathsep + [FILE PATH TO GRAPHVIZ bin FOLDER] 
 # ----------------------------------------------------------------------- #
 ```
 
@@ -129,7 +154,7 @@ conda install graphviz
 
 If the error persists:
 
-##### MAC:
+##### MAC
 ```
 brew install graphviz
 ```

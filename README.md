@@ -22,7 +22,7 @@ All courses at the same 'level' in the tree are the same color. Courses with the
 indicate that **ONE** of those courses is enough to statisfy the prerequisite requirement. 
 
 <p align = "center">
-    <img src = "Prereq Trees/EE235.png" width = 600 alt="EE235 Prerequisite Tree">
+    <img src = "static/Images/EE235.png" width=600 alt="EE235 Prerequisite Tree">
 </p>
 
 ### Console Display
@@ -84,6 +84,33 @@ CSE143*
 |   CSE142
 ```
 
+### Flask Application
+
+There is an option to run this application on a server and to generate prerequisite trees on the web.
+In order to run the `Flask` application on the localhost open the Command Line and `cd` into the directory where the application is stored. Once there input the following commands:
+
+#### Windows
+```
+set FLASK_APP=app.py
+```
+### MAC
+```
+export FLASK_APP=app.py
+```
+
+and then:
+
+```
+flask run
+```
+
+Then open the following link to access the website: http://127.0.0.1:5000/home/
+
+The following page should appear:
+<p align="center">
+    <img src="static/Images/HomePage.png" width=400 alt="Home Page">
+</p>
+
 ### Course Data
 
 Course Data | Description 
@@ -108,6 +135,8 @@ UW Campus are also created as well as a `Total.tsv` and `Total.json` file with c
 
 The `.tsv` and `.json` files are included in the `UW_Campus_Catalogs` folder.
 
+<p align = "center">
+
 **TSV** | **JSON**
 :---: | :---:
 [Bothell](UW_Campus_Catalogs/TSV/Bothell.tsv) | [Bothell](UW_Campus_Catalogs/JSON/Bothell.json)
@@ -115,6 +144,7 @@ The `.tsv` and `.json` files are included in the `UW_Campus_Catalogs` folder.
 [Tacoma](UW_Campus_Catalogs/TSV/Tacoma.tsv) | [Tacoma](UW_Campus_Catalogs/JSON/Tacoma.json)
 [Total](UW_Campus_Catalogs/TSV/Total.tsv) | [Total](UW_Campus_Catalogs/JSON/Total.json)
 
+</p>
 
 Upon starting `main.py`, if the `UW_Campus_Catalogs` directory is not present in the directory 
 of the scripts, it will automatically be created and filled with the documents in the table above.
@@ -122,19 +152,49 @@ If the `UW_Campus_Catalogs` directory is present, there will be a prompt asking 
 should be updated:
 
 ```python
-Course catalogs were last updated on 2019-07-20 13:14:07
+Course catalogs were last updated on XXXX-XX-XX XX:XX:XX
 Would you like to update the Course Catalogs? (y/n):
 ```
 
 ### Requirements/Dependencies
+
 Python 3.7
+
+#### Web Scraping and Tree Generation using GraphViz
+
 ```
  - tqdm         [pip install tqdm]
- - bs4          [pip install bs4]
+ - bs4          [pip install beautifulsoup4]
  - Graphviz     [pip install graphviz]
+ - Requests     [pip install requests]
 ```
+
+#### Flask Application
+```
+ - Flask        [pip install Flask]
+
 In order for the visual representation with Graphviz to work, [Graphviz](https://graphviz.gitlab.io/download/) must be downloaded. Once downloaded go to `create_tree.py`. and change the System Path under `GRAPHVIZ PATH SETUP`
 Make sure to add the `bin` folder of the downloaded Graphviz folder to the end of the system path.
+
+The directory for the application is structured according to the diagram below:
+```
+static
+    Images
+        Images used for website
+    JavaScript
+        Script file for ajax request
+    Prerequisite_Trees
+        All generated Prerequisite Trees
+templates
+    All HTML files
+UW_Campus_Catalogs
+    TSV
+        All .tsv files for each campus
+    JSON
+        All .json files for each campus and all departments
+```
+
+***
 
 ```python
 # --------------------------GRAPHVIZ PATH SETUP-------------------------- #

@@ -308,7 +308,7 @@
         "Department Name": "BBIO",
         "Description": "Survey of cell biology, including macromolecules, cellular metabolism and reproduction, genetics, molecular biology, and evolution, especially as they apply to organisms. Lectures and weekly lab exercises. Intended for students pursing nursing or allied health degrees; not intended for biology majors. Prerequisite: minimum grade of 2.0 in either B CHEM 115 or B CHEM 143/B CHEM 144.",
         "Offered with": "",
-        "Prerequisites": "BCHEM115,BCHEM143/BCHEM144",
+        "Prerequisites": "BCHEM115,BCHEM143,BCHEM144",
         "Quarters Offered": ""
     },
     "BBIO241": {
@@ -347,7 +347,7 @@
         "Department Name": "BBIO",
         "Description": "Biology of microorganisms. Prokaryotic cell structure, function, metabolism, genetics, and biotechnology. Medical aspects of microbiology: disease mechanisms, transmission and control; human defense mechanisms; and antimicrobial drugs. Includes labs. Intended for nursing and allied health degrees; not intended for biology majors. Prerequisite: either B CHEM 115 or B CHEM 143/B CHEM 144; either B BIO 200 or B BIO 240.",
         "Offered with": "",
-        "Prerequisites": "BCHEM115,BCHEM143/BCHEM144;BBIO200,BBIO240",
+        "Prerequisites": "BCHEM115,BCHEM143,BCHEM144;BBIO200,BBIO240",
         "Quarters Offered": ""
     },
     "BBIO285": {
@@ -516,7 +516,7 @@
         "Department Name": "BBIO",
         "Description": "Second quarter of biochemistry, covering chemistry of major metabolic pathways, including glycolysis, the Krebs cycle, electron, transport, and metabolism of amino acids and fatty acids. Prerequisite: B BIO 364/B CHEM 364. ",
         "Offered with": "",
-        "Prerequisites": "BBIO364/BCHEM364",
+        "Prerequisites": "BBIO364,BCHEM364",
         "Quarters Offered": "W"
     },
     "BBIO366": {
@@ -2518,7 +2518,7 @@
         "Department Name": "BCHEM",
         "Description": "Preparations and qualitative organic analysis. Designed to be taken with B CHEM 239. Prerequisite: minimum grade of 1.7 in both B CHEM 238 and B CHEM 241; B CHEM 239, which may be taken concurrently.",
         "Offered with": "",
-        "Prerequisites": "BCHEM238&&BCHEM241;BCHEM239",
+        "Prerequisites": "BCHEM238;BCHEM241;BCHEM239",
         "Quarters Offered": ""
     },
     "BCHEM293": {
@@ -2609,7 +2609,7 @@
         "Department Name": "BCHEM",
         "Description": "Examines the chemistry of the atmosphere and the relationship between air pollution sources, air quality, and human health from both a scientific and policy perspective. Prerequisite: Minimum 2.0 in B CHEM 163 and B CHEM 164.",
         "Offered with": "",
-        "Prerequisites": "BCHEM163&&BCHEM164",
+        "Prerequisites": "BCHEM163;BCHEM164",
         "Quarters Offered": ""
     },
     "BCHEM364": {
@@ -2635,7 +2635,7 @@
         "Department Name": "BCHEM",
         "Description": "Second quarter of biochemistry, covering chemistry of major metabolic pathways, including glycolysis, the Krebs cycle, electron, transport, and metabolism of amino acids and fatty acids. Prerequisite: B BIO 364/B CHEM 364. ",
         "Offered with": "",
-        "Prerequisites": "BBIO364/BCHEM364",
+        "Prerequisites": "BBIO364,BCHEM364",
         "Quarters Offered": "W"
     },
     "BCHEM366": {
@@ -4507,7 +4507,7 @@
         "Department Name": "BEDUC",
         "Description": "Fulfills the second seminar of the two-part course series designed to help students compile and revise the final version of the reflective learning Capstone Electronic Portfolio for the Bachelor of Arts in Educational Studies major.  This course will be conducted as an independent study facilitated by the student's academic advisor. Prerequisite: B EDUC 399 and B EDUC 495 Credit/no-credit only. ",
         "Offered with": "",
-        "Prerequisites": "BEDUC399&&BEDUC495",
+        "Prerequisites": "BEDUC399;BEDUC495",
         "Quarters Offered": "A,W,Sp"
     },
     "BEDUC501": {
@@ -5560,7 +5560,7 @@
         "Department Name": "BEE",
         "Description": "Examines the specification, design of a microprocessor-based computer system that are dedicated to specific application. Covers low-level programing, memory systems, I/O and system debugging. Students design an embedded microprocessor system using computer-aided design tools. Prerequisite: minimum grade of 2.0 in B EE 271 and B EE 331.",
         "Offered with": "",
-        "Prerequisites": "BEE271&&BEE331",
+        "Prerequisites": "BEE271;BEE331",
         "Quarters Offered": ""
     },
     "BEE433": {
@@ -5755,7 +5755,7 @@
         "Department Name": "BEE",
         "Description": "Focuses on understanding a broad variety of sensor technologies and their application as systems in everyday use. Provides both a foundation to move into a particular area of sensor technology and also a means to apply appropriate sensors for particular applications. Prerequisite: minimum grade of 1.5 in both B EE 235 and B EE 331.",
         "Offered with": "",
-        "Prerequisites": "BEE235&&BEE331",
+        "Prerequisites": "BEE235;BEE331",
         "Quarters Offered": ""
     },
     "BEE486": {
@@ -6418,7 +6418,7 @@
         "Department Name": "BES",
         "Description": "Explores the interaction among physical, chemical, and ecological systems in lakes with a focus anthropogenic change in local and regional lakes. Entails collaborative fieldwork component in water quality. Prerequisite: B CHEM 143 and B CHEM 144.",
         "Offered with": "",
-        "Prerequisites": "BCHEM143&&BCHEM144",
+        "Prerequisites": "BCHEM143;BCHEM144",
         "Quarters Offered": ""
     },
     "BES331": {
@@ -7640,7 +7640,7 @@
         "Department Name": "BHS",
         "Description": "Introduces principles, methods, and issues in public health practice-based epidemiology. Covers research designs and methods to describe disease occurrence and risk factor associations, and the role of epidemiologic data in health policy. Prerequisite: minimum grade of 2.0 in BHS 201 and BHS 300; and minimum grade of 1.7 in either B HLTH 215/B MATH 215, BIS 315, B BUS 215, or STMATH 341. ",
         "Offered with": "",
-        "Prerequisites": "BHS201&&BHS300;BHLTH215/BMATH215,BIS315,BBUS215,STMATH341",
+        "Prerequisites": "BHS201;BHS300;BHLTH215,BMATH215,BIS315,BBUS215,STMATH341",
         "Quarters Offered": "S"
     },
     "BHS496": {
@@ -12268,7 +12268,7 @@
         "Department Name": "BME",
         "Description": "Covers dynamic system modeling (mechanical, electrical, fluid, and thermos systems); linear oscillator analysis (Laplace transforms, Fourier transforms, eigenvalue problems, and modal analysis); performance specifications of feedback control systems; and controller designs for single input single output systems. Includes laboratory experiences. Prerequisite: minimum grade of 1.7 in both B ME 342 and B ME 315.",
         "Offered with": "",
-        "Prerequisites": "BME342&&BME315",
+        "Prerequisites": "BME342;BME315",
         "Quarters Offered": ""
     },
     "BME345": {
@@ -12294,7 +12294,7 @@
         "Department Name": "BME",
         "Description": "Fundamentals of electrical circuits and components, and their application in motors, generators, and other machinery used in industrial applications. Includes laboratory. Prerequisite: minimum grade of 1.7 in both STMATH 126 and B PHYS 122.",
         "Offered with": "",
-        "Prerequisites": "STMATH126&&BPHYS122",
+        "Prerequisites": "STMATH126;BPHYS122",
         "Quarters Offered": "A"
     },
     "BME431": {
@@ -12307,7 +12307,7 @@
         "Department Name": "BME",
         "Description": "Covers underlying physics of diagnostic and therapeutic ultrasound systems and their physical effects. Estimates important ultrasound parameters using numerical simulations, algebraic techniques, and laboratory-based measurements. Prerequisite: minimum grade of 2.0 in both B ENGR 310 and B PHYS 123.",
         "Offered with": "",
-        "Prerequisites": "BENGR310&&BPHYS123",
+        "Prerequisites": "BENGR310;BPHYS123",
         "Quarters Offered": ""
     },
     "BME432": {
@@ -12398,7 +12398,7 @@
         "Department Name": "BME",
         "Description": "Examines the responsibilities of the engineer in the ethical application of technology in diverse, interconnected, and global societies. Historical and contemporary cases are used to probe socio-cultural implications of engineering practice and the role of engineers in local, national, and global development. Prerequisite: minimum grade of 2.0 in both STMATH 126 and B PHYS 121.",
         "Offered with": "",
-        "Prerequisites": "STMATH126&&BPHYS121",
+        "Prerequisites": "STMATH126;BPHYS121",
         "Quarters Offered": ""
     },
     "BME482": {
@@ -12463,7 +12463,7 @@
         "Department Name": "BME",
         "Description": "Small-team project targeting open-ended design problems in mechanical engineering. May be undertaken as part of an industrial internship with direct supervision of the mechanical engineering faculty and sponsor. Prerequisite: minimum grade of .7 in each of B ME 333; B ME 343; and B EE 371/CSS 371.",
         "Offered with": "",
-        "Prerequisites": "BME333;BME343;BEE371/CSS371",
+        "Prerequisites": "BME333;BME343;BEE371,CSS371",
         "Quarters Offered": ""
     },
     "BME496": {
@@ -13074,7 +13074,7 @@
         "Department Name": "BNURS",
         "Description": "Preparation for matching with scholarly chairperson, advanced fieldwork and the capstone project courses.  Coaches students to analyze current fit with the competencies required for a selected advanced nursing clinical, educational or administrative leadership role; and on collaborative roles, functions, products, and documentation required to complete fieldwork and the capstone project. Prerequisite: B NURS 504 and B NURS 525. Credit/no-credit only.",
         "Offered with": "",
-        "Prerequisites": "BNURS504&&BNURS525",
+        "Prerequisites": "BNURS504;BNURS525",
         "Quarters Offered": ""
     },
     "BNURS591": {
@@ -13373,7 +13373,7 @@
         "Department Name": "BPHYS",
         "Description": "Provides introduction to the science of cosmology. Topics include mathematical descriptions of the expanding universe, the big bang, the cosmic microwave background, and early universe. Prerequisite: minimum grade of 2.0 in both B PHYS 221 and B PHYS 222.",
         "Offered with": "",
-        "Prerequisites": "BPHYS221&&BPHYS222",
+        "Prerequisites": "BPHYS221;BPHYS222",
         "Quarters Offered": ""
     },
     "BPHYS317": {
@@ -13555,7 +13555,7 @@
         "Department Name": "BPHYS",
         "Description": "Draw connections between physics, mathematics and general science topics and connect these topics to issues relevant in modern day society and industry. Focus on written, verbal and visual communication skills and using literature sources Prerequisite: BPHYS 224 and BPHYS 222",
         "Offered with": "",
-        "Prerequisites": "BPHYS224&&BPHYS222",
+        "Prerequisites": "BPHYS224;BPHYS222",
         "Quarters Offered": ""
     },
     "BPHYS493": {
@@ -15024,7 +15024,7 @@
         "Department Name": "CSS",
         "Description": "Examines the core web development technologies used to design, build and support web-based applications. Introduce various web programming languages. creates interactive media projects, including applying programming constructs, incorporating text and multimedia contents, and using standard web communication formats. Prerequisite: CSS 342 and CSS 475.",
         "Offered with": "",
-        "Prerequisites": "CSS342&&CSS475",
+        "Prerequisites": "CSS342;CSS475",
         "Quarters Offered": ""
     },
     "CSS482": {
@@ -15934,7 +15934,7 @@
         "Department Name": "ELCBUS",
         "Description": "Explores creative, integrative approaches to conflict resolution. Includes bargaining games, role-plays, cases, issues in conflict management, interpersonal influence processes, ethical implications of bargaining problems, and persona negotiating styles. Equivalent to B BUS 462. Prerequisite: minimum grade of 1.7 in both ELCBUS 300 and ELCBUS 320.",
         "Offered with": "",
-        "Prerequisites": "ELCBUS300&&ELCBUS320",
+        "Prerequisites": "ELCBUS300;ELCBUS320",
         "Quarters Offered": ""
     },
     "ELCBUS441": {
@@ -16389,7 +16389,7 @@
         "Department Name": "STMATH",
         "Description": "An introduction to the concepts of financial mathematics, and how they are applied in calculating\npresent and accumulated values for various streams of cash flows, as a basis for future use in: reserving; valuation; pricing; asset/liability management; investment income; capital budgeting; and valuing contingent cash flows. Prerequisite: A minimum grade of 2.0 in STMATH 125; and a minimum grade of 2.0 in  B BUS 220/BIS 200.",
         "Offered with": "",
-        "Prerequisites": "STMATH125;BBUS220/BIS200",
+        "Prerequisites": "STMATH125;BBUS220,BIS200",
         "Quarters Offered": ""
     },
     "STMATH341": {
@@ -16506,7 +16506,7 @@
         "Department Name": "STMATH",
         "Description": "Es . Topics include polynomial and piecewise polynomial interpolation, the Fourier transform, numerical differentiation and integration, and approximate solution of",
         "Offered with": "",
-        "Prerequisites": "STMATH307&&STMATH405",
+        "Prerequisites": "STMATH307;STMATH405",
         "Quarters Offered": ""
     },
     "STMATH407": {
@@ -16545,7 +16545,7 @@
         "Department Name": "STMATH",
         "Description": "A mathematically rigorous treatment of vector spaces; linear transformations and matrices; matrix operations and linear systems; determinants; eigenvalues, eigenvectors, and diagonalization; canonical forms; and special matrices including permutation and nonnegative matrices. Prerequisite: minimum grade of 2.0 in each of STMATH 300 and STMATH 308; recommended: STMATH 300 and STMATH 308.",
         "Offered with": "",
-        "Prerequisites": "STMATH300&&STMATH308",
+        "Prerequisites": "STMATH300;STMATH308",
         "Quarters Offered": ""
     },
     "STMATH420": {

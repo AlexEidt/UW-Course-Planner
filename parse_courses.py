@@ -37,15 +37,25 @@ Building off the script by Kamil Jiwa, the following changes were made:
     -Progress bar for parsing
 """
 
-# Creates a tsv file containing course data for each UW Campus
+""" Creates a tsv file containing course data for each UW Campus """
 
 import re
 import csv
 import time
+import logging
+import json
+import requests as r
 import urllib3 as URL
 from bs4 import BeautifulSoup as Soup
 from tqdm import tqdm as AddProgressBar
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
+handler = logging.FileHandler('Log.log')
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 CAMPUSES = {                                                                                
     'Bothell': 'http://www.washington.edu/students/crscatb/',                               
@@ -81,7 +91,7 @@ def complete_description(description):
             find_all[i] = x.replace(' ', '')
             number = re.search(r'\d{3}', find_all[i]).group(0)
             for crs in re.findall(r'[A-Z& ]+', find_all[i]):
-                completed.append('{}{}'.format(crs, number))
+                completed.append(f'{crs}{number}')
             description = description.replace(x, '{}{}'.format(' ', '/'.join(completed)), 1)
 
     find_series_2 = re.findall(r'[A-Z& ]+\d+, ?\d{3}', description)
@@ -94,7 +104,7 @@ def complete_description(description):
         course_dep = re.search(r'[A-Z& ]+', find_series_2[i])
         if course_dep: 
             depmnt = course_dep.group(0)
-            description = description.replace(series, '{}{}'.format(depmnt, number), 1)
+            description = description.replace(series, f'{depmnt}{number}', 1)
     return description
 
 
@@ -110,6 +120,7 @@ def get_credits(description):
 
 
 not_offered = re.compile(r'[Nn]ot open to students')
+co_req = re.compile(r'[Cc]o-?[Rr]equisites?')
 def get_requisites(description, type):
     """Gets the requisite courses for the given course
     @params
@@ -117,7 +128,7 @@ def get_requisites(description, type):
         'type': Either 'Prerequisite' or 'Co-Requisite'
     Returns 
         The requisite courses. 
-        If type='Prerequisite', courses are separated by ';', '/', '&&', or ','
+        If type='Prerequisite', courses are separated by ';', '/', '&&', and/or ','
     """
     if type not in description:                                                             
         return ''       
@@ -127,8 +138,8 @@ def get_requisites(description, type):
     description = not_offered.split(description.split('Offered:')[0].split(type)[1])[0]
     multiple = re.search(r'[A-Z& ]+\d{3}/[A-Z& ]+\d{3}/[A-Z& ]+\d{3} and', description)
     if multiple:
-        description = description.replace(multiple.group(0), '{}{}'.format(multiple.group(0)[:-4], ';'), 1)
-    if 'Prerequisite' in type: description = description.split('Co-requisite')[0]                         
+        description = description.replace(multiple.group(0), f'{multiple.group(0)[:-4]};', 1)
+    if 'Prerequisite' in type: description = co_req.split(description)[0]                         
     POI = ',POI' if 'permission' in description.lower() else '' 
     new_result = []
     for course in description.split('(')[0].split(';'):
@@ -140,7 +151,7 @@ def get_requisites(description, type):
 
     if 'with either' in description:
             with_either = description.split('with either')
-            description = '{}{}{}'.format(with_either[0], '&&', with_either[1].replace('or', '/'))
+            description = '{}&&{}'.format(with_either[0], with_either[1].replace('or', '/'))
     description = description.replace('and', '&&').replace('or', ',')
 
     def extract(course_option, split_char):
@@ -148,7 +159,6 @@ def get_requisites(description, type):
         for next_option in list(filter(('').__ne__, course_option.split(split_char))):
             find_match(next_option, elements)
         return elements
-
 
     def find_match(to_match, to_append):
         match = re.search(r'([A-Z& ]{2,}\d{3})', to_match)
@@ -170,14 +180,22 @@ def get_requisites(description, type):
         semi_colon.append(','.join(list(filter(('').__ne__, comma))))
     result = ';'.join(list(filter(('').__ne__, semi_colon))).replace(' ', '')
     result = result.strip(',').strip(';').strip('&').replace(';,', ';')
-    result = '{}{}'.format(result, POI)
+    result = f'{result}{POI}'
     result = re.sub(r'&{3,}', '', result)
     result = ','.join(list(filter(('').__ne__, result.split(','))))
     result = ';'.join(list(filter(('').__ne__, result.split(';'))))
     result = ','.join(list(dict.fromkeys(result.split(',')))).replace(';&&', ';').strip('&')
     result = ';'.join(list(dict.fromkeys(result.split(';'))))
-    result = result.strip(',').strip(';').strip('&').replace(';,', ';')
-    return result.strip()
+    result = result.strip(',').strip(';').strip('&').replace(';,', ';').strip()
+    filter_result = []
+    for course in result.split(';'):
+        if '/' in course and '&&' not in course:
+            filter_result.append(course.replace('/', ','))
+        elif '/' not in course and '&&' in course and ',' not in course:
+            filter_result.append(course.replace('&&', ';'))
+        else:
+            filter_result.append(course)
+    return ';'.join(filter_result)
 
 
 def get_offered(description):
@@ -254,13 +272,13 @@ def extract_description(description, credit_type):
         description = description.split(found)[1]
         match_match = re.search(r'[A-Z][a-z]+', found)
         if match_match:
-            description = '{} {}'.format(match_match.group(0), description.strip())
+            description = f'{match_match.group(0)} {description.strip()}'
     else:
         match = re.search(r'[A-Z][a-z]+[A-Z]', description)
         if match:
             found = match.group(0)
             description = description.split(found)[1]
-            description = '{}{}'.format(found[-1], description)
+            description = f'{found[-1]}{description}'
     return description
 
 
@@ -297,41 +315,70 @@ def get_web_soup(website_link):
     source = website.request('GET', website_link)
     return Soup(source.data, features='lxml')
 
-
+department_dict = {} # Maps department abbreviations to names for each UW Campus
 def read_department_courses(course_data, campus, path):
     """Creates a .tsv file with all the course offered on the given 'campus'
+       Initalizes 'departments.json' to include a dictionary of all department
+       abbreviations to actual department name for each UW Campus.
     @params
         'course_data': BeautifulSoup object with the department list website for the given 'campus'
         'campus': The campus to get the courses from
         'path': The file path to the directory storing all .tsv files for each campus
     """
-    with open('{}\\{}\\{}.tsv'.format(path, 'TSV', campus), mode='w', newline='') as courses:
+    department_names = {}
+    not_parsed = []
+    with open(f'{path}\\TSV\\{campus}.tsv', mode='w', newline='') as courses:
         tsv_writer = csv.writer(courses, delimiter='\t')
         tsv_writer.writerow(COLUMN_NAMES)
         for dep_link in AddProgressBar(course_data.find_all('a')):
             dep_file = dep_link.get('href')
-            if '.html' in dep_file and '/' not in dep_file:
-                file_name = '{}{}'.format(CAMPUSES[campus], dep_file)   
-                department = get_web_soup(file_name)
-                for course in department.find_all('a'):
-                    course_ID = course.get('name')             
-                    department_name = None
-                    course_number = None
-                    if course_ID:
-                        department_name = re.sub(r'\d+', '', course_ID).upper()
-                        course_number = re.sub(r'[A-Z&]+', '', course_ID.upper())
-                        tsv_writer.writerow(get_course_data(campus, department_name, 
-                                            course_number, course.get_text()))
+            if re.search(r'[a-z]+\.html', dep_file):
+                file_name = f'{CAMPUSES[campus]}{dep_file}'
+                request = r.get(file_name)
+                if request.ok:   
+                    department = get_web_soup(file_name)
+                    for course in department.find_all('a'):
+                        course_ID = course.get('name')             
+                        if course_ID:
+                            department_name = re.sub(r'\d+', '', course_ID).upper()
+                            course_number = re.sub(r'[A-Z&]+', '', course_ID.upper())
+                            tsv_writer.writerow(get_course_data(campus, department_name, 
+                                                course_number, course.get_text()))
+                            department_names[department_name] = dep_link.get_text().rsplit('(', 1)[0].strip()
+                else:
+                    logger.critical(f'Could not access: {file_name}. HTTP Status Code: {request.status_code}')
+                    not_parsed.append(dep_file.replace('.html', '', 1).upper())
+    department_dict[campus] = department_names
+    return not_parsed
 
 
 def gather(path):
     """Creates a .tsv file for every UW campus
     @params
         'path': The file path to the directory storing all .tsv files for each campus
+    Returns
+        Dictionary with missing departments for each UW Campus
     """
+    not_scanned = {}
     t1 = time.perf_counter()
     for campus, link in CAMPUSES.items():
-        read_department_courses(get_web_soup(link), campus, path)
+        request = r.get(link)
+        not_parsed = None
+        if request.ok:
+            not_parsed = read_department_courses(get_web_soup(link), campus, path)
+        else:
+            logger.error(f'''Could not access UW {campus} Course Catalog ({CAMPUSES[campus]}). 
+                            HTTP Status Code: {request.status_code}''')
+        not_scanned[campus] = not_parsed
     t2 = time.perf_counter()
-    print('Course Catalogs for {} have been sucessfully created in: \n\t{}'.format(str(list(CAMPUSES.keys()))[1:-1].replace("'", ''), path))
-    print('Script ran in {:.1f} seconds'.format(t2 - t1))
+    with open(f'{path}\\JSON\\Departments.json', mode='w') as file:
+        json.dump(department_dict, file, indent=4, sort_keys=True)
+    check = [y for x in not_scanned.values() for y in x]
+    if None in not_scanned.values() or check:
+        logger.critical(f'Error in parsing courses. Courses from {str(check)} not parsed')
+    else:
+        logger.info(f'''Course Catalogs for {', '.join(CAMPUSES.keys())} 
+                    have been sucessfully created in: {path}''')
+        logger.info('{} ran in {:.1f} seconds'.format(__name__, t2 - t1))
+    return check
+

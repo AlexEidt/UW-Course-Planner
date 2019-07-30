@@ -1452,7 +1452,7 @@
         "Department Name": "TBANLT",
         "Description": "Introduces the development, implementation, and utilization of business models for managerial decision making.  It covers formulation of models and interpretation of the information a model produces.  Some of the deterministic optimization techniques (e.g. linear/nonlinear models) and probabilistic decision-making techniques (e.g. network models and decision trees) are covered. Prerequisite: either TMATH 110, T BGEN 200, QMETH 201, STAT 220, STAT 221/CS&SS 221/SOC 221, or STAT 311.",
         "Offered with": "",
-        "Prerequisites": "TMATH110,TBGEN200,QMETH201,STAT220,STAT221/CS&SS221/SOC221,STAT311",
+        "Prerequisites": "TMATH110,TBGEN200,QMETH201,STAT220,STAT221,CS&SS221,SOC221,STAT311",
         "Quarters Offered": ""
     },
     "TBANLT460": {
@@ -1465,7 +1465,7 @@
         "Department Name": "TBANLT",
         "Description": "Covers popular methods in predictive analytics including association rules, classification, regression trees, logistic regression and introduces cutting edge interactive data-visualization tools and data reduction techniques. Prerequisite: either TMATH 110, T BGEN 200, QMETH 201, STAT 220, STAT 221/CS&SS 221/SOC 221, STAT 311, or T BUS 301.",
         "Offered with": "",
-        "Prerequisites": "TMATH110,TBGEN200,QMETH201,STAT220,STAT221/CS&SS221/SOC221,STAT311,TBUS301",
+        "Prerequisites": "TMATH110,TBGEN200,QMETH201,STAT220,STAT221,CS&SS221,SOC221,STAT311,TBUS301",
         "Quarters Offered": ""
     },
     "TBANLT480": {
@@ -3025,7 +3025,7 @@
         "Department Name": "TCES",
         "Description": "Ds ). Uses Verilog to analyze and design complex digital systems based on field programmable gate arrays (FPGAs). Uses testing techniques to verify design and introduces operation of digital systems. Prerequisite: Minimum grade of 2.0 in TCES 230 and TCES 312.",
         "Offered with": "",
-        "Prerequisites": "TCES230&&TCES312",
+        "Prerequisites": "TCES230;TCES312",
         "Quarters Offered": ""
     },
     "TCES372": {
@@ -3038,7 +3038,7 @@
         "Department Name": "TCES",
         "Description": "Covers the general features of computation systems, including an introduction to processor architecture, instruction sets, assembly programming, cache and memory architecture, debug monitors, and translation from higher level languages to machine language. Prerequisite: minimum grade of 2.0 in both TCES 230 and TCES 203.",
         "Offered with": "",
-        "Prerequisites": "TCES230&&TCES203",
+        "Prerequisites": "TCES230;TCES203",
         "Quarters Offered": ""
     },
     "TCES380": {
@@ -3090,7 +3090,7 @@
         "Department Name": "TCES",
         "Description": "Covers digital integrated circuit manufacturing process; design rules; diodes; MOS(FET) transistors; interconnect wires; analysis and design of CMOS inverters; combinational and sequential circuits; arithmetic operators and memory; implementation strategies; timing issues; and CAD tools. Prerequisite: minimum grade of 2.0 in both TCES 230 and TCES 312.",
         "Offered with": "",
-        "Prerequisites": "TCES230&&TCES312",
+        "Prerequisites": "TCES230;TCES312",
         "Quarters Offered": ""
     },
     "TCES425": {
@@ -3675,7 +3675,7 @@
         "Department Name": "TCMP",
         "Description": "Introduces students to the role of local organizations in advocating for urban policies and social change. Develops skills to distil and summarize theoretical readings and the competency to gather and analyze data In the context of a process evaluation. Prerequisite: TCMP 546 and TCMP 554.",
         "Offered with": "",
-        "Prerequisites": "TCMP546&&TCMP554",
+        "Prerequisites": "TCMP546;TCMP554",
         "Quarters Offered": ""
     },
     "TCMP590": {
@@ -5235,7 +5235,7 @@
         "Department Name": "TCSS",
         "Description": "Develops student understanding of how compliers translate high level programming languages into assembly language. Includes specifying programming language syntax, building data structures, generating assembly code, and implementing a complier for a small high-level language. Prerequisite: minimum grade of 2.0 in both TCSS 342 and TCSS 371.",
         "Offered with": "",
-        "Prerequisites": "TCSS342&&TCSS371",
+        "Prerequisites": "TCSS342;TCSS371",
         "Quarters Offered": ""
     },
     "TCSS422": {
@@ -5274,7 +5274,7 @@
         "Department Name": "TCSS",
         "Description": "Covers cryptographic methods including public and private key algorithms. Examines protocols that utilize such methods, such as secure email, digital signatures, authorization, e-voting, and electronic cash. Includes lab component for demonstration of security techniques such as firewalls, intrusion detection systems, and virtual private networks. Prerequisite: a minimum grade of 2.0 in TCSS 321 and TCSS 325",
         "Offered with": "",
-        "Prerequisites": "TCSS321&&TCSS325",
+        "Prerequisites": "TCSS321;TCSS325",
         "Quarters Offered": ""
     },
     "TCSS435": {
@@ -5469,7 +5469,7 @@
         "Department Name": "TCSS",
         "Description": "Study and comparison of several programming languages in regards to data structures, operations, notation, and control. Examines programming paradigms, implementation strategies, programming environments, and programming style. Prerequisite: minimum grade of 2.0 in both TCSS 342 and TCSS 333.",
         "Offered with": "",
-        "Prerequisites": "TCSS342&&TCSS333",
+        "Prerequisites": "TCSS342;TCSS333",
         "Quarters Offered": ""
     },
     "TCSS481": {
@@ -5586,7 +5586,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces techniques in algorithm analysis and data structures including time space complexity, and big O notation.  Introduces fundamental data structures: array lists, linked lists, queues, stacks, trees and hash tables and algorithms for sorting, selection, binary search and recursion with emphasis on implementation in a high-level programming language. Prerequisite: TCSS 142 and TCSS 143, or equivalent.",
         "Offered with": "",
-        "Prerequisites": "TCSS142&&TCSS143",
+        "Prerequisites": "TCSS142;TCSS143",
         "Quarters Offered": ""
     },
     "TCSS502": {
@@ -5599,7 +5599,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces object-oriented programming (OOP) skills and best practices in software design including concepts of inheritance, encapsulation, abstraction, polymorphism, and software design patterns. Topics covered in algorithm analysis techniques and data structures course will be leveraged in projects. Prerequisite: TCSS 142 and TCSS 143, or equivalent.",
         "Offered with": "",
-        "Prerequisites": "TCSS142&&TCSS143",
+        "Prerequisites": "TCSS142;TCSS143",
         "Quarters Offered": ""
     },
     "TCSS503": {
@@ -5612,7 +5612,7 @@
         "Department Name": "TCSS",
         "Description": "Introduces advanced data structures and key algorithmic techniques used in solving software engineering problems, such as trees, graphs, breadth/depth first searches, divide and conquer, greedy algorithms and dynamic programming. Learn how to analyze a problem and incorporate advanced data structures into the software implementations. Prerequisite: TCSS 501 and TCSS 502.",
         "Offered with": "",
-        "Prerequisites": "TCSS501&&TCSS502",
+        "Prerequisites": "TCSS501;TCSS502",
         "Quarters Offered": ""
     },
     "TCSS504": {
@@ -5625,7 +5625,7 @@
         "Department Name": "TCSS",
         "Description": "Presents the principles and theory of software engineering and development including: requirements analysis, design and prototyping, system analysis, testing, project and version management, software and system metrics, and software development processes and lifecycles. Prerequisite: TCSS 501 and TCSS 502.",
         "Offered with": "",
-        "Prerequisites": "TCSS501&&TCSS502",
+        "Prerequisites": "TCSS501;TCSS502",
         "Quarters Offered": ""
     },
     "TCSS505": {
@@ -5638,7 +5638,7 @@
         "Department Name": "TCSS",
         "Description": "Examines the fundamental concepts of modern operating systems and how they function. Topics covered include processes, threads, memory management, process scheduling, file systems, virtual machines and software containers.  Covers the basics of the Linux operating system, bash commands, scripting, and systems programming. Prerequisite: TCSS 503 and TCSS 504.",
         "Offered with": "",
-        "Prerequisites": "TCSS503&&TCSS504",
+        "Prerequisites": "TCSS503;TCSS504",
         "Quarters Offered": ""
     },
     "TCSS506": {
@@ -5651,7 +5651,7 @@
         "Department Name": "TCSS",
         "Description": "Features an extended software engineering team project creating a web-based or service-oriented application. Includes topics such as databases, cloud computing, web services architectures and development. Prerequisite: TCSS 503 and TCSS 504.",
         "Offered with": "",
-        "Prerequisites": "TCSS503&&TCSS504",
+        "Prerequisites": "TCSS503;TCSS504",
         "Quarters Offered": ""
     },
     "TCSS510": {
@@ -5755,7 +5755,7 @@
         "Department Name": "TCSS",
         "Description": "Examines a variety of techniques to perform data analytics and their extensions to big data infrastructure. Students will be able to identify mathematical foundations of data analytics, data analyses algorithms and tools. Introduces big data infrastructure, distributed computational paradigm, and distributed data analytics algorithms. Prerequisite: minimum grade of 3.0 in TCSS 343 and TCSS 445 or equivalent.",
         "Offered with": "",
-        "Prerequisites": "TCSS343&&TCSS445",
+        "Prerequisites": "TCSS343;TCSS445",
         "Quarters Offered": ""
     },
     "TCSS552": {
@@ -8134,7 +8134,7 @@
         "Department Name": "TEE",
         "Description": "Examines concepts of Vector Analysis, Electrostatic and Magnetostatic Fields, Time-Varying Electromagnetic Fields, and Maxwell Equations, plane wave propagation, guided waves, and Radiation and Antennas. Prerequisite: minimum grade of 2.0 in both TEE 315 and TCES 310.",
         "Offered with": "",
-        "Prerequisites": "TEE315&&TCES310",
+        "Prerequisites": "TEE315;TCES310",
         "Quarters Offered": ""
     },
     "TEE341": {
@@ -8199,7 +8199,7 @@
         "Department Name": "TEE",
         "Description": "System representation, feedback characteristics, and time-domain characteristics. Classical control theories including Routh-Hurwitz stability criterion, root locus, Nyquist criterion, Bode plots and Nichols charts. Introduces controller digitization, z-transform, and state-space approach. Provides experience in using computers to implement PID controllers to control motors and other physical actuators. Reteam projects in the laboratory. Prerequisite: minimum grade of 2.0 in TCES 310 and TEE 316.",
         "Offered with": "",
-        "Prerequisites": "TCES310&&TEE316",
+        "Prerequisites": "TCES310;TEE316",
         "Quarters Offered": ""
     },
     "TEE453": {
@@ -8238,7 +8238,7 @@
         "Department Name": "TEE",
         "Description": "Key concepts of electromagnetic and optical fields and waves, and their implications in modern communication systems. Selected topics from areas such as propagation in dispersive media, transmission line transients, reflection and refraction, diffraction and scattering, optical fibers, microwave and photonic waveguides, and antennas and sensors networks. Prerequisite: minimum grade of 2.0 in TEE 316 and TEE 331.",
         "Offered with": "",
-        "Prerequisites": "TEE316&&TEE331",
+        "Prerequisites": "TEE316;TEE331",
         "Quarters Offered": ""
     },
     "TEE461": {
@@ -12489,7 +12489,7 @@
         "Department Name": "TINFO",
         "Description": "Examines design and implementation methods of TCP/IP internetworks. Demonstrates techniques for connecting computers in a network and connecting separate networks to form an inter-network. Investigates bridging and switching concepts as well as routing protocols and algorithms. Prerequisite: minimum grade of 2.0 in both T INFO 220 and T INFO 250. Instructors: Bai, Chung, Wilson",
         "Offered with": "",
-        "Prerequisites": "TINFO220&&TINFO250",
+        "Prerequisites": "TINFO220;TINFO250",
         "Quarters Offered": ""
     },
     "TINFO452": {
@@ -13906,7 +13906,7 @@
         "Department Name": "TMATH",
         "Description": "Examines polynomial, rational, exponential, and trigonometric functions. Cannot be taken for credit if credit earned in TMATH 121. Prerequisite: either a minimum grade of 2.0 in TMATH 098, a score of 42-120 on the ACC-CL placement test, or a minimum score of 263 on the ACC-AAF placement test; recommended: co-requisite of TMATH 158.",
         "Offered with": "",
-        "Prerequisites": "TMATH098;TMATH158",
+        "Prerequisites": "TMATH098",
         "Quarters Offered": ""
     },
     "TMATH124": {
@@ -13919,7 +13919,7 @@
         "Department Name": "TMATH",
         "Description": "First quarter in calculus of functions of a single variable. Emphasizes differential calculus. Emphasizes applications and problem solving using the tools of calculus. Cannot be taken for credit if credit earned in TMATH 122. Prerequisite: a minimum grade of 2.0 in either TMATH 116 or TMATH 120, a score of 68% on MPT-A placement test, a score of 75% on MATHEC placement test, or a score of 2 on AP test. ; recommended: co-requisite of TMATH 159.",
         "Offered with": "",
-        "Prerequisites": "TMATH116,TMATH120;TMATH159",
+        "Prerequisites": "TMATH116,TMATH120",
         "Quarters Offered": ""
     },
     "TMATH125": {
@@ -13943,7 +13943,7 @@
         "Course Number": "126",
         "Credits": "5",
         "Department Name": "TMATH",
-        "Description": "Third quarter in calculus sequence. Sequences, series, Taylor expansions, and an introduction to multivariable differential calculus. Prerequisite: 2.0 in TMATH 125, score of 5 on AB advanced placement test, or score of 4 on BC advanced placement test.",
+        "Description": "Third quarter in calculus sequence. Sequences, series, Taylor expansions, and an introduction to multivariable differential calculus. Prerequisite: either a minimum grade of 2.0 in TMATH 125, a score of 5 on the AP MATH AB exam, or a score of 4 on AP MATH BC exam.",
         "Offered with": "",
         "Prerequisites": "TMATH125",
         "Quarters Offered": ""
@@ -15869,7 +15869,7 @@
         "Department Name": "TPHYS",
         "Description": "Focuses on mechanics concepts in physics: motion, work and energy, Newton's Laws, conservation of energy, system of particles, rotations, oscillations and gravity. Includes analyses using calculus and lab activities. Cannot be taken for credit if credit received for TESC 121. Prerequisite: a minimum grade of 2.0 in either TMATH 122, TMATH 124, or MATH 124.  ; recommended: co-requisite of T PHYS 120.",
         "Offered with": "",
-        "Prerequisites": "TMATH122,TMATH124,MATH124;TPHYS120",
+        "Prerequisites": "TMATH122,TMATH124,MATH124",
         "Quarters Offered": ""
     },
     "TPHYS122": {
@@ -17195,7 +17195,7 @@
         "Department Name": "TPSYCH",
         "Description": "Focuses the principles and practices of environmental psychology on applied projects being undertaken in Tacoma and surrounding areas. Conducts research and assessments in the field of environmental psychology to understand better the theories, terms, and methods of Environmental Psychology. Prerequisite: TPSYCH 209 and TPSYCH 340.",
         "Offered with": "",
-        "Prerequisites": "TPSYCH209&&TPSYCH340",
+        "Prerequisites": "TPSYCH209;TPSYCH340",
         "Quarters Offered": ""
     },
     "TPSYCH445": {

@@ -6,13 +6,21 @@ import csv
 import os
 import re
 import json
+import logging
 from datetime import datetime
 from parse_courses import gather, CAMPUSES, COLUMN_NAMES
 from create_tree import create_tree, console_tree
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
+handler = logging.FileHandler('Log.log')
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 
 course_dir = 'UW_Campus_Catalogs' # Name of Folder with Campus tsv/json files
-course_files_dir = '{}\\{}'.format(os.getcwd(), course_dir) # course_dir file path
+course_files_dir = f'{os.getcwd()}\\{course_dir}' # course_dir file path
 
 
 def check_files():
@@ -23,44 +31,51 @@ def check_files():
     """
     try:
         os.mkdir(course_dir)
-        print('Created Directory {} in {}'.format(course_dir, os.getcwd()))
+        message = f'Created Directory {course_dir} in {os.getcwd()}'
+        print(message)
+        logger.info(message)
         try: 
-            os.mkdir('{}\\{}'.format(course_files_dir, 'JSON'))
+            os.mkdir(f'{course_files_dir}\\JSON')
         except Exception: 
-            pass
+            logger.info(f'JSON Directory created in {course_dir}')
         try: 
-            os.mkdir('{}\\{}'.format(course_files_dir, 'TSV'))
+            os.mkdir(f'{course_files_dir}\\TSV')
         except Exception: 
-            pass
+            logger.info(f'TSV Directory created in {course_dir}')
     except Exception:
         last_updated = str(datetime.fromtimestamp(os.stat(course_files_dir).st_mtime)).split('.')[0]
-        print('Course catalogs were last updated on {}'.format(last_updated))
+        print(f'Course catalogs were last updated on {last_updated}')
         update = input('Would you like to update the Course Catalogs? (y/n): ')
     else:
         update = 'y'
     finally:
         if 'y' in update.lower():
             try: 
-                os.remove('{}\\{}\\{}'.format(course_files_dir, 'JSON', 'Total.json'))
+                os.remove(f'{course_files_dir}\\JSON\\Total.json')
             except (FileExistsError, FileNotFoundError) as e: 
                 pass
             try: 
-                os.remove('{}\\{}\\{}'.format(course_files_dir, 'TSV', 'Total.tsv'))
+                os.remove(f'{course_files_dir}\\JSON\\Total.tsv')
             except (FileExistsError, FileNotFoundError) as e: 
                 pass
-            print('Creating TSV/JSON docs for {} UW Campuses...'.format(','.join(list(CAMPUSES.keys()))))
-            gather(course_files_dir)
-            total = open('{}\\{}\\{}.tsv'.format(course_files_dir, 'TSV', 'Total'), mode='a')
+            print(f"Creating TSV/JSON docs for {', '.join(list(CAMPUSES.keys()))} UW Campuses...")
+            check_parse = gather(course_files_dir)
+            total = open(f'{course_files_dir}\\TSV\\Total.tsv', mode='a')
             csv.writer(total, delimiter='\t').writerow(COLUMN_NAMES)
             for campus in CAMPUSES.keys():
                 courses_dict = read_file(campus)
                 write_json(courses_dict, 'w', campus)
-                write_json(courses_dict, 'a', 'Total')
-                with open('{}\\{}\\{}.tsv'.format(course_files_dir, 'TSV', campus)) as campus_file: 
+                logger.info(f'JSON File for UW {campus} created under {course_files_dir}\\JSON')
+                with open(f'{course_files_dir}\\TSV\\{campus}.tsv') as campus_file: 
                     next(campus_file)
                     for line in campus_file:
                         total.write(line)
+            write_json(read_file('Total'), 'w', 'Total')
+            logger.info(f'JSON File for All UW Campuses created under {course_files_dir}\\JSON')
             total.close()
+            if not check_parse:
+                print('There has been an error parsing courses from the UW Course Catalogs. Check ParseUW.log')
+                print(f'Courses from the following deparment(s) were not scanned: {str(check_parse)}')
 
 
 def read_file(campus):
@@ -71,7 +86,7 @@ def read_file(campus):
         Dictionary of all course ID's with their information
     """
     all_courses = {}
-    with open('{}\\{}\\{}.tsv'.format(course_files_dir, 'TSV', campus), mode='r') as file:
+    with open(f'{course_files_dir}\\TSV\\{campus}.tsv', mode='r') as file:
         reader = csv.reader(file, delimiter='\t')
         next(reader)
         for course in reader: 
@@ -123,7 +138,7 @@ def write_json(all_courses, mode_type, campus):
         'mode_type': Write or append to file
         'campus': The campus the courses are from
     """
-    file_name = '{}\\{}\\{}.json'.format(course_files_dir, 'JSON', campus)
+    file_name = f'{course_files_dir}\\JSON\\{campus}.json'
     with open(file_name, mode=mode_type) as json_file:
         json.dump(all_courses, json_file, indent=4, sort_keys=True)
 
@@ -137,7 +152,7 @@ def select_option(options, prompt, value=None):
         Value selected by user
     """
     dict = {str(c[0]): c[1] for c in list(enumerate(options, start=1))}
-    print(str(['{}. {}'.format(key, value) for key, value in dict.items()])[1:-1].replace("'", ''))
+    print(str([f'{key}. {value}' for key, value in dict.items()])[1:-1].replace("'", ''))
     while value not in dict.keys() and value not in dict.values():
         value = input(prompt)
     return value if not value.isdigit() else dict[value]
@@ -156,7 +171,7 @@ def get_course_data(all_courses, more='y'):
             if course in all_courses:
                 print(all_courses[course][option])
             else:
-                print('{} is not a course offered at UW.'.format(course))
+                print(f'{course} is not a course offered at UW.')
             more = input('Continue searching for more specific course data? (y/n): ').lower()
 
 
@@ -175,11 +190,11 @@ def enter_courses(all_courses, courses_taken, more='y'):
             for function in tree_dict[tree]:
                 function(all_courses, courses_taken, course, '')
         else:
-            print('{} is not a course offered at UW.'.format(course))
+            print(f'{course} is not a course offered at UW.')
         more = input('Continue? (y/n): ').lower()
 
 
-def start():
+def main():
     """Creates the campus tsv files if necessary and prompts the user for a UW
        Campus and the course they would like to search for"""
     check_files()
@@ -189,4 +204,5 @@ def start():
     enter_courses(all_courses, courses_taken)
 
 
-start()
+if __name__ == '__main__':
+    main()

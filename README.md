@@ -108,7 +108,7 @@ Then open the following link to access the website: http://127.0.0.1:5000/home/
 
 The following page should appear:
 <p align="center">
-    <img src="static/Images/HomePage.PNG" width=400 alt="Home Page">
+    <img src="static/Images/HomePage.PNG" width=600 alt="Home Page">
 </p>
 
 ### Course Data
@@ -174,9 +174,6 @@ Python 3.7
  - Flask        [pip install Flask]
  ```
 
-In order for the visual representation with Graphviz to work, [Graphviz](https://graphviz.gitlab.io/download/) must be downloaded. Once downloaded go to `create_tree.py`. and change the System Path under `GRAPHVIZ PATH SETUP`
-Make sure to add the `bin` folder of the downloaded Graphviz folder to the end of the system path.
-
 The directory for the application is structured according to the diagram below:
 ```
 static
@@ -196,6 +193,9 @@ UW_Campus_Catalogs
 ```
 
 ***
+
+In order for the visual representation with Graphviz to work, [Graphviz](https://graphviz.gitlab.io/download/) must be downloaded. Once downloaded go to `create_tree.py`. and change the System Path under `GRAPHVIZ PATH SETUP`
+Make sure to add the `bin` folder of the downloaded Graphviz folder to the end of the system path.
 
 ```python
 # --------------------------GRAPHVIZ PATH SETUP-------------------------- #

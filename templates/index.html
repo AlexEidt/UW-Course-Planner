@@ -1,35 +1,4 @@
 {% extends "layout.html" %}
-{% block content %}
-    <br>
-    <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;
-               text-align: center">
-        <strong>Prerequisite Tree Generator</strong>
-    </h2>
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6" style="text-align: center">
-                <input type="text" class="form-control" id="courseInput" placeholder="Course">
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6" style="text-align: center">
-                <button class="btn btn-primary" id="btn">Generate Prerequisite Tree</button>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
-    <hr>
-    <div id="response"></div>
+{% block content%}
 
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="{{ url_for('static', filename='JavaScript/script.js') }}"></script>
 {% endblock content %}

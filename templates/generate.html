@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
+               text-align: center; padding: 0.5em">
+        <strong>Prerequisite Tree Generator</strong>
+    </h2>
+    <div class="form-inline" style="text-align: center; margin-left: auto; margin-right: auto; display: block">
+        <input type="text" class="form-control" id="courseInput" placeholder="Course">
+        <button class="btn btn-primary" id="btn">
+            <span></span>Generate
+        </button>
+    </div>
+    <hr>
+    <img id="tree" src= "test.png" style="width: 50%; margin-left: auto; margin-right: auto; display: block">
+    <script>
+        $(document).ready(function() {
+            $('img#tree').hide();
+            $('button#btn').on('click', function() {
+                var course = $('#courseInput').val();
+                $.ajax({
+                    data: {
+                        name: course,
+                    },
+                    url: "/_get_tree/",
+                    type: "POST",
+                    beforeSend: function() {
+                        $('#btn').attr('disabled', true);
+                        $('span').addClass('spinner-border spinner-border-sm');
+                    },
+                }).done(function(resp) {
+                    $('#btn').attr('disabled', false);
+                    var image = resp.data;
+                    if (!image.includes(' ') && image.length > 0) {
+                        $('img#tree').attr('src', "../static/Prerequisite_Trees/" + image)
+                        $('img#tree').show();
+                    } else if (image.length > 0) {
+                        var text = image.split(' ')[1];
+                        if (image.startsWith('NA')) {
+                            alert(text + " is not a course offered at UW");
+                        } else if (image.startsWith('NP')) {
+                            alert(text + " has no Prerequisites");
+                        }
+                    }
+                    $('span').removeClass('spinner-border spinner-border-sm');
+                });
+            }); 
+        });
+    </script>
+{% endblock content %}

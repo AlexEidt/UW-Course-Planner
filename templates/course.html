@@ -1,28 +1,43 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="table-responsive">
-        <table class="table table-striped">
-        <th colspan=2 style="text-align: center; font-family: Verdana">
-            {{ '{} --- {}'.format(course, course_data['Course Name']) }}</th>
-        <tr>
-            {% if levels > 3 %}
-                <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
-                    style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 60 }}
-                    class="img-responsive"></td>
-            {% else %}
-                <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
-                    style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 140 }}
-                    class="img-responsive"></td>
-            {% endif %}
-        </tr>
-        {% for name, data in course_data.items() %}
-            {% if data %}
-                <tr>
-                    <td style="text-align: center"><strong>{{ name }}</strong></td>
-                    <td style="text-align: center">{{ data }}</td>
-                </tr>
-            {% endif %}
-        {% endfor %}
-        </table>
-    </div>
+    {% if in_dict %}
+        <div class="table-responsive">
+            <table class="table table-striped">
+            <th colspan=2 style="text-align: center; font-family: Verdana">
+                {{ '{} --- {}'.format(course, course_data['Course Name']) }}</th>
+            <tr>
+                {% if levels > 3 %}
+                    <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
+                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 60 }}
+                        class="img-responsive"></td>
+                {% elif levels > 0 %}
+                    <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
+                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 280 }}
+                        class="img-responsive"></td>
+                {% endif %}
+            </tr>
+            {% for name, data in course_data.items() %}
+                {% if data %}
+                    {% if 'Department Name' in name %}
+                    <tr>
+                        <td style="text-align: center"><strong>{{ name }}</strong></td>
+                        <td style="text-align: center"><a href="{{ url + data }}">
+                            <strong>{{ data }}</strong></a>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td style="text-align: center"><strong>{{ name }}</strong></td>
+                        <td style="text-align: center">{{ data }}</td>
+                    </tr>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            </table>
+        </div>
+    {% else %}
+        <script>
+            alert("{{ '{} is not a course offered at UW'.format(course) }}")
+        </script>
+    {% endif %}
 {% endblock content %}

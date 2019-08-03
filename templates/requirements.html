@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style>
+    td {
+        vertical-align: middle;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .card-bg-light {
+        width: 50%;
+        padding: 2em;
+    }
+    .card-img-top {
+        width: 80px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+    }
+    </style>
+    <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
+    text-align: center; padding: 1em">
+        <strong>UW Course Tool Requirements</strong>
+    </h2>
+    <table>
+        <col style="width: 30%">
+        <col style="width: 30%">
+        <col style="width: 30%">
+        <tr>
+            <td>
+                <br>
+                {% if transcript %}
+                    <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Transcript Found">
+                {% else %}
+                    <img class="card-img-top" src="{{ url_for('static', filename='Images/x.png') }}" alt="Transcript not Found">
+                {% endif %}
+            </td>
+            <td>
+                <br>
+                {% if connected() %}
+                <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Internet Connected">
+                {% else %}
+                    <img class="card-img-top" src="{{ url_for('static', filename='Images/x.png') }}" alt="Internet not Connected">
+                {% endif %}
+            </td>
+            <td>
+                <br>
+                {% if gather() %}
+                    <img class="card-img-top" id="gatherImg" src="{{ url_for('static', filename='Images/check.png') }}" alt="All required files present">
+                {% else %}
+                    <img class="card-img-top" id="gatherImg" src="{{ url_for('static', filename='Images/x.png') }}" alt="Some required files missing">
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td><h5 class="card-title">Transcript</h5></td>
+            <td><h5 class="card-title">Internet Connection</h5></td>
+            <td><h5 class="card-title">Required Files</h5></td>
+        </tr>
+        <tr>
+            <td>
+                <p class="card-text">
+                    <strong>OPTIONAL:</strong> To remove courses you've already taken, copy/paste your
+                    <a href="https://myplan.uw.edu/" target="_blank">Unofficial Transcript</a> 
+                        into a text document called Transcript.txt and copy/paste into a text document 
+                        called <strong>Transcript.txt</strong> 
+                </p>
+            </td>
+            <td>
+                <p class="card-text">
+                    An Internet Connection is required to download course information from the UW course catalog.
+                </p>
+            </td>
+            <td>
+                <p class="card-text">
+                    Files containing course information for every UW Campus and Departments are required in order for 
+                    course searches and prerequisite tree generation to work. File creation/updating may take up to 3 minutes.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                {% if not transcript %}
+                    <form action="{{ url + 'upload'}}" id="file" method="POST" enctype="multipart/form-data"
+                    style="align-items: center">
+                        <input type="file" name="transcript" class="form-control-file"/>
+                        <input type="submit" id="fileSubmit" class="btn btn-primary"/>
+                    </form>
+                {% endif %}
+            </td>
+            <td></td>
+            <td>
+                <br>
+                {% if gather() %}
+                    <button id="gather" class="btn btn-primary">
+                        <span id="gatherBtn"></span>Update Course Catalogs
+                    </button>
+                {% else %}
+                    <button id="gather" class="btn btn-primary">
+                        <span id="gatherBtn"></span>Create Files
+                    </button>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td colspan=3><br></td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function() {
+            $('button#gather').on('click', function(event) {
+                event.preventDefault();
+                if ("{{ connected() }}".includes("True")) {
+                    $.ajax({
+                        url: '/gather',
+                        type: 'POST',
+                        beforeSend: function() {
+                            $('#gather').attr('disabled', true);
+                            $('span').addClass('spinner-border spinner-border-sm');
+                        },
+                    }).done(function() {
+                        $('span').removeClass('spinner-border spinner-border-sm');
+                        if ("{{ gather() }}".includes('False')) {
+                            $('#gatherImg').attr('src', "{{ url_for('static', filename='Images/check.png') }}");
+                            alert('All required files created')
+                        } else {
+                            $('#gatherImg').attr('src', "{{ url_for('static', filename='Images/x.png') }}");
+                            alert('Error in creating files. Try again')
+                            $('#gather').attr('disabled', false);
+                        }
+                    });
+                } else {
+                    alert("No Internet Connection Available")
+                }
+            });
+        });
+    </script>
+{% endblock content %}

@@ -44,6 +44,7 @@ import csv
 import time
 import logging
 import json
+import os
 import requests as r
 import urllib3 as URL
 from bs4 import BeautifulSoup as Soup
@@ -56,6 +57,9 @@ handler = logging.FileHandler('Log.log')
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 logger.addHandler(handler)
+
+course_dir = 'UW_Campus_Catalogs' # Name of Folder with Campus tsv/json files
+course_files_dir = f'{os.getcwd()}\\{course_dir}' # course_dir file path
 
 CAMPUSES = {                                                                                
     'Bothell': 'http://www.washington.edu/students/crscatb/',                               
@@ -316,6 +320,7 @@ def get_web_soup(website_link):
     return Soup(source.data, features='lxml')
 
 department_dict = {} # Maps department abbreviations to names for each UW Campus
+total_department_dict = {} # Department abbreviations to names for all UW Campuses
 def read_department_courses(course_data, campus, path):
     """Creates a .tsv file with all the course offered on the given 'campus'
        Initalizes 'departments.json' to include a dictionary of all department
@@ -332,7 +337,7 @@ def read_department_courses(course_data, campus, path):
         tsv_writer.writerow(COLUMN_NAMES)
         for dep_link in AddProgressBar(course_data.find_all('a')):
             dep_file = dep_link.get('href')
-            if re.search(r'[a-z]+\.html', dep_file):
+            if '.html' in dep_file and '/' not in dep_file:
                 file_name = f'{CAMPUSES[campus]}{dep_file}'
                 request = r.get(file_name)
                 if request.ok:   
@@ -344,12 +349,45 @@ def read_department_courses(course_data, campus, path):
                             course_number = re.sub(r'[A-Z&]+', '', course_ID.upper())
                             tsv_writer.writerow(get_course_data(campus, department_name, 
                                                 course_number, course.get_text()))
-                            department_names[department_name] = dep_link.get_text().rsplit('(', 1)[0].strip()
+                            department_full_name = dep_link.get_text().rsplit('(', 1)[0].strip()
+                            department_names[department_name] = department_full_name
+                            total_department_dict[department_name] = department_full_name
                 else:
                     logger.critical(f'Could not access: {file_name}. HTTP Status Code: {request.status_code}')
                     not_parsed.append(dep_file.replace('.html', '', 1).upper())
     department_dict[campus] = department_names
     return not_parsed
+
+
+def write_json(all_courses, mode_type, campus):
+    """Writes the complete course dictionary for a UW Campus to a JSON file
+    @params
+        'all_courses': Course dictionary
+        'mode_type': Write or append to file
+        'campus': The campus the courses are from
+    """
+    file_name = f'{course_files_dir}\\JSON\\{campus}.json'
+    with open(file_name, mode=mode_type) as json_file:
+        json.dump(all_courses, json_file, indent=4, sort_keys=True)
+
+
+def read_file(campus):
+    """Scans the tsv file for the given 'campus'
+    @params
+        'campus': The campus to search courses from
+    Returns:
+        Dictionary of all course ID's with their information
+    """
+    all_courses = {}
+    with open(f'{course_files_dir}\\TSV\\{campus}.tsv', mode='r') as file:
+        reader = csv.reader(file, delimiter='\t')
+        next(reader)
+        for course in reader: 
+            if course:
+                all_courses['{0[1]}{0[2]}'.format(course)] = {
+                    COLUMN_NAMES[i]: course[i] for i in range(len(COLUMN_NAMES))
+                }
+    return all_courses
 
 
 def gather(path):
@@ -370,9 +408,36 @@ def gather(path):
             logger.error(f'''Could not access UW {campus} Course Catalog ({CAMPUSES[campus]}). 
                             HTTP Status Code: {request.status_code}''')
         not_scanned[campus] = not_parsed
-    t2 = time.perf_counter()
+
+    # Remove docs with all courses to prevent appending to old files
+    try: os.remove(f'{course_files_dir}\\JSON\\Total.json')
+    except (FileExistsError, FileNotFoundError): pass
+    try: os.remove(f'{course_files_dir}\\TSV\\Total.tsv')
+    except (FileExistsError, FileNotFoundError): pass
+
+    # Create Departments json file
+    department_dict['Total'] = total_department_dict
     with open(f'{path}\\JSON\\Departments.json', mode='w') as file:
         json.dump(department_dict, file, indent=4, sort_keys=True)
+
+    # Create Total.tsv file
+    total = open(f'{course_files_dir}\\TSV\\Total.tsv', mode='a')
+    csv.writer(total, delimiter='\t').writerow(COLUMN_NAMES)
+    for campus in CAMPUSES.keys():
+        write_json(read_file(campus), 'w', campus)
+        logger.info(f'JSON File for UW {campus} created under {course_files_dir}\\JSON')
+        with open(f'{course_files_dir}\\TSV\\{campus}.tsv') as campus_file: 
+            next(campus_file)
+            for line in campus_file:
+                total.write(line)
+
+    # Create Total.json file
+    write_json(read_file('Total'), 'w', 'Total')
+    logger.info(f'JSON File for All UW Campuses created under {course_files_dir}\\JSON')
+    
+    total.close()
+    t2 = time.perf_counter()
+
     check = [y for x in not_scanned.values() for y in x]
     if None in not_scanned.values() or check:
         logger.critical(f'Error in parsing courses. Courses from {str(check)} not parsed')
@@ -380,5 +445,4 @@ def gather(path):
         logger.info(f'''Course Catalogs for {', '.join(CAMPUSES.keys())} 
                     have been sucessfully created in: {path}''')
         logger.info('{} ran in {:.1f} seconds'.format(__name__, t2 - t1))
-    return check
 

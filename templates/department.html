@@ -1,20 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
-    <table class="table table-striped table table-hover">
-        <th colspan=2 style="font-family: Verdana; text-align: center">
-            <strong>
-                {{ '({}) {}'.format(department, department_dict[campus][department]) }}
-            </strong>
-        </th>
-        {% for course, data in course_dict.items() %}
-            <tr>
-                <td style="text-align: center">
-                    <a href="{{ url + campus + "/" + course }}">
-                        {{ course }}
-                    </a>
-                </td>
-                <td>{{ data['Course Name'] }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+    {% if in_dict %}
+        <table class="table table-striped table table-hover">
+            <th colspan=2 style="font-family: Verdana; text-align: center">
+                <strong>
+                    {{ '({}) {}'.format(department, department_dict['Total'][department]) }}
+                </strong>
+            </th>
+            {% for course, data in course_dict.items() %}
+                <tr>
+                    <td style="text-align: center">
+                        <a href="{{ url + course }}" target="_blank">
+                            {{ course }}
+                        </a>
+                    </td>
+                    <td>{{ data['Course Name'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <script>
+            alert("{{ '{} is not a course offered at UW'.format(department) }}")
+        </script>
+    {% endif %}
 {% endblock content %}

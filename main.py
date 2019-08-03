@@ -7,8 +7,9 @@ import os
 import re
 import json
 import logging
+import requests
 from datetime import datetime
-from parse_courses import gather, CAMPUSES, COLUMN_NAMES
+from parse_courses import gather, CAMPUSES, COLUMN_NAMES, course_files_dir, course_dir, read_file
 from create_tree import create_tree, console_tree
 
 logger = logging.getLogger(__name__)
@@ -18,9 +19,6 @@ handler = logging.FileHandler('Log.log')
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 logger.addHandler(handler)
-
-course_dir = 'UW_Campus_Catalogs' # Name of Folder with Campus tsv/json files
-course_files_dir = f'{os.getcwd()}\\{course_dir}' # course_dir file path
 
 
 def check_files():
@@ -50,54 +48,12 @@ def check_files():
         update = 'y'
     finally:
         if 'y' in update.lower():
-            try: 
-                os.remove(f'{course_files_dir}\\JSON\\Total.json')
-            except (FileExistsError, FileNotFoundError) as e: 
-                pass
-            try: 
-                os.remove(f'{course_files_dir}\\JSON\\Total.tsv')
-            except (FileExistsError, FileNotFoundError) as e: 
-                pass
             print(f"Creating TSV/JSON docs for {', '.join(list(CAMPUSES.keys()))} UW Campuses...")
-            check_parse = gather(course_files_dir)
-            total = open(f'{course_files_dir}\\TSV\\Total.tsv', mode='a')
-            csv.writer(total, delimiter='\t').writerow(COLUMN_NAMES)
-            for campus in CAMPUSES.keys():
-                courses_dict = read_file(campus)
-                write_json(courses_dict, 'w', campus)
-                logger.info(f'JSON File for UW {campus} created under {course_files_dir}\\JSON')
-                with open(f'{course_files_dir}\\TSV\\{campus}.tsv') as campus_file: 
-                    next(campus_file)
-                    for line in campus_file:
-                        total.write(line)
-            write_json(read_file('Total'), 'w', 'Total')
-            logger.info(f'JSON File for All UW Campuses created under {course_files_dir}\\JSON')
-            total.close()
-            if not check_parse:
-                print('There has been an error parsing courses from the UW Course Catalogs. Check ParseUW.log')
-                print(f'Courses from the following deparment(s) were not scanned: {str(check_parse)}')
+            gather(course_files_dir)
+            print('Check the Log for any departments that may not have been parsed')
 
 
-def read_file(campus):
-    """Scans the tsv file for the given 'campus'
-    @params
-        'campus': The campus to search courses from
-    Returns:
-        Dictionary of all course ID's with their information
-    """
-    all_courses = {}
-    with open(f'{course_files_dir}\\TSV\\{campus}.tsv', mode='r') as file:
-        reader = csv.reader(file, delimiter='\t')
-        next(reader)
-        for course in reader: 
-            if course:
-                all_courses['{0[1]}{0[2]}'.format(course)] = {
-                    COLUMN_NAMES[i]: course[i] for i in range(len(COLUMN_NAMES))
-                }
-    return all_courses
-
-
-def scan_transcript(course_dict):
+def scan_transcript(course_dict, webapp=False):
     """Asks the user if their transcript should be scanned in to remove classes from the class
        tree that they've already taken.
     @params 
@@ -105,18 +61,26 @@ def scan_transcript(course_dict):
     Returns
         List of courses taken from the transcript given
     """
-    print('If you would like to scan in your transcript to eliminate searching courses you have')
-    print("already taken, go to MyUW under 'Unofficial Transcript' and press CTRL+A and paste")
-    print('your transcript into a text file in the same directory as this script.')
-    transcript = input('Scan in Transcript? (y/n): ')
-    file_name = ''
-    if 'y' in transcript.lower():
-        check = False
-        while not check:
-            file_name = input('Transcript file name: ')
-            check = file_name in os.listdir(os.getcwd())
+    if not webapp:
+        print('If you would like to scan in your transcript to eliminate searching courses you have')
+        print("already taken, go to MyUW under 'Unofficial Transcript' and press CTRL+A and paste")
+        print('your transcript into a text file in the same directory as this script.')
+        transcript = input('Scan in Transcript? (y/n): ')
+        file_name = ''
+        if 'y' in transcript.lower():
+            check = False
+            while not check:
+                file_name = input('Transcript file name: ')
+                check = file_name in os.listdir(os.getcwd())
+        else:
+            return []
     else:
-        return []
+        try:
+            open('Transcript.txt')
+        except Exception:
+            return []
+        else:
+            file_name = 'Transcript.txt'
     courses_taken = []
     with open(file_name, mode='r') as transcript:
         for line in transcript:
@@ -131,16 +95,17 @@ def scan_transcript(course_dict):
     return courses_taken
 
 
-def write_json(all_courses, mode_type, campus):
-    """Writes the complete course dictionary for a UW Campus to a JSON file
-    @params
-        'all_courses': Course dictionary
-        'mode_type': Write or append to file
-        'campus': The campus the courses are from
+def check_connection(url='https://www.google.com/'):
+    """Checks for a connection to the internet
+    Returns
+        True if internet is connected, False otherwise
     """
-    file_name = f'{course_files_dir}\\JSON\\{campus}.json'
-    with open(file_name, mode=mode_type) as json_file:
-        json.dump(all_courses, json_file, indent=4, sort_keys=True)
+    try:
+        requests.get(url)
+    except Exception:
+        return False
+    else:
+        return True
 
 
 def select_option(options, prompt, value=None):
@@ -202,7 +167,12 @@ def main():
     all_courses = read_file(campus)
     courses_taken = scan_transcript(all_courses)
     enter_courses(all_courses, courses_taken)
+    get_course_data(all_courses)
 
 
 if __name__ == '__main__':
-    main()
+    if check_connection():
+        main()
+    else:
+        logger.critical("No Internet Connection")
+        print('Could not connect to the Internet')

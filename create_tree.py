@@ -38,15 +38,18 @@ def create_tree(course_dict, courses_taken, course, indent):
     )
     global level_counter
     level_counter = set()
-    tree.node(course, course)
-    tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
-    # Recursively build up tree
-    global total
-    total = []
-    create_tree_helper(course_dict, course, 0, courses_taken, tree)
-    tree.render('static\\Prerequisite_Trees\\{}'.format(course), view=False, format='png')
-    logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
-    return max(level_counter)
+    if course in course_dict:
+        if course_dict[course]['Prerequisites']:
+            tree.node(course, course)
+            tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
+            # Recursively build up tree
+            global total
+            total = []
+            create_tree_helper(course_dict, course, 0, courses_taken, tree)
+            tree.render('static\\Prerequisite_Trees\\{}'.format(course), view=False, format='png')
+            logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
+            return max(level_counter)
+    return 0
 
 
 arrowheads = ['box', 'dot', 'normal', 'diamond', 'tee', 'crow',
@@ -110,4 +113,3 @@ def console_tree(course_dict, courses_taken, course, indent):
                         console_tree(course_dict, courses_taken, reqcourse, indent + '|   ')
                 if len(check) > 1 and len(list_reqs) > 1:
                     print(indent.replace('|   ', '', 1))
-

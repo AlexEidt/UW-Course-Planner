@@ -12,25 +12,23 @@
                         class="img-responsive"></td>
                 {% elif levels > 0 %}
                     <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
-                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 280 }}
+                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 110 }}
                         class="img-responsive"></td>
                 {% endif %}
             </tr>
             {% for name, data in course_data.items() %}
                 {% if data %}
-                    {% if 'Department Name' in name %}
                     <tr>
                         <td style="text-align: center"><strong>{{ name }}</strong></td>
-                        <td style="text-align: center"><a href="{{ url + data }}">
-                            <strong>{{ data }}</strong></a>
-                        </td>
+                        {% if 'Department Name' in name %}
+                            <td style="text-align: center"><a href="{{ url + data }}">
+                                <strong>{{ data }}</strong></a>
+                            </td>
+                        </tr>
+                        {% else %}
+                            <td style="text-align: center">{{ data }}</td>
+                        {% endif %}
                     </tr>
-                    {% else %}
-                    <tr>
-                        <td style="text-align: center"><strong>{{ name }}</strong></td>
-                        <td style="text-align: center">{{ data }}</td>
-                    </tr>
-                    {% endif %}
                 {% endif %}
             {% endfor %}
             </table>

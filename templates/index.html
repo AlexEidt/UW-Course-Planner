@@ -1,4 +1,103 @@
 {% extends "layout.html" %}
 {% block content%}
-
+    <style>
+    .card-body {
+        text-align: center;
+        font-weight: bolder;
+    }
+    .card {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 1.4em;
+    }
+    p {
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+    #example {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border:5px solid turquoise;
+    }
+    #cardImg {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+    }
+    </style>
+    <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
+    text-align: center; padding: 1em">
+        <strong>UW Course Tool</strong>
+    </h2>
+    <p>
+        The UW Course Tool helps to simplify course searches at UW. It offers a keyword search to search through the descriptions
+        of every course offered at UW to give you an idea of what courses could match your interests. Each department for every
+        UW Campus is listed with a link to a page with all courses in that department. Prerequisite Trees help give you a better
+        understanding of the courses you need to take and succint course information gives you a quick overview of every course. 
+        The search bar in the top right of the screen allows you to quickly search for courses and departments. 
+    </p>
+    <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">Requirements</div>
+    </div>
+        <p>
+            The <a href="{{ url_for('requirements') }}">Requirements</a> show you all the files/settings that need to
+        be in place in order for course searches and prerequisite tree generation to work: A Transcript, Internet Connection and Course Files.
+        Whether each of these requirements is fulfilled is indicated by a green checkmark above the item. If all required files are present, 
+        then the internet connection is not needed. The Transcript is optional, and upon successfull uploading, the Transcript will have a green
+        checkmark above it. If you chose to scan in your transcript, all courses you've already taken will be removed from Prerequisite Trees
+        and will not show up in the Keyword Search. This can make Prerequisite Trees for higher level courses much more readible and useful.<br> 
+        The UW Course Catalogs do get updated every once in a while, so if you would like to update the current course files to include the newest
+        courses, you can click the 'Update Course Catalogs' button. Keep in mind that downloading all the information and creating all the necessary
+        information can take up to 3 minutes, so update the catalogs sparingly. 
+        </p>   
+        <br>  
+        <div id="cardImg" class="card bg-light text-dark">
+            <img id="example" src="{{ url_for('static', filename='Images/requirements.png') }}">
+        </div>
+        <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">Departments</div>
+    </div>
+        <p>
+            <a href="{{ url_for('departments') }}">Departments</a> shows you all the Departments for each UW Campus. Clicking on the Department
+        abbreviation will lead you to a page with a list of courses in that department. Clicking on any one of those courses will bring you
+        to another page with all the information for that course including its Prerequisite Tree if there are any prerequisites for the course. 
+        </p>
+        <br>  
+        <div id="cardImg" class="card bg-light text-dark">
+            <img id="example" src="{{ url_for('static', filename='Images/departments.png') }}">
+        </div>
+        <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">Create Tree</div>
+    </div>
+        <p>
+            The <a href="{{ url_for('generate') }}">Tree Generator</a> creates a Prerequisite Tree for any
+        course you enter. Courses must be the department abbreviation followed by the 3 digit course code. Example: <strong>EE235</strong>
+        </p>
+        <br>  
+        <div id="cardImg" class="card bg-light text-dark">
+            <img id="example" src="{{ url_for('static', filename='Images/generator.png') }}">
+        </div>
+        <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">Keyword Search</div>
+    </div>
+        <p>
+            The <a href="{{ url_for('requirements') }}">Keyword Search</a> shows you all courses with the given keyword in
+        their description (case-insensitive).
+        </p>
+        <br>  
+        <div id="cardImg" class="card bg-light text-dark">
+            <img id="example" src="{{ url_for('static', filename='Images/keyword.png') }}">
+        </div>
+        <br>
 {% endblock content %}

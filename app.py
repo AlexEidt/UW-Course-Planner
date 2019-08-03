@@ -82,18 +82,31 @@ def search():
     return redirect(url_for('index'))
 
 
+
 @app.route('/_get_tree/', methods=['POST'])
 def _get_tree():
     course = request.form['name'].upper().replace(' ', '')
-    course_dict = get_course_dict('Total')
-    if course in course_dict:
-        if course_dict[course]['Prerequisites']:
-            create_tree(course_dict, scan_transcript(course_dict, webapp=True), course, None)
-            img = f'{course}.png'
+    search_course = course.endswith('SEARCHCOURSE')
+    course = course.replace('SEARCHCOURSE', '', 1)
+    if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
+        department_dict = get_course_dict('Departments')
+        if course in department_dict['Total']:
+            img = course
         else:
-            img = f'NP {course}'
+            img = f'ND {course}'
     else:
-        img = f'NA {course}' if course else ''
+        course_dict = get_course_dict('Total')
+        if course in course_dict:
+            if course_dict[course]['Prerequisites']:
+                if not search_course:
+                    create_tree(course_dict, scan_transcript(course_dict, webapp=True), course, None)
+                    img = f'{course}.png'
+                else:
+                    img = course
+            else:
+                img = f'NP {course}'
+        else:
+            img = f'NA {course}' if course else ''
     return jsonify({'data': img})
 
 
@@ -102,8 +115,9 @@ def _keyword_search():
     keyword = request.form['keyword'].lower()
     course_dict = get_course_dict('Total')
     matches = {}
+    courses_taken = scan_transcript(course_dict, webapp=True)
     for course, data in course_dict.items():
-        if keyword in data['Description'].lower():
+        if keyword in data['Description'].lower() and course not in courses_taken:
             matches[course] = data
     return jsonify({'matches': matches})
 

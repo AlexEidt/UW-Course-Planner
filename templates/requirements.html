@@ -21,7 +21,7 @@
     </style>
     <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
     text-align: center; padding: 1em">
-        <strong>UW Course Tool Requirements</strong>
+        <strong>Requirements</strong>
     </h2>
     <table>
         <col style="width: 30%">
@@ -82,26 +82,22 @@
         <tr>
             <td>
                 <br>
-                {% if not transcript %}
-                    <form action="{{ url + 'upload'}}" id="file" method="POST" enctype="multipart/form-data"
-                    style="align-items: center">
-                        <input type="file" name="transcript" class="form-control-file"/>
-                        <input type="submit" id="fileSubmit" class="btn btn-primary"/>
-                    </form>
-                {% endif %}
+                <form action="{{ url + 'upload'}}" id="file" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="transcript" style="padding: 1em" class="form-control-file"/>
+                    <br>
+                    <input type="submit" id="fileSubmit" class="btn btn-primary"/>
+                </form>
             </td>
             <td></td>
             <td>
                 <br>
-                {% if gather() %}
-                    <button id="gather" class="btn btn-primary">
+                <button id="gather" class="btn btn-primary">
+                    {% if gather() %}
                         <span id="gatherBtn"></span>Update Course Catalogs
-                    </button>
-                {% else %}
-                    <button id="gather" class="btn btn-primary">
+                    {% else %}
                         <span id="gatherBtn"></span>Create Files
-                    </button>
-                {% endif %}
+                    {% endif %}
+                </button>
             </td>
         </tr>
         <tr>
@@ -112,7 +108,7 @@
         $(document).ready(function() {
             $('button#gather').on('click', function(event) {
                 event.preventDefault();
-                if ("{{ connected() }}".includes("True")) {
+                if ("{{ connected() }}".includes('True')) {
                     $.ajax({
                         url: '/gather',
                         type: 'POST',
@@ -122,12 +118,11 @@
                         },
                     }).done(function() {
                         $('span').removeClass('spinner-border spinner-border-sm');
-                        if ("{{ gather() }}".includes('False')) {
+                        if ("{{ gather()|safe }}".includes('True')) {
                             $('#gatherImg').attr('src', "{{ url_for('static', filename='Images/check.png') }}");
                             alert('All required files created')
                         } else {
                             $('#gatherImg').attr('src', "{{ url_for('static', filename='Images/x.png') }}");
-                            alert('Error in creating files. Try again')
                             $('#gather').attr('disabled', false);
                         }
                     });

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>UW Course Tool</title>
-        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='Images/UWLogo.png')}}" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='Images/UWIcon.png')}}" />
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,10 +29,10 @@
                         <a class="nav-link" href="{{ url_for('requirements')}}">Requirements</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('generate')}}">Create Tree</a>
+                        <a class="nav-link" href="{{ url_for('departments')}}">Departments</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('departments')}}">Departments</a>
+                        <a class="nav-link" href="{{ url_for('generate')}}">Create Tree</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url_for('keyword')}}">Keyword Search</a>
@@ -40,10 +40,8 @@
                 </ul>
             </div>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" id="courseSearch" placeholder="Search Courses...">
-                <a href="" id="searchLink">
-                    <button class="btn btn-success my-2 my-sm-0" id="searchBtn" type="button">Search</button>
-                </a>
+                <input class="form-control mr-sm-2" type="text" id="courseSearch" placeholder="Search...">
+                <button class="btn btn-success my-2 my-sm-0" id="searchBtn" type="button">Search</button>
             </form>   
         </nav>
         {% block content %}{% endblock %}
@@ -55,12 +53,28 @@
         <script>
             $(document).ready(function() {
                 $('button#searchBtn').on('click', function() {
-                    var course = $('#courseSearch').val().toUpperCase();
-                    while (course.includes(' ')) {
-                        course = course.replace(' ', '');
-                    }
-                    var root = window.location.protocol + '//' + window.location.host + '/' + course;
-                    document.getElementById('searchLink').href = root;
+                    var course = $('#courseSearch').val();
+                    course += ' SearchCourse';
+                    $.ajax({
+                        url: '/_get_tree/',
+                        type: 'POST',
+                        data: {
+                            name: course
+                        }
+                    }).done(function(resp) {
+                        if (resp.data.includes(' ') && (resp.data.startsWith('NA'))) {
+                            alert(resp.data.split(' ')[1] + ' is not a course offered at UW');
+                        } else if (resp.data.includes(' ') && resp.data.startsWith('ND')) {
+                            alert(resp.data.split(' ')[1] + ' is not a department at UW');
+                        } else if (resp.data.length > 0) {
+                            var searched = resp.data
+                            if (resp.data.includes(' ')) {
+                                searched = searched.split(' ')[1];
+                            }
+                            var root = window.location.protocol + '//' + window.location.host + '/' + searched;
+                            window.open(root, '_top');
+                        }
+                    });
                 });
             });
         </script>

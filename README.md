@@ -21,7 +21,7 @@ The prerequisite tree for **EE235** as a PNG is shown below.
 All courses at the same 'level' in the tree are the same color. Courses with the same shape at the end of the arrow
 indicate that **ONE** of those courses is enough to statisfy the prerequisite requirement. 
 
-<img src = "static/Images/EE235.png" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="EE235 Prerequisite Tree">
+<img src = "static/Images/EE235.png" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="EE235 Prerequisite Tree">
 
 ### Console Display
 The following prerequisite tree for **EE235** is shown below.
@@ -94,17 +94,25 @@ python app.py
 Then open the following link to access the website: http://127.0.0.1:5000/home/
 
 The following page should appear:
-<img src="static/Images/HomePage.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+
+<img src="static/Images/HomePage.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
 
 The other pages on the site:
 
-<img src="static/Images/requirements.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+<img src="static/Images/requirements.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
+
 ***
-<img src="static/Images/departments.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+
+<img src="static/Images/departments.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
+
 ***
-<img src="static/Images/generator.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+
+<img src="static/Images/generator.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
+
 ***
-<img src="static/Images/keyword.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+
+<img src="static/Images/keyword.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
+
 ***
 
 ### Course Data

@@ -1,0 +1,11 @@
+create_tree -- 2019-08-03 17:26:19,312 -- INFO : Prerequisite Tree created for ARCTIC201 in 'static/Prerequisite_Trees'
+create_tree -- 2019-08-03 17:26:34,995 -- INFO : Prerequisite Tree created for EE469 in 'static/Prerequisite_Trees'
+create_tree -- 2019-08-03 17:27:21,784 -- INFO : Prerequisite Tree created for EE235 in 'static/Prerequisite_Trees'
+create_tree -- 2019-08-03 18:42:22,214 -- INFO : Prerequisite Tree created for EE235 in 'static/Prerequisite_Trees'
+create_tree -- 2019-08-03 18:42:35,961 -- INFO : Prerequisite Tree created for BIOC442 in 'static/Prerequisite_Trees'
+parse_courses -- 2019-08-03 18:46:23,797 -- CRITICAL : Could not access: http://www.washington.edu/students/crscat/heor.html. HTTP Status Code: 404
+parse_courses -- 2019-08-03 18:46:47,626 -- INFO : JSON File for UW Bothell created under C:\Users\alex\Documents\UWCourseWeb\UW_Campus_Catalogs\JSON
+parse_courses -- 2019-08-03 18:46:48,944 -- INFO : JSON File for UW Seattle created under C:\Users\alex\Documents\UWCourseWeb\UW_Campus_Catalogs\JSON
+parse_courses -- 2019-08-03 18:46:49,327 -- INFO : JSON File for UW Tacoma created under C:\Users\alex\Documents\UWCourseWeb\UW_Campus_Catalogs\JSON
+parse_courses -- 2019-08-03 18:46:50,914 -- INFO : JSON File for All UW Campuses created under C:\Users\alex\Documents\UWCourseWeb\UW_Campus_Catalogs\JSON
+parse_courses -- 2019-08-03 18:46:50,921 -- CRITICAL : Error in parsing courses. Courses from ['HEOR'] not parsed

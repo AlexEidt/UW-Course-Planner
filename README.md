@@ -21,9 +21,7 @@ The prerequisite tree for **EE235** as a PNG is shown below.
 All courses at the same 'level' in the tree are the same color. Courses with the same shape at the end of the arrow
 indicate that **ONE** of those courses is enough to statisfy the prerequisite requirement. 
 
-<p align = "center">
-    <img src = "static/Images/EE235.png" width=600 alt="EE235 Prerequisite Tree">
-</p>
+<img src = "static/Images/EE235.png" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="EE235 Prerequisite Tree">
 
 ### Console Display
 The following prerequisite tree for **EE235** is shown below.
@@ -87,29 +85,27 @@ CSE143*
 ### Flask Application
 
 There is an option to run this application on a server and to generate prerequisite trees on the web.
-In order to run the `Flask` application on the localhost open the Command Line and `cd` into the directory where the application is stored. Once there input the following commands:
-
-#### Windows
-```
-set FLASK_APP=app.py
-```
-#### MAC
-```
-export FLASK_APP=app.py
-```
-
-and then:
+In order to run the `Flask` application on the localhost open the Command Line and `cd` into the directory where the application is stored. Once there input the following command:
 
 ```
-flask run
+python app.py
 ```
 
 Then open the following link to access the website: http://127.0.0.1:5000/home/
 
 The following page should appear:
-<p align="center">
-    <img src="static/Images/HomePage.PNG" width=600 alt="Home Page">
-</p>
+<img src="static/Images/HomePage.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+
+The other pages on the site:
+
+<img src="static/Images/requirements.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+***
+<img src="static/Images/departments.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+***
+<img src="static/Images/generator.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+***
+<img src="static/Images/keyword.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 65%" alt="Home Page">
+***
 
 ### Course Data
 

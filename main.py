@@ -159,15 +159,34 @@ def enter_courses(all_courses, courses_taken, more='y'):
         more = input('Continue? (y/n): ').lower()
 
 
-def main():
+def keyword_search(all_courses, courses_taken, more='y'):
+    """Prints all courses that include the given keyword in their course description.
+       (Case-insensitive)
+    @params
+        'all_courses': Course dictionary
+        'courses_taken': Courses already taken from the user, scanned in from transcript
+    """
+    while 'y' in more:
+        keyword = input('Enter a Keyword: ').lower()
+        courses_taken = scan_transcript(all_courses, webapp=True)
+        for course, data in all_courses.items():
+            if keyword in data['Description'].lower() and course not in courses_taken:
+                print(f'{course}\t{data}')
+        more = input('Continue Keyword Search? (y/n) ').lower()
+
+
+def main(more='y'):
     """Creates the campus tsv files if necessary and prompts the user for a UW
        Campus and the course they would like to search for"""
     check_files()
     campus = select_option(CAMPUSES.keys(), 'Choose a UW Campus: ')
     all_courses = read_file(campus)
     courses_taken = scan_transcript(all_courses)
-    enter_courses(all_courses, courses_taken)
-    get_course_data(all_courses)
+    while 'y' in more:
+        enter_courses(all_courses, courses_taken)
+        get_course_data(all_courses)
+        keyword_search(all_courses, courses_taken)
+        more = input('Continue course searches? (y/n)').lower()
 
 
 if __name__ == '__main__':

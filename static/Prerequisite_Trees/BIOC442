@@ -1,0 +1,298 @@
+// BIOC442 Prerequisites
+digraph {
+	graph [overlap=scale rankdir=TB splines=ortho]
+	edge [arrowhead=dot]
+	BIOC442 [label=BIOC442]
+	node [color=gray30 shape=invtrapezium style="rounded,filled"]
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	BIOC442 -> BIOC406
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	BIOC406 -> BIOC405
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC405 -> BIOL200
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> BIOL180
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> BBIO180
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> TBIOL120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> TESC120
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM143
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM143 -> CHEM110
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM145
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM145 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	MATH124 -> MATH120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	MATH120 -> MATH098
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	MATH120 -> MATH103
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey78]
+	MATH103 -> MATH102
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	MATH102 -> MATH100
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	MATH120 -> MATH109
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM145 -> MATH134
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM223
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM223 -> CHEM152
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM152 -> CHEM142
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	CHEM142 -> CHEM110
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM152 -> CHEM143
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM152 -> CHEM145
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM223 -> CHEM153
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM153 -> CHEM143
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM223 -> CHEM155
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM155 -> CHEM145
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM237
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM237 -> CHEM153
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM237 -> CHEM155
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM237 -> CHEM162
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	CHEM162 -> CHEM152
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> OCEAN295
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	OCEAN295 -> CHEM152
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	OCEAN295 -> CHEM120
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM220
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM220 -> CHEM120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM220 -> CHEM142
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM152
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM153
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey90]
+	BIOL200 -> CHEM155
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC405 -> CHEM223
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC405 -> CHEM237
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC405 -> CHEM335
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM335 -> CHEM155
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM335 -> CHEM162
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	BIOC442 -> BIOC441
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	BIOC441 -> BIOC440
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> BIOL200
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> CHEM224
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM224 -> CHEM223
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> CHEM239
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM239 -> CHEM238
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM238 -> CHEM237
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM238 -> CHEM335
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM238 -> BCHEM237
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	BCHEM237 -> BCHEM162
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	BCHEM237 -> BCHEM163
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	BCHEM163 -> BCHEM153
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey78]
+	BCHEM153 -> BCHEM143
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> BCHEM139
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> BMATH122
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	BMATH122 -> BMATH121
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> BMATH123
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	BMATH123 -> BMATH122
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> MATH120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> STMATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH124 -> BMATH123
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH124 -> MATH120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> STMATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH125 -> STMATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH125 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> MATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	MATH125 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> STMATH126
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH126 -> STMATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	STMATH126 -> MATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM143 -> MATH126
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey72]
+	MATH126 -> MATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	BCHEM237 -> BCHEM164
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey81]
+	BCHEM164 -> BCHEM154
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey78]
+	BCHEM154 -> BCHEM144
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey75]
+	BCHEM144 -> BCHEM143
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey78]
+	BCHEM154 -> BCHEM153
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey81]
+	BCHEM164 -> BCHEM163
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM239 -> CHEM335
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM239 -> BCHEM238
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	BCHEM238 -> BCHEM237
+	edge [arrowhead=dot arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> CHEM337
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	CHEM337 -> CHEM336
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	CHEM336 -> CHEM335
+	edge [arrowhead=normal arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> MATH124
+	edge [arrowhead=normal arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> MATH134
+	edge [arrowhead=normal arrowsize=1.1]
+	node [fillcolor=grey93]
+	BIOC440 -> MATH144
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	BIOC442 -> BIOC451
+}

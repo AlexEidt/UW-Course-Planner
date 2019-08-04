@@ -119,7 +119,7 @@ def get_credits(description):
     Returns 
         The number of credit offered for the course if there are any, otherwise an empty String
     """
-    match = re.search(r'\([^\)]+\)', description)
+    match = re.search(r'\([\*,\.max\d/ \-]+\)', description)
     return match.group(0)[1:-1] if match else ''
 
 

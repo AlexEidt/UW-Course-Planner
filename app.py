@@ -10,7 +10,6 @@ from parse_courses import CAMPUSES, gather
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
-app.config['UPLOADED_FILES_DEST'] = 'uploads'
 
 
 def get_course_dict(campus):

@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark">
             <div class="navbar-brand">
                 <img src="{{ url_for('static', filename='Images/UWLogo.png') }}" width=60 alt="UW Logo">
             </div>
@@ -38,11 +38,15 @@
                         <a class="nav-link" href="{{ url_for('keyword')}}">Keyword Search</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav ml-auto"> 
+                    <li>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" id="courseSearch" placeholder="Search...">
+                            <button class="btn btn-success my-2 my-sm-0" id="searchBtn" type="button">Search</button>
+                        </form>   
+                    </li>
+                </ul>
             </div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" id="courseSearch" placeholder="Search...">
-                <button class="btn btn-success my-2 my-sm-0" id="searchBtn" type="button">Search</button>
-            </form>   
         </nav>
         {% block content %}{% endblock %}
         <script

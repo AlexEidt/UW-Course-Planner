@@ -36,10 +36,11 @@ def create_tree(course_dict, courses_taken, course, indent, webapp=False):
         graph_attr = {'rankdir':'TB', 'splines':'ortho', 'overlap':'scale'},
         edge_attr = {'arrowhead': 'dot'}
     )
-    global level_counter
+    global level_counter, width_counter
     level_counter = set()
+    width_counter = set()
     if course in course_dict and course not in courses_taken:
-        if course_dict[course]['Prerequisites']:
+        if course_dict[course]['Prerequisites'] or course_dict[course]['Co-Requisites']:
             tree.node(course, course)
             tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
             # Recursively build up tree
@@ -48,14 +49,15 @@ def create_tree(course_dict, courses_taken, course, indent, webapp=False):
             create_tree_helper(course_dict, course, 0, courses_taken, tree)
             levels = max(level_counter)
             if levels:
-                tree.render('static\\Prerequisite_Trees\\{}'.format(course), view=not webapp, format='png')
+                tree.render(f'static\\Prerequisite_Trees\\{course}', view=not webapp, format='png')
+            print(str(width_counter))
             logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
-            return levels
+            return min(list((levels, max(width_counter))))
     return -1
 
 
-arrowheads = ['box', 'dot', 'normal', 'diamond', 'tee', 'crow',
-              'icurve', 'curve', 'inv', 'vee', 'none']
+arrowheads = ['box', 'dot', 'normal', 'diamond', 'inv', 'tee', 'crow',
+              'icurve', 'curve', 'vee', 'none']
 split_course = re.compile(r'/|,|&&')
 def create_tree_helper(course_dict, course, level, courses_taken, tree):
     """Builds up the prerequisite tree
@@ -70,14 +72,17 @@ def create_tree_helper(course_dict, course, level, courses_taken, tree):
     if course in course_dict and course:
         if course not in total:
             total.append(course)
-            for index, crs in enumerate(course_dict[course]['Prerequisites'].split(';')):
-                if set(split_course.split(crs)).isdisjoint(courses_taken):
-                    for option in split_course.split(crs):
-                        if option:
-                            tree.attr('edge', arrowhead=arrowheads[index], arrowsize='1.1')
-                            tree.attr('node', fillcolor=f'grey{str(99 - (level * 3))}')
-                            tree.edge(course, option)
-                            create_tree_helper(course_dict, option, level + 1, courses_taken, tree)
+            for i, requisite_type in enumerate(['Prerequisites', 'Co-Requisites']):
+                for index, crs in enumerate(course_dict[course][requisite_type].split(';')):
+                    split_crs = split_course.split(crs)
+                    width_counter.add(len(split_crs))
+                    if set(split_crs).isdisjoint(courses_taken):
+                        for option in split_course.split(crs):
+                            if option:
+                                tree.attr('edge', arrowhead=arrowheads[index] if not i else f'o{arrowheads[index]}', arrowsize='1.1')
+                                tree.attr('node', fillcolor=f'grey{str(99 - (level * 3))}' if not i else 'cyan')
+                                tree.edge(course, option)
+                                create_tree_helper(course_dict, option, level + 1, courses_taken, tree)
 
 
 def console_tree(course_dict, courses_taken, course, indent):

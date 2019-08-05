@@ -102,7 +102,7 @@ def _get_tree():
             img = f'AT {course}'
         else:
             if course in course_dict:
-                if course_dict[course]['Prerequisites']:
+                if course_dict[course]['Prerequisites'] or course_dict[course]['Co-Requisites']:
                     if not search_course:
                         levels = create_tree(course_dict, courses_taken, course, None, webapp=True)
                         img = f'{course}.png'

@@ -319,6 +319,7 @@ def get_web_soup(website_link):
     source = website.request('GET', website_link)
     return Soup(source.data, features='lxml')
 
+
 department_dict = {} # Maps department abbreviations to names for each UW Campus
 total_department_dict = {} # Department abbreviations to names for all UW Campuses
 def read_department_courses(course_data, campus, path):

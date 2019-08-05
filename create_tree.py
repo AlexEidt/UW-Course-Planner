@@ -20,7 +20,7 @@ os.environ["PATH"] += os.pathsep + 'C:\\Graphviz\\bin'
 # ---------------------------------------------------------------------- #
 
 
-def create_tree(course_dict, courses_taken, course, indent):
+def create_tree(course_dict, courses_taken, course, indent, webapp=False):
     """Starts the tree by adding the selected course as the top element
     @params
         'course_dict': The dictionary of courses
@@ -38,7 +38,7 @@ def create_tree(course_dict, courses_taken, course, indent):
     )
     global level_counter
     level_counter = set()
-    if course in course_dict:
+    if course in course_dict and course not in courses_taken:
         if course_dict[course]['Prerequisites']:
             tree.node(course, course)
             tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
@@ -46,10 +46,12 @@ def create_tree(course_dict, courses_taken, course, indent):
             global total
             total = []
             create_tree_helper(course_dict, course, 0, courses_taken, tree)
-            tree.render('static\\Prerequisite_Trees\\{}'.format(course), view=False, format='png')
+            levels = max(level_counter)
+            if levels:
+                tree.render('static\\Prerequisite_Trees\\{}'.format(course), view=not webapp, format='png')
             logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
-            return max(level_counter)
-    return 0
+            return levels
+    return -1
 
 
 arrowheads = ['box', 'dot', 'normal', 'diamond', 'tee', 'crow',

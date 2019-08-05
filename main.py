@@ -159,13 +159,14 @@ def enter_courses(all_courses, courses_taken, more='y'):
         more = input('Continue? (y/n): ').lower()
 
 
-def keyword_search(all_courses, courses_taken, more='y'):
+def keyword_search(all_courses, courses_taken):
     """Prints all courses that include the given keyword in their course description.
        (Case-insensitive)
     @params
         'all_courses': Course dictionary
         'courses_taken': Courses already taken from the user, scanned in from transcript
     """
+    more = input('Search for keywords in course descriptions? (y/n): ').lower()
     while 'y' in more:
         keyword = input('Enter a Keyword: ').lower()
         courses_taken = scan_transcript(all_courses, webapp=True)

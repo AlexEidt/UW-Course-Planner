@@ -18,6 +18,13 @@
         margin-right: auto; 
         display: block;
     }
+    p {
+        width: 80%;
+        text-align: center;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+    }
     </style>
     <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
     text-align: center; padding: 1em">
@@ -29,7 +36,6 @@
         <col style="width: 30%">
         <tr>
             <td>
-                <br>
                 {% if transcript %}
                     <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Transcript Found">
                 {% else %}
@@ -37,7 +43,6 @@
                 {% endif %}
             </td>
             <td>
-                <br>
                 {% if connected() %}
                 <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Internet Connected">
                 {% else %}
@@ -45,7 +50,6 @@
                 {% endif %}
             </td>
             <td>
-                <br>
                 {% if gather() %}
                     <img class="card-img-top" id="gatherImg" src="{{ url_for('static', filename='Images/check.png') }}" alt="All required files present">
                 {% else %}
@@ -60,19 +64,19 @@
         </tr>
         <tr>
             <td>
-                <p class="card-text">
+                <p>
                     <strong>OPTIONAL:</strong> To remove courses you've already taken, copy/paste your
                     <a href="https://myplan.uw.edu/" target="_blank">Unofficial Transcript</a> 
-                        into a text document called <strong>Transcript.txt</strong>
+                        into a text document and upload it. 
                 </p>
             </td>
             <td>
-                <p class="card-text">
+                <p>
                     An Internet Connection is required to download course information from the UW course catalog.
                 </p>
             </td>
             <td>
-                <p class="card-text">
+                <p>
                     Files containing course information for every UW Campus and Departments are required in order for 
                     course searches and prerequisite tree generation to work. File creation/updating may take up to 3 minutes.
                 </p>
@@ -80,16 +84,13 @@
         </tr>
         <tr>
             <td>
-                <br>
                 <form action="{{ url + 'upload'}}" id="file" method="POST" enctype="multipart/form-data">
                     <input type="file" name="transcript" style="padding: 1em" class="form-control-file"/>
-                    <br>
                     <input type="submit" id="fileSubmit" class="btn btn-primary"/>
                 </form>
             </td>
             <td></td>
             <td>
-                <br>
                 <button id="gather" class="btn btn-primary">
                     {% if gather() %}
                         <span id="gatherBtn"></span>Update Course Catalogs
@@ -100,7 +101,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan=3><br></td>
+            <td colspan=3></td>
         </tr>
     </table>
     <script>

@@ -1,32 +1,44 @@
 {% extends "layout.html" %}
 {% block content %}
+    <style>
+    p {
+        width: 80%;
+        padding: 2em;
+        text-align: left;
+    }
+    </style>
     {% if in_dict %}
         <div class="table-responsive">
             <table class="table table-striped">
+            <col style="width: 20%">
+            <col style="width: 60%">
             <th colspan=2 style="text-align: center; font-family: Verdana">
                 {{ '{} --- {}'.format(course, course_data['Course Name']) }}</th>
             <tr>
                 {% if levels > 3 %}
-                    <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
-                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 60 }}
-                        class="img-responsive"></td>
+                    <td colspan=2><img id="display" src=""
+                        style="display: block; margin-left: auto; margin-right: auto; width: 40%" class="img-responsive"></td>
                 {% elif levels > 0 %}
-                    <td colspan=2><img src="{{ url_for('static', filename='{}/{}.png'.format('Prerequisite_Trees', course)) }}"
-                        style="display: block; margin-left: auto; margin-right: auto" width={{ levels * 110 }}
-                        class="img-responsive"></td>
+                    <td colspan=2><img id="display" src=""
+                        style="display: block; margin-left: auto; margin-right: auto; width: 25%" class="img-responsive"></td>
                 {% endif %}
             </tr>
+            <script>
+                var course = "{{ course }}";
+                var time = new Date();
+                $('img#display').attr('src', '../static/Prerequisite_Trees/' + course + '.png?none=' + time.getTime());
+            </script>
             {% for name, data in course_data.items() %}
                 {% if data %}
                     <tr>
-                        <td style="text-align: center"><strong>{{ name }}</strong></td>
+                        <td><strong>{{ name }}</strong></td>
                         {% if 'Department Name' in name %}
-                            <td style="text-align: center"><a href="{{ url + data }}">
+                            <td><a href="{{ url + data }}">
                                 <strong>{{ data }}</strong></a>
                             </td>
                         </tr>
                         {% else %}
-                            <td style="text-align: center">{{ data }}</td>
+                            <td>{{ data }}</td>
                         {% endif %}
                     </tr>
                 {% endif %}

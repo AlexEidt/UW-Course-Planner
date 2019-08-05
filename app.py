@@ -3,6 +3,7 @@
 import re
 import json
 import os
+from datetime import datetime
 from flask import Flask, redirect, url_for, render_template, jsonify, request
 from create_tree import create_tree
 from main import read_file, course_files_dir, course_dir, check_connection, scan_transcript
@@ -58,17 +59,17 @@ def get_files():
         gather(course_files_dir)
     found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
     return render_template('requirements.html', url=request.url_root, transcript=found_transcript, 
-                            connected=check_connection, gather=check)
+        connected=check_connection, gather=check)
  
 
 @app.route('/upload', methods=['GET', 'POST'])
 def get_transcript():
     if request.method == 'POST':
         transcript = request.files['transcript']
-        transcript.save(transcript.filename)
+        transcript.save('Transcript.txt')
     found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
     return render_template('requirements.html', url=request.url_root, transcript=found_transcript, 
-                            connected=check_connection, gather=check)
+        connected=check_connection, gather=check)
 
 
 @app.route('/search/', methods=['POST'])
@@ -76,7 +77,7 @@ def search():
     course = request.form['name'].upper().replace(' ', '')
     total_course_dict = get_course_dict('Total')
     if course in total_course_dict:
-        levels = create_tree(total_course_dict, scan_transcript(total_course_dict, webapp=True), course, None)
+        levels = create_tree(total_course_dict, scan_transcript(total_course_dict, webapp=True), course, None, webapp=True)
         return render_template('course.html', course=course, course_data=total_course_dict[course], levels=levels)
     return redirect(url_for('index'))
 
@@ -87,6 +88,7 @@ def _get_tree():
     course = request.form['name'].upper().replace(' ', '')
     search_course = course.endswith('SEARCHCOURSE')
     course = course.replace('SEARCHCOURSE', '', 1)
+    levels = -1
     if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
         department_dict = get_course_dict('Departments')
         if course in department_dict['Total']:
@@ -95,18 +97,22 @@ def _get_tree():
             img = f'ND {course}'
     else:
         course_dict = get_course_dict('Total')
-        if course in course_dict:
-            if course_dict[course]['Prerequisites']:
-                if not search_course:
-                    create_tree(course_dict, scan_transcript(course_dict, webapp=True), course, None)
-                    img = f'{course}.png'
-                else:
-                    img = course
-            else:
-                img = f'NP {course}'
+        courses_taken = scan_transcript(course_dict, webapp=True)
+        if course in courses_taken:
+            img = f'AT {course}'
         else:
-            img = f'NA {course}' if course else ''
-    return jsonify({'data': img})
+            if course in course_dict:
+                if course_dict[course]['Prerequisites']:
+                    if not search_course:
+                        levels = create_tree(course_dict, courses_taken, course, None, webapp=True)
+                        img = f'{course}.png'
+                    else:
+                        img = course
+                else:
+                    img = f'NP {course}'
+            else:
+                img = f'NA {course}' if course else ''
+    return jsonify({'data': img, 'levels': levels if levels > 0 else 0})
 
 
 @app.route('/_keyword_search/', methods=['POST'])
@@ -130,7 +136,7 @@ def keyword():
 def requirements():
     found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
     return render_template('requirements.html', url=request.url_root, transcript=found_transcript, 
-                            connected=check_connection, gather=check)
+        connected=check_connection, gather=check)
 
 
 @app.route('/departments/', methods=['GET', 'POST'])
@@ -157,9 +163,10 @@ def department(department):
             department_dict=department_dict, url=request.url_root, department=department,
             in_dict=department in department_dict['Total'])
     else:
-        levels = create_tree(course_dict, scan_transcript(course_dict, webapp=True), department, None)
-        return render_template('course.html', course=department, course_data=course_dict[department], levels=levels,
-                        in_dict=department in course_dict, url=request.url_root)
+        levels = create_tree(course_dict, scan_transcript(course_dict, webapp=True), department, None, webapp=True)
+        return render_template('course.html', course=department, 
+            course_data=course_dict[department], levels=levels,
+            in_dict=department in course_dict, url=request.url_root)
     
 
 @app.route('/generate/')

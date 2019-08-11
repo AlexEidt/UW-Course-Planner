@@ -13,10 +13,15 @@
 
 The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.washington.edu/students/timeschd/) and for UW Course Catalogs (see below) for every UW Campus. This data is stored in `.json` files that can be found in the `UW_Course_Catalogs` and `UW_Time_Schedules` directories. 
 
-### UW Course Catalogs
+#### UW Course Catalogs
  >[Bothell](http://www.washington.edu/students/crscatb/)                             
  [Seattle](http://www.washington.edu/students/crscat/)                                
  [Tacoma](http://www.washington.edu/students/crscatt/) 
+
+#### UW Time Schedules
+ >[Bothell](https://www.uwb.edu/registration/time)                             
+ [Seattle](https://www.washington.edu/students/timeschd/)                                
+ [Tacoma](https://www.washington.edu/students/timeschd/T/)
 
 ### Prerequisite Tree
 A prerequisite tree for any course offered at the UW can be created as a PNG file or in the console (see below).

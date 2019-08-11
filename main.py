@@ -192,5 +192,5 @@ if __name__ == '__main__':
     if check_connection():
         main()
     else:
-        logger.critical("No Internet Connection")
-        print('Could not connect to the Internet')
+        logger.critical('No Internet Connection')
+        print('No Internet Connection')

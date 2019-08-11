@@ -449,10 +449,15 @@ def gather(path):
 
 
 if __name__ == '__main__':
-    try: os.mkdir(course_dir)
-    except Exception: pass
-    try: os.mkdir(f'{course_files_dir}\\JSON')
-    except Exception: pass
-    try: os.mkdir(f'{course_files_dir}\\TSV')
-    except Exception: pass
-    gather(course_files_dir)
+    try:
+        r.get('https://www.google.com/') # Check Internet Connection
+    except Exception:
+        pass
+    else:
+        try: os.mkdir(course_dir)
+        except Exception: pass
+        try: os.mkdir(f'{course_files_dir}\\JSON')
+        except Exception: pass
+        try: os.mkdir(f'{course_files_dir}\\TSV')
+        except Exception: pass
+        gather(course_files_dir)

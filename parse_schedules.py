@@ -14,6 +14,8 @@ import time
 import os
 import requests as r
 import urllib3 as URL
+from parse_courses import get_web_soup
+from main import check_connection
 from datetime import datetime as dttime
 from datetime import timedelta as td
 from bs4 import BeautifulSoup as Soup
@@ -61,18 +63,6 @@ QUARTERS = {
 COURSE_KEYS = ['Section', 'Type', 'Days', 'Time', 'Building', 'Room Number']
 
 TIME_SCHEDULES_DIR = 'UW_Time_Schedules'
-
-
-def get_web_soup(website_link):
-    """Creates BeautifulSoup for the given website link
-    @params
-        'website_link': The website to be scraped
-    Returns
-        BeautifulSoup object for the given link
-    """
-    website = URL.PoolManager()
-    source = website.request('GET', website_link)
-    return Soup(source.data, features='lxml')
 
 
 def quarter_dates():
@@ -251,19 +241,6 @@ def parse_schedules(department):
             if course_data:
                 department_schedule[crs_listed] = course_data
     return department_schedule
-    
-
-def check_connection(url='https://www.google.com/'):
-    """Checks for a connection to the internet
-    Returns
-        True if internet is connected, False otherwise
-    """
-    try:
-        r.get(url)
-    except Exception:
-        return False
-    else:
-        return True
 
 
 if __name__ == '__main__':

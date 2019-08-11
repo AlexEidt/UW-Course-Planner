@@ -32,7 +32,7 @@ def create_tree(course_dict, courses_taken, course, indent, webapp=False):
     """
     # Tree used to draw the course prerequisite tree
     tree = Digraph(
-        comment=f'{course} Prerequisites',
+        comment='Prerequisites',
         graph_attr = {'rankdir':'TB', 'splines':'ortho', 'overlap':'scale'},
         edge_attr = {'arrowhead': 'dot'}
     )
@@ -43,14 +43,13 @@ def create_tree(course_dict, courses_taken, course, indent, webapp=False):
         if course_dict[course]['Prerequisites'] or course_dict[course]['Co-Requisites']:
             tree.node(course, course)
             tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
-            # Recursively build up tree
             global total
             total = []
+            # Recursively build up tree
             create_tree_helper(course_dict, course, 0, courses_taken, tree)
             levels = max(level_counter)
             if levels:
                 tree.render(f'static\\Prerequisite_Trees\\{course}', view=not webapp, format='png')
-            print(str(width_counter))
             logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
             return min(list((levels, max(width_counter))))
     return -1

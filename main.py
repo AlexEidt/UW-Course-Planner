@@ -29,9 +29,7 @@ def check_files():
     """
     try:
         os.mkdir(course_dir)
-        message = f'Created Directory {course_dir} in {os.getcwd()}'
-        print(message)
-        logger.info(message)
+        logger.info(f'Created Directory {course_dir} in {os.getcwd()}')
         try: 
             os.mkdir(f'{course_files_dir}\\JSON')
         except Exception: 

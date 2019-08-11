@@ -447,3 +447,12 @@ def gather(path):
                     have been sucessfully created in: {path}''')
         logger.info('{} ran in {:.1f} seconds'.format(__name__, t2 - t1))
 
+
+if __name__ == '__main__':
+    try: os.mkdir(course_dir)
+    except Exception: pass
+    try: os.mkdir(f'{course_files_dir}\\JSON')
+    except Exception: pass
+    try: os.mkdir(f'{course_files_dir}\\TSV')
+    except Exception: pass
+    gather(course_files_dir)

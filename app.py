@@ -27,7 +27,10 @@ def get_course_dict(campus):
 
 
 def check():
-    # Create Directories for JSON and TSV Files
+    """Checks if all required files are present in the course_files_dir
+    Returns
+        True if all files are found, False otherwise
+    """
     try: 
         os.mkdir(course_dir)
     except Exception: pass
@@ -43,8 +46,7 @@ def check():
     present_tsv = os.listdir(f'{course_files_dir}\\TSV')
     present_json = os.listdir(f'{course_files_dir}\\JSON')
     present_total = present_tsv + present_json
-    check = [c for c in required_total if c not in present_total]
-    return not bool(check)
+    return not bool([c for c in required_total if c not in present_total])
 
 
 @app.route('/')

@@ -13,6 +13,8 @@
 
 The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.washington.edu/students/timeschd/) and for UW Course Catalogs (see below) for every UW Campus. This data is stored in `.json` files that can be found in the `UW_Course_Catalogs` and `UW_Time_Schedules` directories. 
 
+Run `parse_courses.py` to generate `.json` files for UW Course Campuses and `parse_schedules.py` to generate `.json` files for the UW Time Schedules for every UW Campus.
+
 ### UW Course Catalogs
  >[Bothell](http://www.washington.edu/students/crscatb/)                             
  [Seattle](http://www.washington.edu/students/crscat/)                                

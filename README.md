@@ -179,7 +179,7 @@ Python 3.7
 
 #### Flask Application
 ```
- - Flask        [pip install Flask]
+ - Flask        [pip install flask]
  ```
 
 The directory for the application is structured according to the diagram below:

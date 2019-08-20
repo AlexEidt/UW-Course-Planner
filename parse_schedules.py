@@ -12,14 +12,23 @@ import datetime
 import logging
 import time
 import os
-import requests as r
 import urllib3 as URL
 from parse_courses import get_web_soup
 from main import check_connection
 from datetime import datetime as dttime
 from datetime import timedelta as td
-from bs4 import BeautifulSoup as Soup
-from tqdm import tqdm as AddProgressBar
+try:
+    import requests as r
+except Exception:
+    raise Exception('Requests not installed. Try installing with "pip install requests"')
+try:
+    from bs4 import BeautifulSoup as Soup
+except Exception:
+    raise Exception('bs4 not installed. Try installing with "pip install beautifulsoup4"')
+try:
+    from tqdm import tqdm as AddProgressBar
+except Exception:
+    raise Exception('tqdm not installed. Try installing with "pip install tqdm"')
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

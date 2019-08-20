@@ -7,10 +7,13 @@ import os
 import re
 import json
 import logging
-import requests
 from datetime import datetime
 from parse_courses import gather, CAMPUSES, COLUMN_NAMES, course_files_dir, course_dir, read_file
 from create_tree import create_tree, console_tree
+try:
+    import requests
+except Exception:
+    raise Exception('Requests not installed. Try installing with "pip install requests"')
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

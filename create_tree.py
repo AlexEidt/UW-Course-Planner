@@ -4,7 +4,11 @@
 import os    
 import re
 import logging
-from graphviz import Digraph
+try:
+    from graphviz import Digraph
+except Exception:
+    raise Exception('Graphviz not installed. Try installing with "pip install graphviz"')
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

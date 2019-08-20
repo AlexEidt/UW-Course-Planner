@@ -4,10 +4,13 @@ import re
 import json
 import os
 from datetime import datetime
-from flask import Flask, redirect, url_for, render_template, jsonify, request
 from create_tree import create_tree
 from main import read_file, course_files_dir, course_dir, check_connection, scan_transcript
 from parse_courses import CAMPUSES, gather
+try:
+    from flask import Flask, redirect, url_for, render_template, jsonify, request
+except Exception:
+    raise Exception('Flask not installed. Try installing with "pip install flask"')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'

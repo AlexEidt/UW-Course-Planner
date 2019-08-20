@@ -3,6 +3,8 @@
  Search for any course offered at any one of the three UW Campuses and see a full tree of prerequisites for that course. There is also an option to scan in your transcript as a `.txt` file to eliminate any course in the tree that has already been taken. 
  Run `main.py` for a console interface and `app.py` to run the website on the localhost.
 
+Check out http://alexeidt.pythonanywhere.com/ for a live demo!
+
 ***
 
 **Always make sure to check the actual prerequisites for any course before making a decision on which course to take!**

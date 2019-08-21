@@ -3,20 +3,12 @@
 
 import os    
 import re
-import logging
+from utility import logger, scan_transcript, Prerequisite_Trees
 try:
     from graphviz import Digraph
 except Exception:
     raise Exception('Graphviz not installed. Try installing with "pip install graphviz"')
-
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
-handler = logging.FileHandler('Log.log')
-handler.setLevel(logging.DEBUG)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+    
 
 # Change PATH setup for Graphviz folder here:
 # --------------------------GRAPHVIZ PATH SETUP------------------------- #
@@ -53,7 +45,7 @@ def create_tree(course_dict, courses_taken, course, indent, webapp=False):
             create_tree_helper(course_dict, course, 0, courses_taken, tree)
             levels = max(level_counter)
             if levels:
-                tree.render(f'static\\Prerequisite_Trees\\{course}', view=not webapp, format='png')
+                tree.render(os.path.normpath(f'{Prerequisite_Trees}/{course}'), view=not webapp, format='png')
             logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
             return min(list((levels, max(width_counter))))
     return -1

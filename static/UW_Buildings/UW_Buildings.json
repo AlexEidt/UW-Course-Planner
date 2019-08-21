@@ -1,0 +1,485 @@
+{
+    "Bothell": {
+        "ARC": {
+            "Name": "Activities & Recreation Center"
+        },
+        "DISC": {
+            "Name": "Discovery Hall"
+        },
+        "ELC": {
+            "Name": "Eastside Leadership Center"
+        },
+        "LB1": {
+            "Name": "Library Building 1"
+        },
+        "LB2": {
+            "Name": "Library Building 2"
+        },
+        "LBA": {
+            "Name": "Library Building Annex"
+        },
+        "NCEC": {
+            "Name": "North Creek Events Center"
+        },
+        "UW1": {
+            "Name": "Founders Hall"
+        },
+        "UW2": {
+            "Name": "Commons Hall"
+        },
+        "UWBB": {
+            "Name": "Beardslee Building"
+        },
+        "UWBX": {
+            "Name": "Beardslee Crossing"
+        }
+    },
+    "Seattle": {
+        "ACC": {
+            "Name": "John M. Wallace Hall (formerly Academic Computing Center)"
+        },
+        "AER": {
+            "Name": "Aerospace & Engineering Research Building"
+        },
+        "ALB": {
+            "Name": "Allen Library"
+        },
+        "ALD": {
+            "Name": "Alder Hall"
+        },
+        "AND": {
+            "Name": "Anderson Hall"
+        },
+        "ARC": {
+            "Name": "Architecture Hall"
+        },
+        "ART": {
+            "Name": "Art Building"
+        },
+        "ATG": {
+            "Name": "Atmos Sci/Geophysics"
+        },
+        "BAG": {
+            "Name": "Bagley Hall"
+        },
+        "BGH": {
+            "Name": "Botany Greenhouse"
+        },
+        "BIOE": {
+            "Name": "W.H. Foege Bioengineering Building"
+        },
+        "BLD": {
+            "Name": "Bloedel Hall"
+        },
+        "BMM": {
+            "Name": "Burke Memorial Museum"
+        },
+        "BNS": {
+            "Name": "Benson Hall"
+        },
+        "BRY": {
+            "Name": "Bryant Building"
+        },
+        "CDH": {
+            "Name": "Condon Hall"
+        },
+        "CHB": {
+            "Name": "Chemistry Building"
+        },
+        "CHCL": {
+            "Name": "Center on Human Development and Disability"
+        },
+        "CHL": {
+            "Name": "Chemistry Library Building"
+        },
+        "CLK": {
+            "Name": "Clark Hall"
+        },
+        "CMA": {
+            "Name": "Ceramic and Metal Arts Building"
+        },
+        "CMU": {
+            "Name": "Communications Building"
+        },
+        "CNH": {
+            "Name": "Canoe House"
+        },
+        "CSE": {
+            "Name": "Paul G. Allen Center for Computer Science & Engineering"
+        },
+        "CSE2": {
+            "Name": "Bill & Melinda Gates Center for Computer Science & Engineering"
+        },
+        "CSH": {
+            "Name": "Conibear Shellhouse"
+        },
+        "DEM": {
+            "Name": "Dempsey Hall"
+        },
+        "DEN": {
+            "Name": "Denny Hall"
+        },
+        "DRC": {
+            "Name": "Douglas Research Conservatory"
+        },
+        "DSC": {
+            "Name": "3941 University Way N.E."
+        },
+        "ECC": {
+            "Name": "Ethnic Cultural Center"
+        },
+        "ECE": {
+            "Name": "Electrical and Computer Engineering Building"
+        },
+        "EDP": {
+            "Name": "Edmundson Pavilion"
+        },
+        "EEB": {
+            "Name": "Electrical Engineering Building"
+        },
+        "EGA": {
+            "Name": "Engineering Annex"
+        },
+        "EGL": {
+            "Name": "Eagleson Hall"
+        },
+        "ELB": {
+            "Name": "Engineering Library"
+        },
+        "EXED": {
+            "Name": "Bank of America Executive Education Center"
+        },
+        "FIS": {
+            "Name": "Fisheries Center"
+        },
+        "FLK": {
+            "Name": "Fluke Hall"
+        },
+        "FSH": {
+            "Name": "Fishery Sciences"
+        },
+        "FTR": {
+            "Name": "Fisheries Teaching and Research Building"
+        },
+        "GA1": {
+            "Name": "Guthrie Annex 1"
+        },
+        "GA2": {
+            "Name": "Guthrie Annex 2"
+        },
+        "GA3": {
+            "Name": "Guthrie Annex 3"
+        },
+        "GDR": {
+            "Name": "Golf Driving Range"
+        },
+        "GLD": {
+            "Name": "Gould Hall"
+        },
+        "GNOM": {
+            "Name": "W.H. Foege Genome Sciences Building"
+        },
+        "GRB": {
+            "Name": "Gerberding Hall (Administration)"
+        },
+        "GTH": {
+            "Name": "Guthrie Hall"
+        },
+        "GUG": {
+            "Name": "Guggenheim Hall"
+        },
+        "GWN": {
+            "Name": "Gowen Hall"
+        },
+        "HAG": {
+            "Name": "Henry Art Gallery"
+        },
+        "HCK": {
+            "Name": "Hitchcock Hall"
+        },
+        "HGT": {
+            "Name": "Haggett Hall"
+        },
+        "HHL": {
+            "Name": "Harris Hydraulics Lab"
+        },
+        "HLL": {
+            "Name": "Hall Health Center"
+        },
+        "HND": {
+            "Name": "Henderson Hall"
+        },
+        "HNS": {
+            "Name": "Hansee Hall"
+        },
+        "HPT": {
+            "Name": "Hughes Penthouse Theater"
+        },
+        "HS4": {
+            "Name": "Health Sciences Annex 4"
+        },
+        "HSA": {
+            "Name": "Health Sciences Building wings A, B, & C"
+        },
+        "HSB": {
+            "Name": "Health Sciences Building wings AA and BB"
+        },
+        "HSD": {
+            "Name": "Health Sciences Building wings D, F, G, & H"
+        },
+        "HSE": {
+            "Name": "Health Sciences Building wing E"
+        },
+        "HSI": {
+            "Name": "Health Sciences Building wing I"
+        },
+        "HSJ": {
+            "Name": "Health Sciences Building wing J"
+        },
+        "HSK": {
+            "Name": "Health Sciences Building wing K"
+        },
+        "HSRR": {
+            "Name": "Health Sciences Building wing RR"
+        },
+        "HST": {
+            "Name": "Health Sciences Building wing T"
+        },
+        "HUB": {
+            "Name": "Student Union Building"
+        },
+        "HUT": {
+            "Name": "Hutchinson Hall"
+        },
+        "ICH": {
+            "Name": "Cunningham Hall"
+        },
+        "ICT": {
+            "Name": "Samuel E. Kelly Ethnic Cultural Center"
+        },
+        "IMA": {
+            "Name": "Intramural Activities Building"
+        },
+        "JHA": {
+            "Name": "Johnson Annex"
+        },
+        "JHN": {
+            "Name": "Johnson Hall"
+        },
+        "KIN": {
+            "Name": "Kincaid Hall"
+        },
+        "KNE": {
+            "Name": "Kane Hall"
+        },
+        "LAH": {
+            "Name": "Lander Hall"
+        },
+        "LAW": {
+            "Name": "William H. Gates Hall"
+        },
+        "LEW": {
+            "Name": "Lewis Hall"
+        },
+        "LOW": {
+            "Name": "Loew Hall"
+        },
+        "MAR": {
+            "Name": "Marine Studies Building"
+        },
+        "MEB": {
+            "Name": "Mechanical Engineering Building"
+        },
+        "MGH": {
+            "Name": "Mary Gates Hall"
+        },
+        "MKZ": {
+            "Name": "Mackenzie Hall"
+        },
+        "MLR": {
+            "Name": "Miller Hall"
+        },
+        "MNY": {
+            "Name": "Meany Hall"
+        },
+        "MOR": {
+            "Name": "More Hall"
+        },
+        "MSB": {
+            "Name": "Marine Sciences Building"
+        },
+        "MUE": {
+            "Name": "Mueller Hall"
+        },
+        "MUS": {
+            "Name": "Music Building"
+        },
+        "NAN": {
+            "Name": "Nanoengineering & Sciences Building"
+        },
+        "NRB": {
+            "Name": "Nuclear Reactor Building"
+        },
+        "OBS": {
+            "Name": "Observatory"
+        },
+        "OCE": {
+            "Name": "Oceanography Building"
+        },
+        "OCN": {
+            "Name": "Ocean Sciences Building"
+        },
+        "OTB": {
+            "Name": "Oceanography Teaching Building"
+        },
+        "OUG": {
+            "Name": "Odegaard Library"
+        },
+        "PAA": {
+            "Name": "Physics-Astronomy Auditorium"
+        },
+        "PAB": {
+            "Name": "Physics-Astronomy Building"
+        },
+        "PAR": {
+            "Name": "Parrington Hall"
+        },
+        "PAT": {
+            "Name": "Physics Astronomy Tower"
+        },
+        "PCAR": {
+            "Name": "PACCAR Hall"
+        },
+        "PDL": {
+            "Name": "Padelford Hall"
+        },
+        "PHT": {
+            "Name": "Playhouse Theater"
+        },
+        "PLT": {
+            "Name": "Plant Laboratory"
+        },
+        "RAI": {
+            "Name": "Raitt Hall"
+        },
+        "ROB": {
+            "Name": "Roberts Hall"
+        },
+        "RTB": {
+            "Name": "Benjamin Hall, Interdiciplinary Research & Technology Building"
+        },
+        "RVC": {
+            "Name": "Roosevelt Commons"
+        },
+        "SAV": {
+            "Name": "Savery Hall"
+        },
+        "SGS": {
+            "Name": "Community"
+        },
+        "SIG": {
+            "Name": "Sieg Hall"
+        },
+        "SMI": {
+            "Name": "Smith Hall"
+        },
+        "SMZ": {
+            "Name": "Schmitz Hall"
+        },
+        "SOCC": {
+            "Name": "South Campus Center"
+        },
+        "SUZ": {
+            "Name": "Suzzallo Library"
+        },
+        "SWS": {
+            "Name": "Social Work/Speech and Hearing Sciences Building"
+        },
+        "TER": {
+            "Name": "Terry Hall"
+        },
+        "TGB": {
+            "Name": "Graves Building"
+        },
+        "THO": {
+            "Name": "Thomson Hall"
+        },
+        "UMCC": {
+            "Name": "University Medical Center wings CC, EE, NE, NN, NW, SE, SS, & SW"
+        },
+        "UMSP": {
+            "Name": "University Medical Center, Surgery and Treatment Pavilion"
+        },
+        "WCL": {
+            "Name": "Wilson Ceramic Laboratory"
+        },
+        "WFS": {
+            "Name": "Winkenwerder Forest Sciences Laboratory"
+        },
+        "WIL": {
+            "Name": "Wilcox Hall"
+        },
+        "WLW": {
+            "Name": "Willow Hall"
+        }
+    },
+    "Tacoma": {
+        "ADMC": {
+            "Name": "Academic Building"
+        },
+        "BB": {
+            "Name": "Birmingham Block"
+        },
+        "BHS": {
+            "Name": "Birmingham Hay & Seed"
+        },
+        "CAR": {
+            "Name": "Carlton Center"
+        },
+        "CP": {
+            "Name": "Cherry Parkes"
+        },
+        "DOU": {
+            "Name": "Dougan"
+        },
+        "GWP": {
+            "Name": "Garretson Woodruff & Pratt"
+        },
+        "JOY": {
+            "Name": "Russell T. Joy"
+        },
+        "KEY": {
+            "Name": "Keystone"
+        },
+        "MAT": {
+            "Name": "Mattress Factory"
+        },
+        "MDS": {
+            "Name": "McDonald Smith"
+        },
+        "PNK": {
+            "Name": "Pinkerton"
+        },
+        "SCI": {
+            "Name": "Science"
+        },
+        "TLB": {
+            "Name": "Tioga Library Building"
+        },
+        "UWY": {
+            "Name": "University Y Student Center"
+        },
+        "WCG": {
+            "Name": "West Coast Grocery"
+        },
+        "WG": {
+            "Name": "Walsh Gardner"
+        },
+        "WHT": {
+            "Name": "The Whitney"
+        },
+        "WPH": {
+            "Name": "William W. Philip Hall"
+        }
+    }
+}

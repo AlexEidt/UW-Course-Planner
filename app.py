@@ -1,12 +1,12 @@
 """Runs the Flask Application"""
 
-import re
-import json
-import os
+import re, json, os
 from datetime import datetime
 from create_tree import create_tree
-from main import read_file, course_files_dir, course_dir, check_connection, scan_transcript
+from main import read_file
 from parse_courses import CAMPUSES, gather
+from geocode import geocode_all
+from utility import check_connection, scan_transcript, UW_Course_Catalogs, UW_Buildings
 try:
     from flask import Flask, redirect, url_for, render_template, jsonify, request
 except Exception:
@@ -24,7 +24,7 @@ def get_course_dict(campus):
     Returns
         A course dictionary for the given campus
     """
-    with open(f'{course_files_dir}\\JSON\\{campus}.json', mode='r') as file:
+    with open(os.path.normpath(f'{UW_Course_Catalogs}/JSON/{campus}.json'), mode='r') as file:
         course_dict = json.loads(file.read())
     return course_dict
 
@@ -35,19 +35,19 @@ def check():
         True if all files are found, False otherwise
     """
     try: 
-        os.mkdir(course_dir)
+        os.mkdir(f'{UW_Course_Catalogs}')
     except Exception: pass
     try: 
-        os.mkdir(f'{course_files_dir}\\JSON')
+        os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/JSON'))
     except Exception: pass
     try: 
-        os.mkdir(f'{course_files_dir}\\TSV')
+        os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/TSV'))
     except Exception: pass
     required_tsv = [f'{c}.tsv' for c in CAMPUSES.keys()] + ['Total.tsv']
     required_json = [f'{c}.json' for c in CAMPUSES.keys()] + ['Departments.json', 'Total.json']
     required_total = required_tsv + required_json
-    present_tsv = os.listdir(f'{course_files_dir}\\TSV')
-    present_json = os.listdir(f'{course_files_dir}\\JSON')
+    present_tsv = os.listdir(os.path.normpath(f'{UW_Course_Catalogs}/TSV'))
+    present_json = os.listdir(os.path.normpath(f'{UW_Course_Catalogs}/JSON'))
     present_total = present_tsv + present_json
     return not bool([c for c in required_total if c not in present_total])
 
@@ -61,7 +61,7 @@ def index():
 @app.route('/gather', methods=['POST'])
 def get_files():
     if check_connection():
-        gather(course_files_dir)
+        gather()
     found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
     return render_template('requirements.html', url=request.url_root, transcript=found_transcript, 
         connected=check_connection, gather=check)
@@ -130,6 +130,13 @@ def _keyword_search():
         if keyword in data['Description'].lower() and course not in courses_taken:
             matches[course] = data
     return jsonify({'matches': matches})
+
+
+@app.route('/get_geocode/', methods=['POST'])
+def get_geocode():
+    with open(os.path.normpath(f'{UW_Buildings}/Seattle_Coordinates.json'), mode='r') as file:
+        coordinates = json.loads(file.read())
+    return jsonify({'data': coordinates})
 
 
 @app.route('/keyword/')

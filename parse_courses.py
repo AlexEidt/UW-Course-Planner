@@ -39,36 +39,18 @@ Building off the script by Kamil Jiwa, the following changes were made:
 
 """ Creates a tsv file containing course data for each UW Campus """
 
-import re
-import csv
-import time
-import logging
-import json
-import os
+import re, csv, time, logging, json, os
 import urllib3 as URL
+from utility import logger, get_web_soup, check_connection, UW_Course_Catalogs
 try:
     import requests as r
 except Exception:
     raise Exception('Requests not installed. Try installing with "pip install requests"')
 try:
-    from bs4 import BeautifulSoup as Soup
-except Exception:
-    raise Exception('bs4 not installed. Try installing with "pip install beautifulsoup4"')
-try:
     from tqdm import tqdm as AddProgressBar
 except Exception:
     raise Exception('tqdm not installed. Try installing with "pip install tqdm"')
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
-handler = logging.FileHandler('Log.log')
-handler.setLevel(logging.DEBUG)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
-
-course_dir = 'UW_Campus_Catalogs' # Name of Folder with Campus tsv/json files
-course_files_dir = f'{os.getcwd()}\\{course_dir}' # course_dir file path
+    
 
 CAMPUSES = {                                                                                
     'Bothell': 'http://www.washington.edu/students/crscatb/',                               
@@ -317,32 +299,19 @@ def get_course_data(campus, department, number, description):
     return data
 
 
-def get_web_soup(website_link):
-    """Creates BeautifulSoup for the given website link
-    @params
-        'website_link': The website to be scraped
-    Returns
-        BeautifulSoup object for the given link
-    """
-    website = URL.PoolManager()
-    source = website.request('GET', website_link)
-    return Soup(source.data, features='lxml')
-
-
 department_dict = {} # Maps department abbreviations to names for each UW Campus
 total_department_dict = {} # Department abbreviations to names for all UW Campuses
-def read_department_courses(course_data, campus, path):
+def read_department_courses(course_data, campus):
     """Creates a .tsv file with all the course offered on the given 'campus'
        Initalizes 'departments.json' to include a dictionary of all department
        abbreviations to actual department name for each UW Campus.
     @params
         'course_data': BeautifulSoup object with the department list website for the given 'campus'
         'campus': The campus to get the courses from
-        'path': The file path to the directory storing all .tsv files for each campus
     """
     department_names = {}
     not_parsed = []
-    with open(f'{path}\\TSV\\{campus}.tsv', mode='w', newline='') as courses:
+    with open(os.path.normpath(f'{UW_Course_Catalogs}/TSV/{campus}.tsv'), mode='w', newline='') as courses:
         tsv_writer = csv.writer(courses, delimiter='\t')
         tsv_writer.writerow(COLUMN_NAMES)
         for dep_link in AddProgressBar(course_data.find_all('a')):
@@ -376,7 +345,7 @@ def write_json(all_courses, mode_type, campus):
         'mode_type': Write or append to file
         'campus': The campus the courses are from
     """
-    file_name = f'{course_files_dir}\\JSON\\{campus}.json'
+    file_name = os.path.normpath(f'{UW_Course_Catalogs}/JSON/{campus}.json')
     with open(file_name, mode=mode_type) as json_file:
         json.dump(all_courses, json_file, indent=4, sort_keys=True)
 
@@ -389,7 +358,7 @@ def read_file(campus):
         Dictionary of all course ID's with their information
     """
     all_courses = {}
-    with open(f'{course_files_dir}\\TSV\\{campus}.tsv', mode='r') as file:
+    with open(os.path.normpath(f'{UW_Course_Catalogs}/TSV/{campus}.tsv'), mode='r') as file:
         reader = csv.reader(file, delimiter='\t')
         next(reader)
         for course in reader: 
@@ -400,50 +369,55 @@ def read_file(campus):
     return all_courses
 
 
-def gather(path):
+def gather():
     """Creates a .tsv file for every UW campus
-    @params
-        'path': The file path to the directory storing all .tsv files for each campus
     Returns
         Dictionary with missing departments for each UW Campus
     """
+    try: os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}'))
+    except Exception: pass
+    try: os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/JSON'))
+    except Exception: pass
+    try: os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/TSV'))
+    except Exception: pass
+    print('Scanning the UW Course Catalogs...')
     not_scanned = {}
     t1 = time.perf_counter()
     for campus, link in CAMPUSES.items():
         request = r.get(link)
         not_parsed = None
         if request.ok:
-            not_parsed = read_department_courses(get_web_soup(link), campus, path)
+            not_parsed = read_department_courses(get_web_soup(link), campus)
         else:
             logger.error(f'''Could not access UW {campus} Course Catalog ({CAMPUSES[campus]}). 
                             HTTP Status Code: {request.status_code}''')
         not_scanned[campus] = not_parsed
 
     # Remove docs with all courses to prevent appending to old files
-    try: os.remove(f'{course_files_dir}\\JSON\\Total.json')
+    try: os.remove(os.path.normpath(f'{UW_Course_Catalogs}/JSON/Total.json'))
     except (FileExistsError, FileNotFoundError): pass
-    try: os.remove(f'{course_files_dir}\\TSV\\Total.tsv')
+    try: os.remove(os.path.normpath(f'{UW_Course_Catalogs}/TSV/Total.tsv'))
     except (FileExistsError, FileNotFoundError): pass
 
     # Create Departments json file
     department_dict['Total'] = total_department_dict
-    with open(f'{path}\\JSON\\Departments.json', mode='w') as file:
+    with open(os.path.normpath(f'{UW_Course_Catalogs}/JSON/Departments.json'), mode='w') as file:
         json.dump(department_dict, file, indent=4, sort_keys=True)
 
     # Create Total.tsv file
-    total = open(f'{course_files_dir}\\TSV\\Total.tsv', mode='a')
+    total = open(os.path.normpath(f'{UW_Course_Catalogs}/TSV/Total.tsv'), mode='a')
     csv.writer(total, delimiter='\t').writerow(COLUMN_NAMES)
     for campus in CAMPUSES.keys():
         write_json(read_file(campus), 'w', campus)
-        logger.info(f'JSON File for UW {campus} created under {course_files_dir}\\JSON')
-        with open(f'{course_files_dir}\\TSV\\{campus}.tsv') as campus_file: 
+        logger.info(f'JSON File for UW {campus} created')
+        with open(os.path.normpath(f'{UW_Course_Catalogs}/TSV/{campus}.tsv')) as campus_file: 
             next(campus_file)
             for line in campus_file:
                 total.write(line)
 
     # Create Total.json file
     write_json(read_file('Total'), 'w', 'Total')
-    logger.info(f'JSON File for All UW Campuses created under {course_files_dir}\\JSON')
+    logger.info(f'JSON File for All UW Campuses created')
     
     total.close()
     t2 = time.perf_counter()
@@ -453,20 +427,13 @@ def gather(path):
         logger.critical(f'Error in parsing courses. Courses from {str(check)} not parsed')
     else:
         logger.info(f'''Course Catalogs for {', '.join(CAMPUSES.keys())} 
-                    have been sucessfully created in: {path}''')
-        logger.info('{} ran in {:.1f} seconds'.format(__name__, t2 - t1))
+                    have been sucessfully created''')
+        logger.info(f'{__name__} ran in {(t2 - t1):.1f} seconds')
 
 
 if __name__ == '__main__':
-    try:
-        r.get('https://www.google.com/') # Check Internet Connection
-    except Exception:
-        pass
+    if check_connection():
+        gather()
     else:
-        try: os.mkdir(course_dir)
-        except Exception: pass
-        try: os.mkdir(f'{course_files_dir}\\JSON')
-        except Exception: pass
-        try: os.mkdir(f'{course_files_dir}\\TSV')
-        except Exception: pass
-        gather(course_files_dir)
+        print('No Internet Connection')
+        logger.critical('No Internet Connection')

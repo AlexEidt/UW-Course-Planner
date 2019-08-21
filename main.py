@@ -2,26 +2,15 @@
 tree in the console or as a PNG file. 
 """
 
-import csv
-import os
-import re
-import json
-import logging
+import csv, os, re, json, logging
 from datetime import datetime
-from parse_courses import gather, CAMPUSES, COLUMN_NAMES, course_files_dir, course_dir, read_file
+from parse_courses import gather, CAMPUSES, COLUMN_NAMES, read_file
 from create_tree import create_tree, console_tree
+from utility import logger, check_connection, scan_transcript, UW_Course_Catalogs
 try:
     import requests
 except Exception:
     raise Exception('Requests not installed. Try installing with "pip install requests"')
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
-handler = logging.FileHandler('Log.log')
-handler.setLevel(logging.DEBUG)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
 
 
 def check_files():
@@ -31,18 +20,15 @@ def check_files():
     the user can choose to update it.
     """
     try:
-        os.mkdir(course_dir)
-        logger.info(f'Created Directory {course_dir} in {os.getcwd()}')
+        os.mkdir(UW_Course_Catalogs)
         try: 
-            os.mkdir(f'{course_files_dir}\\JSON')
-        except Exception: 
-            logger.info(f'JSON Directory created in {course_dir}')
+            os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/JSON'))
+        except Exception: pass
         try: 
-            os.mkdir(f'{course_files_dir}\\TSV')
-        except Exception: 
-            logger.info(f'TSV Directory created in {course_dir}')
+            os.mkdir(os.path.normpath(f'{UW_Course_Catalogs}/TSV'))
+        except Exception: pass
     except Exception:
-        last_updated = str(datetime.fromtimestamp(os.stat(course_files_dir).st_mtime)).split('.')[0]
+        last_updated = str(datetime.fromtimestamp(os.stat(UW_Course_Catalogs).st_mtime)).split('.')[0]
         print(f'Course catalogs were last updated on {last_updated}')
         update = input('Would you like to update the Course Catalogs? (y/n): ')
     else:
@@ -50,63 +36,8 @@ def check_files():
     finally:
         if 'y' in update.lower():
             print(f"Creating TSV/JSON docs for {', '.join(list(CAMPUSES.keys()))} UW Campuses...")
-            gather(course_files_dir)
+            gather()
             print('Check the Log for any departments that may not have been parsed')
-
-
-def scan_transcript(course_dict, webapp=False):
-    """Asks the user if their transcript should be scanned in to remove classes from the class
-       tree that they've already taken.
-    @params 
-        'course_dict': The dictionary of courses scanned in from the campus selected by the user
-    Returns
-        List of courses taken from the transcript given
-    """
-    if not webapp:
-        print('If you would like to scan in your transcript to eliminate searching courses you have')
-        print("already taken, go to MyUW under 'Unofficial Transcript' and press CTRL+A and paste")
-        print('your transcript into a text file in the same directory as this script.')
-        transcript = input('Scan in Transcript? (y/n): ')
-        file_name = ''
-        if 'y' in transcript.lower():
-            check = False
-            while not check:
-                file_name = input('Transcript file name: ')
-                check = file_name in os.listdir(os.getcwd())
-        else:
-            return []
-    else:
-        try:
-            open('Transcript.txt')
-        except Exception:
-            return []
-        else:
-            file_name = 'Transcript.txt'
-    courses_taken = []
-    with open(file_name, mode='r') as transcript:
-        for line in transcript:
-            if 'CUMULATIVE CREDIT SUMMARY' in line:
-                break
-            match = re.search(r'([A-Z& ]+\s?\d{3})', line)
-            if match:
-                dropped = re.search(r'\d\.\d\s+W\d\s', line)
-                line_data = match.group(0).replace(' ', '')
-                if line_data in course_dict and not dropped:
-                    courses_taken.append(line_data)
-    return courses_taken
-
-
-def check_connection(url='https://www.google.com/'):
-    """Checks for a connection to the internet
-    Returns
-        True if internet is connected, False otherwise
-    """
-    try:
-        requests.get(url)
-    except Exception:
-        return False
-    else:
-        return True
 
 
 def select_option(options, prompt, value=None):
@@ -197,3 +128,4 @@ if __name__ == '__main__':
     else:
         logger.critical('No Internet Connection')
         print('No Internet Connection')
+

@@ -4,19 +4,11 @@ upcoming quarter of UW. If the courses for the upcoming quarter are not availabl
 are used. The current quarter is calculated, no need to enter any information.
 """
 
-import json
-import math
-import re
-import calendar
-import datetime
-import logging
-import time
-import os
+import json, math, re, calendar, datetime, logging, time, os
 import urllib3 as URL
-from parse_courses import get_web_soup
-from main import check_connection
 from datetime import datetime as dttime
 from datetime import timedelta as td
+from utility import logger, get_web_soup, check_connection, UW_Time_Schedules, Organized_Time_Schedules
 try:
     import requests as r
 except Exception:
@@ -29,14 +21,6 @@ try:
     from tqdm import tqdm as AddProgressBar
 except Exception:
     raise Exception('tqdm not installed. Try installing with "pip install tqdm"')
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(name)s -- %(asctime)s -- %(levelname)s : %(message)s')
-handler = logging.FileHandler('Log.log')
-handler.setLevel(logging.DEBUG)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
 
 
 CAMPUSES = {
@@ -113,8 +97,10 @@ def quarter_dates():
     return {}
 
 
-def get_quarter():
+def get_quarter(filter_=False):
     """Calculates the current quarter based on the current date
+    @params
+        'filter_': Filters out the A and B terms of Summer Quarter if necessary
     Returns
         List representing the current quarter(s) 
         NOTE: Summer Quarter has two terms, A and B
@@ -129,6 +115,11 @@ def get_quarter():
         for i in range(len(QUARTERS) - 2):
             range_.append([d[i][0], (d[i + 1][0] if i < len(QUARTERS) - 3 else (d[0][0] + td(days=365))) - td(days=1)])
         return [q for q, d in zip(QUARTERS.keys(), range_) if d[0] < datetime.date.today() < d[1]]
+    if filter_:
+        if 'SUM' in ''.join(current_quarters):
+            return 'SUM'
+        else:
+            return ''.join(current_quarters)
     return current_quarters
 
 
@@ -146,8 +137,7 @@ def parse_departments(campus):
         'campus': The campus to get schedules from
     """
     upcoming_quarter = get_next_quarter()
-    current = get_quarter()
-    current_quarter = ''.join(current) if 'SUM' not in current else 'SUM'
+    current_quarter = get_quarter(filter_=True)
     if not CAMPUSES[campus]['upper_case']:
         upcoming_quarter = upcoming_quarter.lower()
         current_quarter = current_quarter.lower()
@@ -215,11 +205,12 @@ def parse_departments(campus):
             else:
                 value = value[0]
             new_dict[new_key if new_key != key else key] = value
-    with open(f'{TIME_SCHEDULES_DIR}\\{campus}_{current_quarter}.json', mode='w') as file:
+    with open(os.path.normpath(f'{UW_Time_Schedules}/{campus}_{current_quarter}.json'), mode='w') as file:
         json.dump(new_dict, file, indent=4)
 
 
 sln_split = re.compile(r'\d{5,}')
+check_if_list = ['Days', 'Time', 'Building', 'Room Number']
 def parse_schedules(department):
     """Creates a dictionary of course, schedule pairings
     @params:
@@ -241,34 +232,47 @@ def parse_schedules(department):
             if not re.search(r'\n[A-Z&]+', ','.join(filter_empty[:-1])):
                 if re.search(r'[\*,\[\]\.max\d/ \-]+', filter_empty[1]):
                     filter_empty[1] = 'LECT'
-                if 'to,be,arranged' not in ','.join(filter_empty[i] for i in range(2, 5)).replace(' ', '') and filter_empty:
-                    data = filter_empty[0:6]
-                    if bool(data[-1] != '*' and data[-2] != '*') or bool(data[-1] == '*' and data[-2] != '*'):
-                        data = list(map(lambda x: x.replace(' ', ''), data))
-                        course_data.append({k: v for k, v in zip(COURSE_KEYS, data)})
+                all_sections = re.findall(r'([A-Z\d]+,[A-Z]+,)?([A-Za-z]+,\d+\-\d+P?,[A-Z\d]+,[A-Za-z/\+\-\d]+)', ','.join(filter_empty))
+                if not bool(len(all_sections) == 1 and all_sections[0][0] == '') and all_sections:
+                    new = [','.join(list(filter(('').__ne__, list(t)))).replace(',,', ',') for t in all_sections]
+                    if new:
+                        course_data_dict = {}
+                        for key, value in zip(COURSE_KEYS, new[0].split(',')):
+                            course_data_dict[key] = [value] if key in check_if_list else value
+                        if len(new) > 1:
+                            for i in range(1, len(new)):
+                                for key, value in zip(check_if_list, new[i].split(',')):
+                                    course_data_dict[key].append(value)
+                        course_data.append(course_data_dict)
         if crs_listed:
             if course_data:
                 department_schedule[crs_listed] = course_data
     return department_schedule
 
 
-if __name__ == '__main__':
+def main(console=True, update=False):
     try:
-        os.mkdir(TIME_SCHEDULES_DIR)
+        os.mkdir(UW_Time_Schedules)
     except Exception:
-        last_updated = str(dttime.fromtimestamp(os.stat(TIME_SCHEDULES_DIR).st_mtime)).split('.')[0]
-        print(f'Campus Time Schedules were last updated on {last_updated}')
-        update = input('Update UW Course Time Schedules? (y/n): ').lower()
+        if console:
+            update = input('Update UW Course Time Schedules? (y/n): ').lower()
+        else:
+            update = 'y' if update else 'n'
     else:
-        update = 'y'
+        update = 'y' 
     finally:
         if 'y' in update:
-            if check_connection():
-                t1 = time.perf_counter()
-                for campus in CAMPUSES.keys():
-                    parse_departments(campus)
-                t2 = time.perf_counter()
-                logger.info(f'{__name__} ran in {(t2 - t1):.1f} seconds')
-            else:
-                logger.critical('No Internet Connection')
-                print('No Internet Connection')
+            print('Getting UW Time Schedule Data...')
+            t1 = time.perf_counter()
+            for campus in CAMPUSES.keys():
+                parse_departments(campus)
+            t2 = time.perf_counter()
+            logger.info(f'{__name__} ran in {(t2 - t1):.1f} seconds')
+
+
+if __name__ == '__main__':
+    if check_connection():
+        main()
+    else:
+        logger.critical('No Internet Connection')
+        print('No Internet Connection')

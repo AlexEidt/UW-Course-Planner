@@ -15,7 +15,19 @@ Check out http://alexeidt.pythonanywhere.com/ for a live demo!
 
 The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.washington.edu/students/timeschd/) and for UW Course Catalogs (see below) for every UW Campus. This data is stored in `.json` files that can be found in the `UW_Course_Catalogs` and `UW_Time_Schedules` directories. 
 
-Run `parse_courses.py` to generate `.json` files for UW Course Campuses and `parse_schedules.py` to generate `.json` files for the UW Time Schedules for every UW Campus.
+### Scripts
+
+Script | Purpose
+--- | ---
+`UW_Buildings.py` | Creates `UW_Buildings.json` in `static/UW_Buildings` which is a mapping of Building abbreviations to full names for all buildings on each UW Campus
+`app.py` | Runs the Flask Application on the localhost. Alternatively go to alexeidt.pythonanywhere.com to see the same site
+`create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. 
+`geocode.py` | Finds the GPS coordinates for each UW Building on each UW Campus and stores them in `.json` files under `static/UW_Buildings`
+`main.py` | Runs the program in the console
+`parse_courses.py` | Parses UW's Course Catalog for every campus and stores course data in `.json` files under `static/UW_Course_Catalogs`
+`parse_schedules.py` | Parses UW's Time Schedules for every campus and stores data in `.json` files under `static/UW_Time_Schedules`
+`run_all.py` | Deletes all existing UW Information files in `static` and replaces them with updated files. Run this script if you want to create all files again
+`utility.py` | Basic methods and other functionality shared by the other modules
 
 #### UW Course Catalogs
  >[Bothell](http://www.washington.edu/students/crscatb/)                             
@@ -106,27 +118,7 @@ python app.py
 
 Then open the following link to access the website: http://127.0.0.1:5000/home/
 
-The following page should appear:
-
-<img src="static/Images/HomePage.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
-
-The other pages on the site:
-
-<img src="static/Images/requirements.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
-
-***
-
-<img src="static/Images/departments.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
-
-***
-
-<img src="static/Images/generator.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
-
-***
-
-<img src="static/Images/keyword.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 45%" alt="Home Page">
-
-***
+Alternatively, go to the live demo at: alexeidt.pythonanywhere.com
 
 ### Course Data
 
@@ -177,6 +169,9 @@ Would you like to update the Course Catalogs? (y/n):
 
 Python 3.7
 
+[ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) (Place into same directory as all scripts)
+Make sure to download the correct version for your version of Chrome.
+
 #### Web Scraping and Tree Generation using GraphViz
 
 ```
@@ -184,6 +179,7 @@ Python 3.7
  - bs4          [pip install beautifulsoup4]
  - Graphviz     [pip install graphviz]
  - Requests     [pip install requests]
+ - Selenium     [pip install selenium]
 ```
 
 #### Flask Application
@@ -198,13 +194,21 @@ static
         Images used for website
     Prerequisite_Trees
         All generated Prerequisite Trees
+    JavaScript
+        All JavaScript files for each HTML file in 'templates'
+    UW_Campus_Catalogs
+        TSV
+            All .tsv files for each campus
+        JSON
+            All .json files for each campus and all departments
+    UW_Time_Schedules
+        Organized_Time_Schedules
+            All offered courses with quiz/lab/studio sections assigned to their respective lecture
+        All Time Schedules for each UW Campus
+    UW_Buildings
+        All files containing coordinates for each building at each UW Campus
 templates
     All HTML files
-UW_Campus_Catalogs
-    TSV
-        All .tsv files for each campus
-    JSON
-        All .json files for each campus and all departments
 ```
 
 ***

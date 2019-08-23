@@ -6,6 +6,7 @@ are used. The current quarter is calculated, no need to enter any information.
 
 import json, math, re, calendar, datetime, logging, time, os
 import urllib3 as URL
+from itertools import chain
 from datetime import datetime as dttime
 from datetime import timedelta as td
 from utility import logger, get_web_soup, check_connection, UW_Time_Schedules, Organized_Time_Schedules
@@ -53,7 +54,7 @@ QUARTERS = {
     'SUMB': 'AUT'
 }
 
-COURSE_KEYS = ['Section', 'Type', 'Days', 'Time', 'Building', 'Room Number']
+COURSE_KEYS = ['Section', 'Type', 'Days', 'Time', 'Building', 'Room Number', 'Course']
 
 TIME_SCHEDULES_DIR = 'UW_Time_Schedules'
 
@@ -237,7 +238,7 @@ def parse_schedules(department):
                     new = [','.join(list(filter(('').__ne__, list(t)))).replace(',,', ',') for t in all_sections]
                     if new:
                         course_data_dict = {}
-                        for key, value in zip(COURSE_KEYS, new[0].split(',')):
+                        for key, value in zip(COURSE_KEYS, chain(new[0].split(','), [crs_listed])):
                             course_data_dict[key] = [value] if key in check_if_list else value
                         if len(new) > 1:
                             for i in range(1, len(new)):

@@ -2,6 +2,15 @@
 <html lang="en">
     <head>
         <title>UW Course Tool</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin="">
+        </script>
+        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='Images/UWIcon.png')}}" />
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -23,19 +32,22 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('index')}}">Home</a>
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('requirements')}}">Requirements</a>
+                        <a class="nav-link" href="{{ url_for('requirements') }}">Requirements</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('departments')}}">Departments</a>
+                        <a class="nav-link" href="{{ url_for('departments') }}">Departments</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('generate')}}">Create Tree</a>
+                        <a class="nav-link" href="{{ url_for('generate') }}">Create Tree</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ url_for('keyword')}}">Keyword Search</a>
+                        <a class="nav-link" href="{{ url_for('keyword') }}">Keyword Search</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('geocode') }}"><strong>MyMap</strong></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto"> 
@@ -54,6 +66,8 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous">
         </script>
+        <link href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
         <script src="{{ url_for('static', filename='JavaScript/layout.js') }}"></script>
     </body>
 </html>

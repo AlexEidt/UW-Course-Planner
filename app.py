@@ -5,8 +5,8 @@ from datetime import datetime
 from create_tree import create_tree
 from main import read_file
 from parse_courses import CAMPUSES, gather
-from geocode import geocode_all
-from utility import check_connection, scan_transcript, UW_Course_Catalogs, UW_Buildings
+from geocode import geocode_all, get_combinations
+from utility import check_connection, scan_transcript, UW_Course_Catalogs, UW_Buildings, UW_Time_Schedules, Organized_Time_Schedules
 try:
     from flask import Flask, redirect, url_for, render_template, jsonify, request
 except Exception:
@@ -87,7 +87,6 @@ def search():
     return redirect(url_for('index'))
 
 
-
 @app.route('/_get_tree/', methods=['POST'])
 def _get_tree():
     course = request.form['name'].upper().replace(' ', '')
@@ -132,11 +131,67 @@ def _keyword_search():
     return jsonify({'matches': matches})
 
 
+total_coords = {}
+for campus in CAMPUSES:
+    with open(os.path.normpath(f'{UW_Buildings}/{campus}_Coordinates.json'), mode='r') as file:
+        total_coords.update(json.loads(file.read()))
 @app.route('/get_geocode/', methods=['POST'])
 def get_geocode():
-    with open(os.path.normpath(f'{UW_Buildings}/Seattle_Coordinates.json'), mode='r') as file:
-        coordinates = json.loads(file.read())
-    return jsonify({'data': coordinates})
+    return jsonify({'coords': total_coords}) #'combinations': get_combinations('hi')})
+
+
+planned_courses = []
+@app.route('/check_course/', methods=['POST'])
+def check_course():
+    with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='r') as file:
+        current_courses = json.loads(file.read())
+    total = get_course_dict('Total')
+    course = request.form['course'].upper().replace(' ', '')
+    planned_course = None
+    if re.search(r'[A-Z& ]+\d+ ?[A-Z]?', course):
+        check_in = course if not course[-1].isalpha() else course[:-1]
+        if check_in in current_courses.keys():
+            planned_course = course
+            check = True
+            if course[-1].isalpha():
+                planned_course = f'{course[:-1]} {course[-1]}'
+                if course[:-1] in total:
+                    if course[:-1] in current_courses.keys():
+                        check = f'Lecture {course[-1]}' in current_courses[course[:-1]].keys()
+                    else:
+                        check = False
+                else:
+                    check = False
+            else:
+                check = course in total
+            planned_courses.append(planned_course)
+        else:
+            check = False
+    else:
+        check = False
+    return jsonify({'data': check, 'name': planned_course})
+
+ 
+@app.route('/create_schedule/', methods=['POST'])
+def create_schedule():
+    courses = request.form['course'].strip(',').split(',')
+    global course_options
+    course_options = get_combinations(courses)
+    next_option = None
+    try:
+        next_option = next(course_options)
+    except StopIteration:
+        next_option = None
+    return jsonify({'option': next_option, 'coords': total_coords})
+
+
+@app.route('/get_schedules/', methods=['POST'])
+def get_schedules():
+    try:
+        next_option = next(course_options)
+    except StopIteration:
+        next_option = None
+    return jsonify({'option': next_option, 'coords': total_coords})
 
 
 @app.route('/keyword/')
@@ -158,6 +213,11 @@ def departments():
     department_dict = get_course_dict('Departments')
     return render_template('departments.html', department_dict=department_dict,
         url=request.url_root)
+
+
+@app.route('/geocode/')
+def geocode():
+    return render_template('geocode.html')
 
 
 @app.route('/<department>/')

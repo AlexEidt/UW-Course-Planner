@@ -1,191 +1,191 @@
-const days = ['', 'Monday', 'Tuesday', 'Wednesday',
-                          'Thursday', 'Friday', 'Saturday',
-                          'Sunday'];
-const daysShort = ['M', 'T', 'W', 'Th', 'F'];
-
+function deleteRow(btn) {
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+var mymap = L.map('mapid').setView([47.65587781988791, -122.30949282646179], 15);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+}).addTo(mymap);
+$('#mapped').hide()
+var index = 0;
+var campus = new Array();
+var layers = new Array();
 $(document).ready(function() {
-
-    // Center map on the University of Washington's 'Red Square', considered by many to
-    // be the center of the Seattle Campus
-    var mymap = L.map('mapid').setView([47.65587781988791, -122.30949282646179], 17);
-
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}.png', {
-        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
-    }).addTo(mymap)
-
-    var chosen = ['CSE351', 'EE233', 'CLAS320', 'MATH308'];
-
-    $.ajax({
-        url: '/get_geocode/',
-        type: 'POST',
-    }).done(function(response) {
-        var coords = response.data;
-        Object.keys(coords).forEach(function(key) {
-            
-            try {
-                latitude = parseFloat(response.data[key]['Latitude']);
-                longitude = parseFloat(response.data[key]['Longitude']);
-                L.marker([latitude, longitude]).addTo(mymap)
-            } catch (error) {
-            }
-            
-        });
-
-        // Create table with courses
-        var table = document.getElementById('table');
-        var daysOfWeek = table.insertRow();
-        for (var i = 0; i < days.length; i++) {
-            var cell = table.rows[0].insertCell();
-            cell.innerHTML = '<strong>' + days[i] + '</strong>';
+    var table = document.getElementById('chosen');
+    $('a#campus').on('click', function() {
+        campus = [];
+        campus.push(this.innerHTML);
+        var campus_for = 'Seattle';
+        if (campus.length > 0) {
+            campus_for = campus[0];
         }
-        for (var i = 0; i < 20; i++) {
-            var row = table.insertRow();
-            for (var j = 0; j < days.length; j++) {
-                row.insertCell();
-            }
+        var campus_coords = {
+            'Bothell': [47.758937, -122.190688],
+            'Seattle': [47.65587781988791, -122.30949282646179],
+            'Tacoma': [47.244562, -122.437562]
         }
-        /*
-        for (var i = 13; i < 46; i++) {
-            var row = table.insertRow();
-            var cell = row.insertCell();
-            cell.innerHTML = '<strong>' + getTime(i / 2) + '</strong>';
-            for (var j = 1; j < days.length; j++) {
-                row.insertCell();
-            }
-        }*/
-
-        var rowIndex = 1;
-        var courseMap = {};
-        // Fill in table with chosen courses
-        var course = response.courses;
-        for (var i = 0; i < chosen.length; i++) {
-            // Find department from course name
-            var pattern = /[A-Z&]+/g;
-            var result = pattern.exec(chosen[i]);
-            var courseList = course[result][chosen[i]];
-            
-            var building = courseList[0].Building;
-            var latitude = parseFloat(coords[building]['Latitude']);
-            var longitude = parseFloat(coords[building]['Longitude']);
-            if (latitude != '' && longitude != '') {
-                L.marker([latitude, longitude]).addTo(mymap) 
-            }
-            
-            var sectionMap = {};
-            for (var j = 0; j < courseList.length; j++) {
-                sectionType = courseList[j]['Type'];
-                switch (sectionType) {
-                case 'LECT':
-                case 'VAR':       
-                    var courseSections = {
-                        CourseInformation: courseList[j],
-                        QZ: [], 
-                        LB: [], 
-                        ST: []
-                    };
-                    sectionMap['Lecture ' + courseList[j]['Section']] = courseSections;
-                    break;
-                default:
-                    courseSections[sectionType].push(courseList[j]);
-                }
-            }
-            //document.getElementById("table").rows[Math.floor(time)].cells[daysOffered[j]].innerHTML = chosen[i];
-            
-            courseMap[chosen[i]] = sectionMap;
-            daysOffered = getDays(chosen[i], 'A', course[result]);
-            for (var j = 0; j < daysOffered.length; j++) {
-                table.rows[rowIndex].cells[daysShort.indexOf(daysOffered[j]) + 1].innerHTML = chosen[i] + '<br/>'
-                    + courseList[0].Type + ' ' + courseList[0].Section + '<br/>' + courseList[0].Building + '<br/>' + 
-                    courseList[0].Time;
-            }
-            rowIndex++;
-            quiz = sectionMap['Lecture A']['QZ'];
-            if (quiz.length > 0) {
-                quizDays = getDays(chosen[i], quiz[0].Section, course[result]);
-                for (var j = 0; j < quizDays.length; j++) {
-                    table.rows[rowIndex].cells[daysShort.indexOf(quizDays[j]) + 1].innerHTML = chosen[i] + '<br/>'
-                    + quiz[0].Type + ' ' + quiz[0].Section + '<br/>' + quiz[0].Building + '<br/>' + 
-                    quiz[0].Time;
-                }
-            }
-            lab = sectionMap['Lecture A']['LB'];
-            if (lab.length > 0) {
-                labDays = getDays(chosen[i], lab[0].Section, course[result]);
-                for (var j = 0; j < labDays.length; j++) {
-                    table.rows[rowIndex].cells[daysShort.indexOf(quizDays[j]) + 1].innerHTML = chosen[i] + '<br/>'
-                    + lab[0].Type + ' ' + lab[0].Section + '<br/>' + lab[0].Building + '<br/>' + 
-                    lab[0].Time;
-                }
-            }
-            rowIndex ++;
-        }
-        console.log(courseMap);
-        
+        // Center map on the University of Washington's 'Red Square', considered by many to
+        // be the center of the Seattle Campus
+        mymap.setView(campus_coords[this.innerHTML], 15, {animate: true});
     });
+    $('button#btn').on('click', function() {
+        if ($('#course').val() != '') {
+            var courses = ''
+            for (var i = 0; i < table.rows.length; i++) {
+                courses += table.rows[i].cells[0].innerHTML + ',';
+            }
+            check_course = $('#course').val().toUpperCase();
+            while (check_course.includes(' ')) {
+                check_course = check_course.replace(' ', '');
+            }
+            if ('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.includes(check_course.charAt(check_course.length - 1))) {
+                check_course = check_course.substring(0, check_course.length - 2);
+            }
+            if (!courses.includes(check_course)) {
+                $.ajax({
+                    url: '/check_course/',
+                    type: 'POST',
+                    data: {
+                        course: $('#course').val()
+                    },
+                    beforeSend: function() {
+                        $('#btn').attr('disabled', true);
+                        $('span#select').addClass('spinner-border spinner-border-sm');
+                    },
+                }).done(function(resp) {
+                    if (resp.data) {
+                        var row = table.insertRow();
+                        row.insertCell().innerHTML = resp['name'];
+                        row.insertCell().innerHTML = '<button class="btn btn-primary" id="remove" onclick="deleteRow(this)">Remove</button>';
+                    } else {
+                        alert($('#course').val() + ' is not a course at UW or may not be offered this quarter');
+                    }
+                    $('#btn').attr('disabled', false);
+                    $('span#select').removeClass('spinner-border spinner-border-sm');
+                });
+            } else {
+                alert($('#course').val().toUpperCase() + ' has already been entered');
+            }
+        }
+    });
+    $('button#schedule').on('click', function() {
+        var courses = ''
+        for (var i = 0; i < table.rows.length; i++) {
+            courses += table.rows[i].cells[0].innerHTML + ',';
+        }
+        if (courses.trim().length > 0) {
+            $.ajax({
+                url: '/create_schedule/',
+                type: 'POST',
+                data: {
+                    course: courses
+                },
+                beforeSend: function() {
+                    $('#schedule').attr('disabled', true);
+                    $('span#sch').addClass('spinner-border spinner-border-sm');
+                },
+            }).done(function(resp) {
+                if (resp.option != null) {
+                    $('#inputs').hide();
+                    $('btn#remove').attr('disabled', true);
+                    $('span#sch').removeClass('spinner-border spinner-border-sm');
+                    table.innerHTML = '';
 
+                    $('#mapped').show();
+                    show_schedule(resp);
+                    
+                } else {
+                    $('#schedule').attr('disabled', false);
+                    $('span#sch').removeClass('spinner-border spinner-border-sm');
+                    alert('No Course Combinations Found');
+                }
+            });
+        }
+    });
+    $('#prev').on('click', function() {
+        if (index > 0) {
+            index--;
+            mymap.removeLayer(layers[index + 1][0]);
+            layers[index][0].addTo(mymap);
+            document.getElementById('sectionsTitle').innerHTML = layers[index][1];
+        } else {
+            $('#prev').attr('disabled', true);
+        }
+    });
+    $('#next').on('click', function() {
+        index++;
+        if (index < layers.length) {
+            mymap.removeLayer(layers[index - 1][0]);
+            layers[index][0].addTo(mymap);
+            document.getElementById('sectionsTitle').innerHTML = layers[index][1];
+        } else {
+            $.ajax({
+                url: '/get_schedules/',
+                type: 'POST',
+                beforeSend: function() {
+                        $('#next').attr('disabled', true);
+                        $('span#nextSpan').addClass('spinner-border spinner-border-sm');
+                } 
+            }).done(function(resp) {
+                $('#next').attr('disabled', false);
+                $('span#nextSpan').removeClass('spinner-border spinner-border-sm');
+                if (resp.option == null) {
+                    alert('No more combinations');
+                    $('#next').attr('disabled', true);
+                } else {
+                    show_schedule(resp);
+                    mymap.removeLayer(layers[index - 1][0]);
+                }
+                $('#prev').attr('disabled', false);
+            });
+        }
+    });
 });
+function show_schedule(resp) {
+    var headerText = '';
 
-
-
-// Returns an Array of Strings representing the days (full names) the
-// given course is offered
-function getDays (course, section, courseMap) {
-    var courseInformation = courseMap[course];
-    var daysOn = null;
-    for (var i = 0; i < courseInformation.length; i++) {
-        if (courseInformation[i]['Section'] == section) {
-            daysOn = courseInformation[i]['Days'];
-            break;
+    var building_map = {}
+    for (var i = 0; i < resp.option.length; i++) {
+        for (var j = 0; j < resp.option[i].length; j++) {
+            for (var k = 0; k < resp.option[i][j].Building.length; k++) {
+                var building = resp.option[i][j].Building[k];
+                var o = resp.option[i][j];
+                if (building_map.hasOwnProperty(building)) {
+                    building_map[building].push('<strong>' + o.Course + '</strong>' 
+                                                + ' ' + o.Type + ' ' + o.Section + 
+                                                '<br>' + o.Days[k] + ' ' + o.Time[k] 
+                                                + ' ' + building);
+                } else {
+                    building_map[building] = ['<strong>' + o.Course + '</strong>' 
+                                            + ' ' + o.Type + ' ' + o.Section + 
+                                            '<br>' + o.Days[k] + ' ' + o.Time[k] + 
+                                            ' ' + building];
+                }
+                if (!headerText.includes(o.Course)) {
+                    headerText += o.Course + ' ' + o.Section + ', ';
+                } else {
+                    headerText += o.Section + ', ';
+                }
+            }
         }
     }
-    var daysOffered = new Array();
-    for (var j = 0; j < daysShort.length; j++) {
-        if (daysOn.startsWith('Th')) {
-            daysOffered.push('Th');
-            daysOn = daysOn.replace('Th', '');
-            console.log(course, daysOn);
-            continue;
+    var courseMarkers = new Array();
+    Object.keys(building_map).forEach(function(building) {
+        var latitude = parseFloat(resp.coords[building]['Latitude']);
+        var longitude = parseFloat(resp.coords[building]['Longitude']);
+        var text = '';
+        for (var i = 0; i < building_map[building].length; i++) {
+            //L.marker([latitude, longitude]).addTo(mymap);
+            text += '<br>' + building_map[building][i];
         }
-        if (daysOn.startsWith(daysShort[j])) {
-            daysOffered.push(daysShort[j]);
-            daysOn = daysOn.replace(daysShort[j], '');
+        if (text.startsWith('<br>')) {
+            text = text.substring(4);
         }
-    }
-    return daysOffered;
-}
-
-// Returns the time as a String on a 12-hour clock
-function getTime (time) {
-    if (time > 12) {
-    time -= 12; 
-    }
-    if (time == 0.5) {
-        time = 12.5;
-    }
-    if (time % 1 === 0) {
-        return (time) + ':00';
-    } else {
-        return Math.floor(time) + ':30';
-    }
-}
-
-// Returns the Distance in meters between two buildings
-function getDistance (building1, building2) {
-    if (coords[building1]['Latitude'] == '' ||
-        coords[building1]['Longitude'] == '') {
-        alert('Could not find Coordinates for ' + building1 + ' hall');
-        return null;
-    } else if (coords[building2]['Latitude'] == '' ||
-        coords[building2]['Longitude'] == '') {
-        alert('Could not find Coordinates for ' + building2 + ' hall');
-        return null;
-    } else {
-        var latitude1 = parseFloat(coords[building1]['Latitude']);
-        var longitude1 = parseFloat(coords[building1]['Longitude']);
-        var latitude2 = parseFloat(coords[building2]['Latitude']);
-        var longitude2 = parseFloat(coords[building2]['Longitude']);
-        var coord1 = latitude1 - latitude2;
-        var coord2 = longitude1 - longitude2;
-        return Math.sqrt(Math.pow(coord1, 2) + Math.pow(coord2, 2)) * 100000;
-    }
+        courseMarkers.push(L.marker([latitude, longitude]).bindPopup(text));
+    });
+    var header = headerText.trim().substring(0, headerText.length - 2);
+    document.getElementById('sectionsTitle').innerHTML = header;
+    var layer = L.layerGroup(courseMarkers);
+    layer.addTo(mymap);
+    layers.push([layer, header]);
 }

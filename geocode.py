@@ -1,10 +1,9 @@
-"""Geocodes all Building on the UW Seattle Campus"""
+"""Geocodes all Building on the UW Seattle Campus
+Finds all combinations of classes given a list of courses to search"""
 
-import json, re, os, logging
-from time import sleep
+import json, re, os, logging, itertools, time
 from datetime import datetime as dttime
 from threading import Timer
-from itertools import chain
 from parse_schedules import get_next_quarter, get_quarter, CAMPUSES
 from parse_schedules import main as parse_schedules
 from UW_Buildings import main as get_campuses
@@ -53,7 +52,7 @@ def get_all_buildings(uw_campus):
 
     with open(os.path.normpath(f'{UW_Buildings}/UW_Buildings.json'), mode='r') as file:
         buildings = json.loads(file.read())
-    total = set(chain(campus, buildings[uw_campus].keys()))
+    total = set(itertools.chain(campus, buildings[uw_campus].keys()))
     check = [x for x in total if x not in buildings[uw_campus].keys()]
     for x in check:
         buildings[uw_campus][x] = {'Name': ''}
@@ -79,7 +78,7 @@ def geocode(campus):
 
         def select_url(browser, url, key, full_name, end):
             browser.get(url)
-            sleep(5)
+            time.sleep(5)
             html = browser.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
             match = re.search(r'\d+\.\d+,-\d+\.\d+', str(html))
             coords = match.group(0).split(',', 1) if match else ''
@@ -129,7 +128,124 @@ def geocode_all():
     courses_offered = {}
     for campus in CAMPUSES.keys():
         courses_offered[campus] = geocode(campus)
-    return courses_offered    
+    return courses_offered
+
+
+# --------------------------Time Methods--------------------------#       
+get_time = lambda t: [t[0:1], t[1:]] if len(t) == 3 else [t[0:2], t[2:]]
+check_pm = lambda t: ' PM' if t else ' AM'
+select_pm = lambda i, pm1, pm2: pm1 if not i else pm2
+convert = lambda t: time.strftime('%H:%M:%S', time.strptime(t, '%I:%M %p'))
+check_convert_pm = lambda t: convert('12:01 AM') < convert(t) < convert('6:30 AM') or convert('10:30 PM') < convert(t) < convert('11:59 PM')
+convert_pm = lambda t, pm: f'{pm[0]} {switch_pm(pm[-1])}' if check_convert_pm(t) else t
+switch_pm = lambda t: 'AM' if t.strip() == 'PM' else 'PM'
+# --------------------------Time Methods--------------------------#    
+
+
+def has_overlap(time1, time2):
+    """Checks if the two times overlap
+    @params
+        'time1': First time to check
+        'time2': Second time to check
+    Returns 
+        True if there is overlap, otherwise False
+    """
+    pm1 = 'P' in time1
+    pm2 = 'P' in time2
+    time1 = time1.replace('P', '')
+    time2 = time2.replace('P', '')
+    times = list(itertools.chain(time1.split('-', 1), time2.split('-', 1)))
+    times = list(map(get_time, times))
+    course_times = []
+    for i in range(0, len(times), 2):
+        pm = select_pm(i, pm1, pm2)
+        t1 = f'{times[i][0]}:{times[i][1]}{check_pm(pm)}'
+        t2 = f'{times[i + 1][0]}:{times[i + 1][1]}{check_pm(pm)}'
+        time1 = convert(convert_pm(t1, t1.rsplit(' ', 1)))
+        time2 = convert(convert_pm(t2, t2.rsplit(' ', 1)))
+        course_times.append((time1, time2))
+    t1 = course_times[0]
+    return t1[0] < course_times[1][0] < t1[1] or t1[0] < course_times[1][1] < t1[1]
+
+
+def get_days(offered):
+    """Gets the days a course is offered
+    @params
+        'offered': String representing the days a course is offered
+        Example: 'MWF' -> Monday, Wednesday, Friday
+    Returns
+        Set of abbreviated days the course is offered
+    """
+    days = ['Th', 'M', 'T', 'W', 'F', 'S']
+    result = set()
+    for day in days:
+        if day in offered:
+            result.add(day)
+            offered = offered.replace(day, '', 1)
+    return result
+
+
+def check_overlap(schedule):
+    """Checks if the courses in the 'schedule' overlap
+    @params
+        'schedule': List of dictionaries representing a combination of courses
+    Returns
+        True if there is overlap between any sections in the 'schedule'.
+        False otherwise.
+    """
+    course_information = {
+            'M': [], 'T': [], 'W': [], 'Th': [], 'F': [], 'S':[]
+    }
+    for course in schedule:
+        for course_dict in course:
+            for i, d in enumerate(course_dict['Days']):
+                for day in get_days(d):
+                    course_information[day].append(course_dict['Time'][i])
+    for times in course_information.values():
+        if len(set(times)) == len(times):
+            date_combos = list(itertools.combinations(times, 2))
+            dates = [list(set(x)) for x in date_combos if len(set(x)) > 1]
+            for date in dates:
+                if has_overlap(date[0], date[1]):
+                    return True
+        else:
+            return True
+    return False
+
+
+def get_combinations(planned_courses):
+    """Finds all possible combinations of the courses in 'planned_courses'
+    such that no sections of any course overlap
+    @params
+        'planned_courses': List of courses to find combinations from
+    Returns
+        Generator object with all valid combinations of courses
+    """
+    with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='r') as file:
+        courses_offered = json.loads(file.read())
+    total = []
+    for course in planned_courses:
+        course_sections = []
+        lecture = course.rsplit(' ', 1)[-1].strip().upper()
+        if re.search(r'[A-Z]\d?', lecture) and ' ' in course:
+            search = [courses_offered[course.rsplit(' ', 1)[0]][f'Lecture {lecture}']]
+        else:
+            search = courses_offered[course].values()
+        # Get all Lecture/Quiz/Lab/Studio combinations for the given course
+        for section in search:
+            products = []
+            if section['QZ']:
+                products.append(section['QZ'])
+            if section['LB']:
+                products.append(section['LB'])
+            if section['ST']:
+                products.append(section['ST'])
+            products.append([section['LECT']])
+            course_sections.append(list(itertools.product(*products)))
+        total.append([y for x in course_sections for y in x])
+    # Find all course combinations where there are no course overlaps
+    for combo in itertools.filterfalse(lambda x: check_overlap(x), list(itertools.product(*total))):
+        yield combo
 
 
 # Sections class used for the organized Time Schedule

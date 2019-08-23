@@ -15,7 +15,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TACCT210"
             },
             {
                 "Section": "B",
@@ -31,7 +32,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TACCT210"
             },
             {
                 "Section": "C",
@@ -47,7 +49,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TACCT210"
             },
             {
                 "Section": "D",
@@ -63,7 +66,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TACCT210"
             },
             {
                 "Section": "E",
@@ -79,7 +83,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TACCT210"
             }
         ],
         "TACCT230": [
@@ -97,7 +102,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TACCT230"
             }
         ],
         "TACCT301": [
@@ -115,7 +121,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TACCT301"
             },
             {
                 "Section": "B",
@@ -131,7 +138,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TACCT301"
             }
         ],
         "TACCT303": [
@@ -149,7 +157,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TACCT303"
             }
         ],
         "TACCT404": [
@@ -167,7 +176,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TACCT404"
             }
         ],
         "TACCT451": [
@@ -185,7 +195,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TACCT451"
             },
             {
                 "Section": "B",
@@ -201,7 +212,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TACCT451"
             }
         ],
         "TACCT500": [
@@ -219,7 +231,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TACCT500"
             },
             {
                 "Section": "B",
@@ -235,7 +248,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TACCT500"
             }
         ],
         "TACCT502": [
@@ -253,7 +267,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TACCT502"
             },
             {
                 "Section": "B",
@@ -269,7 +284,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TACCT502"
             }
         ],
         "TACCT503": [
@@ -287,7 +303,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TACCT503"
             },
             {
                 "Section": "B",
@@ -303,7 +320,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TACCT503"
             }
         ],
         "TACCT509": [
@@ -321,7 +339,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TACCT509"
             },
             {
                 "Section": "B",
@@ -337,7 +356,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TACCT509"
             }
         ],
         "TACCT536": [
@@ -355,7 +375,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TACCT536"
             },
             {
                 "Section": "B",
@@ -371,7 +392,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TACCT536"
             }
         ],
         "TACCT540": [
@@ -389,7 +411,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TACCT540"
             },
             {
                 "Section": "B",
@@ -405,7 +428,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TACCT540"
             }
         ]
     },
@@ -425,7 +449,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBECON421"
             }
         ],
         "TBECON423": [
@@ -443,7 +468,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBECON423"
             }
         ]
     },
@@ -463,7 +489,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBGEN111"
             }
         ],
         "TBGEN218": [
@@ -481,7 +508,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TBGEN218"
             },
             {
                 "Section": "B",
@@ -497,7 +525,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TBGEN218"
             }
         ],
         "TBGEN322": [
@@ -515,7 +544,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TBGEN322"
             }
         ]
     },
@@ -535,7 +565,8 @@
                 ],
                 "Room Number": [
                     "102"
-                ]
+                ],
+                "Course": "TBUS101"
             }
         ],
         "TBUS102": [
@@ -553,7 +584,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TBUS102"
             },
             {
                 "Section": "B",
@@ -569,7 +601,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TBUS102"
             }
         ],
         "TBUS300": [
@@ -587,7 +620,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TBUS300"
             },
             {
                 "Section": "B",
@@ -603,7 +637,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TBUS300"
             },
             {
                 "Section": "C",
@@ -619,7 +654,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TBUS300"
             },
             {
                 "Section": "D",
@@ -635,7 +671,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TBUS300"
             }
         ],
         "TBUS301": [
@@ -653,7 +690,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TBUS301"
             },
             {
                 "Section": "B",
@@ -669,7 +707,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TBUS301"
             },
             {
                 "Section": "C",
@@ -685,7 +724,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TBUS301"
             }
         ],
         "TBUS310": [
@@ -703,7 +743,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBUS310"
             },
             {
                 "Section": "B",
@@ -719,7 +760,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBUS310"
             },
             {
                 "Section": "C",
@@ -735,7 +777,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBUS310"
             },
             {
                 "Section": "D",
@@ -751,7 +794,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBUS310"
             }
         ],
         "TBUS320": [
@@ -769,7 +813,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TBUS320"
             },
             {
                 "Section": "B",
@@ -785,7 +830,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TBUS320"
             },
             {
                 "Section": "C",
@@ -801,7 +847,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TBUS320"
             },
             {
                 "Section": "D",
@@ -817,7 +864,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBUS320"
             }
         ],
         "TBUS350": [
@@ -835,7 +883,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBUS350"
             },
             {
                 "Section": "B",
@@ -851,7 +900,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBUS350"
             },
             {
                 "Section": "C",
@@ -867,7 +917,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TBUS350"
             }
         ],
         "TBUS400": [
@@ -885,7 +936,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBUS400"
             },
             {
                 "Section": "B",
@@ -901,7 +953,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TBUS400"
             }
         ],
         "TBUS490": [
@@ -919,7 +972,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TBUS490"
             }
         ],
         "TBUS500": [
@@ -937,7 +991,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TBUS500"
             }
         ],
         "TBUS520": [
@@ -955,7 +1010,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TBUS520"
             }
         ],
         "TBUS570": [
@@ -973,7 +1029,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBUS570"
             }
         ]
     },
@@ -993,7 +1050,8 @@
                 ],
                 "Room Number": [
                     "102"
-                ]
+                ],
+                "Course": "TMGMT418"
             }
         ],
         "TMGMT475": [
@@ -1011,7 +1069,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMGMT475"
             }
         ],
         "TMGMT480": [
@@ -1029,7 +1088,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TMGMT480"
             }
         ]
     },
@@ -1049,7 +1109,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMKTG355"
             }
         ],
         "TMKTG425": [
@@ -1067,7 +1128,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TMKTG425"
             },
             {
                 "Section": "B",
@@ -1083,7 +1145,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TMKTG425"
             }
         ],
         "TMKTG450": [
@@ -1101,7 +1164,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TMKTG450"
             }
         ]
     },
@@ -1121,7 +1185,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TCORE101"
             },
             {
                 "Section": "C",
@@ -1137,7 +1202,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TCORE101"
             },
             {
                 "Section": "D",
@@ -1153,7 +1219,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TCORE101"
             },
             {
                 "Section": "G",
@@ -1169,7 +1236,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TCORE101"
             },
             {
                 "Section": "I",
@@ -1185,7 +1253,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TCORE101"
             },
             {
                 "Section": "J",
@@ -1201,7 +1270,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TCORE101"
             }
         ],
         "TCORE102": [
@@ -1219,7 +1289,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TCORE102"
             },
             {
                 "Section": "B",
@@ -1235,7 +1306,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TCORE102"
             },
             {
                 "Section": "C",
@@ -1251,7 +1323,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCORE102"
             },
             {
                 "Section": "D",
@@ -1267,7 +1340,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TCORE102"
             },
             {
                 "Section": "E",
@@ -1283,7 +1357,8 @@
                 ],
                 "Room Number": [
                     "WCG110"
-                ]
+                ],
+                "Course": "TCORE102"
             }
         ],
         "TCORE103": [
@@ -1301,7 +1376,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCORE103"
             },
             {
                 "Section": "B",
@@ -1317,7 +1393,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TCORE103"
             },
             {
                 "Section": "E",
@@ -1333,7 +1410,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TCORE103"
             }
         ],
         "TCORE104": [
@@ -1351,7 +1429,8 @@
                 ],
                 "Room Number": [
                     "BB107"
-                ]
+                ],
+                "Course": "TCORE104"
             },
             {
                 "Section": "C",
@@ -1367,7 +1446,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TCORE104"
             },
             {
                 "Section": "E",
@@ -1383,7 +1463,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCORE104"
             },
             {
                 "Section": "F",
@@ -1399,7 +1480,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TCORE104"
             }
         ]
     },
@@ -1419,7 +1501,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TUNIV250"
             },
             {
                 "Section": "B",
@@ -1435,7 +1518,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TUNIV250"
             }
         ]
     },
@@ -1455,7 +1539,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TEDUC301"
             }
         ],
         "TEDUC471": [
@@ -1473,7 +1558,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "TEDUC471"
             }
         ],
         "TEDUC490": [
@@ -1491,7 +1577,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TEDUC490"
             }
         ],
         "TEDUC502": [
@@ -1509,7 +1596,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDUC502"
             }
         ],
         "TEDUC504": [
@@ -1527,7 +1615,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TEDUC504"
             }
         ],
         "TEDUC510": [
@@ -1545,7 +1634,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TEDUC510"
             }
         ],
         "TEDUC520": [
@@ -1563,7 +1653,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TEDUC520"
             }
         ],
         "TEDUC535": [
@@ -1581,7 +1672,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TEDUC535"
             }
         ],
         "TEDUC540": [
@@ -1599,7 +1691,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TEDUC540"
             }
         ],
         "TEDUC541": [
@@ -1617,7 +1710,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TEDUC541"
             },
             {
                 "Section": "B",
@@ -1633,7 +1727,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDUC541"
             }
         ],
         "TEDUC548": [
@@ -1651,7 +1746,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDUC548"
             }
         ],
         "TEDUC560": [
@@ -1669,7 +1765,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TEDUC560"
             },
             {
                 "Section": "B",
@@ -1685,7 +1782,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDUC560"
             }
         ],
         "TEDUC564": [
@@ -1703,7 +1801,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TEDUC564"
             },
             {
                 "Section": "B",
@@ -1719,7 +1818,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDUC564"
             }
         ],
         "TEDUC590": [
@@ -1737,7 +1837,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TEDUC590"
             }
         ]
     },
@@ -1757,7 +1858,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TEDADM573"
             }
         ],
         "TEDADM576": [
@@ -1775,7 +1877,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TEDADM576"
             }
         ]
     },
@@ -1795,7 +1898,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDLD583"
             }
         ],
         "TEDLD588": [
@@ -1813,7 +1917,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDLD588"
             }
         ],
         "TEDLD594": [
@@ -1831,7 +1936,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDLD594"
             }
         ],
         "TEDLD602": [
@@ -1849,7 +1955,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDLD602"
             },
             {
                 "Section": "B",
@@ -1865,7 +1972,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TEDLD602"
             },
             {
                 "Section": "C",
@@ -1881,7 +1989,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TEDLD602"
             }
         ]
     },
@@ -1901,7 +2010,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDNUR588"
             }
         ],
         "TEDNUR602": [
@@ -1919,7 +2029,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEDNUR602"
             }
         ]
     },
@@ -1939,7 +2050,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TEDSM517"
             }
         ]
     },
@@ -1959,7 +2071,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TEDSP541"
             },
             {
                 "Section": "B",
@@ -1975,7 +2088,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TEDSP541"
             }
         ],
         "TEDSP548": [
@@ -1993,7 +2107,8 @@
                 ],
                 "Room Number": [
                     "WCG110"
-                ]
+                ],
+                "Course": "TEDSP548"
             }
         ],
         "TEDSP556": [
@@ -2011,7 +2126,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TEDSP556"
             }
         ],
         "TEDSP590": [
@@ -2029,7 +2145,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TEDSP590"
             }
         ],
         "TEDSP595": [
@@ -2047,7 +2164,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TEDSP595"
             }
         ]
     },
@@ -2067,7 +2185,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TGH101"
             }
         ],
         "TGH203": [
@@ -2085,7 +2204,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TGH203"
             }
         ],
         "TGH300": [
@@ -2103,7 +2223,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TGH300"
             }
         ],
         "TGH303": [
@@ -2121,7 +2242,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TGH303"
             }
         ]
     },
@@ -2145,7 +2267,8 @@
                 "Room Number": [
                     "201",
                     "111"
-                ]
+                ],
+                "Course": "TCSS101"
             },
             {
                 "Section": "B",
@@ -2161,7 +2284,8 @@
                 ],
                 "Room Number": [
                     "101"
-                ]
+                ],
+                "Course": "TCSS101"
             }
         ],
         "TCSS141": [
@@ -2183,7 +2307,8 @@
                 "Room Number": [
                     "114",
                     "001"
-                ]
+                ],
+                "Course": "TCSS141"
             }
         ],
         "TCSS142": [
@@ -2205,7 +2330,8 @@
                 "Room Number": [
                     "106",
                     "106"
-                ]
+                ],
+                "Course": "TCSS142"
             },
             {
                 "Section": "B",
@@ -2225,7 +2351,8 @@
                 "Room Number": [
                     "106",
                     "106"
-                ]
+                ],
+                "Course": "TCSS142"
             },
             {
                 "Section": "C",
@@ -2245,7 +2372,8 @@
                 "Room Number": [
                     "106",
                     "106"
-                ]
+                ],
+                "Course": "TCSS142"
             }
         ],
         "TCSS143": [
@@ -2267,7 +2395,8 @@
                 "Room Number": [
                     "106",
                     "106"
-                ]
+                ],
+                "Course": "TCSS143"
             },
             {
                 "Section": "B",
@@ -2287,7 +2416,8 @@
                 "Room Number": [
                     "101",
                     "101"
-                ]
+                ],
+                "Course": "TCSS143"
             }
         ],
         "TCSS305": [
@@ -2305,7 +2435,8 @@
                 ],
                 "Room Number": [
                     "GWP216"
-                ]
+                ],
+                "Course": "TCSS305"
             },
             {
                 "Section": "B",
@@ -2321,7 +2452,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TCSS305"
             },
             {
                 "Section": "C",
@@ -2337,7 +2469,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TCSS305"
             }
         ],
         "TCSS321": [
@@ -2355,7 +2488,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "TCSS321"
             },
             {
                 "Section": "B",
@@ -2371,7 +2505,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCSS321"
             },
             {
                 "Section": "C",
@@ -2387,7 +2522,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TCSS321"
             }
         ],
         "TCSS325": [
@@ -2405,7 +2541,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCSS325"
             },
             {
                 "Section": "B",
@@ -2421,7 +2558,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCSS325"
             },
             {
                 "Section": "C",
@@ -2437,7 +2575,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TCSS325"
             }
         ],
         "TCSS342": [
@@ -2455,7 +2594,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TCSS342"
             }
         ],
         "TCSS343": [
@@ -2473,7 +2613,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TCSS343"
             },
             {
                 "Section": "B",
@@ -2489,7 +2630,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TCSS343"
             }
         ],
         "TCSS360": [
@@ -2507,7 +2649,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TCSS360"
             },
             {
                 "Section": "B",
@@ -2523,7 +2666,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TCSS360"
             }
         ],
         "TCSS371": [
@@ -2541,7 +2685,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TCSS371"
             }
         ],
         "TCSS372": [
@@ -2559,7 +2704,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TCSS372"
             },
             {
                 "Section": "B",
@@ -2575,7 +2721,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TCSS372"
             }
         ],
         "TCSS380": [
@@ -2593,7 +2740,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TCSS380"
             },
             {
                 "Section": "B",
@@ -2609,7 +2757,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TCSS380"
             }
         ],
         "TCSS390": [
@@ -2627,7 +2776,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "B",
@@ -2643,7 +2793,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "C",
@@ -2659,7 +2810,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "D",
@@ -2675,7 +2827,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "E",
@@ -2691,7 +2844,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "F",
@@ -2707,7 +2861,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "G",
@@ -2723,7 +2878,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TCSS390"
             },
             {
                 "Section": "H",
@@ -2739,7 +2895,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TCSS390"
             }
         ],
         "TCSS431": [
@@ -2757,7 +2914,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TCSS431"
             }
         ],
         "TCSS435": [
@@ -2775,7 +2933,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TCSS435"
             }
         ],
         "TCSS445": [
@@ -2793,7 +2952,8 @@
                 ],
                 "Room Number": [
                     "111"
-                ]
+                ],
+                "Course": "TCSS445"
             }
         ],
         "TCSS450": [
@@ -2811,7 +2971,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TCSS450"
             }
         ],
         "TCSS452": [
@@ -2829,7 +2990,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCSS452"
             }
         ],
         "TCSS481": [
@@ -2847,7 +3009,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TCSS481"
             }
         ],
         "TCSS543": [
@@ -2865,7 +3028,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TCSS543"
             },
             {
                 "Section": "B",
@@ -2881,7 +3045,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCSS543"
             }
         ],
         "TCSS555": [
@@ -2899,7 +3064,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCSS555"
             },
             {
                 "Section": "B",
@@ -2915,7 +3081,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TCSS555"
             }
         ],
         "TCSS559": [
@@ -2933,7 +3100,8 @@
                 ],
                 "Room Number": [
                     "BB107"
-                ]
+                ],
+                "Course": "TCSS559"
             }
         ],
         "TCSS562": [
@@ -2951,7 +3119,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TCSS562"
             }
         ],
         "TCSS580": [
@@ -2969,7 +3138,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TCSS580"
             }
         ],
         "TCSS592": [
@@ -2987,7 +3157,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCSS592"
             }
         ],
         "TCSS593": [
@@ -3005,7 +3176,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCSS593"
             }
         ],
         "TCSS598": [
@@ -3023,7 +3195,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TCSS598"
             }
         ]
     },
@@ -3043,7 +3216,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TCES203"
             }
         ],
         "TCES230": [
@@ -3061,7 +3235,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TCES230"
             },
             {
                 "Section": "AA",
@@ -3077,7 +3252,8 @@
                 ],
                 "Room Number": [
                     "206D"
-                ]
+                ],
+                "Course": "TCES230"
             },
             {
                 "Section": "AB",
@@ -3093,7 +3269,8 @@
                 ],
                 "Room Number": [
                     "206D"
-                ]
+                ],
+                "Course": "TCES230"
             }
         ],
         "TCES310": [
@@ -3111,7 +3288,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TCES310"
             }
         ],
         "TCES390": [
@@ -3129,7 +3307,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TCES390"
             }
         ],
         "TCES420": [
@@ -3147,7 +3326,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCES420"
             }
         ],
         "TCES421": [
@@ -3165,7 +3345,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TCES421"
             }
         ],
         "TCES430": [
@@ -3183,7 +3364,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TCES430"
             },
             {
                 "Section": "AA",
@@ -3199,7 +3381,8 @@
                 ],
                 "Room Number": [
                     "206D"
-                ]
+                ],
+                "Course": "TCES430"
             },
             {
                 "Section": "AB",
@@ -3215,7 +3398,8 @@
                 ],
                 "Room Number": [
                     "206D"
-                ]
+                ],
+                "Course": "TCES430"
             }
         ],
         "TCES455": [
@@ -3233,7 +3417,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCES455"
             },
             {
                 "Section": "AB",
@@ -3249,7 +3434,8 @@
                 ],
                 "Room Number": [
                     "206D"
-                ]
+                ],
+                "Course": "TCES455"
             }
         ],
         "TCES480": [
@@ -3267,7 +3453,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCES480"
             }
         ]
     },
@@ -3287,7 +3474,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TEE315"
             },
             {
                 "Section": "AA",
@@ -3303,7 +3491,8 @@
                 ],
                 "Room Number": [
                     "202"
-                ]
+                ],
+                "Course": "TEE315"
             },
             {
                 "Section": "AB",
@@ -3319,7 +3508,8 @@
                 ],
                 "Room Number": [
                     "202"
-                ]
+                ],
+                "Course": "TEE315"
             }
         ],
         "TEE453": [
@@ -3337,7 +3527,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TEE453"
             }
         ],
         "TEE480": [
@@ -3355,7 +3546,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TEE480"
             }
         ]
     },
@@ -3375,7 +3567,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO220"
             },
             {
                 "Section": "B",
@@ -3391,7 +3584,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TINFO220"
             },
             {
                 "Section": "C",
@@ -3407,7 +3601,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TINFO220"
             }
         ],
         "TINFO240": [
@@ -3425,7 +3620,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TINFO240"
             },
             {
                 "Section": "B",
@@ -3441,7 +3637,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TINFO240"
             }
         ],
         "TINFO250": [
@@ -3459,7 +3656,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO250"
             },
             {
                 "Section": "B",
@@ -3475,7 +3673,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO250"
             },
             {
                 "Section": "C",
@@ -3491,7 +3690,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO250"
             }
         ],
         "TINFO360": [
@@ -3509,7 +3709,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO360"
             },
             {
                 "Section": "B",
@@ -3525,7 +3726,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO360"
             },
             {
                 "Section": "C",
@@ -3541,7 +3743,8 @@
                 ],
                 "Room Number": [
                     "009"
-                ]
+                ],
+                "Course": "TINFO360"
             }
         ],
         "TINFO390": [
@@ -3559,7 +3762,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TINFO390"
             },
             {
                 "Section": "B",
@@ -3575,7 +3779,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TINFO390"
             }
         ],
         "TINFO441": [
@@ -3593,7 +3798,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINFO441"
             },
             {
                 "Section": "B",
@@ -3609,7 +3815,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINFO441"
             }
         ],
         "TINFO444": [
@@ -3627,7 +3834,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINFO444"
             }
         ],
         "TINFO451": [
@@ -3645,7 +3853,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINFO451"
             }
         ],
         "TINFO461": [
@@ -3663,7 +3872,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINFO461"
             }
         ],
         "TINFO476": [
@@ -3681,7 +3891,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TINFO476"
             }
         ]
     },
@@ -3701,7 +3912,8 @@
                 ],
                 "Room Number": [
                     "101"
-                ]
+                ],
+                "Course": "TINST101"
             }
         ],
         "TINST207": [
@@ -3719,7 +3931,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TINST207"
             }
         ],
         "TINST310": [
@@ -3737,7 +3950,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TINST310"
             },
             {
                 "Section": "B",
@@ -3753,7 +3967,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TINST310"
             }
         ]
     },
@@ -3773,7 +3988,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TAMST120"
             }
         ],
         "TAMST210": [
@@ -3791,7 +4007,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TAMST210"
             }
         ],
         "TAMST220": [
@@ -3809,7 +4026,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TAMST220"
             }
         ]
     },
@@ -3829,7 +4047,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TARTS120"
             },
             {
                 "Section": "B",
@@ -3845,7 +4064,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TARTS120"
             }
         ],
         "TARTS151": [
@@ -3863,7 +4083,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TARTS151"
             }
         ],
         "TARTS200": [
@@ -3881,7 +4102,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TARTS200"
             }
         ],
         "TARTS240": [
@@ -3899,7 +4121,8 @@
                 ],
                 "Room Number": [
                     "004"
-                ]
+                ],
+                "Course": "TARTS240"
             }
         ],
         "TARTS266": [
@@ -3917,7 +4140,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TARTS266"
             }
         ],
         "TARTS281": [
@@ -3935,7 +4159,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TARTS281"
             }
         ],
         "TARTS282": [
@@ -3953,7 +4178,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TARTS282"
             }
         ],
         "TARTS367": [
@@ -3971,7 +4197,8 @@
                 ],
                 "Room Number": [
                     "004"
-                ]
+                ],
+                "Course": "TARTS367"
             }
         ],
         "TARTS386": [
@@ -3989,7 +4216,8 @@
                 ],
                 "Room Number": [
                     "004"
-                ]
+                ],
+                "Course": "TARTS386"
             }
         ],
         "TARTS391": [
@@ -4007,7 +4235,8 @@
                 ],
                 "Room Number": [
                     "004"
-                ]
+                ],
+                "Course": "TARTS391"
             }
         ],
         "TARTS402": [
@@ -4025,7 +4254,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TARTS402"
             }
         ],
         "TARTS405": [
@@ -4043,7 +4273,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TARTS405"
             }
         ]
     },
@@ -4067,7 +4298,8 @@
                 "Room Number": [
                     "211",
                     "211"
-                ]
+                ],
+                "Course": "TBIOL110"
             }
         ],
         "TBIOL120": [
@@ -4085,7 +4317,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "AA",
@@ -4101,7 +4334,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "AB",
@@ -4117,7 +4351,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "C",
@@ -4133,7 +4368,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "CA",
@@ -4149,7 +4385,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "CB",
@@ -4165,7 +4402,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "E",
@@ -4181,7 +4419,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "EA",
@@ -4197,7 +4436,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "EB",
@@ -4213,7 +4453,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "G",
@@ -4229,7 +4470,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "GA",
@@ -4245,7 +4487,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "GB",
@@ -4261,7 +4504,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "H",
@@ -4277,7 +4521,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "HA",
@@ -4293,7 +4538,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "I",
@@ -4309,7 +4555,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "IA",
@@ -4325,7 +4572,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "J",
@@ -4341,7 +4589,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "JA",
@@ -4357,7 +4606,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "K",
@@ -4373,7 +4623,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "KA",
@@ -4389,7 +4640,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "M",
@@ -4405,7 +4657,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "MA",
@@ -4421,7 +4674,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "N",
@@ -4437,7 +4691,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL120"
             },
             {
                 "Section": "NA",
@@ -4453,7 +4708,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TBIOL120"
             }
         ],
         "TBIOL202": [
@@ -4471,7 +4727,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TBIOL202"
             }
         ],
         "TBIOL232": [
@@ -4489,7 +4746,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "TBIOL232"
             }
         ],
         "TBIOL301": [
@@ -4507,7 +4765,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBIOL301"
             },
             {
                 "Section": "AA",
@@ -4523,7 +4782,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL301"
             },
             {
                 "Section": "AB",
@@ -4539,7 +4799,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL301"
             },
             {
                 "Section": "B",
@@ -4555,7 +4816,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TBIOL301"
             },
             {
                 "Section": "BA",
@@ -4571,7 +4833,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL301"
             },
             {
                 "Section": "BB",
@@ -4587,7 +4850,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TBIOL301"
             }
         ],
         "TBIOL303": [
@@ -4605,7 +4869,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TBIOL303"
             },
             {
                 "Section": "AA",
@@ -4621,7 +4886,8 @@
                 ],
                 "Room Number": [
                     "309"
-                ]
+                ],
+                "Course": "TBIOL303"
             },
             {
                 "Section": "AB",
@@ -4637,7 +4903,8 @@
                 ],
                 "Room Number": [
                     "309"
-                ]
+                ],
+                "Course": "TBIOL303"
             }
         ],
         "TBIOL304": [
@@ -4655,7 +4922,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TBIOL304"
             },
             {
                 "Section": "AA",
@@ -4671,7 +4939,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOL304"
             },
             {
                 "Section": "AB",
@@ -4687,7 +4956,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOL304"
             }
         ],
         "TBIOL305": [
@@ -4709,7 +4979,8 @@
                 "Room Number": [
                     "209",
                     "209"
-                ]
+                ],
+                "Course": "TBIOL305"
             }
         ],
         "TBIOL320": [
@@ -4731,7 +5002,8 @@
                 "Room Number": [
                     "217",
                     "209"
-                ]
+                ],
+                "Course": "TBIOL320"
             }
         ],
         "TBIOL340": [
@@ -4753,7 +5025,8 @@
                 "Room Number": [
                     "217",
                     "217"
-                ]
+                ],
+                "Course": "TBIOL340"
             }
         ],
         "TBIOL350": [
@@ -4771,7 +5044,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TBIOL350"
             }
         ],
         "TBIOL362": [
@@ -4789,7 +5063,8 @@
                 ],
                 "Room Number": [
                     "309"
-                ]
+                ],
+                "Course": "TBIOL362"
             }
         ],
         "TBIOL432": [
@@ -4807,7 +5082,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOL432"
             }
         ]
     },
@@ -4827,7 +5103,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TBIOMD201"
             }
         ],
         "TBIOMD310": [
@@ -4845,7 +5122,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TBIOMD310"
             }
         ],
         "TBIOMD410": [
@@ -4863,7 +5141,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TBIOMD410"
             }
         ],
         "TBIOMD495": [
@@ -4881,7 +5160,8 @@
                 ],
                 "Room Number": [
                     "209"
-                ]
+                ],
+                "Course": "TBIOMD495"
             }
         ]
     },
@@ -4905,7 +5185,8 @@
                 "Room Number": [
                     "137",
                     "317"
-                ]
+                ],
+                "Course": "TCHEM131"
             },
             {
                 "Section": "B",
@@ -4925,7 +5206,8 @@
                 "Room Number": [
                     "137",
                     "317"
-                ]
+                ],
+                "Course": "TCHEM131"
             }
         ],
         "TCHEM139": [
@@ -4943,7 +5225,8 @@
                 ],
                 "Room Number": [
                     "217"
-                ]
+                ],
+                "Course": "TCHEM139"
             }
         ],
         "TCHEM142": [
@@ -4961,7 +5244,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "AA",
@@ -4977,7 +5261,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "AB",
@@ -4993,7 +5278,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "B",
@@ -5009,7 +5295,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "BA",
@@ -5025,7 +5312,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "BB",
@@ -5041,7 +5329,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "C",
@@ -5057,7 +5346,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "CA",
@@ -5073,7 +5363,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "CB",
@@ -5089,7 +5380,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "D",
@@ -5105,7 +5397,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "DA",
@@ -5121,7 +5414,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "DB",
@@ -5137,7 +5431,8 @@
                 ],
                 "Room Number": [
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "E",
@@ -5157,7 +5452,8 @@
                 "Room Number": [
                     "209",
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             },
             {
                 "Section": "F",
@@ -5177,7 +5473,8 @@
                 "Room Number": [
                     "209",
                     "311"
-                ]
+                ],
+                "Course": "TCHEM142"
             }
         ],
         "TCHEM164": [
@@ -5195,7 +5492,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TCHEM164"
             }
         ],
         "TCHEM251": [
@@ -5213,7 +5511,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "AA",
@@ -5229,7 +5528,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "AB",
@@ -5245,7 +5545,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "B",
@@ -5261,7 +5562,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "BA",
@@ -5277,7 +5579,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "BB",
@@ -5293,7 +5596,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "C",
@@ -5309,7 +5613,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "CA",
@@ -5325,7 +5630,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "CB",
@@ -5341,7 +5647,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "D",
@@ -5357,7 +5664,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "DA",
@@ -5373,7 +5681,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             },
             {
                 "Section": "DB",
@@ -5389,7 +5698,8 @@
                 ],
                 "Room Number": [
                     "317"
-                ]
+                ],
+                "Course": "TCHEM251"
             }
         ],
         "TCHEM405": [
@@ -5407,7 +5717,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TCHEM405"
             }
         ]
     },
@@ -5427,7 +5738,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TCHIN101"
             }
         ]
     },
@@ -5447,7 +5759,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCOM230"
             }
         ],
         "TCOM275": [
@@ -5465,7 +5778,8 @@
                 ],
                 "Room Number": [
                     "111"
-                ]
+                ],
+                "Course": "TCOM275"
             }
         ],
         "TCOM312": [
@@ -5483,7 +5797,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TCOM312"
             }
         ],
         "TCOM320": [
@@ -5501,7 +5816,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCOM320"
             }
         ],
         "TCOM330": [
@@ -5519,7 +5835,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCOM330"
             }
         ],
         "TCOM347": [
@@ -5537,7 +5854,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCOM347"
             },
             {
                 "Section": "B",
@@ -5553,7 +5871,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TCOM347"
             }
         ],
         "TCOM348": [
@@ -5571,7 +5890,8 @@
                 ],
                 "Room Number": [
                     "101"
-                ]
+                ],
+                "Course": "TCOM348"
             }
         ],
         "TCOM349": [
@@ -5589,7 +5909,8 @@
                 ],
                 "Room Number": [
                     "205"
-                ]
+                ],
+                "Course": "TCOM349"
             }
         ],
         "TCOM353": [
@@ -5607,7 +5928,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TCOM353"
             }
         ],
         "TCOM380": [
@@ -5625,7 +5947,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TCOM380"
             }
         ],
         "TCOM387": [
@@ -5643,7 +5966,8 @@
                 ],
                 "Room Number": [
                     "101"
-                ]
+                ],
+                "Course": "TCOM387"
             }
         ],
         "TCOM444": [
@@ -5661,7 +5985,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TCOM444"
             }
         ],
         "TCOM465": [
@@ -5679,7 +6004,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TCOM465"
             }
         ]
     },
@@ -5699,7 +6025,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TECON101"
             }
         ],
         "TECON200": [
@@ -5717,7 +6044,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TECON200"
             }
         ],
         "TECON201": [
@@ -5735,7 +6063,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "TECON201"
             }
         ],
         "TECON210": [
@@ -5753,7 +6082,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TECON210"
             }
         ],
         "TECON360": [
@@ -5771,7 +6101,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TECON360"
             }
         ],
         "TECON450": [
@@ -5789,7 +6120,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TECON450"
             }
         ]
     },
@@ -5809,7 +6141,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TESC200"
             }
         ],
         "TESC201": [
@@ -5827,7 +6160,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TESC201"
             }
         ],
         "TESC310": [
@@ -5845,7 +6179,8 @@
                 ],
                 "Room Number": [
                     "102"
-                ]
+                ],
+                "Course": "TESC310"
             }
         ],
         "TESC410": [
@@ -5863,7 +6198,8 @@
                 ],
                 "Room Number": [
                     "160"
-                ]
+                ],
+                "Course": "TESC410"
             }
         ]
     },
@@ -5883,7 +6219,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TEST200"
             }
         ]
     },
@@ -5903,7 +6240,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TEGL101"
             }
         ],
         "TEGL112": [
@@ -5921,7 +6259,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TEGL112"
             }
         ],
         "TEGL201": [
@@ -5939,7 +6278,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TEGL201"
             }
         ],
         "TEGL266": [
@@ -5957,7 +6297,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TEGL266"
             }
         ],
         "TEGL304": [
@@ -5975,7 +6316,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TEGL304"
             }
         ],
         "TEGL305": [
@@ -5993,7 +6335,8 @@
                 ],
                 "Room Number": [
                     "GWP216"
-                ]
+                ],
+                "Course": "TEGL305"
             }
         ]
     },
@@ -6017,7 +6360,8 @@
                 "Room Number": [
                     "BHS106",
                     "BHS106"
-                ]
+                ],
+                "Course": "TFILM201"
             },
             {
                 "Section": "B",
@@ -6037,7 +6381,8 @@
                 "Room Number": [
                     "BHS106",
                     "BHS106"
-                ]
+                ],
+                "Course": "TFILM201"
             },
             {
                 "Section": "C",
@@ -6053,7 +6398,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TFILM201"
             },
             {
                 "Section": "D",
@@ -6069,7 +6415,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TFILM201"
             }
         ],
         "TFILM220": [
@@ -6087,7 +6434,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TFILM220"
             }
         ],
         "TFILM386": [
@@ -6105,7 +6453,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TFILM386"
             }
         ],
         "TFILM434": [
@@ -6123,7 +6472,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TFILM434"
             }
         ],
         "TFILM487": [
@@ -6141,7 +6491,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TFILM487"
             }
         ]
     },
@@ -6165,7 +6516,8 @@
                 "Room Number": [
                     "209",
                     "209"
-                ]
+                ],
+                "Course": "TGEOS117"
             },
             {
                 "Section": "B",
@@ -6185,7 +6537,8 @@
                 "Room Number": [
                     "209",
                     "209"
-                ]
+                ],
+                "Course": "TGEOS117"
             }
         ],
         "TGEOS215": [
@@ -6203,7 +6556,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TGEOS215"
             }
         ],
         "TGEOS241": [
@@ -6225,7 +6579,8 @@
                 "Room Number": [
                     "209",
                     "209"
-                ]
+                ],
+                "Course": "TGEOS241"
             },
             {
                 "Section": "B",
@@ -6245,7 +6600,8 @@
                 "Room Number": [
                     "209",
                     "209"
-                ]
+                ],
+                "Course": "TGEOS241"
             }
         ]
     },
@@ -6265,7 +6621,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "THIST111"
             }
         ],
         "THIST201": [
@@ -6283,7 +6640,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "THIST201"
             }
         ],
         "THIST220": [
@@ -6301,7 +6659,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "THIST220"
             }
         ],
         "THIST270": [
@@ -6319,7 +6678,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "THIST270"
             }
         ],
         "THIST378": [
@@ -6337,7 +6697,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "THIST378"
             }
         ],
         "THIST380": [
@@ -6355,7 +6716,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "THIST380"
             }
         ],
         "THIST465": [
@@ -6373,7 +6735,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "THIST465"
             }
         ],
         "THIST478": [
@@ -6391,7 +6754,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "THIST478"
             }
         ],
         "THIST490": [
@@ -6409,7 +6773,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "THIST490"
             }
         ],
         "THIST495": [
@@ -6427,7 +6792,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "THIST495"
             }
         ],
         "THIST498": [
@@ -6445,7 +6811,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "THIST498"
             }
         ]
     },
@@ -6465,7 +6832,8 @@
                 ],
                 "Room Number": [
                     "102"
-                ]
+                ],
+                "Course": "TIAS305"
             },
             {
                 "Section": "C",
@@ -6481,7 +6849,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TIAS305"
             }
         ],
         "TIAS501": [
@@ -6499,7 +6868,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TIAS501"
             }
         ],
         "TIAS502": [
@@ -6517,7 +6887,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TIAS502"
             }
         ]
     },
@@ -6537,7 +6908,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TLAW150"
             }
         ],
         "TLAW215": [
@@ -6555,7 +6927,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TLAW215"
             }
         ],
         "TLAW320": [
@@ -6573,7 +6946,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TLAW320"
             }
         ],
         "TLAW348": [
@@ -6591,7 +6965,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TLAW348"
             }
         ],
         "TLAW363": [
@@ -6609,7 +6984,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TLAW363"
             }
         ],
         "TLAW438": [
@@ -6627,7 +7003,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TLAW438"
             }
         ],
         "TLAW452": [
@@ -6645,7 +7022,8 @@
                 ],
                 "Room Number": [
                     "GWP216"
-                ]
+                ],
+                "Course": "TLAW452"
             }
         ]
     },
@@ -6665,7 +7043,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TLIT101"
             },
             {
                 "Section": "B",
@@ -6681,7 +7060,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TLIT101"
             }
         ],
         "TLIT237": [
@@ -6699,7 +7079,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TLIT237"
             }
         ],
         "TLIT306": [
@@ -6717,7 +7098,8 @@
                 ],
                 "Room Number": [
                     "GWP212"
-                ]
+                ],
+                "Course": "TLIT306"
             }
         ],
         "TLIT311": [
@@ -6735,7 +7117,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TLIT311"
             }
         ],
         "TLIT335": [
@@ -6753,7 +7136,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TLIT335"
             }
         ],
         "TLIT476": [
@@ -6771,7 +7155,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TLIT476"
             }
         ]
     },
@@ -6791,7 +7176,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TMATH098"
             }
         ],
         "TMATH110": [
@@ -6809,7 +7195,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "B",
@@ -6825,7 +7212,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "C",
@@ -6841,7 +7229,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "D",
@@ -6857,7 +7246,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "E",
@@ -6873,7 +7263,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "F",
@@ -6889,7 +7280,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "G",
@@ -6905,7 +7297,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "H",
@@ -6921,7 +7314,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "I",
@@ -6937,7 +7331,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH110"
             },
             {
                 "Section": "J",
@@ -6953,7 +7348,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH110"
             }
         ],
         "TMATH115": [
@@ -6971,7 +7367,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH115"
             },
             {
                 "Section": "B",
@@ -6987,7 +7384,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH115"
             },
             {
                 "Section": "C",
@@ -7003,7 +7401,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH115"
             },
             {
                 "Section": "D",
@@ -7019,7 +7418,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH115"
             }
         ],
         "TMATH116": [
@@ -7037,7 +7437,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH116"
             },
             {
                 "Section": "B",
@@ -7053,7 +7454,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH116"
             }
         ],
         "TMATH120": [
@@ -7071,7 +7473,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH120"
             },
             {
                 "Section": "B",
@@ -7087,7 +7490,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH120"
             }
         ],
         "TMATH124": [
@@ -7105,7 +7509,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "B",
@@ -7121,7 +7526,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "C",
@@ -7137,7 +7543,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "D",
@@ -7153,7 +7560,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "E",
@@ -7169,7 +7577,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "F",
@@ -7185,7 +7594,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "G",
@@ -7201,7 +7611,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TMATH124"
             },
             {
                 "Section": "H",
@@ -7217,7 +7628,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TMATH124"
             }
         ],
         "TMATH125": [
@@ -7235,7 +7647,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TMATH125"
             },
             {
                 "Section": "B",
@@ -7251,7 +7664,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TMATH125"
             },
             {
                 "Section": "C",
@@ -7267,7 +7681,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH125"
             },
             {
                 "Section": "D",
@@ -7283,7 +7698,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH125"
             },
             {
                 "Section": "E",
@@ -7299,7 +7715,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TMATH125"
             },
             {
                 "Section": "F",
@@ -7315,7 +7732,8 @@
                 ],
                 "Room Number": [
                     "206"
-                ]
+                ],
+                "Course": "TMATH125"
             }
         ],
         "TMATH126": [
@@ -7333,7 +7751,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TMATH126"
             },
             {
                 "Section": "B",
@@ -7349,7 +7768,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH126"
             }
         ],
         "TMATH158": [
@@ -7367,7 +7787,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TMATH158"
             }
         ],
         "TMATH159": [
@@ -7385,7 +7806,8 @@
                 ],
                 "Room Number": [
                     "WG210"
-                ]
+                ],
+                "Course": "TMATH159"
             },
             {
                 "Section": "B",
@@ -7401,7 +7823,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TMATH159"
             }
         ],
         "TMATH300": [
@@ -7419,7 +7842,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH300"
             }
         ],
         "TMATH307": [
@@ -7437,7 +7861,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH307"
             }
         ],
         "TMATH308": [
@@ -7455,7 +7880,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH308"
             },
             {
                 "Section": "B",
@@ -7471,7 +7897,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TMATH308"
             },
             {
                 "Section": "C",
@@ -7487,7 +7914,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH308"
             }
         ],
         "TMATH324": [
@@ -7505,7 +7933,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH324"
             }
         ],
         "TMATH350": [
@@ -7523,7 +7952,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TMATH350"
             }
         ],
         "TMATH390": [
@@ -7541,7 +7971,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TMATH390"
             },
             {
                 "Section": "B",
@@ -7557,7 +7988,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TMATH390"
             }
         ],
         "TMATH412": [
@@ -7575,7 +8007,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TMATH412"
             }
         ],
         "TMATH424": [
@@ -7593,7 +8026,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TMATH424"
             }
         ]
     },
@@ -7613,7 +8047,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TNPRFT231"
             }
         ],
         "TNPRFT451": [
@@ -7631,7 +8066,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TNPRFT451"
             }
         ],
         "TNPRFT490": [
@@ -7649,7 +8085,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TNPRFT490"
             }
         ],
         "TNPRFT531": [
@@ -7667,7 +8104,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TNPRFT531"
             }
         ],
         "TNPRFT551": [
@@ -7685,7 +8123,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TNPRFT551"
             }
         ],
         "TNPRFT590": [
@@ -7703,7 +8142,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TNPRFT590"
             }
         ]
     },
@@ -7723,7 +8163,8 @@
                 ],
                 "Room Number": [
                     "GWP216"
-                ]
+                ],
+                "Course": "TPHIL200"
             }
         ],
         "TPHIL240": [
@@ -7741,7 +8182,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TPHIL240"
             }
         ],
         "TPHIL250": [
@@ -7759,7 +8201,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TPHIL250"
             }
         ],
         "TPHIL270": [
@@ -7777,7 +8220,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TPHIL270"
             }
         ],
         "TPHIL361": [
@@ -7795,7 +8239,8 @@
                 ],
                 "Room Number": [
                     "BHS106"
-                ]
+                ],
+                "Course": "TPHIL361"
             }
         ]
     },
@@ -7815,7 +8260,8 @@
                 ],
                 "Room Number": [
                     "137"
-                ]
+                ],
+                "Course": "TPHYS120"
             }
         ],
         "TPHYS121": [
@@ -7833,7 +8279,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "AA",
@@ -7849,7 +8296,8 @@
                 ],
                 "Room Number": [
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "AB",
@@ -7865,7 +8313,8 @@
                 ],
                 "Room Number": [
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "B",
@@ -7881,7 +8330,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "BA",
@@ -7897,7 +8347,8 @@
                 ],
                 "Room Number": [
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "BB",
@@ -7913,7 +8364,8 @@
                 ],
                 "Room Number": [
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "C",
@@ -7933,7 +8385,8 @@
                 "Room Number": [
                     "137",
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             },
             {
                 "Section": "D",
@@ -7953,7 +8406,8 @@
                 "Room Number": [
                     "137",
                     "137"
-                ]
+                ],
+                "Course": "TPHYS121"
             }
         ]
     },
@@ -7973,7 +8427,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TPOLS201"
             }
         ],
         "TPOLS202": [
@@ -7991,7 +8446,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "TPOLS202"
             }
         ],
         "TPOLS203": [
@@ -8009,7 +8465,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TPOLS203"
             }
         ],
         "TPOLS204": [
@@ -8027,7 +8484,8 @@
                 ],
                 "Room Number": [
                     "BHS104"
-                ]
+                ],
+                "Course": "TPOLS204"
             }
         ],
         "TPOLS230": [
@@ -8045,7 +8503,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TPOLS230"
             }
         ],
         "TPOLS329": [
@@ -8063,7 +8522,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TPOLS329"
             }
         ],
         "TPOLS340": [
@@ -8081,7 +8541,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TPOLS340"
             }
         ],
         "TPOLS343": [
@@ -8099,7 +8560,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TPOLS343"
             }
         ],
         "TPOLS371": [
@@ -8117,7 +8579,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TPOLS371"
             }
         ],
         "TPOLS480": [
@@ -8135,7 +8598,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TPOLS480"
             }
         ]
     },
@@ -8155,7 +8619,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TPSYCH101"
             },
             {
                 "Section": "C",
@@ -8171,7 +8636,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TPSYCH101"
             }
         ],
         "TPSYCH209": [
@@ -8189,7 +8655,8 @@
                 ],
                 "Room Number": [
                     "001"
-                ]
+                ],
+                "Course": "TPSYCH209"
             },
             {
                 "Section": "B",
@@ -8205,7 +8672,8 @@
                 ],
                 "Room Number": [
                     "001"
-                ]
+                ],
+                "Course": "TPSYCH209"
             }
         ],
         "TPSYCH210": [
@@ -8223,7 +8691,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TPSYCH210"
             }
         ],
         "TPSYCH220": [
@@ -8241,7 +8710,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TPSYCH220"
             },
             {
                 "Section": "B",
@@ -8257,7 +8727,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TPSYCH220"
             }
         ],
         "TPSYCH240": [
@@ -8275,7 +8746,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TPSYCH240"
             }
         ],
         "TPSYCH260": [
@@ -8293,7 +8765,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TPSYCH260"
             }
         ],
         "TPSYCH309": [
@@ -8311,7 +8784,8 @@
                 ],
                 "Room Number": [
                     "001"
-                ]
+                ],
+                "Course": "TPSYCH309"
             },
             {
                 "Section": "B",
@@ -8327,7 +8801,8 @@
                 ],
                 "Room Number": [
                     "001"
-                ]
+                ],
+                "Course": "TPSYCH309"
             }
         ],
         "TPSYCH311": [
@@ -8345,7 +8820,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TPSYCH311"
             }
         ],
         "TPSYCH319": [
@@ -8363,7 +8839,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TPSYCH319"
             }
         ],
         "TPSYCH321": [
@@ -8381,7 +8858,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TPSYCH321"
             }
         ],
         "TPSYCH328": [
@@ -8399,7 +8877,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TPSYCH328"
             }
         ],
         "TPSYCH345": [
@@ -8417,7 +8896,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TPSYCH345"
             }
         ],
         "TPSYCH349": [
@@ -8435,7 +8915,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TPSYCH349"
             }
         ],
         "TPSYCH360": [
@@ -8453,7 +8934,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TPSYCH360"
             }
         ],
         "TPSYCH401": [
@@ -8471,7 +8953,8 @@
                 ],
                 "Room Number": [
                     "GWP220"
-                ]
+                ],
+                "Course": "TPSYCH401"
             }
         ],
         "TPSYCH422": [
@@ -8489,7 +8972,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TPSYCH422"
             }
         ],
         "TPSYCH441": [
@@ -8507,7 +8991,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TPSYCH441"
             }
         ],
         "TPSYCH450": [
@@ -8525,7 +9010,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TPSYCH450"
             }
         ]
     },
@@ -8545,7 +9031,8 @@
                 ],
                 "Room Number": [
                     "WCG103"
-                ]
+                ],
+                "Course": "TRELIG105"
             }
         ],
         "TRELIG333": [
@@ -8563,7 +9050,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TRELIG333"
             }
         ],
         "TRELIG345": [
@@ -8581,7 +9069,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TRELIG345"
             }
         ]
     },
@@ -8601,7 +9090,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TSOC165"
             },
             {
                 "Section": "B",
@@ -8617,7 +9107,8 @@
                 ],
                 "Room Number": [
                     "215"
-                ]
+                ],
+                "Course": "TSOC165"
             }
         ],
         "TSOC434": [
@@ -8635,7 +9126,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TSOC434"
             }
         ],
         "TSOC470": [
@@ -8653,7 +9145,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TSOC470"
             }
         ],
         "TSOC534": [
@@ -8671,7 +9164,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TSOC534"
             }
         ],
         "TSOC570": [
@@ -8689,7 +9183,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TSOC570"
             }
         ]
     },
@@ -8709,7 +9204,8 @@
                 ],
                 "Room Number": [
                     "WG320"
-                ]
+                ],
+                "Course": "TSPAN101"
             },
             {
                 "Section": "B",
@@ -8725,7 +9221,8 @@
                 ],
                 "Room Number": [
                     "WG320"
-                ]
+                ],
+                "Course": "TSPAN101"
             },
             {
                 "Section": "C",
@@ -8741,7 +9238,8 @@
                 ],
                 "Room Number": [
                     "WG320"
-                ]
+                ],
+                "Course": "TSPAN101"
             }
         ],
         "TSPAN102": [
@@ -8763,7 +9261,8 @@
                 "Room Number": [
                     "WG320",
                     "SP100A"
-                ]
+                ],
+                "Course": "TSPAN102"
             }
         ],
         "TSPAN210": [
@@ -8781,7 +9280,8 @@
                 ],
                 "Room Number": [
                     "WG320"
-                ]
+                ],
+                "Course": "TSPAN210"
             }
         ],
         "TSPAN301": [
@@ -8799,7 +9299,8 @@
                 ],
                 "Room Number": [
                     "WG320"
-                ]
+                ],
+                "Course": "TSPAN301"
             }
         ],
         "TSPAN376": [
@@ -8817,7 +9318,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TSPAN376"
             }
         ],
         "TSPAN388": [
@@ -8835,7 +9337,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TSPAN388"
             }
         ]
     },
@@ -8855,7 +9358,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TWOMN101"
             },
             {
                 "Section": "B",
@@ -8871,7 +9375,8 @@
                 ],
                 "Room Number": [
                     "214"
-                ]
+                ],
+                "Course": "TWOMN101"
             }
         ],
         "TWOMN205": [
@@ -8889,7 +9394,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TWOMN205"
             }
         ],
         "TWOMN347": [
@@ -8907,7 +9413,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TWOMN347"
             }
         ]
     },
@@ -8927,7 +9434,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TWRT112"
             }
         ],
         "TWRT120": [
@@ -8945,7 +9453,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TWRT120"
             },
             {
                 "Section": "C",
@@ -8961,7 +9470,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TWRT120"
             },
             {
                 "Section": "D",
@@ -8977,7 +9487,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TWRT120"
             },
             {
                 "Section": "E",
@@ -8993,7 +9504,8 @@
                 ],
                 "Room Number": [
                     "334A"
-                ]
+                ],
+                "Course": "TWRT120"
             },
             {
                 "Section": "F",
@@ -9009,7 +9521,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TWRT120"
             }
         ],
         "TWRT200": [
@@ -9027,7 +9540,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TWRT200"
             },
             {
                 "Section": "B",
@@ -9043,7 +9557,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TWRT200"
             },
             {
                 "Section": "C",
@@ -9059,7 +9574,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TWRT200"
             },
             {
                 "Section": "D",
@@ -9075,7 +9591,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TWRT200"
             },
             {
                 "Section": "E",
@@ -9091,7 +9608,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TWRT200"
             },
             {
                 "Section": "F",
@@ -9107,7 +9625,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TWRT200"
             }
         ],
         "TWRT211": [
@@ -9125,7 +9644,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TWRT211"
             },
             {
                 "Section": "B",
@@ -9141,7 +9661,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TWRT211"
             }
         ],
         "TWRT270": [
@@ -9159,7 +9680,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TWRT270"
             }
         ],
         "TWRT280": [
@@ -9177,7 +9699,8 @@
                 ],
                 "Room Number": [
                     "BHS103"
-                ]
+                ],
+                "Course": "TWRT280"
             }
         ],
         "TWRT287": [
@@ -9195,7 +9718,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TWRT287"
             }
         ],
         "TWRT291": [
@@ -9213,7 +9737,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TWRT291"
             },
             {
                 "Section": "D",
@@ -9229,7 +9754,8 @@
                 ],
                 "Room Number": [
                     "207"
-                ]
+                ],
+                "Course": "TWRT291"
             },
             {
                 "Section": "E",
@@ -9245,7 +9771,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TWRT291"
             },
             {
                 "Section": "F",
@@ -9261,7 +9788,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TWRT291"
             }
         ],
         "TWRT330": [
@@ -9279,7 +9807,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TWRT330"
             }
         ],
         "TWRT372": [
@@ -9297,7 +9826,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TWRT372"
             }
         ]
     },
@@ -9317,7 +9847,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "THLTH215"
             }
         ],
         "THLTH330": [
@@ -9335,7 +9866,8 @@
                 ],
                 "Room Number": [
                     "BB106"
-                ]
+                ],
+                "Course": "THLTH330"
             }
         ],
         "THLTH440": [
@@ -9353,7 +9885,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "THLTH440"
             }
         ],
         "THLTH455": [
@@ -9371,7 +9904,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "THLTH455"
             }
         ]
     },
@@ -9391,7 +9925,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "THLEAD350"
             },
             {
                 "Section": "B",
@@ -9407,7 +9942,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "THLEAD350"
             }
         ],
         "THLEAD360": [
@@ -9425,7 +9961,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "THLEAD360"
             }
         ],
         "THLEAD405": [
@@ -9443,7 +9980,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "THLEAD405"
             }
         ],
         "THLEAD407": [
@@ -9461,7 +9999,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "THLEAD407"
             },
             {
                 "Section": "B",
@@ -9477,7 +10016,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "THLEAD407"
             }
         ],
         "THLEAD430": [
@@ -9495,7 +10035,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "THLEAD430"
             },
             {
                 "Section": "B",
@@ -9511,7 +10052,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "THLEAD430"
             },
             {
                 "Section": "C",
@@ -9527,7 +10069,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "THLEAD430"
             }
         ]
     },
@@ -9547,7 +10090,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS340"
             }
         ],
         "TNURS350": [
@@ -9565,7 +10109,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS350"
             },
             {
                 "Section": "B",
@@ -9581,7 +10126,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TNURS350"
             }
         ],
         "TNURS407": [
@@ -9599,7 +10145,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS407"
             },
             {
                 "Section": "B",
@@ -9615,7 +10162,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TNURS407"
             }
         ],
         "TNURS430": [
@@ -9633,7 +10181,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS430"
             },
             {
                 "Section": "B",
@@ -9649,7 +10198,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TNURS430"
             },
             {
                 "Section": "C",
@@ -9665,7 +10215,8 @@
                 ],
                 "Room Number": [
                     "211"
-                ]
+                ],
+                "Course": "TNURS430"
             }
         ],
         "TNURS450": [
@@ -9683,7 +10234,8 @@
                 ],
                 "Room Number": [
                     "111"
-                ]
+                ],
+                "Course": "TNURS450"
             },
             {
                 "Section": "B",
@@ -9699,7 +10251,8 @@
                 ],
                 "Room Number": [
                     "101"
-                ]
+                ],
+                "Course": "TNURS450"
             }
         ],
         "TNURS510": [
@@ -9717,7 +10270,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS510"
             }
         ],
         "TNURS513": [
@@ -9735,7 +10289,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TNURS513"
             }
         ],
         "TNURS527": [
@@ -9753,7 +10308,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS527"
             }
         ],
         "TNURS545": [
@@ -9771,7 +10327,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TNURS545"
             }
         ],
         "TNURS557": [
@@ -9789,7 +10346,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS557"
             }
         ],
         "TNURS558": [
@@ -9807,7 +10365,8 @@
                 ],
                 "Room Number": [
                     "WG308"
-                ]
+                ],
+                "Course": "TNURS558"
             }
         ],
         "TNURS561": [
@@ -9825,7 +10384,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TNURS561"
             }
         ]
     },
@@ -9845,7 +10405,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCRIM101"
             },
             {
                 "Section": "B",
@@ -9861,7 +10422,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCRIM101"
             }
         ],
         "TCRIM225": [
@@ -9879,7 +10441,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TCRIM225"
             }
         ],
         "TCRIM272": [
@@ -9897,7 +10460,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TCRIM272"
             }
         ],
         "TCRIM361": [
@@ -9915,7 +10479,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TCRIM361"
             }
         ],
         "TCRIM362": [
@@ -9933,7 +10498,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TCRIM362"
             }
         ],
         "TCRIM370": [
@@ -9951,7 +10517,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCRIM370"
             }
         ],
         "TCRIM371": [
@@ -9969,7 +10536,8 @@
                 ],
                 "Room Number": [
                     "WCG209"
-                ]
+                ],
+                "Course": "TCRIM371"
             }
         ],
         "TCRIM373": [
@@ -9987,7 +10555,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TCRIM373"
             }
         ],
         "TCRIM395": [
@@ -10005,7 +10574,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TCRIM395"
             }
         ],
         "TCRIM433": [
@@ -10023,7 +10593,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TCRIM433"
             }
         ]
     },
@@ -10043,7 +10614,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TSOCW501"
             },
             {
                 "Section": "B",
@@ -10059,7 +10631,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TSOCW501"
             }
         ],
         "TSOCW502": [
@@ -10077,7 +10650,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TSOCW502"
             },
             {
                 "Section": "B",
@@ -10093,7 +10667,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TSOCW502"
             }
         ],
         "TSOCW512": [
@@ -10111,7 +10686,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TSOCW512"
             },
             {
                 "Section": "B",
@@ -10127,7 +10703,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TSOCW512"
             }
         ],
         "TSOCW531": [
@@ -10145,7 +10722,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TSOCW531"
             },
             {
                 "Section": "B",
@@ -10161,7 +10739,8 @@
                 ],
                 "Room Number": [
                     "109"
-                ]
+                ],
+                "Course": "TSOCW531"
             }
         ],
         "TSOCW532": [
@@ -10179,7 +10758,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TSOCW532"
             },
             {
                 "Section": "B",
@@ -10195,7 +10775,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TSOCW532"
             }
         ]
     },
@@ -10215,7 +10796,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TSOCWF101"
             },
             {
                 "Section": "B",
@@ -10231,7 +10813,8 @@
                 ],
                 "Room Number": [
                     "313"
-                ]
+                ],
+                "Course": "TSOCWF101"
             }
         ],
         "TSOCWF300": [
@@ -10249,7 +10832,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TSOCWF300"
             },
             {
                 "Section": "B",
@@ -10265,7 +10849,8 @@
                 ],
                 "Room Number": [
                     "GWP101"
-                ]
+                ],
+                "Course": "TSOCWF300"
             }
         ],
         "TSOCWF301": [
@@ -10283,7 +10868,8 @@
                 ],
                 "Room Number": [
                     "113"
-                ]
+                ],
+                "Course": "TSOCWF301"
             },
             {
                 "Section": "B",
@@ -10299,7 +10885,8 @@
                 ],
                 "Room Number": [
                     "114"
-                ]
+                ],
+                "Course": "TSOCWF301"
             }
         ],
         "TSOCWF361": [
@@ -10317,7 +10904,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TSOCWF361"
             }
         ],
         "TSOCWF390": [
@@ -10335,7 +10923,8 @@
                 ],
                 "Room Number": [
                     "115"
-                ]
+                ],
+                "Course": "TSOCWF390"
             },
             {
                 "Section": "B",
@@ -10351,7 +10940,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TSOCWF390"
             },
             {
                 "Section": "C",
@@ -10367,7 +10957,8 @@
                 ],
                 "Room Number": [
                     "110"
-                ]
+                ],
+                "Course": "TSOCWF390"
             }
         ],
         "TSOCWF402": [
@@ -10385,7 +10976,8 @@
                 ],
                 "Room Number": [
                     "325"
-                ]
+                ],
+                "Course": "TSOCWF402"
             },
             {
                 "Section": "B",
@@ -10401,7 +10993,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TSOCWF402"
             }
         ],
         "TSOCWF405": [
@@ -10419,7 +11012,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TSOCWF405"
             },
             {
                 "Section": "B",
@@ -10435,7 +11029,8 @@
                 ],
                 "Room Number": [
                     "301"
-                ]
+                ],
+                "Course": "TSOCWF405"
             }
         ],
         "TSOCWF433": [
@@ -10453,7 +11048,8 @@
                 ],
                 "Room Number": [
                     "BHS107"
-                ]
+                ],
+                "Course": "TSOCWF433"
             }
         ]
     },
@@ -10473,7 +11069,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCMP554"
             }
         ],
         "TCMP557": [
@@ -10491,7 +11088,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCMP557"
             }
         ],
         "TCMP572": [
@@ -10509,7 +11107,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TCMP572"
             }
         ],
         "TCMP573": [
@@ -10527,7 +11126,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TCMP573"
             }
         ]
     },
@@ -10547,7 +11147,8 @@
                 ],
                 "Room Number": [
                     "131"
-                ]
+                ],
+                "Course": "TGIS311"
             }
         ],
         "TGIS460": [
@@ -10565,7 +11166,8 @@
                 ],
                 "Room Number": [
                     "131"
-                ]
+                ],
+                "Course": "TGIS460"
             }
         ],
         "TGIS502": [
@@ -10583,7 +11185,8 @@
                 ],
                 "Room Number": [
                     "104"
-                ]
+                ],
+                "Course": "TGIS502"
             }
         ],
         "TGIS503": [
@@ -10601,7 +11204,8 @@
                 ],
                 "Room Number": [
                     "131"
-                ]
+                ],
+                "Course": "TGIS503"
             }
         ]
     },
@@ -10621,7 +11225,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TSUD240"
             }
         ],
         "TSUD444": [
@@ -10639,7 +11244,8 @@
                 ],
                 "Room Number": [
                     "BB104"
-                ]
+                ],
+                "Course": "TSUD444"
             }
         ]
     },
@@ -10659,7 +11265,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TUDE340"
             }
         ],
         "TUDE440": [
@@ -10677,7 +11284,8 @@
                 ],
                 "Room Number": [
                     "103"
-                ]
+                ],
+                "Course": "TUDE440"
             }
         ]
     },
@@ -10697,7 +11305,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TURB101"
             },
             {
                 "Section": "B",
@@ -10713,7 +11322,8 @@
                 ],
                 "Room Number": [
                     "280"
-                ]
+                ],
+                "Course": "TURB101"
             }
         ],
         "TURB103": [
@@ -10731,7 +11341,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TURB103"
             },
             {
                 "Section": "B",
@@ -10747,7 +11358,8 @@
                 ],
                 "Room Number": [
                     "117"
-                ]
+                ],
+                "Course": "TURB103"
             }
         ],
         "TURB210": [
@@ -10765,7 +11377,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TURB210"
             }
         ],
         "TURB220": [
@@ -10783,7 +11396,8 @@
                 ],
                 "Room Number": [
                     "106"
-                ]
+                ],
+                "Course": "TURB220"
             }
         ],
         "TURB225": [
@@ -10801,7 +11415,8 @@
                 ],
                 "Room Number": [
                     "270"
-                ]
+                ],
+                "Course": "TURB225"
             }
         ],
         "TURB312": [
@@ -10819,7 +11434,8 @@
                 ],
                 "Room Number": [
                     "105"
-                ]
+                ],
+                "Course": "TURB312"
             }
         ],
         "TURB316": [
@@ -10837,7 +11453,8 @@
                 ],
                 "Room Number": [
                     "210"
-                ]
+                ],
+                "Course": "TURB316"
             }
         ],
         "TURB324": [
@@ -10855,7 +11472,8 @@
                 ],
                 "Room Number": [
                     "GWP216"
-                ]
+                ],
+                "Course": "TURB324"
             }
         ],
         "TURB350": [
@@ -10873,7 +11491,8 @@
                 ],
                 "Room Number": [
                     "108"
-                ]
+                ],
+                "Course": "TURB350"
             }
         ],
         "TURB480": [
@@ -10891,7 +11510,8 @@
                 ],
                 "Room Number": [
                     "201"
-                ]
+                ],
+                "Course": "TURB480"
             }
         ]
     }

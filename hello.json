@@ -1,0 +1,4754 @@
+{
+    "HI": [
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MGH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "231"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "FSH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "107"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "930-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AC",
+                    "Time": [
+                        "1030-1120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MUE"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "153"
+                    ],
+                    "Section": "AD",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AE",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "BA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "BB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "BC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "BD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MGH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "231"
+                    ],
+                    "Section": "CA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "FSH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "107"
+                    ],
+                    "Section": "CB",
+                    "Time": [
+                        "930-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "CC",
+                    "Time": [
+                        "1030-1120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MUE"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "153"
+                    ],
+                    "Section": "CD",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "CE",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "DA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "DB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "DC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AM",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "DD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "BA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "BB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "BC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "BD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "DA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "DB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "DC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AN",
+                    "Time": [
+                        "1130-120"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "DD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MGH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "231"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "FSH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "107"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "930-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AC",
+                    "Time": [
+                        "1030-1120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MUE"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "153"
+                    ],
+                    "Section": "AD",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AE",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "BA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "BB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "BC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "BD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MGH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "231"
+                    ],
+                    "Section": "CA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "FSH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "107"
+                    ],
+                    "Section": "CB",
+                    "Time": [
+                        "930-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "CC",
+                    "Time": [
+                        "1030-1120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MUE"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "153"
+                    ],
+                    "Section": "CD",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "CE",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "C",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "DA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "DB",
+                    "Time": [
+                        "130-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "246"
+                    ],
+                    "Section": "DC",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AO",
+                    "Time": [
+                        "330-520"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "238"
+                    ],
+                    "Section": "DD",
+                    "Time": [
+                        "330-420"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "D",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MGH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "231"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "FSH"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "107"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "930-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AC",
+                    "Time": [
+                        "1030-1120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MUE"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "153"
+                    ],
+                    "Section": "AD",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "MEB"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "248"
+                    ],
+                    "Section": "AE",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "CSE2"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "G20"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "1130-1220"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "T"
+                    ],
+                    "Room Number": [
+                        "B164"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-920"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "PAB"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "B176"
+                    ],
+                    "Section": "AP",
+                    "Time": [
+                        "730-920P"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "PAA",
+                        "KNE"
+                    ],
+                    "Course": "PHYS122",
+                    "Days": [
+                        "MWF",
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "A102",
+                        "120"
+                    ],
+                    "Section": "A",
+                    "Time": [
+                        "830-920",
+                        "500-620P"
+                    ],
+                    "Type": "LECT"
+                }
+            ],
+            [
+                {
+                    "Building": [
+                        "BAG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "Th"
+                    ],
+                    "Room Number": [
+                        "261"
+                    ],
+                    "Section": "BA",
+                    "Time": [
+                        "1230-120"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "SIG"
+                    ],
+                    "Course": "CSE351",
+                    "Days": [
+                        "MWF"
+                    ],
+                    "Room Number": [
+                        "134"
+                    ],
+                    "Section": "B",
+                    "Time": [
+                        "230-320"
+                    ],
+                    "Type": "LECT"
+                }
+            ]
+        ]
+    ]
+}

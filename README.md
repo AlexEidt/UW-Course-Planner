@@ -15,6 +15,12 @@ Check out http://alexeidt.pythonanywhere.com/ for a live demo!
 
 The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.washington.edu/students/timeschd/) and for UW Course Catalogs (see below) for every UW Campus. This data is stored in `.json` files that can be found in the `UW_Course_Catalogs` and `UW_Time_Schedules` directories. 
 
+##### JSON Files
+
+[UW Time Schedules](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Time_Schedules)
+[UW Course Catalogs](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Course_Catalogs)
+[UW Buildings and Coordinates](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Buildings)
+
 ### Scripts
 
 Script | Purpose
@@ -137,33 +143,6 @@ Course Data | Description
 **Description** | The description of the course objectives.
 
 ***
-
-### File Creation
-The prerequisite trees rely on data from `.tsv` files in order to work. `.json` files with course data for each
-UW Campus are also created as well as a `Total.tsv` and `Total.json` file with course data for all campuses. 
-
-The `.tsv` and `.json` files are included in the `UW_Campus_Catalogs` folder.
-
-<p align = "center">
-
-**TSV** | **JSON**
-:---: | :---:
-[Bothell](UW_Campus_Catalogs/TSV/Bothell.tsv) | [Bothell](UW_Campus_Catalogs/JSON/Bothell.json)
-[Seattle](UW_Campus_Catalogs/TSV/Seattle.tsv) | [Seattle](UW_Campus_Catalogs/JSON/Seattle.json)
-[Tacoma](UW_Campus_Catalogs/TSV/Tacoma.tsv) | [Tacoma](UW_Campus_Catalogs/JSON/Tacoma.json)
-[Total](UW_Campus_Catalogs/TSV/Total.tsv) | [Total](UW_Campus_Catalogs/JSON/Total.json)
-
-</p>
-
-Upon starting `main.py`, if the `UW_Campus_Catalogs` directory is not present in the directory 
-of the scripts, it will automatically be created and filled with the documents in the table above.
-If the `UW_Campus_Catalogs` directory is present, there will be a prompt asking if the course catalogs
-should be updated:
-
-```python
-Course catalogs were last updated on XXXX-XX-XX XX:XX:XX
-Would you like to update the Course Catalogs? (y/n):
-```
 
 ### Requirements/Dependencies
 

@@ -6,6 +6,7 @@ from create_tree import create_tree
 from main import read_file
 from parse_courses import CAMPUSES, gather
 from geocode import geocode_all, get_combinations
+from geocode import main as check_schedules
 from utility import check_connection, scan_transcript, UW_Course_Catalogs, UW_Buildings, UW_Time_Schedules, Organized_Time_Schedules
 try:
     from flask import Flask, redirect, url_for, render_template, jsonify, request
@@ -137,10 +138,9 @@ for campus in CAMPUSES:
         total_coords.update(json.loads(file.read()))
 @app.route('/get_geocode/', methods=['POST'])
 def get_geocode():
-    return jsonify({'coords': total_coords}) #'combinations': get_combinations('hi')})
+    return jsonify({'coords': total_coords}) 
 
 
-planned_courses = []
 @app.route('/check_course/', methods=['POST'])
 def check_course():
     with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='r') as file:
@@ -164,7 +164,6 @@ def check_course():
                     check = False
             else:
                 check = course in total
-            planned_courses.append(planned_course)
         else:
             check = False
     else:
@@ -177,7 +176,6 @@ def create_schedule():
     courses = request.form['course'].strip(',').split(',')
     global course_options
     course_options = get_combinations(courses)
-    next_option = None
     try:
         next_option = next(course_options)
     except StopIteration:
@@ -217,6 +215,7 @@ def departments():
 
 @app.route('/geocode/')
 def geocode():
+    check_schedules()
     return render_template('geocode.html')
 
 

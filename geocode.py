@@ -272,35 +272,45 @@ def main():
     this key are all the lectures for this course with quiz, lab and studio sections
     included as a list
     """
-    courses = geocode_all()
-    all_campuses = {}
-    all_campuses.update(courses['Seattle'])
-    all_campuses.update(courses['Bothell'])
-    all_campuses.update(courses['Tacoma'])
-    total = set()
-    for campus in CAMPUSES.keys():
-        for department in courses[campus].values():
-            for crs in department.keys():
-                total.add(crs)
-    course_map = {}
-    for course in total:
-        department = re.search(r'[A-Z&]+', course).group(0)
-        course_list = all_campuses[department][course]
-        section_map = {}
-        for section in course_list:
-            section_type = section['Type']
-            if section_type in ['LECT', 'VAR']:
-                course_sections = Sections()
-                course_sections.LECT = section
-                section_map['Lecture {}'.format(section['Section'])] = course_sections.__dict__
-            else:
-                course_sections.add_section(section_type, section)
-        course_map[course] = section_map
     try:
-        os.mkdir(Organized_Time_Schedules)
+        os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='w') as file:
-        json.dump(course_map, file, indent=4, sort_keys=True)
+    check = set()
+    for campus in CAMPUSES.keys():
+        upcoming_quarter = get_next_quarter()
+        upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], upcoming_quarter, dttime.now().year)
+        quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else get_quarter(filter_=True)
+        check.add(f'{campus}_{quarter}{dttime.now().year}.json' not in os.listdir(UW_Time_Schedules))
+    if True in check:
+        courses = geocode_all()
+        all_campuses = {}
+        all_campuses.update(courses['Seattle'])
+        all_campuses.update(courses['Bothell'])
+        all_campuses.update(courses['Tacoma'])
+        total = set()
+        for campus in CAMPUSES.keys():
+            for department in courses[campus].values():
+                for crs in department.keys():
+                    total.add(crs)
+        course_map = {}
+        for course in total:
+            department = re.search(r'[A-Z&]+', course).group(0)
+            course_list = all_campuses[department][course]
+            section_map = {}
+            for section in course_list:
+                section_type = section['Type']
+                if section_type in ['LECT', 'VAR']:
+                    course_sections = Sections()
+                    course_sections.LECT = section
+                    section_map['Lecture {}'.format(section['Section'])] = course_sections.__dict__
+                else:
+                    course_sections.add_section(section_type, section)
+            course_map[course] = section_map
+        try:
+            os.mkdir(Organized_Time_Schedules)
+        except Exception: pass
+        with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='w') as file:
+            json.dump(course_map, file, indent=4, sort_keys=True)
 
 
 if __name__ == '__main__':

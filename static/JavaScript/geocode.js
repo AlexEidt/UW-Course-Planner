@@ -111,6 +111,7 @@ $(document).ready(function() {
         } else {
             $('#prev').attr('disabled', true);
         }
+        $('#next').attr('disabled', false);
     });
     $('#next').on('click', function() {
         index++;
@@ -118,6 +119,7 @@ $(document).ready(function() {
             mymap.removeLayer(layers[index - 1][0]);
             layers[index][0].addTo(mymap);
             document.getElementById('sectionsTitle').innerHTML = layers[index][1];
+            $('#prev').attr('disabled', false);
         } else {
             $.ajax({
                 url: '/get_schedules/',

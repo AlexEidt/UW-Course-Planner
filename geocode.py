@@ -275,13 +275,10 @@ def main():
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    check = set()
-    for campus in CAMPUSES.keys():
-        upcoming_quarter = get_next_quarter()
-        upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], upcoming_quarter, dttime.now().year)
-        quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else get_quarter(filter_=True)
-        check.add(f'{campus}_{quarter}{dttime.now().year}.json' not in os.listdir(UW_Time_Schedules))
-    if True in check:
+    upcoming_quarter = get_next_quarter()
+    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES['Seattle']['link'], upcoming_quarter, dttime.now().year)
+    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else get_quarter(filter_=True)
+    if f'Seattle_{quarter}{dttime.now().year}.json' not in os.listdir(UW_Time_Schedules):
         courses = geocode_all()
         all_campuses = {}
         all_campuses.update(courses['Seattle'])

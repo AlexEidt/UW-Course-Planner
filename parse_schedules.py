@@ -139,6 +139,8 @@ def parse_departments(campus):
     """
     upcoming_quarter = get_next_quarter()
     current_quarter = get_quarter(filter_=True)
+    if type(current_quarter) == type([]):
+        current_quarter = ''.join(current_quarter)
     if not CAMPUSES[campus]['upper_case']:
         upcoming_quarter = upcoming_quarter.lower()
         current_quarter = current_quarter.lower()

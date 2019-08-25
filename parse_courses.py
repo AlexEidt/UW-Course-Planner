@@ -264,10 +264,11 @@ def extract_description(description, credit_type):
     match = re.search(r'[A-Z]{2,}[a-z]+', description)
     if match:
         found = match.group(0)
-        description = description.split(found)[1]
-        match_match = re.search(r'[A-Z][a-z]+', found)
-        if match_match:
-            description = f'{match_match.group(0)} {description.strip()}'
+        if description.find(found) < 100:
+            description = description.split(found)[1]
+            match_match = re.search(r'[A-Z][a-z]+', found)
+            if match_match:
+                description = f'{match_match.group(0)} {description.strip()}'
     else:
         match = re.search(r'[A-Z][a-z]+[A-Z]', description)
         if match:
@@ -431,7 +432,7 @@ def gather():
         logger.info(f'{__name__} ran in {(t2 - t1):.1f} seconds')
 
 
-if __name__ == '__main__':
+if __name__ == '__main__' and False:
     if check_connection():
         gather()
     else:

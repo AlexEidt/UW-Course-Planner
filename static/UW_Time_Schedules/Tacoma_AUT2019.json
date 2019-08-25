@@ -5951,25 +5951,6 @@
                 "Course": "TCOM380"
             }
         ],
-        "TCOM387": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MW"
-                ],
-                "Time": [
-                    "550-750P"
-                ],
-                "Building": [
-                    "DOU"
-                ],
-                "Room Number": [
-                    "101"
-                ],
-                "Course": "TCOM387"
-            }
-        ],
         "TCOM444": [
             {
                 "Section": "A",
@@ -6103,25 +6084,6 @@
                     "BB104"
                 ],
                 "Course": "TECON360"
-            }
-        ],
-        "TECON450": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "1010-1210"
-                ],
-                "Building": [
-                    "ADMC"
-                ],
-                "Room Number": [
-                    "BB104"
-                ],
-                "Course": "TECON450"
             }
         ]
     },
@@ -6870,25 +6832,6 @@
                     "GWP101"
                 ],
                 "Course": "TIAS501"
-            }
-        ],
-        "TIAS502": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "550-750P"
-                ],
-                "Building": [
-                    "JOY"
-                ],
-                "Room Number": [
-                    "207"
-                ],
-                "Course": "TIAS502"
             }
         ]
     },
@@ -8205,6 +8148,25 @@
                 "Course": "TPHIL250"
             }
         ],
+        "TPHIL251": [
+            {
+                "Section": "A",
+                "Type": "LECT",
+                "Days": [
+                    "TTh"
+                ],
+                "Time": [
+                    "130-330"
+                ],
+                "Building": [
+                    "ADMC"
+                ],
+                "Room Number": [
+                    "BB104"
+                ],
+                "Course": "TPHIL251"
+            }
+        ],
         "TPHIL270": [
             {
                 "Section": "A",
@@ -8697,23 +8659,6 @@
         ],
         "TPSYCH220": [
             {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MWF"
-                ],
-                "Time": [
-                    "1100-1220"
-                ],
-                "Building": [
-                    "CP"
-                ],
-                "Room Number": [
-                    "325"
-                ],
-                "Course": "TPSYCH220"
-            },
-            {
                 "Section": "B",
                 "Type": "LECT",
                 "Days": [
@@ -9053,25 +8998,6 @@
                 ],
                 "Course": "TRELIG333"
             }
-        ],
-        "TRELIG345": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MWF"
-                ],
-                "Time": [
-                    "930-1050"
-                ],
-                "Building": [
-                    "DOU"
-                ],
-                "Room Number": [
-                    "201"
-                ],
-                "Course": "TRELIG345"
-            }
         ]
     },
     "TSOC": {
@@ -9130,25 +9056,6 @@
                 "Course": "TSOC434"
             }
         ],
-        "TSOC470": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MW"
-                ],
-                "Time": [
-                    "550-750P"
-                ],
-                "Building": [
-                    "DOU"
-                ],
-                "Room Number": [
-                    "280"
-                ],
-                "Course": "TSOC470"
-            }
-        ],
         "TSOC534": [
             {
                 "Section": "A",
@@ -9166,25 +9073,6 @@
                     "280"
                 ],
                 "Course": "TSOC534"
-            }
-        ],
-        "TSOC570": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MW"
-                ],
-                "Time": [
-                    "550-750P"
-                ],
-                "Building": [
-                    "DOU"
-                ],
-                "Room Number": [
-                    "280"
-                ],
-                "Course": "TSOC570"
             }
         ]
     },
@@ -9377,25 +9265,6 @@
                     "214"
                 ],
                 "Course": "TWOMN101"
-            }
-        ],
-        "TWOMN205": [
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "1010-1210"
-                ],
-                "Building": [
-                    "ADMC"
-                ],
-                "Room Number": [
-                    "BHS107"
-                ],
-                "Course": "TWOMN205"
             }
         ],
         "TWOMN347": [

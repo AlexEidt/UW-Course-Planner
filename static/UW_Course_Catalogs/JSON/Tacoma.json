@@ -6026,7 +6026,7 @@
         "Course Number": "584",
         "Credits": "5",
         "Department Name": "TCSS",
-        "Description": "Cs ; Hardware Trojans; Side-Channel attacks; Design-for-Trust. Prerequisite: TCES 330.",
+        "Description": "Covers topics related to testing VLSI circuits and hardware security including manufacturing test fundamentals, fault modeling and simulation, automatic test pattern generation algorithms, Design-for-Testability, testability vs security, trustworthiness of integrated circuits; Counterfeit ICs; Hardware Trojans; Side-Channel attacks; Design-for-Trust. Prerequisite: TCES 330.",
         "Offered with": "",
         "Prerequisites": "TCES330",
         "Quarters Offered": ""
@@ -7248,7 +7248,7 @@
         "Course Number": "550",
         "Credits": "3",
         "Department Name": "TEDSP",
-        "Description": "Ei A, Section 504 of the Vocational Rehabilitation Act, and the Washington Administrative Code: Special Education Rules and Regulations.",
+        "Description": "Provides in-depth exploration of disabling conditions with emphasis on the etiology of high incidence disabilities. Covers theoretical, conceptual and empirical bases to meet the needs of diverse students. Addresses legislation including the IDEiA, Section 504 of the Vocational Rehabilitation Act, and the Washington Administrative Code: Special Education Rules and Regulations.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -12604,7 +12604,7 @@
         "Course Number": "473",
         "Credits": "5",
         "Department Name": "TINFO",
-        "Description": "Is ). Prerequisite: T INFO 360",
+        "Description": "Covers application of data structures and algorithms in order to solve real world computing problems. Students will design solutions using various data structures. Object - oriented methods will be used to create effective and efficient problem solutions. Students will use and implement application programming interfaces (APIs). Prerequisite: T INFO 360",
         "Offered with": "",
         "Prerequisites": "TINFO360",
         "Quarters Offered": ""
@@ -19812,7 +19812,7 @@
         "Quarters Offered": ""
     },
     "TWOMN101": {
-        "Areas of Knowledge": "I&S",
+        "Areas of Knowledge": "I&S, DIV",
         "Campus": "Tacoma",
         "Co-Requisites": "",
         "Course Name": "Introduction to Women's Studies",

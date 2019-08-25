@@ -2417,10 +2417,10 @@
                     "330-520"
                 ],
                 "Building": [
-                    "EXED"
+                    "GWN"
                 ],
                 "Room Number": [
-                    "110"
+                    "201"
                 ],
                 "Course": "ANTH321"
             }
@@ -2436,10 +2436,10 @@
                     "330-450"
                 ],
                 "Building": [
-                    "AND"
+                    "JHN"
                 ],
                 "Room Number": [
-                    "223"
+                    "102"
                 ],
                 "Course": "ANTH324"
             }
@@ -2586,10 +2586,10 @@
                     "330-450"
                 ],
                 "Building": [
-                    "AND"
+                    "JHN"
                 ],
                 "Room Number": [
-                    "223"
+                    "102"
                 ],
                 "Course": "ANTH524"
             }
@@ -14388,7 +14388,7 @@
                     "BAG"
                 ],
                 "Room Number": [
-                    "236",
+                    "106",
                     "236"
                 ],
                 "Course": "CHEM142"
@@ -14578,7 +14578,7 @@
                 ],
                 "Room Number": [
                     "260",
-                    "260"
+                    "236"
                 ],
                 "Course": "CHEM142"
             },
@@ -20888,10 +20888,10 @@
                     "330-520"
                 ],
                 "Building": [
-                    "EXED"
+                    "GWN"
                 ],
                 "Room Number": [
-                    "110"
+                    "201"
                 ],
                 "Course": "RELIG321"
             }
@@ -24130,13 +24130,13 @@
                     "W"
                 ],
                 "Time": [
-                    "1030-1220"
+                    "930-1120"
                 ],
                 "Building": [
-                    "MUS"
+                    "LOW"
                 ],
                 "Room Number": [
-                    "219"
+                    "220"
                 ],
                 "Course": "ECON602"
             }
@@ -25168,23 +25168,6 @@
                 ],
                 "Room Number": [
                     "082"
-                ],
-                "Course": "ENGL282"
-            },
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "MTWTh"
-                ],
-                "Time": [
-                    "330-420"
-                ],
-                "Building": [
-                    "THO"
-                ],
-                "Room Number": [
-                    "331"
                 ],
                 "Course": "ENGL282"
             },
@@ -28269,23 +28252,6 @@
                 ],
                 "Room Number": [
                     "121"
-                ],
-                "Course": "GENST199"
-            },
-            {
-                "Section": "G6",
-                "Type": "LECT",
-                "Days": [
-                    "T"
-                ],
-                "Time": [
-                    "230-320"
-                ],
-                "Building": [
-                    "BAG"
-                ],
-                "Room Number": [
-                    "331A"
                 ],
                 "Course": "GENST199"
             },
@@ -41526,10 +41492,10 @@
                     "130-250"
                 ],
                 "Building": [
-                    "LOW"
+                    "EXED"
                 ],
                 "Room Number": [
-                    "106"
+                    "110"
                 ],
                 "Course": "MATH441"
             }
@@ -52650,6 +52616,25 @@
                 "Course": "POLS488"
             }
         ],
+        "POLS499": [
+            {
+                "Section": "D",
+                "Type": "LECT",
+                "Days": [
+                    "TTh"
+                ],
+                "Time": [
+                    "1030-1120"
+                ],
+                "Building": [
+                    "THO"
+                ],
+                "Room Number": [
+                    "215"
+                ],
+                "Course": "POLS499"
+            }
+        ],
         "POLS500": [
             {
                 "Section": "A",
@@ -54972,25 +54957,6 @@
                 "Course": "LATV111"
             }
         ],
-        "LATV201": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "MTWThF"
-                ],
-                "Time": [
-                    "1130-1220"
-                ],
-                "Building": [
-                    "SAV"
-                ],
-                "Room Number": [
-                    "168"
-                ],
-                "Course": "LATV201"
-            }
-        ],
         "LATV310": [
             {
                 "Section": "A",
@@ -55352,23 +55318,6 @@
                 ],
                 "Room Number": [
                     "314"
-                ],
-                "Course": "SCAND490"
-            },
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "1230-150"
-                ],
-                "Building": [
-                    "SIG"
-                ],
-                "Room Number": [
-                    "229"
                 ],
                 "Course": "SCAND490"
             }
@@ -60348,10 +60297,10 @@
                     "330-450"
                 ],
                 "Building": [
-                    "GWN"
+                    "CDH"
                 ],
                 "Room Number": [
-                    "201"
+                    "139"
                 ],
                 "Course": "BE200"
             },
@@ -74378,10 +74327,10 @@
                     "1230-220"
                 ],
                 "Building": [
-                    "CDH"
+                    "MOR"
                 ],
                 "Room Number": [
-                    "139"
+                    "234"
                 ],
                 "Course": "CESG501"
             }
@@ -74928,23 +74877,6 @@
                 "Course": "CSE142"
             },
             {
-                "Section": "AV",
-                "Type": "QZ",
-                "Days": [
-                    "Th"
-                ],
-                "Time": [
-                    "830-920"
-                ],
-                "Building": [
-                    "MGH"
-                ],
-                "Room Number": [
-                    "234"
-                ],
-                "Course": "CSE142"
-            },
-            {
                 "Section": "AW",
                 "Type": "QZ",
                 "Days": [
@@ -75377,23 +75309,6 @@
                 ],
                 "Time": [
                     "330-420"
-                ],
-                "Building": [
-                    "MGH"
-                ],
-                "Room Number": [
-                    "248"
-                ],
-                "Course": "CSE142"
-            },
-            {
-                "Section": "BR",
-                "Type": "QZ",
-                "Days": [
-                    "Th"
-                ],
-                "Time": [
-                    "830-920"
                 ],
                 "Building": [
                     "MGH"
@@ -76544,13 +76459,13 @@
                     "T"
                 ],
                 "Time": [
-                    "330-420"
+                    "1130-1220"
                 ],
                 "Building": [
                     "LOW"
                 ],
                 "Room Number": [
-                    "117"
+                    "201"
                 ],
                 "Course": "CSE190"
             },
@@ -76561,13 +76476,166 @@
                     "T"
                 ],
                 "Time": [
-                    "330-420"
+                    "1130-1220"
                 ],
                 "Building": [
-                    "LOW"
+                    "MEB"
                 ],
                 "Room Number": [
-                    "118"
+                    "250"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BH",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "930-1020"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "026"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BI",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "930-1020"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "025"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BJ",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "1030-1130"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "025"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BK",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "1030-1120"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "031"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BL",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "1030-1120"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "042"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BM",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "1230-120"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "026"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BN",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "130-220"
+                ],
+                "Building": [
+                    "ECE"
+                ],
+                "Room Number": [
+                    "025"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BO",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "230-320"
+                ],
+                "Building": [
+                    "SAV"
+                ],
+                "Room Number": [
+                    "131"
+                ],
+                "Course": "CSE190"
+            },
+            {
+                "Section": "BP",
+                "Type": "QZ",
+                "Days": [
+                    "T"
+                ],
+                "Time": [
+                    "230-320"
+                ],
+                "Building": [
+                    "THO"
+                ],
+                "Room Number": [
+                    "234"
                 ],
                 "Course": "CSE190"
             },
@@ -81464,15 +81532,19 @@
                 "Section": "A",
                 "Type": "LECT",
                 "Days": [
-                    "TTh"
+                    "T",
+                    "Th"
                 ],
                 "Time": [
-                    "430-620P"
+                    "430-720P",
+                    "430-520P"
                 ],
                 "Building": [
+                    "MEB",
                     "MEB"
                 ],
                 "Room Number": [
+                    "251",
                     "251"
                 ],
                 "Course": "EE565"
@@ -86347,23 +86419,6 @@
                     "301"
                 ],
                 "Course": "ATMS220"
-            },
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "Th"
-                ],
-                "Time": [
-                    "1230-120"
-                ],
-                "Building": [
-                    "GWN"
-                ],
-                "Room Number": [
-                    "301"
-                ],
-                "Course": "ATMS220"
             }
         ],
         "ATMS290": [
@@ -88126,6 +88181,25 @@
                     "022"
                 ],
                 "Course": "ESS489"
+            }
+        ],
+        "ESS502": [
+            {
+                "Section": "A",
+                "Type": "LECT",
+                "Days": [
+                    "TTh"
+                ],
+                "Time": [
+                    "1100-1220"
+                ],
+                "Building": [
+                    "JHN"
+                ],
+                "Room Number": [
+                    "027"
+                ],
+                "Course": "ESS502"
             }
         ],
         "ESS503": [
@@ -90967,7 +91041,7 @@
                     "MWF"
                 ],
                 "Time": [
-                    "1030-1120"
+                    "1230-120"
                 ],
                 "Building": [
                     "OTB"
@@ -91170,7 +91244,7 @@
                     "MWF"
                 ],
                 "Time": [
-                    "1030-1120"
+                    "1230-120"
                 ],
                 "Building": [
                     "OTB"

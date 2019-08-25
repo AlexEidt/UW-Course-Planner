@@ -460,23 +460,6 @@
                 "Course": "BCORE107"
             },
             {
-                "Section": "J",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "845-1045"
-                ],
-                "Building": [
-                    "UW2"
-                ],
-                "Room Number": [
-                    "305"
-                ],
-                "Course": "BCORE107"
-            },
-            {
                 "Section": "K",
                 "Type": "LECT",
                 "Days": [
@@ -1880,10 +1863,10 @@
                     "115-315"
                 ],
                 "Building": [
-                    "UWBB"
+                    "UW1"
                 ],
                 "Room Number": [
-                    "240"
+                    "020"
                 ],
                 "Course": "BBUS310"
             },
@@ -1971,10 +1954,10 @@
                     "115-315"
                 ],
                 "Building": [
-                    "UW1"
+                    "UWBB"
                 ],
                 "Room Number": [
-                    "020"
+                    "240"
                 ],
                 "Course": "BBUS340"
             },
@@ -3284,7 +3267,7 @@
                 "Section": "A",
                 "Type": "LECT",
                 "Days": [
-                    "T"
+                    "Th"
                 ],
                 "Time": [
                     "900-400"
@@ -3301,7 +3284,7 @@
                 "Section": "B",
                 "Type": "LECT",
                 "Days": [
-                    "Th"
+                    "T"
                 ],
                 "Time": [
                     "900-400"
@@ -3320,16 +3303,16 @@
                 "Section": "A",
                 "Type": "LECT",
                 "Days": [
-                    "W"
+                    "F"
                 ],
                 "Time": [
-                    "115-315"
+                    "1100-200"
                 ],
                 "Building": [
-                    "UWBB"
+                    "DISC"
                 ],
                 "Room Number": [
-                    "205"
+                    "165B"
                 ],
                 "Course": "BEDUC425"
             }
@@ -3339,27 +3322,10 @@
                 "Section": "A",
                 "Type": "LECT",
                 "Days": [
-                    "M"
+                    "F"
                 ],
                 "Time": [
-                    "845-1045"
-                ],
-                "Building": [
-                    "LB1"
-                ],
-                "Room Number": [
-                    "203"
-                ],
-                "Course": "BEDUC435"
-            },
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "W"
-                ],
-                "Time": [
-                    "845-1045"
+                    "900-1030"
                 ],
                 "Building": [
                     "LB1"
@@ -7585,6 +7551,23 @@
                     "221"
                 ],
                 "Course": "CSS301"
+            },
+            {
+                "Section": "G",
+                "Type": "LECT",
+                "Days": [
+                    "MW"
+                ],
+                "Time": [
+                    "330-530"
+                ],
+                "Building": [
+                    "UW2"
+                ],
+                "Room Number": [
+                    "211"
+                ],
+                "Course": "CSS301"
             }
         ],
         "CSS310": [
@@ -7691,6 +7674,23 @@
                 ],
                 "Room Number": [
                     "050"
+                ],
+                "Course": "CSS342"
+            },
+            {
+                "Section": "E",
+                "Type": "LECT",
+                "Days": [
+                    "MW"
+                ],
+                "Time": [
+                    "330-530"
+                ],
+                "Building": [
+                    "UW2"
+                ],
+                "Room Number": [
+                    "205"
                 ],
                 "Course": "CSS342"
             }
@@ -9674,7 +9674,7 @@
                     "UW2"
                 ],
                 "Room Number": [
-                    "340"
+                    "240"
                 ],
                 "Course": "STMATH126"
             },
@@ -9763,7 +9763,7 @@
                     "UW2"
                 ],
                 "Room Number": [
-                    "240"
+                    "340"
                 ],
                 "Course": "STMATH307"
             }

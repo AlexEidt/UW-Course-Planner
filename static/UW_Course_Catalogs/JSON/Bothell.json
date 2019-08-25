@@ -176,7 +176,7 @@
         "Course Number": "567",
         "Credits": "4",
         "Department Name": "BACCT",
-        "Description": "Cs .  Provides an introduction to entity tax accounting with emphasis on both tax consequences and tax planning.",
+        "Description": "Provides an analysis and evaluation of the federal income tax consequences affecting Corporations, Partnerships, and LLCs.  Provides an introduction to entity tax accounting with emphasis on both tax consequences and tax planning.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -566,7 +566,7 @@
         "Course Number": "375",
         "Credits": "5",
         "Department Name": "BBIO",
-        "Description": "As , amino acid metabolism, and protein trafficking and degradation. Prerequisite: B BIO 220; one of B BIO 360, B BIO 364, B CHEM 364, GENOME 361, or BIOC 405.",
+        "Description": "Molecular biology, focusing on structure and synthesis of informational macromolecules. Includes DNA replication and repair, chromosome structure, synthesis and processing of RNA and proteins, regulatory RNAs, amino acid metabolism, and protein trafficking and degradation. Prerequisite: B BIO 220; one of B BIO 360, B BIO 364, B CHEM 364, GENOME 361, or BIOC 405. ",
         "Offered with": "",
         "Prerequisites": "BBIO220;BBIO360,BBIO364,BCHEM364,GENOME361,BIOC405",
         "Quarters Offered": "Sp"
@@ -2659,7 +2659,7 @@
         "Course Number": "375",
         "Credits": "5",
         "Department Name": "BCHEM",
-        "Description": "As , amino acid metabolism, and protein trafficking and degradation. Prerequisite: B BIO 220; one of B BIO 360, B BIO 364, B CHEM 364, GENOME 361, or BIOC 405.",
+        "Description": "Molecular biology, focusing on structure and synthesis of informational macromolecules. Includes DNA replication and repair, chromosome structure, synthesis and processing of RNA and proteins, regulatory RNAs, amino acid metabolism, and protein trafficking and degradation. Prerequisite: B BIO 220; one of B BIO 360, B BIO 364, B CHEM 364, GENOME 361, or BIOC 405. ",
         "Offered with": "",
         "Prerequisites": "BBIO220;BBIO360,BBIO364,BCHEM364,GENOME361,BIOC405",
         "Quarters Offered": "Sp"
@@ -2869,19 +2869,6 @@
         "Department Name": "BCHIN",
         "Description": "Intermediate -level Chinese language courses for which there are no direct University of Washington Bothell equivalents, taken through a University of Washington study abroad program. Further study at 200-level subject to placement test scores.",
         "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BCLIM200": {
-        "Areas of Knowledge": "NW/I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Climate Science",
-        "Course Number": "200",
-        "Credits": "5",
-        "Department Name": "BCLIM",
-        "Description": "Introduces climate science and global climate change. Topics include the scientific method, earth history, global biogeochemical cycles, population and energy consumption, and greenhouse gas emissions; fundamental climate science, energy conservation, alternative energy; climate and the media; and climate policy. Includes service project around issues of energy or climate.",
-        "Offered with": "BST200",
         "Prerequisites": "",
         "Quarters Offered": ""
     },
@@ -4921,7 +4908,7 @@
         "Course Number": "541",
         "Credits": "5",
         "Department Name": "BEDUC",
-        "Description": "Ls in general education of classes specifically for",
+        "Description": " Gourd, NaranjoFocuses on theories in second language acquisition, bilingual education, and the structure of English. Topics include research, practice, and connections between language, literacy, cultural traditions, identity, and education in preparation for teaching ELLs in general education of classes specifically for ELLs. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "W"
@@ -4960,7 +4947,7 @@
         "Course Number": "544",
         "Credits": "5",
         "Department Name": "BEDUC",
-        "Description": "Ls . Examines language assessment tools, tests, ad other factors for determining placement in language-support programs.",
+        "Description": "Explores historical and political contexts of bilingual education in U.S. including legislation, inclusive principles, theory, and research. Focuses on addressing cognitive academic, social-cultural, and language needs of ESOLs. Examines language assessment tools, tests, ad other factors for determining placement in language-support programs. ",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": "Sp"
@@ -6382,32 +6369,6 @@
         "Prerequisites": "BCHEM153",
         "Quarters Offered": ""
     },
-    "BES318": {
-        "Areas of Knowledge": "NW, QSR",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Hydrogeology",
-        "Course Number": "318",
-        "Credits": "5",
-        "Department Name": "BES",
-        "Description": "Examines details and mechanisms of the natural processes associated with the hydrologic cycle. Explores rivers, groundwater, and watershed management issues within Washington State.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BES321": {
-        "Areas of Knowledge": "NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Geomorphology",
-        "Course Number": "321",
-        "Credits": "5",
-        "Department Name": "BES",
-        "Description": "Provides an overview of the science and geomorphology, emphasizing field observations, data collection, and data analyses associated with geomorphological methods. Examines how landforms evolve, how landforms and abiotic processes influence ecosystems, and how human activities are impacting all of the above.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BES330": {
         "Areas of Knowledge": "NW",
         "Campus": "Bothell",
@@ -6430,19 +6391,6 @@
         "Credits": "5",
         "Department Name": "BES",
         "Description": "Provides an overview of the formation, circulation, water quality, ecology, and environmental problems of estuaries. Students investigate the unique environments and processes of the Puget Sound watershed and interact with community members to learn about Puget Sound advocacy, management, research, and education efforts.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BES341": {
-        "Areas of Knowledge": "I&S/NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Natural Hazards and Human Disasters",
-        "Course Number": "341",
-        "Credits": "5",
-        "Department Name": "BES",
-        "Description": "Investigates the distribution and impacts of natural hazards and what controls the magnitude and frequency of these events. Examines how cultural and social factors influence the hazard vulnerability of populations.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -7617,19 +7565,6 @@
         "Prerequisites": "BHS201",
         "Quarters Offered": ""
     },
-    "BHS310": {
-        "Areas of Knowledge": "",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Pathways to Health Studies",
-        "Course Number": "310",
-        "Credits": "2",
-        "Department Name": "BHS",
-        "Description": "Provides a forum for students to plan their educational pathway within the Health Studies major. Provides an overview of career options and professional development opportunities, supplemented with guest lectures by professionals working in the field. Prerequisite: minimum 2.0 grade in BHS 201. Credit/no-credit only. ",
-        "Offered with": "",
-        "Prerequisites": "BHS201",
-        "Quarters Offered": "W"
-    },
     "BHS403": {
         "Areas of Knowledge": "",
         "Campus": "Bothell",
@@ -8098,32 +8033,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS153": {
-        "Areas of Knowledge": "NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Geology",
-        "Course Number": "153",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Survey of the physical systems that give the earth its form. Emphasizes the dynamic nature of interior and surface processes on the earth and stressing the value of geological forms in understanding of the past and predicting future events.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": "W,Sp"
-    },
-    "BIS154": {
-        "Areas of Knowledge": "NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Oceanography",
-        "Course Number": "154",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Case studies of research on the oceans, deep-sea exploration, climate change, and human impacts on marine life. Considers societal factors affecting progress in marine science, changing popular attitudes toward the oceans, and key current policy implications of marine science.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": "A,W,Sp"
-    },
     "BIS161": {
         "Areas of Knowledge": "VLPA",
         "Campus": "Bothell",
@@ -8449,19 +8358,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS223": {
-        "Areas of Knowledge": "I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Narrative Ethnography",
-        "Course Number": "223",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Introduction to narrative ethnography. Focuses on the making of narrative ethnographic knowledge (observing, asking, listening, analyzing, writing up) through experiential exercises.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS224": {
         "Areas of Knowledge": "I&S, DIV",
         "Campus": "Bothell",
@@ -8510,19 +8406,6 @@
         "Credits": "5",
         "Department Name": "BIS",
         "Description": "Uses an intersectional lens to analyze both the roles of the gender norms in women's experience with misogyny, and the creative ways that women, girls, and femmes challenge and resist the gender based repression.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS230": {
-        "Areas of Knowledge": "NW, QSR",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Mathematical Thinking for the Liberal Arts",
-        "Course Number": "230",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Develops mathematics from historical, intellectual, and applied perspectives. Designed to broaden concepts of the meaning of mathematics, develop mathematical thinking, and encourage the use of mathematics in meaningful applications.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -8796,19 +8679,6 @@
         "Credits": "5",
         "Department Name": "BIS",
         "Description": "Introduces the history, culture, and politics of people of Latin descent in local and global context. Draws from history, literature, humanities, philosophy, the arts, film, and related areas of inquiry.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS260": {
-        "Areas of Knowledge": "I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to World Religions",
-        "Course Number": "260",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Explores the world's major religious traditions. Stresses the wide range of perspectives within each tradition, their porous boundaries, contested beliefs, and multiple practices as they have adapted to new circumstances and the needs of changing communities over time.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -9164,32 +9034,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS308": {
-        "Areas of Knowledge": "",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Issues in Philosophy and Culture",
-        "Course Number": "308",
-        "Credits": "5, max. 10",
-        "Department Name": "BIS",
-        "Description": "Examines a central problem associated with the nature, varieties, values, and transmission of cultures. Alternative problems to be emphasized include the cultural relativity of truth and value, multi-cultural education, and knowledge and practice. Emphasizes philosophical texts. Also considers writings from sociology, anthropology, history and literature.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS309": {
-        "Areas of Knowledge": "VLPA",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "History of Dance in Europe and America",
-        "Course Number": "309",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Discussion of the major developments in European and American dance history. Dances from the court, ballroom, and theater including masterpieces from the modern repertoire. Based on primary source material and film recreations that document dance's social and theatrical role from the Renaissance to the present.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS310": {
         "Areas of Knowledge": "I&S, DIV",
         "Campus": "Bothell",
@@ -9463,19 +9307,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS334": {
-        "Areas of Knowledge": "I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Traditional Chinese History",
-        "Course Number": "334",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "History of traditional China from earliest times to the beginning of the Qing dynasty. Covers the birth and development of the principal social, economic, and political institutions in China. Also treats the principal cultural and scientific achievements of China, and the philosophical traditions which have dominated East Asia.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS335": {
         "Areas of Knowledge": "I&S, DIV",
         "Campus": "Bothell",
@@ -9669,19 +9500,6 @@
         "Description": "Introduces the field of personality psychology and the scientific study of psychological individuality. Addresses three key approaches to personality; basic traits; motives, goals, schemas, and tasks; and broad and culturally shaped life stories that provide identity, purpose, and meaning. Integrates classical personality theories and contemporary research in the field. Prerequisite: Not open for credit to students who have taken PSYCH 203 or PSYCH 303 at the Seattle Campus.",
         "Offered with": "",
         "Prerequisites": "PSYCH203,PSYCH303",
-        "Quarters Offered": ""
-    },
-    "BIS350": {
-        "Areas of Knowledge": "NW, QSR",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "The Concept of Number",
-        "Course Number": "350",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Explores the concept of number from an historical perspective and the modern mathematical perspective. Stresses the new properties of \"'number\"', starting with counting numbers and progressing to the concept of a field.",
-        "Offered with": "",
-        "Prerequisites": "",
         "Quarters Offered": ""
     },
     "BIS351": {
@@ -9914,19 +9732,6 @@
         "Credits": "5",
         "Department Name": "BIS",
         "Description": "Examines representations of the tropical world across a range of textual objects, such as painting, photography, literature, ethnography and film.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS373": {
-        "Areas of Knowledge": "VLPA/I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Cultural History of Rome",
-        "Course Number": "373",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Intense study of the urban space of Rome as a cultural center from its origins to the modern era. Examines Roman influence over time covering the republican, imperial, and papal phases of this city as illustrated through the visual record of buildings, gardens, sculpture, mosaics, and paintings.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -10334,32 +10139,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS417": {
-        "Areas of Knowledge": "I&S/VLPA",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Paris: The City and Its History",
-        "Course Number": "417",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Explores the issues of urban culture and history in the city of Paris. Uses pertinent primary and secondary texts to explore why Paris has been regarded as the jewel of European cities and what constitutes its sense of place.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS418": {
-        "Areas of Knowledge": "VLPA",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Masculinity, Homoeroticism, and Queer Theory in American Culture",
-        "Course Number": "418",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Exploration of the shifting and contradictory images and ideas of masculinity in American culture, focusing especially on the way masculinities are constructed in relations between men. Emphasizes advanced methods in American Studies.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS419": {
         "Areas of Knowledge": "I&S",
         "Campus": "Bothell",
@@ -10412,19 +10191,6 @@
         "Prerequisites": "BIS270",
         "Quarters Offered": ""
     },
-    "BIS424": {
-        "Areas of Knowledge": "",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Topics in American Studies",
-        "Course Number": "424",
-        "Credits": "5, max. 15",
-        "Department Name": "BIS",
-        "Description": "Examination of a specific topic in order to provide a deeper understanding of a particular aspect of American culture.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS425": {
         "Areas of Knowledge": "I&S",
         "Campus": "Bothell",
@@ -10464,19 +10230,6 @@
         "Prerequisites": "",
         "Quarters Offered": ""
     },
-    "BIS434": {
-        "Areas of Knowledge": "VLPA/I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Psychology and the Visual Arts",
-        "Course Number": "434",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Explores the visual arts experience in many of its psychological, social, and cultural dimensions. Topics include visual perception and cognition, the process of assigning personal meaning and value to art, and the role of the visual arts in individual and community identity development and change efforts.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BIS436": {
         "Areas of Knowledge": "I&S",
         "Campus": "Bothell",
@@ -10486,19 +10239,6 @@
         "Credits": "5",
         "Department Name": "BIS",
         "Description": "Provides comparative analyses of family life in various cultures and societies. Topics include family organization, family and kinship structure, marital and parent-child relationships, socialization, aging and familial roles. Examines methods for conducting comparative research.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS437": {
-        "Areas of Knowledge": "I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Narrative Psychology",
-        "Course Number": "437",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Examines the ways narrative has been used in psychology theory, practice, and research. Introduces narrative concepts and analysis techniques, examines how diverse cultural contexts shape personal stories, demonstrates narrative research strengths, and explores the ways larger social narratives can affect individual actualization.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -10681,19 +10421,6 @@
         "Credits": "5, max. 10",
         "Department Name": "BIS",
         "Description": "Investigates theoretical approaches to the study of literature. Topics may range from chronicles of critical theories to psychoanalysis and literature, or the examination of individual theoreticians such as Michel Foucault.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
-    "BIS463": {
-        "Areas of Knowledge": "I&S, DIV",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "U.S. Women's History",
-        "Course Number": "463",
-        "Credits": "5",
-        "Department Name": "BIS",
-        "Description": "Surveys the place of women in the United States from Native American-European contact to the present. Topics include comparative gender norms, women's politics, gender and slavery, alliances and disagreements among women, women and work, courtship, sexuality, and marriage.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -14091,45 +13818,6 @@
         "Prerequisites": "",
         "Quarters Offered": "A"
     },
-    "BST153": {
-        "Areas of Knowledge": "NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Geology",
-        "Course Number": "153",
-        "Credits": "5",
-        "Department Name": "BST",
-        "Description": "Survey of the physical systems that give the earth its form. Emphasizes the dynamic nature of interior and surface processes on the earth and stressing the value of geological forms in understanding of the past and predicting future events.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": "W,Sp"
-    },
-    "BST154": {
-        "Areas of Knowledge": "NW",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Oceanography",
-        "Course Number": "154",
-        "Credits": "5",
-        "Department Name": "BST",
-        "Description": "Case studies of research on the oceans, deep-sea exploration, climate change, and human impacts on marine life. Considers societal factors affecting progress in marine science, changing popular attitudes toward the oceans, and key current policy implications of marine science.",
-        "Offered with": "",
-        "Prerequisites": "",
-        "Quarters Offered": "A,W,Sp"
-    },
-    "BST200": {
-        "Areas of Knowledge": "NW/I&S",
-        "Campus": "Bothell",
-        "Co-Requisites": "",
-        "Course Name": "Introduction to Climate Science",
-        "Course Number": "200",
-        "Credits": "5",
-        "Department Name": "BST",
-        "Description": "Introduces climate science and global climate change. Topics include the scientific method, earth history, global biogeochemical cycles, population and energy consumption, and greenhouse gas emissions; fundamental climate science, energy conservation, alternative energy; climate and the media; and climate policy. Includes service project around issues of energy or climate.",
-        "Offered with": "BCLIM200",
-        "Prerequisites": "",
-        "Quarters Offered": ""
-    },
     "BST205": {
         "Areas of Knowledge": "I&S, DIV",
         "Campus": "Bothell",
@@ -15061,7 +14749,7 @@
         "Course Number": "485",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Ns ), including vision, motor control, learning, data analysis. Topics include ANN architectures, algorithms: perceptrons, Widrow-Hoff, backpropagation, Hebbian networks. Prerequisite: CSS 343; may not be repeated.",
+        "Description": " StiberApplication of biological computing principles to machine problem solving. State of the art in artificial neural networks (ANNs), including vision, motor control, learning, data analysis. Topics include ANN architectures, algorithms: perceptrons, Widrow-Hoff, backpropagation, Hebbian networks. Prerequisite: CSS 343; may not be repeated.",
         "Offered with": "",
         "Prerequisites": "CSS343",
         "Quarters Offered": ""
@@ -15360,7 +15048,7 @@
         "Course Number": "535",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Us and GPUs), data, algorithms, and application domains.",
+        "Description": "Covers the essential theories, principles, concepts, and practices related to designing, implementing, evaluating, and using high-performance computing systems. These include ways to reason about issues arising from the use of homogeneous and heterogeneous combinations of memory and computational resources (e.g. CPUs and GPUs), data, algorithms, and application domains.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -15412,7 +15100,7 @@
         "Course Number": "545",
         "Credits": "5",
         "Department Name": "CSS",
-        "Description": "Is . Uses programming projects to explore the concepts and application in each area, and enable students to define a final project to combine and intersect the above areas.",
+        "Description": "Covers concepts related to systems once can build located at the intersections of pocket size computing devices; location aware technologies; mobile web services; and integrated sensors such as touch- and gesture-based UIs. Uses programming projects to explore the concepts and application in each area, and enable students to define a final project to combine and intersect the above areas.",
         "Offered with": "",
         "Prerequisites": "",
         "Quarters Offered": ""
@@ -16504,7 +16192,7 @@
         "Course Number": "406",
         "Credits": "5",
         "Department Name": "STMATH",
-        "Description": "Es . Topics include polynomial and piecewise polynomial interpolation, the Fourier transform, numerical differentiation and integration, and approximate solution of",
+        "Description": "Methods and theory for numerically approximating functions, their integrals and derivatives, and solutions to ODEs. Topics include polynomial and piecewise polynomial interpolation, the Fourier transform, numerical differentiation and integration, and approximate solution of ODEs using Euler and Runge-Kutta methods. Prerequisite: Minimum grade of 2.0 in STMATH 307 and STMATH 405.",
         "Offered with": "",
         "Prerequisites": "STMATH307;STMATH405",
         "Quarters Offered": ""

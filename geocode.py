@@ -25,22 +25,29 @@ def get_all_buildings(uw_campus):
         Dictionary with abbreviation, full name pairings for all buildings
     """
     upcoming_quarter = get_next_quarter()
-    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[uw_campus]['link'], upcoming_quarter, dttime.now().year)
-    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else get_quarter(filter_=True)
+    current_quarter = get_quarter(filter_=True)
+    year = dttime.now().year
+    if upcoming_quarter == 'WIN':
+        if dttime.now().month in [10, 11, 12]:
+            year += 1
+    if type(current_quarter) == type([]):
+        current_quarter = ''.join(current_quarter)
+    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[uw_campus]['link'], upcoming_quarter, year)
+    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
 
     get_campuses()
 
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    if f'{uw_campus}_{quarter}{dttime.now().year}.json' not in os.listdir(UW_Time_Schedules):
+    if f'{uw_campus}_{quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
         if check_connection():
             parse_schedules(console=False, update=True)
         else:
             logger.critical('No Internet Connection')
             print('No Internet Connection')
 
-    with open(os.path.normpath(f'{UW_Time_Schedules}/{uw_campus}_{quarter}{dttime.now().year}.json'), mode='r') as file:
+    with open(os.path.normpath(f'{UW_Time_Schedules}/{uw_campus}_{quarter}{year}.json'), mode='r') as file:
         courses = json.loads(file.read())
 
     campus = set()
@@ -276,9 +283,16 @@ def main():
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
     upcoming_quarter = get_next_quarter()
-    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES['Seattle']['link'], upcoming_quarter, dttime.now().year)
-    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else get_quarter(filter_=True)
-    if f'Seattle_{quarter}{dttime.now().year}.json' not in os.listdir(UW_Time_Schedules):
+    current_quarter = get_quarter(filter_=True)
+    year = dttime.now().year
+    if upcoming_quarter == 'WIN':
+        if dttime.now().month in [10, 11, 12]:
+            year += 1
+    if type(current_quarter) == type([]):
+        current_quarter = ''.join(current_quarter)
+    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES['Seattle']['link'], upcoming_quarter, year)
+    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
+    if f'Seattle_{quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
         courses = geocode_all()
         all_campuses = {}
         all_campuses.update(courses['Seattle'])

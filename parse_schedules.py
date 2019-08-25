@@ -139,23 +139,27 @@ def parse_departments(campus):
     """
     upcoming_quarter = get_next_quarter()
     current_quarter = get_quarter(filter_=True)
+    year = dttime.now().year
+    if upcoming_quarter == 'WIN':
+        if dttime.now().month in [10, 11, 12]:
+            year += 1
     if type(current_quarter) == type([]):
         current_quarter = ''.join(current_quarter)
     if not CAMPUSES[campus]['upper_case']:
         upcoming_quarter = upcoming_quarter.lower()
         current_quarter = current_quarter.lower()
-    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], upcoming_quarter, dttime.now().year)
+    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], upcoming_quarter, year)
     current_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], current_quarter, dttime.now().year)
     courses_link = ''
     schedule_link = ''
 
     if r.get(upcoming_courses_link).ok:
-        courses_link = '{}{}{}/'.format(CAMPUSES[campus]['schedule'], upcoming_quarter.upper(), dttime.now().year)
+        courses_link = '{}{}{}/'.format(CAMPUSES[campus]['schedule'], upcoming_quarter.upper(), year)
         schedule_link = upcoming_courses_link
     elif r.get(current_courses_link).ok:
         courses_link = '{}{}{}/'.format(CAMPUSES[campus]['schedule'], current_quarter.upper(), dttime.now().year)
         schedule_link = current_courses_link
-        logger.warning(f'Could not access upcoming course schedule for {upcoming_quarter}{dttime.now().year}')
+        logger.warning(f'Could not access upcoming course schedule for {upcoming_quarter}{year}')
     else:
         logger.critical('Could not access course schedules for current or upcoming quarters.')
         return None

@@ -119,7 +119,7 @@ CSE143*
 
 The UW Course Tool can show you all combinations of course sections at UW that do not overlap. All three UW Campuses are included. 
 
-<img src="static/Images/Map.png" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="UW Map Example">
+<img src="static/Images/Map.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="UW Map Example">
 
 ### Flask Application
 

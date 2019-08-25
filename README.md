@@ -30,7 +30,7 @@ Most Scripts are dependent on one another. Even if you only care for one part of
 Script | Purpose
 --- | ---
 `UW_Buildings.py` | Creates `UW_Buildings.json` in `static/UW_Buildings` which is a mapping of Building abbreviations to full names for all buildings on each UW Campus.
-`app.py` | Runs the Flask Application on the localhost. Alternatively go to [alexeidt.pythonanywhere.com](alexeidt.pythonanywhere.com) to see the same site.
+`app.py` | Runs the Flask Application on the localhost. Alternatively go to [alexeidt.pythonanywhere.com](http://alexeidt.pythonanywhere.com/) to see the same site.
 `create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. Not runnable by itself.
 `geocode.py` | Finds the GPS coordinates for each UW Building on each UW Campus and stores them in `.json` files under `static/UW_Buildings`. Also creates `Total.json` in `static/UW_Time_Schedules/Organized_Time_Schedules`, which is an organized time schedule of all UW Courses from every campus where Quiz, Lab and Studio sections are mapped to their respective lectures. `Total.json` is required for **MyMap** to work. 
 `main.py` | Runs the program in the console. 
@@ -134,7 +134,7 @@ python app.py
 
 Then open the following link to access the website: http://127.0.0.1:5000/home/
 
-Alternatively, go to the live demo at: [alexeidt.pythonanywhere.com](alexeidt.pythonanywhere.com)
+Alternatively, go to the live demo at: [alexeidt.pythonanywhere.com](http://alexeidt.pythonanywhere.com/)
 
 ### Course Data
 

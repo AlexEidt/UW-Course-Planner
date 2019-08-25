@@ -100,4 +100,15 @@
             <img id="example" src="{{ url_for('static', filename='Images/keyword.png') }}">
         </div>
         <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">MyMap</div>
+    </div>
+        <p>
+            <a href="{{ url_for('geocode') }}">MyMap</a> is a tool you can use to plan out your schedule, on a map! Enter
+            all the courses you want to take and when you are done, click 'Create Schedule'. All possible combinations of courses
+            without overlapping sections will be shown in the header and their location will be displayed with a pin on the
+            map. You can select which UW Campus you want to create mapped out schedules for: Seattle, Bothell or Tacoma.
+            Clicking on the pins on the map will give you information about the course section in that building. 
+        </p>
+    <br>
 {% endblock content %}

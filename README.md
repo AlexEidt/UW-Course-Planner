@@ -25,17 +25,19 @@ The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.wa
 
 ### Scripts
 
+Most Scripts are dependent on one another. Even if you only care for one part of the web scraping/file creation offered by these Scripts, download them all to avoid exceptions.
+
 Script | Purpose
 --- | ---
-`UW_Buildings.py` | Creates `UW_Buildings.json` in `static/UW_Buildings` which is a mapping of Building abbreviations to full names for all buildings on each UW Campus
-`app.py` | Runs the Flask Application on the localhost. Alternatively go to alexeidt.pythonanywhere.com to see the same site
-`create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. 
-`geocode.py` | Finds the GPS coordinates for each UW Building on each UW Campus and stores them in `.json` files under `static/UW_Buildings`
-`main.py` | Runs the program in the console
-`parse_courses.py` | Parses UW's Course Catalog for every campus and stores course data in `.json` files under `static/UW_Course_Catalogs`
-`parse_schedules.py` | Parses UW's Time Schedules for every campus and stores data in `.json` files under `static/UW_Time_Schedules`
-`run_all.py` | Deletes all existing UW Information files in `static` and replaces them with updated files. Run this script if you want to create all files again
-`utility.py` | Basic methods and other functionality shared by the other modules
+`UW_Buildings.py` | Creates `UW_Buildings.json` in `static/UW_Buildings` which is a mapping of Building abbreviations to full names for all buildings on each UW Campus.
+`app.py` | Runs the Flask Application on the localhost. Alternatively go to [alexeidt.pythonanywhere.com](alexeidt.pythonanywhere.com) to see the same site.
+`create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. Not runnable by itself.
+`geocode.py` | Finds the GPS coordinates for each UW Building on each UW Campus and stores them in `.json` files under `static/UW_Buildings`. Also creates `Total.json` in `static/UW_Time_Schedules/Organized_Time_Schedules`, which is an organized time schedule of all UW Courses from every campus where Quiz, Lab and Studio sections are mapped to their respective lectures. `Total.json` is required for **MyMap** to work. 
+`main.py` | Runs the program in the console. 
+`parse_courses.py` | Parses UW's Course Catalog for every campus and stores course data in `.json` files under `static/UW_Course_Catalogs`.
+`parse_schedules.py` | Parses UW's Time Schedules for every campus and stores data in `.json` files under `static/UW_Time_Schedules`.
+`run_all.py` | Deletes all existing UW Information files in `static` and replaces them with updated files. Run this script if you want to create/update all files.
+`utility.py` | Basic methods and other functionality shared by the other modules. Not runnable by itself.
 
 #### UW Course Catalogs
  >[Bothell](http://www.washington.edu/students/crscatb/)                             
@@ -132,7 +134,7 @@ python app.py
 
 Then open the following link to access the website: http://127.0.0.1:5000/home/
 
-Alternatively, go to the live demo at: alexeidt.pythonanywhere.com
+Alternatively, go to the live demo at: [alexeidt.pythonanywhere.com](alexeidt.pythonanywhere.com)
 
 ### Course Data
 

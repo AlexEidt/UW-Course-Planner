@@ -18,7 +18,9 @@ The UW Course Tool offers web scraping for the [UW Time Schedule](https://www.wa
 ##### JSON Files
 
 [UW Time Schedules](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Time_Schedules)
+
 [UW Course Catalogs](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Course_Catalogs)
+
 [UW Buildings and Coordinates](https://github.com/AlexEidt/UW-Course-Tool/tree/master/static/UW_Buildings)
 
 ### Scripts

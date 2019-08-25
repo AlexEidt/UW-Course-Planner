@@ -34,6 +34,8 @@ def get_all_buildings(uw_campus):
         current_quarter = ''.join(current_quarter)
     upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[uw_campus]['link'], upcoming_quarter, year)
     quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
+    if quarter != upcoming_quarter and year == dttime.now().year + 1:
+        year -= 1
 
     get_campuses()
 
@@ -292,6 +294,8 @@ def main():
         current_quarter = ''.join(current_quarter)
     upcoming_courses_link = '{}{}{}/'.format(CAMPUSES['Seattle']['link'], upcoming_quarter, year)
     quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
+    if quarter != upcoming_quarter and year == dttime.now().year + 1:
+        year -= 1
     if f'Seattle_{quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
         courses = geocode_all()
         all_campuses = {}

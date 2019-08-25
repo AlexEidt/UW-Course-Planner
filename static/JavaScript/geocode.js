@@ -156,12 +156,12 @@ function show_schedule(resp) {
                     building_map[building].push('<strong>' + o.Course + '</strong>' 
                                                 + ' ' + o.Type + ' ' + o.Section + 
                                                 '<br>' + o.Days[k] + ' ' + o.Time[k] 
-                                                + ' ' + building);
+                                                + ' ' + building + ' ' + o['Room Number'][k]);
                 } else {
                     building_map[building] = ['<strong>' + o.Course + '</strong>' 
                                             + ' ' + o.Type + ' ' + o.Section + 
                                             '<br>' + o.Days[k] + ' ' + o.Time[k] + 
-                                            ' ' + building];
+                                            ' ' + building + ' ' + o['Room Number'][k]];
                 }
                 if (!headerText.includes(o.Course)) {
                     headerText += o.Course + ' ' + o.Section + ', ';

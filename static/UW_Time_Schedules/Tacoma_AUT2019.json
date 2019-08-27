@@ -5333,108 +5333,6 @@
                 "Course": "TCHEM142"
             },
             {
-                "Section": "C",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "130-330"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "105"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
-                "Section": "CA",
-                "Type": "LB",
-                "Days": [
-                    "T"
-                ],
-                "Time": [
-                    "1010-1240"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "311"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
-                "Section": "CB",
-                "Type": "LB",
-                "Days": [
-                    "Th"
-                ],
-                "Time": [
-                    "1010-1240"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "311"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
-                "Section": "D",
-                "Type": "LECT",
-                "Days": [
-                    "TTh"
-                ],
-                "Time": [
-                    "130-330"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "105"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
-                "Section": "DA",
-                "Type": "LB",
-                "Days": [
-                    "T"
-                ],
-                "Time": [
-                    "1010-1240"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "311"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
-                "Section": "DB",
-                "Type": "LB",
-                "Days": [
-                    "Th"
-                ],
-                "Time": [
-                    "1010-1240"
-                ],
-                "Building": [
-                    "SCI"
-                ],
-                "Room Number": [
-                    "311"
-                ],
-                "Course": "TCHEM142"
-            },
-            {
                 "Section": "E",
                 "Type": "LECT",
                 "Days": [
@@ -5472,6 +5370,48 @@
                 ],
                 "Room Number": [
                     "209",
+                    "311"
+                ],
+                "Course": "TCHEM142"
+            },
+            {
+                "Section": "G",
+                "Type": "LECT",
+                "Days": [
+                    "TTh",
+                    "T"
+                ],
+                "Time": [
+                    "130-330",
+                    "1010-1240"
+                ],
+                "Building": [
+                    "JOY",
+                    "SCI"
+                ],
+                "Room Number": [
+                    "113",
+                    "311"
+                ],
+                "Course": "TCHEM142"
+            },
+            {
+                "Section": "H",
+                "Type": "LECT",
+                "Days": [
+                    "TTh",
+                    "Th"
+                ],
+                "Time": [
+                    "130-330",
+                    "1010-1240"
+                ],
+                "Building": [
+                    "SCI",
+                    "SCI"
+                ],
+                "Room Number": [
+                    "105",
                     "311"
                 ],
                 "Course": "TCHEM142"

@@ -655,25 +655,6 @@
                 "Course": "BCUSP100"
             }
         ],
-        "BCUSP131": [
-            {
-                "Section": "B",
-                "Type": "LECT",
-                "Days": [
-                    "MW"
-                ],
-                "Time": [
-                    "545-745P"
-                ],
-                "Building": [
-                    "UW1"
-                ],
-                "Room Number": [
-                    "060"
-                ],
-                "Course": "BCUSP131"
-            }
-        ],
         "BCUSP199": [
             {
                 "Section": "A",

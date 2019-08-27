@@ -2455,10 +2455,10 @@
                     "830-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Course": "ANTH432"
             }
@@ -2624,10 +2624,10 @@
                     "830-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Course": "ANTH532"
             }
@@ -15898,7 +15898,7 @@
                     "BAG"
                 ],
                 "Room Number": [
-                    "108"
+                    "331A"
                 ],
                 "Course": "CHEM237"
             },
@@ -16119,7 +16119,7 @@
                     "BAG"
                 ],
                 "Room Number": [
-                    "331A"
+                    "108"
                 ],
                 "Course": "CHEM237"
             },
@@ -22800,10 +22800,10 @@
                     "830-950"
                 ],
                 "Building": [
-                    "LOW"
+                    "PCAR"
                 ],
                 "Room Number": [
-                    "105"
+                    "295"
                 ],
                 "Course": "ECON200"
             },
@@ -23004,10 +23004,10 @@
                     "1130-1250"
                 ],
                 "Building": [
-                    "LOW"
+                    "MEB"
                 ],
                 "Room Number": [
-                    "105"
+                    "238"
                 ],
                 "Course": "ECON200"
             },
@@ -28860,10 +28860,10 @@
                     "1130-1220"
                 ],
                 "Building": [
-                    "BAG"
+                    "SAV"
                 ],
                 "Room Number": [
-                    "331A"
+                    "136"
                 ],
                 "Course": "GENST199"
             },
@@ -37218,10 +37218,10 @@
                     "830-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Course": "LING432"
             }
@@ -37332,10 +37332,10 @@
                     "830-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Course": "LING532"
             },
@@ -37349,10 +37349,10 @@
                     "830-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Course": "LING532"
             }
@@ -55898,10 +55898,10 @@
                     "930-1020"
                 ],
                 "Building": [
-                    "LOW"
+                    "SIG"
                 ],
                 "Room Number": [
-                    "102"
+                    "224"
                 ],
                 "Course": "SOC110"
             },
@@ -68106,17 +68106,17 @@
                     "W"
                 ],
                 "Time": [
-                    "930-1020",
+                    "130-220",
                     "1030-1150",
                     "130-450"
                 ],
                 "Building": [
-                    "HSK",
+                    "HST",
                     "HSD",
                     "HSD"
                 ],
                 "Room Number": [
-                    "K069",
+                    "T747",
                     "D165",
                     "D165"
                 ],
@@ -75517,10 +75517,10 @@
                     "1130-1220"
                 ],
                 "Building": [
-                    "BAG"
+                    "SAV"
                 ],
                 "Room Number": [
-                    "331A"
+                    "168"
                 ],
                 "Course": "CSE143"
             },
@@ -90302,27 +90302,6 @@
             }
         ]
     },
-    "FHL": {
-        "FHL490": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "W"
-                ],
-                "Time": [
-                    "400-450"
-                ],
-                "Building": [
-                    "LOW"
-                ],
-                "Room Number": [
-                    "101"
-                ],
-                "Course": "FHL490"
-            }
-        ]
-    },
     "SMEA": {
         "SMEA500": [
             {
@@ -91173,25 +91152,6 @@
                     "211"
                 ],
                 "Course": "OCEAN506"
-            }
-        ],
-        "OCEAN509": [
-            {
-                "Section": "A",
-                "Type": "LECT",
-                "Days": [
-                    "W"
-                ],
-                "Time": [
-                    "230-350"
-                ],
-                "Building": [
-                    "OCN"
-                ],
-                "Room Number": [
-                    "425"
-                ],
-                "Course": "OCEAN509"
             }
         ],
         "OCEAN510": [
@@ -95407,6 +95367,23 @@
                 ],
                 "Room Number": [
                     "138"
+                ],
+                "Course": "LAWA502"
+            },
+            {
+                "Section": "B",
+                "Type": "LECT",
+                "Days": [
+                    "MTWTh"
+                ],
+                "Time": [
+                    "130-245"
+                ],
+                "Building": [
+                    "LAW"
+                ],
+                "Room Number": [
+                    "133"
                 ],
                 "Course": "LAWA502"
             },

@@ -141,7 +141,7 @@ def parse_departments(campus):
     current_quarter = get_quarter(filter_=True)
     year = dttime.now().year
     if upcoming_quarter == 'WIN':
-        if dttime.now().month in [10, 11, 12]:
+        if dttime.now().month in [9, 10, 11, 12]:
             year += 1
     if type(current_quarter) == type([]):
         current_quarter = ''.join(current_quarter)

@@ -4178,14 +4178,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Course": "ANTH432",
                 "Days": [
                     "MW"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Section": "A",
                 "Time": [
@@ -4392,14 +4392,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Course": "ANTH532",
                 "Days": [
                     "MW"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Section": "A",
                 "Time": [
@@ -14346,30 +14346,6 @@
             "ST": []
         }
     },
-    "BCUSP131": {
-        "Lecture B": {
-            "LB": [],
-            "LECT": {
-                "Building": [
-                    "UW1"
-                ],
-                "Course": "BCUSP131",
-                "Days": [
-                    "MW"
-                ],
-                "Room Number": [
-                    "060"
-                ],
-                "Section": "B",
-                "Time": [
-                    "545-745P"
-                ],
-                "Type": "LECT"
-            },
-            "QZ": [],
-            "ST": []
-        }
-    },
     "BCUSP199": {
         "Lecture A": {
             "LB": [],
@@ -14778,93 +14754,7 @@
     },
     "BEARTH201": {
         "Lecture A": {
-            "LB": [
-                {
-                    "Building": [
-                        "HST"
-                    ],
-                    "Course": "NCLIN500",
-                    "Days": [
-                        "W"
-                    ],
-                    "Room Number": [
-                        "T627"
-                    ],
-                    "Section": "AA",
-                    "Time": [
-                        "400-620"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "HST"
-                    ],
-                    "Course": "NCLIN500",
-                    "Days": [
-                        "W"
-                    ],
-                    "Room Number": [
-                        "T627"
-                    ],
-                    "Section": "AB",
-                    "Time": [
-                        "400-620"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "HST"
-                    ],
-                    "Course": "NCLIN500",
-                    "Days": [
-                        "W"
-                    ],
-                    "Room Number": [
-                        "T627"
-                    ],
-                    "Section": "AC",
-                    "Time": [
-                        "400-620"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "HST"
-                    ],
-                    "Course": "NCLIN500",
-                    "Days": [
-                        "W"
-                    ],
-                    "Room Number": [
-                        "T627"
-                    ],
-                    "Section": "AD",
-                    "Time": [
-                        "400-620"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "HST"
-                    ],
-                    "Course": "NCLIN500",
-                    "Days": [
-                        "W"
-                    ],
-                    "Room Number": [
-                        "T627"
-                    ],
-                    "Section": "AE",
-                    "Time": [
-                        "400-620"
-                    ],
-                    "Type": "LB"
-                }
-            ],
+            "LB": [],
             "LECT": {
                 "Building": [
                     "UW2"
@@ -34116,7 +34006,7 @@
                         "W"
                     ],
                     "Room Number": [
-                        "108"
+                        "331A"
                     ],
                     "Section": "AD",
                     "Time": [
@@ -34343,7 +34233,7 @@
                         "M"
                     ],
                     "Room Number": [
-                        "331A"
+                        "108"
                     ],
                     "Section": "BD",
                     "Time": [
@@ -42987,14 +42877,14 @@
                 },
                 {
                     "Building": [
-                        "BAG"
+                        "SAV"
                     ],
                     "Course": "CSE143",
                     "Days": [
                         "TTh"
                     ],
                     "Room Number": [
-                        "331A"
+                        "168"
                     ],
                     "Section": "AG",
                     "Time": [
@@ -50647,7 +50537,93 @@
     },
     "DANCE520": {
         "Lecture A": {
-            "LB": [],
+            "LB": [
+                {
+                    "Building": [
+                        "HST"
+                    ],
+                    "Course": "NCLIN500",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "T627"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "400-620"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "HST"
+                    ],
+                    "Course": "NCLIN500",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "T627"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "400-620"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "HST"
+                    ],
+                    "Course": "NCLIN500",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "T627"
+                    ],
+                    "Section": "AC",
+                    "Time": [
+                        "400-620"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "HST"
+                    ],
+                    "Course": "NCLIN500",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "T627"
+                    ],
+                    "Section": "AD",
+                    "Time": [
+                        "400-620"
+                    ],
+                    "Type": "LB"
+                },
+                {
+                    "Building": [
+                        "HST"
+                    ],
+                    "Course": "NCLIN500",
+                    "Days": [
+                        "W"
+                    ],
+                    "Room Number": [
+                        "T627"
+                    ],
+                    "Section": "AE",
+                    "Time": [
+                        "400-620"
+                    ],
+                    "Type": "LB"
+                }
+            ],
             "LECT": {
                 "Building": [
                     "CHL"
@@ -51371,7 +51347,7 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "HSK",
+                    "HST",
                     "HSD",
                     "HSD"
                 ],
@@ -51382,13 +51358,13 @@
                     "W"
                 ],
                 "Room Number": [
-                    "K069",
+                    "T747",
                     "D165",
                     "D165"
                 ],
                 "Section": "A",
                 "Time": [
-                    "930-1020",
+                    "130-220",
                     "1030-1150",
                     "130-450"
                 ],
@@ -53654,14 +53630,14 @@
                 },
                 {
                     "Building": [
-                        "LOW"
+                        "PCAR"
                     ],
                     "Course": "ECON200",
                     "Days": [
                         "F"
                     ],
                     "Room Number": [
-                        "105"
+                        "295"
                     ],
                     "Section": "AG",
                     "Time": [
@@ -53864,14 +53840,14 @@
                 },
                 {
                     "Building": [
-                        "LOW"
+                        "MEB"
                     ],
                     "Course": "ECON200",
                     "Days": [
                         "F"
                     ],
                     "Room Number": [
-                        "105"
+                        "238"
                     ],
                     "Section": "BH",
                     "Time": [
@@ -60299,50 +60275,7 @@
                 ],
                 "Type": "LECT"
             },
-            "QZ": [
-                {
-                    "Building": [
-                        "HSI",
-                        "HSI"
-                    ],
-                    "Course": "DENTFN561",
-                    "Days": [
-                        "MTThF",
-                        "MTThF"
-                    ],
-                    "Room Number": [
-                        "I142",
-                        "I142"
-                    ],
-                    "Section": "AA",
-                    "Time": [
-                        "130-320",
-                        "330-520"
-                    ],
-                    "Type": "QZ"
-                },
-                {
-                    "Building": [
-                        "HSBB",
-                        "HSBB"
-                    ],
-                    "Course": "DENTFN561",
-                    "Days": [
-                        "MTThF",
-                        "MTThF"
-                    ],
-                    "Room Number": [
-                        "BB1602",
-                        "BB1602"
-                    ],
-                    "Section": "AB",
-                    "Time": [
-                        "130-320",
-                        "330-520"
-                    ],
-                    "Type": "QZ"
-                }
-            ],
+            "QZ": [],
             "ST": []
         }
     },
@@ -65095,7 +65028,71 @@
                 ],
                 "Type": "LECT"
             },
-            "QZ": [],
+            "QZ": [
+                {
+                    "Building": [
+                        "HST",
+                        "HST"
+                    ],
+                    "Course": "PHRMCY541",
+                    "Days": [
+                        "T",
+                        "T"
+                    ],
+                    "Room Number": [
+                        "T-480",
+                        "T-482"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "830-1020",
+                        "830-1020"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "HST",
+                        "HST"
+                    ],
+                    "Course": "PHRMCY541",
+                    "Days": [
+                        "T",
+                        "T"
+                    ],
+                    "Room Number": [
+                        "T-480",
+                        "T-482"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "1230-220",
+                        "1230-220"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "HST",
+                        "HST"
+                    ],
+                    "Course": "PHRMCY541",
+                    "Days": [
+                        "T",
+                        "T"
+                    ],
+                    "Room Number": [
+                        "T-480",
+                        "T-482"
+                    ],
+                    "Section": "AC",
+                    "Time": [
+                        "230-420",
+                        "230-420"
+                    ],
+                    "Type": "QZ"
+                }
+            ],
             "ST": []
         }
     },
@@ -69866,30 +69863,6 @@
             "ST": []
         }
     },
-    "FHL490": {
-        "Lecture A": {
-            "LB": [],
-            "LECT": {
-                "Building": [
-                    "LOW"
-                ],
-                "Course": "FHL490",
-                "Days": [
-                    "W"
-                ],
-                "Room Number": [
-                    "101"
-                ],
-                "Section": "A",
-                "Time": [
-                    "400-450"
-                ],
-                "Type": "LECT"
-            },
-            "QZ": [],
-            "ST": []
-        }
-    },
     "FIN350": {
         "Lecture A": {
             "LB": [],
@@ -74494,14 +74467,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "BAG"
+                    "SAV"
                 ],
                 "Course": "GENST199",
                 "Days": [
                     "W"
                 ],
                 "Room Number": [
-                    "331A"
+                    "136"
                 ],
                 "Section": "K2",
                 "Time": [
@@ -93068,6 +93041,28 @@
             "QZ": [],
             "ST": []
         },
+        "Lecture B": {
+            "LB": [],
+            "LECT": {
+                "Building": [
+                    "LAW"
+                ],
+                "Course": "LAWA502",
+                "Days": [
+                    "MTWTh"
+                ],
+                "Room Number": [
+                    "133"
+                ],
+                "Section": "B",
+                "Time": [
+                    "130-245"
+                ],
+                "Type": "LECT"
+            },
+            "QZ": [],
+            "ST": []
+        },
         "Lecture C": {
             "LB": [],
             "LECT": {
@@ -98457,14 +98452,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Course": "LING432",
                 "Days": [
                     "MW"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Section": "A",
                 "Time": [
@@ -98601,14 +98596,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Course": "LING532",
                 "Days": [
                     "MW"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Section": "A",
                 "Time": [
@@ -98623,14 +98618,14 @@
             "LB": [],
             "LECT": {
                 "Building": [
-                    "LOW"
+                    "CMU"
                 ],
                 "Course": "LING532",
                 "Days": [
                     "MW"
                 ],
                 "Room Number": [
-                    "102"
+                    "226"
                 ],
                 "Section": "B",
                 "Time": [
@@ -117498,30 +117493,6 @@
             "ST": []
         }
     },
-    "OCEAN509": {
-        "Lecture A": {
-            "LB": [],
-            "LECT": {
-                "Building": [
-                    "OCN"
-                ],
-                "Course": "OCEAN509",
-                "Days": [
-                    "W"
-                ],
-                "Room Number": [
-                    "425"
-                ],
-                "Section": "A",
-                "Time": [
-                    "230-350"
-                ],
-                "Type": "LECT"
-            },
-            "QZ": [],
-            "ST": []
-        }
-    },
     "OCEAN510": {
         "Lecture A": {
             "LB": [],
@@ -133158,71 +133129,7 @@
                 ],
                 "Type": "LECT"
             },
-            "QZ": [
-                {
-                    "Building": [
-                        "HST",
-                        "HST"
-                    ],
-                    "Course": "PHRMCY541",
-                    "Days": [
-                        "T",
-                        "T"
-                    ],
-                    "Room Number": [
-                        "T-480",
-                        "T-482"
-                    ],
-                    "Section": "AA",
-                    "Time": [
-                        "830-1020",
-                        "830-1020"
-                    ],
-                    "Type": "QZ"
-                },
-                {
-                    "Building": [
-                        "HST",
-                        "HST"
-                    ],
-                    "Course": "PHRMCY541",
-                    "Days": [
-                        "T",
-                        "T"
-                    ],
-                    "Room Number": [
-                        "T-480",
-                        "T-482"
-                    ],
-                    "Section": "AB",
-                    "Time": [
-                        "1230-220",
-                        "1230-220"
-                    ],
-                    "Type": "QZ"
-                },
-                {
-                    "Building": [
-                        "HST",
-                        "HST"
-                    ],
-                    "Course": "PHRMCY541",
-                    "Days": [
-                        "T",
-                        "T"
-                    ],
-                    "Room Number": [
-                        "T-480",
-                        "T-482"
-                    ],
-                    "Section": "AC",
-                    "Time": [
-                        "230-420",
-                        "230-420"
-                    ],
-                    "Type": "QZ"
-                }
-            ],
+            "QZ": [],
             "ST": []
         }
     },
@@ -135808,14 +135715,14 @@
                 },
                 {
                     "Building": [
-                        "LOW"
+                        "SIG"
                     ],
                     "Course": "SOC110",
                     "Days": [
                         "F"
                     ],
                     "Room Number": [
-                        "102"
+                        "224"
                     ],
                     "Section": "AB",
                     "Time": [
@@ -138286,7 +138193,50 @@
                 ],
                 "Type": "LECT"
             },
-            "QZ": [],
+            "QZ": [
+                {
+                    "Building": [
+                        "HSI",
+                        "HSI"
+                    ],
+                    "Course": "DENTFN561",
+                    "Days": [
+                        "MTThF",
+                        "MTThF"
+                    ],
+                    "Room Number": [
+                        "I142",
+                        "I142"
+                    ],
+                    "Section": "AA",
+                    "Time": [
+                        "130-320",
+                        "330-520"
+                    ],
+                    "Type": "QZ"
+                },
+                {
+                    "Building": [
+                        "HSBB",
+                        "HSBB"
+                    ],
+                    "Course": "DENTFN561",
+                    "Days": [
+                        "MTThF",
+                        "MTThF"
+                    ],
+                    "Room Number": [
+                        "BB1602",
+                        "BB1602"
+                    ],
+                    "Section": "AB",
+                    "Time": [
+                        "130-320",
+                        "330-520"
+                    ],
+                    "Type": "QZ"
+                }
+            ],
             "ST": []
         }
     },
@@ -146262,120 +146212,6 @@
             "QZ": [],
             "ST": []
         },
-        "Lecture C": {
-            "LB": [
-                {
-                    "Building": [
-                        "SCI"
-                    ],
-                    "Course": "TCHEM142",
-                    "Days": [
-                        "T"
-                    ],
-                    "Room Number": [
-                        "311"
-                    ],
-                    "Section": "CA",
-                    "Time": [
-                        "1010-1240"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "SCI"
-                    ],
-                    "Course": "TCHEM142",
-                    "Days": [
-                        "Th"
-                    ],
-                    "Room Number": [
-                        "311"
-                    ],
-                    "Section": "CB",
-                    "Time": [
-                        "1010-1240"
-                    ],
-                    "Type": "LB"
-                }
-            ],
-            "LECT": {
-                "Building": [
-                    "SCI"
-                ],
-                "Course": "TCHEM142",
-                "Days": [
-                    "TTh"
-                ],
-                "Room Number": [
-                    "105"
-                ],
-                "Section": "C",
-                "Time": [
-                    "130-330"
-                ],
-                "Type": "LECT"
-            },
-            "QZ": [],
-            "ST": []
-        },
-        "Lecture D": {
-            "LB": [
-                {
-                    "Building": [
-                        "SCI"
-                    ],
-                    "Course": "TCHEM142",
-                    "Days": [
-                        "T"
-                    ],
-                    "Room Number": [
-                        "311"
-                    ],
-                    "Section": "DA",
-                    "Time": [
-                        "1010-1240"
-                    ],
-                    "Type": "LB"
-                },
-                {
-                    "Building": [
-                        "SCI"
-                    ],
-                    "Course": "TCHEM142",
-                    "Days": [
-                        "Th"
-                    ],
-                    "Room Number": [
-                        "311"
-                    ],
-                    "Section": "DB",
-                    "Time": [
-                        "1010-1240"
-                    ],
-                    "Type": "LB"
-                }
-            ],
-            "LECT": {
-                "Building": [
-                    "SCI"
-                ],
-                "Course": "TCHEM142",
-                "Days": [
-                    "TTh"
-                ],
-                "Room Number": [
-                    "105"
-                ],
-                "Section": "D",
-                "Time": [
-                    "130-330"
-                ],
-                "Type": "LECT"
-            },
-            "QZ": [],
-            "ST": []
-        },
         "Lecture E": {
             "LB": [],
             "LECT": {
@@ -146422,6 +146258,58 @@
                 "Time": [
                     "550-750P",
                     "520-750P"
+                ],
+                "Type": "LECT"
+            },
+            "QZ": [],
+            "ST": []
+        },
+        "Lecture G": {
+            "LB": [],
+            "LECT": {
+                "Building": [
+                    "JOY",
+                    "SCI"
+                ],
+                "Course": "TCHEM142",
+                "Days": [
+                    "TTh",
+                    "T"
+                ],
+                "Room Number": [
+                    "113",
+                    "311"
+                ],
+                "Section": "G",
+                "Time": [
+                    "130-330",
+                    "1010-1240"
+                ],
+                "Type": "LECT"
+            },
+            "QZ": [],
+            "ST": []
+        },
+        "Lecture H": {
+            "LB": [],
+            "LECT": {
+                "Building": [
+                    "SCI",
+                    "SCI"
+                ],
+                "Course": "TCHEM142",
+                "Days": [
+                    "TTh",
+                    "Th"
+                ],
+                "Room Number": [
+                    "105",
+                    "311"
+                ],
+                "Section": "H",
+                "Time": [
+                    "130-330",
+                    "1010-1240"
                 ],
                 "Type": "LECT"
             },

@@ -37,7 +37,7 @@
                                 <strong>{{ data }}</strong></a>
                             </td>
                         </tr>
-                        {% elif 'Prerequisites' in name %}
+                        {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] %}
                             <td>
                                 {% set prereqs = data.replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
                                 {% for prereq in prereqs %}

@@ -37,6 +37,19 @@
                                 <strong>{{ data }}</strong></a>
                             </td>
                         </tr>
+                        {% elif 'Prerequisites' in name %}
+                            <td>
+                                {% set prereqs = data.replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
+                                {% for prereq in prereqs %}
+                                    <strong>
+                                        {% if prereqs.index(prereq) != prereqs|length - 1 %}    
+                                            <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>{{ ', ' }}
+                                        {% else %}
+                                            <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>
+                                        {% endif %}
+                                    </strong>
+                                {% endfor %}
+                            </td>
                         {% else %}
                             <td>{{ data }}</td>
                         {% endif %}

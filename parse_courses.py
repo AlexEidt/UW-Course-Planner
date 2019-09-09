@@ -432,7 +432,7 @@ def gather():
         logger.info(f'{__name__} ran in {(t2 - t1):.1f} seconds')
 
 
-if __name__ == '__main__' and False:
+if __name__ == '__main__':
     if check_connection():
         gather()
     else:

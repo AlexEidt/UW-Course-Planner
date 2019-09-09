@@ -3,20 +3,13 @@ Finds all combinations of classes given a list of courses to search"""
 
 import json, re, os, logging, itertools, time
 from datetime import datetime as dttime
-from threading import Timer
-from parse_schedules import get_next_quarter, get_quarter, CAMPUSES
+import uwtools
+from threading import Thread, Lock
+from parse_schedules import CAMPUSES
 from parse_schedules import main as parse_schedules
-from UW_Buildings import main as get_campuses
-from utility import logger, get_web_soup, check_connection, UW_Buildings, UW_Time_Schedules, Organized_Time_Schedules
-try:
-    import requests as r
-except Exception:
-    raise Exception('Requests not installed. Try installing with "pip install requests"')
-try:
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-except Exception:
-    raise Exception('selenium not installed. Try installing with "pip install selenium"')
+from utility import logger, check_connection, UW_Buildings, UW_Time_Schedules, Organized_Time_Schedules
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 def get_all_buildings(uw_campus):
@@ -24,25 +17,19 @@ def get_all_buildings(uw_campus):
     Returns
         Dictionary with abbreviation, full name pairings for all buildings
     """
-    upcoming_quarter = get_next_quarter()
-    current_quarter = get_quarter(filter_=True)
+    upcoming_quarter = uwtools.get_quarter(type_='upcoming')
+    quarter = uwtools.get_quarter()
     year = dttime.now().year
     if upcoming_quarter == 'WIN':
         if dttime.now().month in [9, 10, 11, 12]:
             year += 1
-    if type(current_quarter) == type([]):
-        current_quarter = ''.join(current_quarter)
-    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[uw_campus]['link'], upcoming_quarter, year)
-    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
     if quarter != upcoming_quarter and year == dttime.now().year + 1:
         year -= 1
-
-    get_campuses()
 
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    if f'{uw_campus}_{quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
+    if f'{uw_campus}_{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
         if check_connection():
             parse_schedules(console=False, update=True)
         else:
@@ -59,8 +46,7 @@ def get_all_buildings(uw_campus):
                 for x in course_data['Building']:
                     campus.add(x)
 
-    with open(os.path.normpath(f'{UW_Buildings}/UW_Buildings.json'), mode='r') as file:
-        buildings = json.loads(file.read())
+    buildings = uwtools.departments()
     total = set(itertools.chain(campus, buildings[uw_campus].keys()))
     check = [x for x in total if x not in buildings[uw_campus].keys()]
     for x in check:
@@ -107,25 +93,27 @@ def geocode(campus):
                     select_url(browser, f'{plus_codes_url} {full_name} {key}', key, full_name, end + 1)
             browser.quit()
 
+        threads = []
         for key, value in buildings[campus].items():
             chrome_options = Options()
             chrome_options.add_argument('--headless')
             browser = webdriver.Chrome(options=chrome_options)
             full_name = value['Name'].split('wings')[0]
             total = '{} {}'.format(plus_codes_url, full_name if value['Name'] else key)
-            window_open = Timer(0.1, select_url, args=(browser, total, key, full_name, 0))
-            window_open.start()
+            threads.append(Thread(target=select_url, args=(browser, total, key, full_name, 0)))
+            threads[-1].start()
+        
+        for thread in threads:
+            thread.join()
 
-        def create_json():
-            new_buildings = {}
-            for key, value in buildings[campus].items():
-                new_buildings[key] = value
-                if 'Latitude' not in value:
-                    new_buildings[key].update({'Latitude': '', 'Longitude': ''})
-            with open(os.path.normpath(f'{UW_Buildings}/{campus}_Coordinates.json'), mode='w') as file:
-                json.dump(new_buildings, file, sort_keys=True, indent=4)
-
-        Timer(10.0, create_json).start()
+        new_buildings = {}
+        for key, value in buildings[campus].items():
+            new_buildings[key] = value
+            if 'Latitude' not in value:
+                new_buildings[key].update({'Latitude': '', 'Longitude': ''})
+        with open(os.path.normpath(f'{UW_Buildings}/{campus}_Coordinates.json'), mode='w') as file:
+            json.dump(new_buildings, file, sort_keys=True, indent=4)
+            
     return dicts[1]
 
 
@@ -284,19 +272,15 @@ def main():
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    upcoming_quarter = get_next_quarter()
-    current_quarter = get_quarter(filter_=True)
+    quarter = uwtools.get_quarter()
+    upcoming_quarter = uwtools.get_quarter(type_='upcoming')
     year = dttime.now().year
     if upcoming_quarter == 'WIN':
         if dttime.now().month in [9, 10, 11, 12]:
             year += 1
-    if type(current_quarter) == type([]):
-        current_quarter = ''.join(current_quarter)
-    upcoming_courses_link = '{}{}{}/'.format(CAMPUSES['Seattle']['link'], upcoming_quarter, year)
-    quarter = upcoming_quarter if r.get(upcoming_courses_link).ok else current_quarter
     if quarter != upcoming_quarter and year == dttime.now().year + 1:
         year -= 1
-    if f'Seattle_{quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
+    if f'Seattle_{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
         courses = geocode_all()
         all_campuses = {}
         all_campuses.update(courses['Seattle'])

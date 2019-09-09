@@ -28,13 +28,14 @@
     </style>
     <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
     text-align: center; padding: 1em">
-        <strong>Requirements</strong>
+        <strong>Transcript</strong>
     </h2>
     <table>
         <col style="width: 30%">
         <col style="width: 30%">
         <col style="width: 30%">
         <tr>
+            <td></td>
             <td>
                 {% if transcript %}
                     <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Transcript Found">
@@ -42,27 +43,10 @@
                     <img class="card-img-top" src="{{ url_for('static', filename='Images/x.png') }}" alt="Transcript not Found">
                 {% endif %}
             </td>
-            <td>
-                {% if connected() %}
-                <img class="card-img-top" src="{{ url_for('static', filename='Images/check.png') }}" alt="Internet Connected">
-                {% else %}
-                    <img class="card-img-top" src="{{ url_for('static', filename='Images/x.png') }}" alt="Internet not Connected">
-                {% endif %}
-            </td>
-            <td>
-                {% if gather() %}
-                    <img class="card-img-top" id="gatherImg" src="{{ url_for('static', filename='Images/check.png') }}" alt="All required files present">
-                {% else %}
-                    <img class="card-img-top" id="gatherImg" src="{{ url_for('static', filename='Images/x.png') }}" alt="Some required files missing">
-                {% endif %}
-            </td>
+            <td></td>
         </tr>
         <tr>
-            <td><h5 class="card-title">Transcript</h5></td>
-            <td><h5 class="card-title">Internet Connection</h5></td>
-            <td><h5 class="card-title">Required Files</h5></td>
-        </tr>
-        <tr>
+            <td></td>
             <td>
                 <p>
                     <strong>OPTIONAL:</strong> To remove courses you've already taken, copy/paste your
@@ -70,19 +54,10 @@
                         into a text document and upload it. 
                 </p>
             </td>
-            <td>
-                <p>
-                    An Internet Connection is required to download course information from the UW course catalog.
-                </p>
-            </td>
-            <td>
-                <p>
-                    Files containing course information for every UW Campus and Departments are required in order for 
-                    course searches and prerequisite tree generation to work. File creation/updating may take up to 3 minutes.
-                </p>
-            </td>
+            <td></td>
         </tr>
         <tr>
+            <td></td>
             <td>
                 <form action="{{ url + 'upload'}}" id="file" method="POST" enctype="multipart/form-data">
                     <input type="file" name="transcript" style="padding: 1em" class="form-control-file"/>
@@ -90,18 +65,6 @@
                 </form>
             </td>
             <td></td>
-            <td>
-                <button id="gather" class="btn btn-primary">
-                    {% if gather() %}
-                        <span id="gatherBtn"></span>Update Course Catalogs
-                    {% else %}
-                        <span id="gatherBtn"></span>Create Files
-                    {% endif %}
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td colspan=3></td>
         </tr>
     </table>
     <script src="{{ url_for('static', filename='JavaScript/requirements.js') }}"></script>

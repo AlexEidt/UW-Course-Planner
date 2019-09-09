@@ -44,11 +44,11 @@ def get_web_soup(website_link):
     return Soup(source.data, features='lxml')
 
 
-def scan_transcript(course_dict, webapp=False):
+def scan_transcript(course_df, webapp=False):
     """Asks the user if their transcript should be scanned in to remove classes from the class
        tree that they've already taken.
     @params 
-        'course_dict': The dictionary of courses scanned in from the campus selected by the user
+        'course_df': The dictionary of courses scanned in from the campus selected by the user
     Returns
         List of courses taken from the transcript given
     """
@@ -81,7 +81,7 @@ def scan_transcript(course_dict, webapp=False):
             if match:
                 dropped = re.search(r'\d\.\d\s+W\d\s', line)
                 line_data = match.group(0).replace(' ', '')
-                if line_data in course_dict and not dropped:
+                if line_data in course_df.index and not dropped:
                     courses_taken.append(line_data)
     return courses_taken
 

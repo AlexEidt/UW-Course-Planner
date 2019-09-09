@@ -1,0 +1,37 @@
+// Prerequisites
+digraph {
+	graph [overlap=scale rankdir=TB splines=ortho]
+	edge [arrowhead=dot]
+	AMATH342 [label=AMATH342]
+	node [color=gray30 shape=invtrapezium style="rounded,filled"]
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	AMATH342 -> MATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	MATH125 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	MATH124 -> MATH120
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	MATH120 -> MATH098
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	MATH120 -> MATH103
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey87]
+	MATH103 -> MATH102
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey84]
+	MATH102 -> MATH100
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey90]
+	MATH120 -> MATH109
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	AMATH342 -> MATH135
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	MATH135 -> MATH134
+}

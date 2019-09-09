@@ -4,7 +4,7 @@
         <table class="table table-striped table table-hover">
             <th colspan=2 style="font-family: Verdana; text-align: center">
                 <strong>
-                    {{ '({}) {}'.format(department, department_dict['Total'][department]) }}
+                    {{ '({}) {}'.format(department, department_dict[department]) }}
                 </strong>
             </th>
             {% for course, data in course_dict.items() %}

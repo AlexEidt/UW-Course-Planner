@@ -132,22 +132,27 @@ def get_next_quarter():
     return ''.join({QUARTERS[q] for q in get_quarter()})
 
 
-def parse_departments(campus):
+def parse_departments(campus, automate=[]):
     """Finds all department schedule websites for the given campus
     @params:
         'campus': The campus to get schedules from
     """
-    upcoming_quarter = get_next_quarter()
-    current_quarter = get_quarter(filter_=True)
-    year = dttime.now().year
-    if upcoming_quarter == 'WIN':
-        if dttime.now().month in [9, 10, 11, 12]:
-            year += 1
-    if type(current_quarter) == type([]):
-        current_quarter = ''.join(current_quarter)
-    if not CAMPUSES[campus]['upper_case']:
-        upcoming_quarter = upcoming_quarter.lower()
-        current_quarter = current_quarter.lower()
+    if not automate:
+        upcoming_quarter = get_next_quarter()
+        current_quarter = get_quarter(filter_=True)
+        year = dttime.now().year
+        if upcoming_quarter == 'WIN':
+            if dttime.now().month in [9, 10, 11, 12]:
+                year += 1
+        if type(current_quarter) == type([]):
+            current_quarter = ''.join(current_quarter)
+        if not CAMPUSES[campus]['upper_case']:
+            upcoming_quarter = upcoming_quarter.lower()
+            current_quarter = current_quarter.lower()
+    else:
+        upcoming_quarter = automate[0]
+        year = automate[1]
+        current_quarter = 'SUM'
     upcoming_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], upcoming_quarter, year)
     current_courses_link = '{}{}{}/'.format(CAMPUSES[campus]['link'], current_quarter, dttime.now().year)
     courses_link = ''
@@ -249,7 +254,10 @@ def parse_schedules(department):
                         if len(new) > 1:
                             for i in range(1, len(new)):
                                 for key, value in zip(check_if_list, new[i].split(',')):
-                                    course_data_dict[key].append(value)
+                                    if key not in course_data_dict:
+                                        course_data_dict[key] = [value]
+                                    else:
+                                        course_data_dict[key].append(value)
                         course_data.append(course_data_dict)
         if crs_listed:
             if course_data:

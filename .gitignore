@@ -1,3 +1,4 @@
 *.pyc
 *.log
 /Prerequisite_Trees/
+/__pycache__/

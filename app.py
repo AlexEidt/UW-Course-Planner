@@ -6,7 +6,7 @@ import uwtools
 from create_tree import create_tree
 from geocode import get_combinations
 from geocode import main as check_schedules
-from utility import check_connection, scan_transcript, Organized_Time_Schedules
+from utility import scan_transcript, Organized_Time_Schedules
 from flask import Flask, redirect, url_for, render_template, jsonify, request
 
 

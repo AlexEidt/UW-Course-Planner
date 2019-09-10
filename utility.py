@@ -1,21 +1,10 @@
 """Common methods and Directory Names used by the other scripts"""
 
 import logging, re, json, os
-import urllib3 as URL
-try:
-    import requests
-except Exception:
-    raise Exception('Requests not installed. Try installing with "pip install requests"')
-try:
-    from bs4 import BeautifulSoup as Soup
-except Exception:
-    raise Exception('bs4 not installed. Try installing with "pip install beautifulsoup4"')
 
 # -----------------------Directories----------------------- #
-UW_Course_Catalogs = os.path.normpath(f'{os.getcwd()}/static/UW_Course_Catalogs')
 UW_Time_Schedules = os.path.normpath(f'{os.getcwd()}/static/UW_Time_Schedules')
 Organized_Time_Schedules = os.path.normpath(f'{UW_Time_Schedules}/Organized_Time_Schedules')
-UW_Buildings = os.path.normpath(f'{os.getcwd()}/static/UW_Buildings')
 Prerequisite_Trees = os.path.normpath(f'{os.getcwd()}/static/Prerequisite_Trees')
 # --------------------------------------------------------- #
 
@@ -32,18 +21,6 @@ logger.addHandler(handler)
 
 
 # -----------------------Methods----------------------- #
-def get_web_soup(website_link):
-    """Creates BeautifulSoup for the given website link
-    @params
-        'website_link': The website to be scraped
-    Returns
-        BeautifulSoup object for the given link
-    """
-    website = URL.PoolManager()
-    source = website.request('GET', website_link)
-    return Soup(source.data, features='lxml')
-
-
 def scan_transcript(course_df, webapp=False):
     """Asks the user if their transcript should be scanned in to remove classes from the class
        tree that they've already taken.
@@ -85,15 +62,3 @@ def scan_transcript(course_df, webapp=False):
                     courses_taken.append(line_data)
     return courses_taken
 
-
-def check_connection(url='https://www.google.com/'):
-    """Checks for a connection to the internet
-    Returns
-        True if internet is connected, False otherwise
-    """
-    try:
-        requests.get(url)
-    except Exception:
-        return False
-    else:
-        return True

@@ -4,15 +4,11 @@ Finds all combinations of classes given a list of courses to search"""
 import json, re, os, logging, itertools, time
 from datetime import datetime as dttime
 import uwtools
-from threading import Thread, Lock
-from parse_schedules import CAMPUSES
-from parse_schedules import main as parse_schedules
-from utility import logger, check_connection, UW_Buildings, UW_Time_Schedules, Organized_Time_Schedules
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from threading import Thread
+from utility import logger, UW_Time_Schedules, Organized_Time_Schedules
 
 
-def get_all_buildings(uw_campus):
+def get_all_buildings():
     """Creates a dictionary with building abbreviations and their full names
     Returns
         Dictionary with abbreviation, full name pairings for all buildings
@@ -29,103 +25,24 @@ def get_all_buildings(uw_campus):
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: pass
-    if f'{uw_campus}_{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
-        if check_connection():
-            parse_schedules(console=False, update=True)
+    if f'{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
+        df = uwtools.time_schedules(year=year, quarter=upcoming_quarter)
+        total = {}
+        if df is not None and not df.empty:
+            for dict_ in df.to_dict(orient='records'):
+                course_name = dict_['Course Name']
+                if course_name not in total:
+                    total[course_name] = [dict_]
+                else:
+                    total[course_name].append(dict_)
+            with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='w') as file:
+                json.dump(total, file, indent=4, sort_keys=True)
         else:
-            logger.critical('No Internet Connection')
-            print('No Internet Connection')
-
-    with open(os.path.normpath(f'{UW_Time_Schedules}/{uw_campus}_{quarter}{year}.json'), mode='r') as file:
-        courses = json.loads(file.read())
-
-    campus = set()
-    for _, dep_courses in courses.items():
-        for _, data in dep_courses.items():
-            for course_data in data:
-                for x in course_data['Building']:
-                    campus.add(x)
-
-    buildings = uwtools.departments()
-    total = set(itertools.chain(campus, buildings[uw_campus].keys()))
-    check = [x for x in total if x not in buildings[uw_campus].keys()]
-    for x in check:
-        buildings[uw_campus][x] = {'Name': ''}
-    return (buildings, courses)
+            upcoming_quarter = quarter
 
 
-def geocode(campus):
-    """Gets the GPS Coordinates for every building at UW
-    @params
-        'campus': The UW Campus to get Building Coordinates from
-    Returns
-        Dictionary of all courses offered at the given campus
-        for the current quarter
-    """
-    dicts = get_all_buildings(campus)
-    buildings = dicts[0]
-    if campus == 'Seattle':
-        plus_codes_url = 'https://plus.codes/map/UW'
-    else:
-        plus_codes_url = 'https://plus.codes/map/UW {}'.format(campus)
-
-    if f'{campus}_Coordinates.json' not in os.listdir(UW_Buildings):
-
-        def select_url(browser, url, key, full_name, end):
-            browser.get(url)
-            time.sleep(5)
-            html = browser.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
-            match = re.search(r'\d+\.\d+,-\d+\.\d+', str(html))
-            coords = match.group(0).split(',', 1) if match else ''
-            if coords:
-                if campus == 'Seattle':
-                    check_coords = int(coords[0].split('.', 1)[0]) == 47 and int(coords[1].split('.', 1)[0]) == -122
-                else:
-                    check_coords = True
-            else:
-                check_coords = False
-            if coords and check_coords:
-                buildings[campus][key].update({'Latitude': coords[0], 'Longitude': coords[1]})
-            elif end <= 1:
-                if end == 0:
-                    select_url(browser, f'{plus_codes_url} {key}', key, full_name, end + 1)
-                else:
-                    select_url(browser, f'{plus_codes_url} {full_name} {key}', key, full_name, end + 1)
-            browser.quit()
-
-        threads = []
-        for key, value in buildings[campus].items():
-            chrome_options = Options()
-            chrome_options.add_argument('--headless')
-            browser = webdriver.Chrome(options=chrome_options)
-            full_name = value['Name'].split('wings')[0]
-            total = '{} {}'.format(plus_codes_url, full_name if value['Name'] else key)
-            threads.append(Thread(target=select_url, args=(browser, total, key, full_name, 0)))
-            threads[-1].start()
-        
-        for thread in threads:
-            thread.join()
-
-        new_buildings = {}
-        for key, value in buildings[campus].items():
-            new_buildings[key] = value
-            if 'Latitude' not in value:
-                new_buildings[key].update({'Latitude': '', 'Longitude': ''})
-        with open(os.path.normpath(f'{UW_Buildings}/{campus}_Coordinates.json'), mode='w') as file:
-            json.dump(new_buildings, file, sort_keys=True, indent=4)
-            
-    return dicts[1]
-
-
-def geocode_all():
-    """Creates UW Time Schedule and UW Buildings json files if necessary.
-    Creates json files with all geocoded UW Buildings if necessary.
-    """
-    print('Geocoding all UW Buildings...')
-    courses_offered = {}
-    for campus in CAMPUSES.keys():
-        courses_offered[campus] = geocode(campus)
-    return courses_offered
+    with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='r') as file:
+        return json.loads(file.read())
 
 
 # --------------------------Time Methods--------------------------#       
@@ -253,13 +170,29 @@ class Sections:
         self.LB = []
         self.ST = []
     
-    def add_section(self, section, data):
-        if section == 'QZ':
-            self.QZ.append(data)
-        elif section == 'LB':
-            self.LB.append(data)
-        elif section == 'ST':
-            self.ST.append(data)
+    def add_section(self, section_type, data):
+        if section_type == 'QZ':
+            s_type = self.QZ
+        elif section_type == 'LB':
+            s_type = self.LB
+        elif section_type == 'ST':
+            s_type = self.ST
+        else:
+            return
+
+        for section in s_type:
+            if section['Section'] == data['Section']:
+                break
+        else:
+            for section_data in ['Building', 'Days', 'Room Number', 'Seats', 'Time']:
+                data[section_data] = [data[section_data]]
+            s_type.append(data)
+            return
+
+        for section in s_type:
+            if section['Section'] == data['Section']:
+                for section_data in ['Building', 'Days', 'Room Number', 'Seats', 'Time']:
+                    section[section_data].append(data[section_data])
 
 
 def main():
@@ -269,9 +202,12 @@ def main():
     this key are all the lectures for this course with quiz, lab and studio sections
     included as a list
     """
+    section_times = ['Building', 'Days', 'Room Number', 'Seats', 'Time']
+
     try:
         os.mkdir(UW_Time_Schedules)
-    except Exception: pass
+    except Exception: 
+        pass
     quarter = uwtools.get_quarter()
     upcoming_quarter = uwtools.get_quarter(type_='upcoming')
     year = dttime.now().year
@@ -280,26 +216,18 @@ def main():
             year += 1
     if quarter != upcoming_quarter and year == dttime.now().year + 1:
         year -= 1
-    if f'Seattle_{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
-        courses = geocode_all()
-        all_campuses = {}
-        all_campuses.update(courses['Seattle'])
-        all_campuses.update(courses['Bothell'])
-        all_campuses.update(courses['Tacoma'])
-        total = set()
-        for campus in CAMPUSES.keys():
-            for department in courses[campus].values():
-                for crs in department.keys():
-                    total.add(crs)
+    if f'{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
+        courses = get_all_buildings()
         course_map = {}
-        for course in total:
-            department = re.search(r'[A-Z&]+', course).group(0)
-            course_list = all_campuses[department][course]
+        for course in courses.keys():
+            course_list = courses[course]
             section_map = {}
             for section in course_list:
                 section_type = section['Type']
                 if section_type in ['LECT', 'VAR']:
                     course_sections = Sections()
+                    for section_data in section_times:
+                        section[section_data] = [section[section_data]]
                     course_sections.LECT = section
                     section_map['Lecture {}'.format(section['Section'])] = course_sections.__dict__
                 else:
@@ -313,9 +241,6 @@ def main():
 
 
 if __name__ == '__main__':
-    if check_connection():
-        main()
-    else:
-        print('No Internet Connection')
-        logger.critical('No Internet Connection')
+    main()
+
 

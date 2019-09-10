@@ -153,18 +153,18 @@ function show_schedule(resp) {
                 var building = resp.option[i][j].Building[k];
                 var o = resp.option[i][j];
                 if (building_map.hasOwnProperty(building)) {
-                    building_map[building].push('<strong>' + o.Course + '</strong>' 
+                    building_map[building].push('<strong>' + o['Course Name'] + '</strong>' 
                                                 + ' ' + o.Type + ' ' + o.Section + 
                                                 '<br>' + o.Days[k] + ' ' + o.Time[k] 
                                                 + ' ' + building + ' ' + o['Room Number'][k]);
                 } else {
-                    building_map[building] = ['<strong>' + o.Course + '</strong>' 
+                    building_map[building] = ['<strong>' + o['Course Name'] + '</strong>' 
                                             + ' ' + o.Type + ' ' + o.Section + 
                                             '<br>' + o.Days[k] + ' ' + o.Time[k] + 
                                             ' ' + building + ' ' + o['Room Number'][k]];
                 }
-                if (!headerText.includes(o.Course)) {
-                    headerText += o.Course + ' ' + o.Section + ', ';
+                if (!headerText.includes(o['Course Name'])) {
+                    headerText += o['Course Name'] + ' ' + o.Section + ', ';
                 } else {
                     headerText += o.Section + ', ';
                 }

@@ -1,18 +1,14 @@
 """Creates a Prerequisite tree for a given course either as a PNG or in the console"""
 
 
-import os    
-import re
+import os  , re  
 from utility import logger, scan_transcript, Prerequisite_Trees
-try:
-    from graphviz import Digraph
-except Exception:
-    raise Exception('Graphviz not installed. Try installing with "pip install graphviz"')
-    
+from graphviz import Digraph
+
 
 # Change PATH setup for Graphviz folder here:
 # --------------------------GRAPHVIZ PATH SETUP------------------------- #
-os.environ["PATH"] += os.pathsep + 'C:\\Graphviz\\bin'
+os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
 # ---------------------------------------------------------------------- #
 
 level_counter = None

@@ -1,19 +1,47 @@
 {% extends "layout.html" %}
 {% block content %}
     <style>
-    td {
-        font-weight: bold;
-    }
-    .col-md-3 {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+        td {
+            font-weight: bold;
+        }
+        .col-md-3 {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            padding: 0.5em;
+        }
+        h6, h5 {
+            text-align: center;
+        }
+        #inputs {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .form-inline {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #chosen {
+            margin: 0px auto;
+            table-layout: fixed;
+            width: 30%;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #mapid {
+            height: 550px;
+        }
     </style>
-    <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif; text-align: center; padding: 0.5em">
+    <h2>
         <strong>MyMap</strong>
     </h2>
-    <div id="inputs" class="form-inline" style="text-align: center; margin-left: auto; margin-right: auto; display: block">
+    <div id="inputs" class="form-inline">
         <input type="text" class="form-control" id="course" placeholder="Enter Course...">
         <button class="btn btn-primary" id="btn">
             <span id="select"></span>Add Course
@@ -35,19 +63,27 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
-                <div class="col-md-1"><button class="btn btn-primary" id="prev"><span id="prevSpan"></span>Prev</button></div>
-                <div class="col-md-6"><h5 id="sectionsTitle" style="text-align: center"></h5></div>
-                <div class="col-md-1"><button class="btn btn-primary" id="next"><span id="nextSpan"></span>Next</button></div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary" id="prev">
+                        <span id="prevSpan"></span>Prev
+                    </button>
+                </div>
+                <div class="col-md-6"><h5 id="sectionsTitle"></h5></div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary" id="next">
+                        <span id="nextSpan"></span>Next
+                    </button>
+                </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
             </div>
         </div>
-        <h6 style="text-align: center">Click on the pins to see course information</h6>
+        <h6>Click on the pins to see course information</h6>
     </div>
     <hr>
-    <div class="form-inline" style="margin-left: auto; margin-right: auto">
-        <table id="chosen" style="margin: 0px auto; table-layout: fixed; width: 30%; vertical-align: middle; text-align: center"></table>
+    <div class="form-inline">
+        <table id="chosen"></table>
     </div>
-    <div id="mapid" style="height: 550px"></div>
+    <div id="mapid"></div>
     <script src="{{ url_for('static', filename='JavaScript/geocode.js') }}"></script>
 {% endblock content %}

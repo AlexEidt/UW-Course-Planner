@@ -2,13 +2,13 @@
 
 import json, re, os, itertools, time, uwtools
 from datetime import datetime
-from utility import UW_Time_Schedules, Organized_Time_Schedules
 
+UW_Time_Schedules = os.path.normpath(f'{os.getcwd()}/static/UW_Time_Schedules')
+Organized_Time_Schedules = os.path.normpath(f'{UW_Time_Schedules}/Organized_Time_Schedules')
 
 # --------------------------Time Methods--------------------------#       
 get_time = lambda t: [t[0:1], t[1:]] if len(t) == 3 else [t[0:2], t[2:]]
 check_pm = lambda t: ' PM' if t else ' AM'
-select_pm = lambda i, pm1, pm2: pm1 if not i else pm2
 convert = lambda t: time.strftime('%H:%M:%S', time.strptime(t, '%I:%M %p'))
 check_convert_pm = lambda t: convert('12:01 AM') < convert(t) < convert('6:30 AM') or convert('10:30 PM') < convert(t) < convert('11:59 PM')
 convert_pm = lambda t, pm: f'{pm[0]} {switch_pm(pm[-1])}' if check_convert_pm(t) else t
@@ -26,20 +26,20 @@ def has_overlap(time1, time2):
     """
     pm1 = 'P' in time1
     pm2 = 'P' in time2
-    time1 = time1.replace('P', '')
-    time2 = time2.replace('P', '')
+    time1 = time1.replace('P', '', 1)
+    time2 = time2.replace('P', '', 1)
     times = list(itertools.chain(time1.split('-', 1), time2.split('-', 1)))
     times = list(map(get_time, times))
     course_times = []
     for i in range(0, len(times), 2):
-        pm = select_pm(i, pm1, pm2)
+        pm = pm1 if not i else pm2
         t1 = f'{times[i][0]}:{times[i][1]}{check_pm(pm)}'
         t2 = f'{times[i + 1][0]}:{times[i + 1][1]}{check_pm(pm)}'
         time1 = convert(convert_pm(t1, t1.rsplit(' ', 1)))
         time2 = convert(convert_pm(t2, t2.rsplit(' ', 1)))
         course_times.append((time1, time2))
     t1 = course_times[0]
-    return t1[0] < course_times[1][0] < t1[1] or t1[0] < course_times[1][1] < t1[1]
+    return t1[0] <= course_times[1][0] <= t1[1] or t1[0] <= course_times[1][1] <= t1[1]
 
 
 def get_days(offered):
@@ -108,12 +108,9 @@ def get_combinations(planned_courses):
         # Get all Lecture/Quiz/Lab/Studio combinations for the given course
         for section in search:
             products = []
-            if section['QZ']:
-                products.append(section['QZ'])
-            if section['LB']:
-                products.append(section['LB'])
-            if section['ST']:
-                products.append(section['ST'])
+            for section_type in ['QZ', 'LB', 'ST']:
+                if section[section_type]:
+                    products.append(section[section_type])
             products.append([section['LECT']])
             course_sections.append(list(itertools.product(*products)))
         total.append([y for x in course_sections for y in x])
@@ -144,7 +141,7 @@ class Sections:
         # For some courses, such as CHEM142 on the Seattle Campus, the Quiz and Lab Section
         # are grouped in the same section. This is why the 'Building', 'Days', 'Room Number', 
         # 'Seats', and 'Time' sections are represented as lists.
-        for section in s_type:
+        for section in s_type[::-1]:
             if section['Section'] == data['Section']:
                 break
         else:
@@ -240,5 +237,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-

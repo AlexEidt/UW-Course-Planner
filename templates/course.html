@@ -1,61 +1,66 @@
 {% extends "layout.html" %}
 {% block content %}
     <style>
-    p {
-        width: 80%;
-        padding: 2em;
-        text-align: left;
-    }
+        p {
+            width: 80%;
+            padding: 2em;
+            text-align: left;
+        }
+        th {
+            text-align: center;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
     </style>
     {% if in_dict %}
         <div class="table-responsive">
             <table class="table table-striped">
-            <col style="width: 20%">
-            <col style="width: 60%">
-            <th colspan=2 style="text-align: center; font-family: Verdana">
-                {{ '{} --- {}'.format(course, course_data['Course Name']) }}</th>
-            <tr>
-                {% if levels > 3 %}
-                    <td colspan=2><img id="display" src=""
-                        style="display: block; margin-left: auto; margin-right: auto; width: 70%" class="img-responsive"></td>
-                {% elif levels > 0 %}
-                    <td colspan=2><img id="display" src=""
-                        style="display: block; margin-left: auto; margin-right: auto; width: 25%" class="img-responsive"></td>
-                {% endif %}
-            </tr>
-            <script>
-                var course = "{{ course }}";
-                var time = new Date();
-                $('img#display').attr('src', '../static/Prerequisite_Trees/' + course + '.png?none=' + time.getTime());
-            </script>
-            {% for name, data in course_data.items() %}
-                {% if data %}
-                    <tr>
-                        <td><strong>{{ name }}</strong></td>
-                        {% if 'Department Name' in name %}
-                            <td><a href="{{ url + data }}">
-                                <strong>{{ data }}</strong></a>
-                            </td>
+                <col style="width: 20%">
+                <col style="width: 60%">
+                <th colspan=2>
+                    {{ '{} --- {}'.format(course, course_data['Course Name']) }}
+                </th>
+                <tr>
+                    {% if levels > 3 %}
+                        <td colspan=2><img id="display" src=""
+                            style="display: block; margin-left: auto; margin-right: auto; width: 70%" class="img-responsive"></td>
+                    {% elif levels > 0 %}
+                        <td colspan=2><img id="display" src=""
+                            style="display: block; margin-left: auto; margin-right: auto; width: 25%" class="img-responsive"></td>
+                    {% endif %}
+                </tr>
+                <script>
+                    var course = "{{ course }}";
+                    var time = new Date();
+                    $('img#display').attr('src', '../static/Prerequisite_Trees/' + course + '.png?none=' + time.getTime());
+                </script>
+                {% for name, data in course_data.items() %}
+                    {% if data %}
+                        <tr>
+                            <td><strong>{{ name }}</strong></td>
+                            {% if 'Department Name' in name %}
+                                <td><a href="{{ url + data }}">
+                                    <strong>{{ data }}</strong></a>
+                                </td>
+                            </tr>
+                            {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] %}
+                                <td>
+                                    {% set prereqs = data.replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
+                                    {% for prereq in prereqs %}
+                                        <strong>
+                                            {% if prereqs.index(prereq) != prereqs|length - 1 %}    
+                                                <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>{{ ', ' }}
+                                            {% else %}
+                                                <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>
+                                            {% endif %}
+                                        </strong>
+                                    {% endfor %}
+                                </td>
+                            {% else %}
+                                <td>{{ data }}</td>
+                            {% endif %}
                         </tr>
-                        {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] %}
-                            <td>
-                                {% set prereqs = data.replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
-                                {% for prereq in prereqs %}
-                                    <strong>
-                                        {% if prereqs.index(prereq) != prereqs|length - 1 %}    
-                                            <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>{{ ', ' }}
-                                        {% else %}
-                                            <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>
-                                        {% endif %}
-                                    </strong>
-                                {% endfor %}
-                            </td>
-                        {% else %}
-                            <td>{{ data }}</td>
-                        {% endif %}
-                    </tr>
-                {% endif %}
-            {% endfor %}
+                    {% endif %}
+                {% endfor %}
             </table>
         </div>
     {% else %}

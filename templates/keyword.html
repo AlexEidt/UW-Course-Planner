@@ -1,10 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h2 style="font-family: Trebuchet MS, Helvetica, sans-serif;
-               text-align: center; padding: 0.5em">
+    <style>
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            padding: 0.5em;
+        }
+        .form-inline {
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+    </style>
+    <h2>
         <strong>Course Keyword Search</strong>
     </h2>
-    <div class="form-inline" style="text-align: center; margin-left: auto; margin-right: auto; display: block">
+    <div class="form-inline">
         <input type="text" class="form-control" id="keywordInput" placeholder="Keyword">
         <button class="btn btn-primary" id="btn">
             <span></span>Search

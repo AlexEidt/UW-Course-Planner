@@ -2,26 +2,24 @@
 
 
 import os, re  
-from utility import Prerequisite_Trees
 from graphviz import Digraph
-
 
 # Change PATH setup for Graphviz folder here:
 # --------------------------GRAPHVIZ PATH SETUP------------------------- #
 os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
 # ---------------------------------------------------------------------- #
+Prerequisite_Trees = os.path.normpath(f'{os.getcwd()}/static/Prerequisite_Trees')
 
 level_counter = None
 width_counter = None
 total = []
 
-def create_tree(course_df, courses_taken, course, indent):
+def create_tree(course_df, courses_taken, course):
     """Starts the tree by adding the selected course as the top element
     @params
         'course_df': The dictionary of courses
         'courses_taken': Courses already taken from the user, scanned in from transcript
         'course': The course in question
-        UNUSED: 'indent': The indentation level for each prerequisite course
     Returns
         The number of levels in the tree
     """

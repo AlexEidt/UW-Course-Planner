@@ -3,9 +3,8 @@
 import re, json, os, uwtools
 from datetime import datetime
 from create_tree import create_tree
-from schedule import get_combinations
+from schedule import get_combinations, Organized_Time_Schedules
 from schedule import main as check_schedules
-from utility import scan_transcript, Organized_Time_Schedules
 from flask import Flask, redirect, url_for, render_template, jsonify, request
 
 
@@ -14,6 +13,31 @@ app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
 catalogs = uwtools.course_catalogs()
 uw_departments = uwtools.departments()
+
+
+def scan_transcript():
+    """Asks the user if their transcript should be scanned in to remove classes from the class
+       tree that they've already taken.
+    Returns
+        List of courses taken from the transcript given
+    """
+    try:
+        open('Transcript.txt')
+    except FileNotFoundError:
+        return []
+    else:
+        courses_taken = []
+        with open('Transcript.txt', mode='r') as transcript:
+            for line in transcript:
+                if 'CUMULATIVE CREDIT SUMMARY' in line:
+                    break
+                match = re.search(r'([A-Z& ]+\s?\d{3})', line)
+                if match:
+                    dropped = re.search(r'\d\.\d\s+W\d\s', line)
+                    line_data = match.group(0).replace(' ', '')
+                    if line_data in catalogs.index and not dropped:
+                        courses_taken.append(line_data)
+        return courses_taken
 
 
 @app.route('/')
@@ -38,7 +62,7 @@ def search():
     course = request.form['name'].upper().replace(' ', '')
     if course in catalogs.index:
         # Create the Prerequisite Tree if necessary for the course page
-        levels = create_tree(catalogs, scan_transcript(catalogs), course, None)
+        levels = create_tree(catalogs, scan_transcript(), course)
         return render_template('course.html', course=course, course_data=catalogs.loc[course].to_dict(), 
                                 levels=levels)
     return redirect(url_for('index'))
@@ -58,7 +82,7 @@ def _get_tree():
             # ND -> Not a Department
             img = f'ND {course}'
     else:
-        courses_taken = scan_transcript(catalogs)
+        courses_taken = scan_transcript()
         if course in courses_taken:
             # AT -> Already Taken
             img = f'AT {course}'
@@ -66,7 +90,7 @@ def _get_tree():
             if course in catalogs.index:
                 if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
                     if not search_course:
-                        levels = create_tree(catalogs, courses_taken, course, None)
+                        levels = create_tree(catalogs, courses_taken, course)
                         img = f'{course}.png'
                     else:
                         img = course
@@ -193,7 +217,7 @@ def department(department):
             department_dict=department_dict, url=request.url_root, department=department,
             in_dict=department in department_dict)
     else:
-        levels = create_tree(catalogs, scan_transcript(catalogs), department, None)
+        levels = create_tree(catalogs, scan_transcript(), department)
         return render_template('course.html', course=department, 
             course_data=catalogs.loc[department].to_dict(), levels=levels,
             in_dict=department in catalogs.index, url=request.url_root)

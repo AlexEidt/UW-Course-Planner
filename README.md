@@ -16,6 +16,7 @@ Script | Purpose
 --- | ---
 `app.py` | Runs the Flask Application on the localhost. Alternatively go to [alexeidt.pythonanywhere.com](http://alexeidt.pythonanywhere.com/) to see the same site.
 `create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. Not runnable by itself.
+`schedule.py` | Creates an Organized Time Schedule for the courses offered for the current quarter at UW.
 `utility.py` | Basic methods and other functionality shared by the other modules. Not runnable by itself.
 
 #### UW Course Catalogs

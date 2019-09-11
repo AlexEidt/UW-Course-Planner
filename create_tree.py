@@ -1,8 +1,8 @@
 """Creates a Prerequisite tree for a given course either as a PNG or in the console"""
 
 
-import os  , re  
-from utility import logger, scan_transcript, Prerequisite_Trees
+import os, re  
+from utility import Prerequisite_Trees
 from graphviz import Digraph
 
 
@@ -15,7 +15,7 @@ level_counter = None
 width_counter = None
 total = []
 
-def create_tree(course_df, courses_taken, course, indent, webapp=False):
+def create_tree(course_df, courses_taken, course, indent):
     """Starts the tree by adding the selected course as the top element
     @params
         'course_df': The dictionary of courses
@@ -27,7 +27,7 @@ def create_tree(course_df, courses_taken, course, indent, webapp=False):
     """
     # Tree used to draw the course prerequisite tree
     tree = Digraph(
-        comment='Prerequisites',
+        comment=f'{course} Prerequisites',
         graph_attr = {'rankdir':'TB', 'splines':'ortho', 'overlap':'scale'},
         edge_attr = {'arrowhead': 'dot'}
     )
@@ -44,9 +44,8 @@ def create_tree(course_df, courses_taken, course, indent, webapp=False):
             create_tree_helper(course_df, course, 0, courses_taken, tree)
             levels = max(level_counter)
             if levels:
-                tree.render(os.path.normpath(f'{Prerequisite_Trees}/{course}'), view=not webapp, format='png')
-            logger.info(f"Prerequisite Tree created for {course} in 'static/Prerequisite_Trees'")
-            return min(list((levels, max(width_counter))))
+                tree.render(os.path.normpath(f'{Prerequisite_Trees}/{course}'), view=False, format='png')
+            return min((levels, max(width_counter)))
     return -1
 
 
@@ -77,40 +76,3 @@ def create_tree_helper(course_df, course, level, courses_taken, tree):
                                 tree.attr('node', fillcolor=f'grey{str(99 - (level * 3))}' if not i else 'cyan')
                                 tree.edge(course, option)
                                 create_tree_helper(course_df, option, level + 1, courses_taken, tree)
-
-
-def console_tree(course_df, courses_taken, course, indent):
-    """Recursively prints all the prerequisite courses for the given 'course'
-    @params
-        'course_df': The dictionary of courses
-        'courses_taken': Courses already taken from the user, scanned in from transcript
-        'course': The course in question
-        NOT USED 'indent': The indentation level for each prerequisite course
-    """
-
-    def search_for(req, char):
-        for course in req:
-            if char in course:
-                return course
-        return ''
-
-    if course and course in course_df.index and course not in courses_taken:  
-        check = course_df.loc[course]['Prerequisites'].split(';')
-        for req in check:
-            list_reqs = split_course.split(req)
-            if set(list_reqs).isdisjoint(courses_taken):
-                for reqcourse in list_reqs:
-                    if reqcourse:
-                        branch = f'{indent}{reqcourse}'
-                        if len(branch.strip()) is not 1 and branch.strip().replace('|', ''):
-                            if len(list_reqs) <= 1 and '&&' not in req and '/' not in req:
-                                print(branch) 
-                            elif reqcourse in search_for(req.split(','), '&&').split('&&'):
-                                print(f'{branch}&')
-                            elif reqcourse in search_for(req.split(','), '/').split('/'):
-                                print(f'{branch}#')
-                            else:
-                                print(f'{branch}*')
-                        console_tree(course_df, courses_taken, reqcourse, indent + '|   ')
-                if len(check) > 1 and len(list_reqs) > 1:
-                    print(indent.replace('|   ', '', 1))

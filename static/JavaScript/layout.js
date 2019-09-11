@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {   
     $('button#searchBtn').on('click', function() {
         var course = $('#courseSearch').val();
         course += ' SearchCourse';

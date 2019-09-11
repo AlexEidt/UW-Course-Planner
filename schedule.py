@@ -1,48 +1,8 @@
-"""Geocodes all Building on the UW Seattle Campus
-Finds all combinations of classes given a list of courses to search"""
+"""Finds all combinations of classes given a list of courses to search"""
 
-import json, re, os, logging, itertools, time
-from datetime import datetime as dttime
-import uwtools
-from threading import Thread
-from utility import logger, UW_Time_Schedules, Organized_Time_Schedules
-
-
-def get_all_buildings():
-    """Creates a dictionary with building abbreviations and their full names
-    Returns
-        Dictionary with abbreviation, full name pairings for all buildings
-    """
-    upcoming_quarter = uwtools.get_quarter(type_='upcoming')
-    quarter = uwtools.get_quarter()
-    year = dttime.now().year
-    if upcoming_quarter == 'WIN':
-        if dttime.now().month in [9, 10, 11, 12]:
-            year += 1
-    if quarter != upcoming_quarter and year == dttime.now().year + 1:
-        year -= 1
-
-    try:
-        os.mkdir(UW_Time_Schedules)
-    except Exception: pass
-    if f'{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
-        df = uwtools.time_schedules(year=year, quarter=upcoming_quarter)
-        total = {}
-        if df is not None and not df.empty:
-            for dict_ in df.to_dict(orient='records'):
-                course_name = dict_['Course Name']
-                if course_name not in total:
-                    total[course_name] = [dict_]
-                else:
-                    total[course_name].append(dict_)
-            with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='w') as file:
-                json.dump(total, file, indent=4, sort_keys=True)
-        else:
-            upcoming_quarter = quarter
-
-
-    with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='r') as file:
-        return json.loads(file.read())
+import json, re, os, itertools, time, uwtools
+from datetime import datetime
+from utility import UW_Time_Schedules, Organized_Time_Schedules
 
 
 # --------------------------Time Methods--------------------------#       
@@ -158,7 +118,7 @@ def get_combinations(planned_courses):
             course_sections.append(list(itertools.product(*products)))
         total.append([y for x in course_sections for y in x])
     # Find all course combinations where there are no course overlaps
-    for combo in itertools.filterfalse(lambda x: check_overlap(x), list(itertools.product(*total))):
+    for combo in itertools.filterfalse(lambda x: check_overlap(x), itertools.product(*total)):
         yield combo
 
 
@@ -180,6 +140,10 @@ class Sections:
         else:
             return
 
+        # Check if Section is already in the list for that section type.
+        # For some courses, such as CHEM142 on the Seattle Campus, the Quiz and Lab Section
+        # are grouped in the same section. This is why the 'Building', 'Days', 'Room Number', 
+        # 'Seats', and 'Time' sections are represented as lists.
         for section in s_type:
             if section['Section'] == data['Section']:
                 break
@@ -204,27 +168,63 @@ def main():
     """
     section_times = ['Building', 'Days', 'Room Number', 'Seats', 'Time']
 
+    # Check if static/UW_Time_Schedules exists and create this directory if necessary
     try:
         os.mkdir(UW_Time_Schedules)
     except Exception: 
         pass
+    # Check if static/UW_Time_Schedules/Organized_Time_Schedules exists and create 
+    # this directory if necessary
+    try:
+        os.mkdir(Organized_Time_Schedules)
+    except Exception:
+        pass
+
     quarter = uwtools.get_quarter()
     upcoming_quarter = uwtools.get_quarter(type_='upcoming')
-    year = dttime.now().year
+    year = datetime.now().year    
     if upcoming_quarter == 'WIN':
-        if dttime.now().month in [9, 10, 11, 12]:
-            year += 1
-    if quarter != upcoming_quarter and year == dttime.now().year + 1:
-        year -= 1
-    if f'{upcoming_quarter}{year}.json' not in os.listdir(UW_Time_Schedules):
-        courses = get_all_buildings()
+        year += 1
+
+    time_schedules_dir = os.listdir(UW_Time_Schedules)
+    
+    if f'{upcoming_quarter}{year}.json' not in time_schedules_dir:
+        df = uwtools.time_schedules(year=year, quarter=upcoming_quarter)
+        # If the time schedule for the upcoming quarter is not available, check if
+        # the time schedule for the current quarter has already been created. 
+        # The time schedule for the current quarter will always be available.
+        if df is None or df.empty:
+            year = year - 1 if upcoming_quarter == 'WIN' else year
+            if f'{quarter}{year}.json' not in time_schedules_dir:
+                df = uwtools.time_schedules(year=year, quarter=quarter)
+            else:
+                return
+
+        # Create a dictionary with Course Names (i.e EE235) as keys and a list of course sections
+        # (as dictionaries) as values. 
+        total = {}
+        for dict_ in df.to_dict(orient='records'):
+            course_name = dict_['Course Name']
+            if course_name not in total:
+                total[course_name] = [dict_]
+            else:
+                total[course_name].append(dict_)
+        # Store the course dictionary in a .json file
+        with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='w') as file:
+            json.dump(total, file, indent=4, sort_keys=True)
+    
+        # Create a dictionary with course names (i.e EE235) as keys.
+        # The value for every key is another dictionary with Lectures as keys (i.e Lecture A).
+        # These lecture keys have another dictionary with section types as keys (LECT, QZ, LB, ST).
+        # The LECT key has the information for the lecture, every other key has a list as a value with
+        # dictionaries representing every QZ/LB/ST section for that lecture.
         course_map = {}
-        for course in courses.keys():
-            course_list = courses[course]
+        for course in total.keys():
+            course_list = total[course]
             section_map = {}
             for section in course_list:
                 section_type = section['Type']
-                if section_type in ['LECT', 'VAR']:
+                if section_type == 'LECT':
                     course_sections = Sections()
                     for section_data in section_times:
                         section[section_data] = [section[section_data]]
@@ -233,9 +233,7 @@ def main():
                 else:
                     course_sections.add_section(section_type, section)
             course_map[course] = section_map
-        try:
-            os.mkdir(Organized_Time_Schedules)
-        except Exception: pass
+        # Store these Organized Time Schedules as a .json file
         with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='w') as file:
             json.dump(course_map, file, indent=4, sort_keys=True)
 

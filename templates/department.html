@@ -5,7 +5,7 @@
             font-family: Verdana;
             text-align: center;
         }
-        td {
+        #abbreviation {
             text-align: center;
         }
     </style>
@@ -18,7 +18,7 @@
             </th>
             {% for course, data in course_dict.items() %}
                 <tr>
-                    <td>
+                    <td id="abbreviation">
                         <a href="{{ url + course }}" target="_blank">
                             <strong>{{ course }}</strong>
                         </a>

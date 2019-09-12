@@ -229,7 +229,8 @@ def main():
                     section_map['Lecture {}'.format(section['Section'])] = course_sections.__dict__
                 else:
                     course_sections.add_section(section_type, section)
-            course_map[course] = section_map
+            if section_map:
+                course_map[course] = section_map
         # Store these Organized Time Schedules as a .json file
         with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='w') as file:
             json.dump(course_map, file, indent=4, sort_keys=True)

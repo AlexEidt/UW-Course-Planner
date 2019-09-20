@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
 catalogs = uwtools.course_catalogs()
-uw_departments = uwtools.departments()
+uw_departments = uwtools.departments(struct='dict', flatten='campus')
 
 
 def scan_transcript():

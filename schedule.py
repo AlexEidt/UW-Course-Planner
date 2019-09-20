@@ -177,8 +177,8 @@ def main():
     except Exception:
         pass
 
-    quarter = uwtools.get_quarter()
-    upcoming_quarter = uwtools.get_quarter(type_='upcoming')
+    quarter = uwtools.get_quarter(filter_=True)
+    upcoming_quarter = uwtools.get_quarter(filter_=True, type_='upcoming')
     year = datetime.now().year    
     if upcoming_quarter == 'WIN':
         year += 1
@@ -186,25 +186,26 @@ def main():
     time_schedules_dir = os.listdir(UW_Time_Schedules)
     
     if f'{upcoming_quarter}{year}.json' not in time_schedules_dir:
-        df = uwtools.time_schedules(year=year, quarter=upcoming_quarter)
+        df = uwtools.time_schedules(year, upcoming_quarter, json_ready=True, struct='dict')        
         # If the time schedule for the upcoming quarter is not available, check if
         # the time schedule for the current quarter has already been created. 
         # The time schedule for the current quarter will always be available.
-        if df is None or df.empty:
+        if df is None:
             year = year - 1 if upcoming_quarter == 'WIN' else year
             if f'{quarter}{year}.json' not in time_schedules_dir:
-                df = uwtools.time_schedules(year=year, quarter=quarter)
+                df = uwtools.time_schedules(year, quarter, json_ready=True, struct='dict')
             else:
                 return
 
         # Create a dictionary with Course Names (i.e EE235) as keys and a list of course sections
         # (as dictionaries) as values. 
         total = {}
-        for dict_ in df.to_dict(orient='records'):
+        for dict_ in df:
             course_name = dict_['Course Name']
-            if course_name not in total:
-                total[course_name] = [dict_]
-            else:
+            # Check if a building exists for the section
+            if dict_['Building'] and dict_['Room Number']:
+                if course_name not in total:
+                    total[course_name] = []
                 total[course_name].append(dict_)
         # Store the course dictionary in a .json file
         with open(os.path.normpath(f'{UW_Time_Schedules}/{upcoming_quarter}{year}.json'), mode='w') as file:

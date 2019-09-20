@@ -180,7 +180,7 @@ def main():
     quarter = uwtools.get_quarter(filter_=True)
     upcoming_quarter = uwtools.get_quarter(filter_=True, type_='upcoming')
     year = datetime.now().year    
-    if upcoming_quarter == 'WIN':
+    if upcoming_quarter == 'WIN' and datetime.now().month in range(9, 13):
         year += 1
 
     time_schedules_dir = os.listdir(UW_Time_Schedules)
@@ -191,7 +191,7 @@ def main():
         # the time schedule for the current quarter has already been created. 
         # The time schedule for the current quarter will always be available.
         if df is None:
-            year = year - 1 if upcoming_quarter == 'WIN' else year
+            year = year - 1 if upcoming_quarter == 'WIN' and datetime.now().month in range(9, 13) else year
             if f'{quarter}{year}.json' not in time_schedules_dir:
                 df = uwtools.time_schedules(year, quarter, json_ready=True, struct='dict')
             else:

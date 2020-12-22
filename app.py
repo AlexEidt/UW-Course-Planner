@@ -16,7 +16,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
 catalogs = pd.read_csv(os.path.join(os.getcwd(), 'static', 'Course_Catalogs.csv'), index_col=0).fillna('')
-uw_departments = uwtools.departments(struct='dict', flatten='campus')
+with open(os.path.join(os.getcwd(), 'static', 'departments.json'), mode='r') as f:
+    uw_departments = json.loads(f.read())
 with open(os.path.join(os.getcwd(), 'static', 'geocode.json'), mode='r') as f:
     geocode_ = json.loads(f.read())
 

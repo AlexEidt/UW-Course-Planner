@@ -45,9 +45,8 @@ def search():
     course = request.form['name'].upper().replace(' ', '')
     if course in catalogs.index:
         # Create the Prerequisite Tree if necessary for the course page
-        levels = create_tree(catalogs, course)
-        return render_template('course.html', course=course, course_data=catalogs.loc[course].to_dict(), 
-                                levels=levels)
+        create_tree(catalogs, course)
+        return render_template('course.html', course=course, course_data=catalogs.loc[course].to_dict())
     return redirect(url_for('index'))
 
 
@@ -57,9 +56,8 @@ def _get_tree():
     course = request.form['name'].upper().replace(' ', '')
     search_course = course.endswith('SEARCHCOURSE')
     course = course.replace('SEARCHCOURSE', '', 1)
-    levels = -1
     if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
-        if course in {c for _, v in uw_departments.items() for c in v}:
+        if course in {c for v in uw_departments.values() for c in v}:
             img = course
         else:
             # ND -> Not a Department
@@ -67,7 +65,7 @@ def _get_tree():
     elif course in catalogs.index:
         if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
             if not search_course:
-                levels = create_tree(catalogs, course)
+                create_tree(catalogs, course)
                 img = f'{course}.png'
             else:
                 img = course
@@ -77,7 +75,7 @@ def _get_tree():
     else:
         # NA -> Not Available
         img = f'NA {course}' if course else ''
-    return jsonify({'data': img, 'levels': levels if levels > 0 else 0})
+    return jsonify({'data': img})
 
 
 @app.route('/_keyword_search/', methods=['POST'])
@@ -186,9 +184,9 @@ def department(department):
             department_dict=department_dict, url=request.url_root, department=department,
             in_dict=department in department_dict)
     else:
-        levels = create_tree(catalogs, department)
+        create_tree(catalogs, department)
         return render_template('course.html', course=department, 
-            course_data=catalogs.loc[department].to_dict(), levels=levels,
+            course_data=catalogs.loc[department].to_dict(),
             in_dict=department in catalogs.index, url=request.url_root)
     
 

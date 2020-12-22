@@ -25,25 +25,13 @@ $(document).ready(function() {
             if (!image.includes(' ') && image.length > 0) {
                 var time = new Date();
                 $('img#tree').attr('src', "../static/Prerequisite_Trees/" + image + '?none=' + time.getTime())
-                if (resp.levels > 3) {
-                    $('img#tree').attr('style', 
-                        "text-align: center; margin-left: auto; margin-right: auto; display: block; width: 80%");
-                    $('img#tree').show();
-                } else if (resp.levels > 0) {
-                    $('img#tree').attr('style', 
-                        "text-align: center; margin-left: auto; margin-right: auto; display: block; width: 25%");
-                    $('img#tree').show();
-                } else {
-                    alert('You have completed all necessary Prerequisites for ' + image.split('.')[0] + '. Make sure to check the Course Catalog before registering for any course')
-                }
+                $('img#tree').show();
             } else if (image.length > 0) {
                 var text = image.split(' ')[1];
                 if (image.startsWith('NA')) {
                     alert(text + " is not a course offered at UW");
                 } else if (image.startsWith('NP')) {
                     alert(text + " has no Prerequisites");
-                } else if (image.startsWith('AT')) {
-                    alert('You have already taken ' + text)
                 }
             }
             $('span').removeClass('spinner-border spinner-border-sm');

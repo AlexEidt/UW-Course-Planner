@@ -1,33 +1,48 @@
 {% extends "layout.html" %}
 {% block content %}
     <style>
-        th {
+        .header {
             text-align: center;
             font-size: 1.5em;
         }
-        #abbreviation {
-            text-align: center;
+        .abbreviation {
+            text-align: left;
+            border: none;
+        }
+        .pad {
+            padding: 0.3rem;
+        }
+        .body {
+            font-size: 1.2rem;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        @media (min-width: 550px) {
+            .abbreviation {
+                border: 2px solid black;
+            }
         }
     </style>
-    <table class="table table-striped">
-        <tr>
+    <div class="container-fluid body">
+        <br />
+        <div class="row">
             {% for campus, dep_dict in department_dict.items() %}
-                <td>
-                    <table class="table table-striped table table-hover">
-                        <tr>
-                            <th colspan=2>{{ campus }}</th>
-                        </tr>
-                        {% for abb, name in dep_dict.items() %}
-                            <tr>
-                                <td id="abbreviation"><strong>
-                                    <a href={{ url + abb }}>{{ abb }}</a>
-                                </strong></td>
-                                <td>{{ name }}</td>
-                            </tr>
-                        {% endfor %}
-                    </table>
-                </td>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 header"><b>{{ campus }}</b></div>
+                    </div>
+                    <br />
+                    {% for abb, name in dep_dict.items() %}
+                        <div class="row pad">
+                            <div class="col-4 abbreviation">
+                                <b><a href={{ url + abb }}>{{ abb }}</a></b>
+                            </div>
+                            <div class="col-8 underline">{{ name.replace('/', ' ') }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
             {% endfor %}
-        </tr>
-    </table>
+        </div>
+    </div>
 {% endblock content %}

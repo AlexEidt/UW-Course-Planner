@@ -10,6 +10,19 @@
             text-align: center;
             font-family: Verdana, Tahoma, sans-serif;
         }
+        #display {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 60vh;
+            max-width:90%;
+        }
+        @media (min-width: 550px) {
+            #display {
+                max-height: 160vh;
+                max-width: 90%;
+            }
+        }
     </style>
     {% if in_dict %}
         <div class="table-responsive">
@@ -20,13 +33,7 @@
                     {{ '{} --- {}'.format(course, course_data['Course Name']) }}
                 </th>
                 <tr>
-                    {% if levels > 3 %}
-                        <td colspan=2><img id="display" src=""
-                            style="display: block; margin-left: auto; margin-right: auto; width: 70%" class="img-responsive"></td>
-                    {% elif levels > 0 %}
-                        <td colspan=2><img id="display" src=""
-                            style="display: block; margin-left: auto; margin-right: auto; width: 25%" class="img-responsive"></td>
-                    {% endif %}
+                    <td colspan=2><img id="display" src="" class="img-responsive"></td>
                 </tr>
                 <script>
                     var course = "{{ course }}";

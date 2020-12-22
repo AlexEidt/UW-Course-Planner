@@ -11,17 +11,13 @@ os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
 # ---------------------------------------------------------------------- #
 Prerequisite_Trees = os.path.join(os.getcwd(), 'static', 'Prerequisite_Trees')
 
-level_counter = None
-width_counter = None
-total = set()
+total = None
 
 def create_tree(course_df, course):
     """Starts the tree by adding the selected course as the top element
     @params
         'course_df': The dictionary of courses
         'course': The course in question
-    Returns
-        The number of levels in the tree
     """
     # Tree used to draw the course prerequisite tree
     tree = Digraph(
@@ -29,9 +25,6 @@ def create_tree(course_df, course):
         graph_attr = {'rankdir':'TB', 'splines':'ortho', 'overlap':'scale'},
         edge_attr = {'arrowhead': 'dot'}
     )
-    global level_counter, width_counter
-    level_counter = set()
-    width_counter = set()
     if course in course_df.index:
         if course_df.loc[course]['Prerequisites'] or course_df.loc[course]['Co-Requisites']:
             tree.node(course, course)
@@ -40,11 +33,9 @@ def create_tree(course_df, course):
             total = set()
             # Recursively build up tree
             create_tree_helper(course_df, course, 0, tree)
-            levels = max(level_counter)
-            if levels:
-                tree.render(os.path.normpath(f'{Prerequisite_Trees}/{course}'), view=False, format='png')
-            return min((levels, max(width_counter)))
-    return -1
+            path = os.path.join(Prerequisite_Trees, f'{course}')
+            tree.render(path, view=False, format='png')
+            os.remove(path)
 
 
 arrowheads = ['box', 'dot', 'normal', 'diamond', 'inv', 'tee', 'crow',
@@ -58,14 +49,12 @@ def create_tree_helper(course_df, course, level, tree):
         'level': The current level of the tree
         'tree': The tree being built
     """
-    level_counter.add(level)
     if course in course_df.index and course:
         if course not in total:
             total.add(course)
             for i, requisite_type in enumerate(['Prerequisites', 'Co-Requisites']):
                 for index, crs in enumerate(course_df.loc[course][requisite_type].split(';')):
                     split_crs = split_course.split(crs)
-                    width_counter.add(len(split_crs))
                     for option in split_course.split(crs):
                         if option:
                             tree.attr('edge', arrowhead=arrowheads[index] if not i else f'o{arrowheads[index]}', arrowsize='1.1')

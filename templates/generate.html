@@ -14,10 +14,17 @@
 
         }
         #tree {
-            width: 50%;
+            display: block;
             margin-left: auto;
             margin-right: auto;
-            display: block;
+            max-height: 60vh;
+            max-width: 90%;
+        }
+        @media (min-width: 550px) {
+            #tree {
+                max-height: 160vh;
+                max-width: 90%;
+            }
         }
     </style>
     <h2>
@@ -30,6 +37,6 @@
         </button>
     </div>
     <hr>
-    <img id="tree" src= "test.png">
+    <img id="tree" src="test.png">
     <script src="{{ url_for('static', filename='JavaScript/generate.js') }}"></script>
 {% endblock content %}

@@ -1,9 +1,13 @@
 """Runs the Flask Application"""
 
-import re, json, os, uwtools
+import re
+import json
+import os
+import uwtools
+import pandas as pd
 from datetime import datetime
 from create_tree import create_tree
-from schedule import get_combinations, Organized_Time_Schedules
+from schedule import get_combinations
 from schedule import main as check_schedules
 from flask import Flask, redirect, url_for, render_template, jsonify, request
 
@@ -11,33 +15,10 @@ from flask import Flask, redirect, url_for, render_template, jsonify, request
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
-catalogs = uwtools.course_catalogs()
+catalogs = pd.read_csv(os.path.join(os.getcwd(), 'static', 'Course_Catalogs.csv'), index_col=0).fillna('')
 uw_departments = uwtools.departments(struct='dict', flatten='campus')
-
-
-def scan_transcript():
-    """Asks the user if their transcript should be scanned in to remove classes from the class
-       tree that they've already taken.
-    Returns
-        List of courses taken from the transcript given
-    """
-    try:
-        open('Transcript.txt')
-    except FileNotFoundError:
-        return []
-    else:
-        courses_taken = []
-        with open('Transcript.txt', mode='r') as transcript:
-            for line in transcript:
-                if 'CUMULATIVE CREDIT SUMMARY' in line:
-                    break
-                match = re.search(r'([A-Z& ]+\s?\d{3})', line)
-                if match:
-                    dropped = re.search(r'\d\.\d\s+W\d\s', line)
-                    line_data = match.group(0).replace(' ', '')
-                    if line_data in catalogs.index and not dropped:
-                        courses_taken.append(line_data)
-        return courses_taken
+with open(os.path.join(os.getcwd(), 'static', 'geocode.json'), mode='r') as f:
+    geocode_ = json.loads(f.read())
 
 
 @app.route('/')
@@ -45,15 +26,16 @@ def scan_transcript():
 def index():
     return render_template('index.html')
 
-
+"""
 @app.route('/upload', methods=['GET', 'POST'])
 def get_transcript():
     # Download Transcript from user and save as 'Transcript.txt'
     if request.method == 'POST':
         transcript = request.files['transcript']
         transcript.save('Transcript.txt')
-    found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
+    found_transcript = 'Transcript.txt' in os.listdir() 
     return render_template('requirements.html', url=request.url_root, transcript=found_transcript)
+"""
 
 
 @app.route('/search/', methods=['POST'])
@@ -62,7 +44,7 @@ def search():
     course = request.form['name'].upper().replace(' ', '')
     if course in catalogs.index:
         # Create the Prerequisite Tree if necessary for the course page
-        levels = create_tree(catalogs, scan_transcript(), course)
+        levels = create_tree(catalogs, course)
         return render_template('course.html', course=course, course_data=catalogs.loc[course].to_dict(), 
                                 levels=levels)
     return redirect(url_for('index'))
@@ -76,30 +58,24 @@ def _get_tree():
     course = course.replace('SEARCHCOURSE', '', 1)
     levels = -1
     if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
-        if course in {c: d for _, v in uw_departments.items() for c, d in v.items()}:
+        if course in {c for _, v in uw_departments.items() for c in v}:
             img = course
         else:
             # ND -> Not a Department
             img = f'ND {course}'
-    else:
-        courses_taken = scan_transcript()
-        if course in courses_taken:
-            # AT -> Already Taken
-            img = f'AT {course}'
-        else:
-            if course in catalogs.index:
-                if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
-                    if not search_course:
-                        levels = create_tree(catalogs, courses_taken, course)
-                        img = f'{course}.png'
-                    else:
-                        img = course
-                else:
-                    # NP -> No Prerequisites
-                    img = f'NP {course}'
+    elif course in catalogs.index:
+        if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
+            if not search_course:
+                levels = create_tree(catalogs, course)
+                img = f'{course}.png'
             else:
-                # NA -> Not Available
-                img = f'NA {course}' if course else ''
+                img = course
+        else:
+            # NP -> No Prerequisites
+            img = f'NP {course}'
+    else:
+        # NA -> Not Available
+        img = f'NA {course}' if course else ''
     return jsonify({'data': img, 'levels': levels if levels > 0 else 0})
 
 
@@ -107,36 +83,33 @@ def _get_tree():
 def _keyword_search():
     # Used for the case-insensitive keyword search 
     keyword = request.form['keyword'].lower()
-    matches = {}
     lower = catalogs['Description'].str.lower()
-    courses = catalogs[lower.str.contains(keyword, regex=False)].to_dict(orient='records')
-    for course in courses:
-        matches['{}{}'.format(course['Department Name'], course['Course Number'])] = course
-    return jsonify({'matches': matches})
+    courses = catalogs[lower.str.contains(keyword, regex=False)].to_dict(orient='index')
+    return jsonify({'matches': courses})
 
 
 @app.route('/get_geocode/', methods=['POST'])
 def get_geocode():
-    return jsonify({'coords': uwtools.geocode()}) 
+    return jsonify({'coords': geocode_}) 
 
 
 @app.route('/check_course/', methods=['POST'])
 def check_course():
     # Checks course entered in MyMap to verify they are actually offered that quarter
-    with open(os.path.normpath(f'{Organized_Time_Schedules}/Total.json'), mode='r') as file:
-        current_courses = json.loads(file.read())
+    with open(os.path.join(os.getcwd(), 'static', 'Time_Schedules.json'), mode='r') as f:
+        current_courses = json.loads(f.read())
     course = request.form['course'].upper().replace(' ', '')
     planned_course = None
     if re.search(r'[A-Z& ]+\d+ ?[A-Z]?', course):
         check_in = course if not course[-1].isalpha() else course[:-1]
-        if check_in in current_courses.keys():
+        if check_in in current_courses:
             planned_course = course
             check = True
             if course[-1].isalpha():
                 planned_course = f'{course[:-1]} {course[-1]}'
                 if course[:-1] in catalogs.index:
-                    if course[:-1] in current_courses.keys():
-                        check = f'Lecture {course[-1]}' in current_courses[course[:-1]].keys()
+                    if course[:-1] in current_courses:
+                        check = f'Lecture {course[-1]}' in current_courses[course[:-1]]
                     else:
                         check = False
                 else:
@@ -161,7 +134,7 @@ def create_schedule():
         next_option = next(course_options)
     except StopIteration:
         next_option = None
-    return jsonify({'option': next_option, 'coords': uwtools.geocode()})
+    return jsonify({'option': next_option, 'coords': geocode_})
 
 
 @app.route('/get_schedules/', methods=['POST'])
@@ -172,18 +145,12 @@ def get_schedules():
         next_option = next(course_options)
     except StopIteration:
         next_option = None
-    return jsonify({'option': next_option, 'coords': uwtools.geocode()})
+    return jsonify({'option': next_option, 'coords': geocode_})
 
 
 @app.route('/keyword/')
 def keyword():
     return render_template('keyword.html')
-
-
-@app.route('/requirements/')
-def requirements():
-    found_transcript = 'Transcript.txt' in os.listdir(os.getcwd()) 
-    return render_template('requirements.html', url=request.url_root, transcript=found_transcript)
 
 
 @app.route('/departments/', methods=['GET', 'POST'])
@@ -200,7 +167,8 @@ def departments():
 
 @app.route('/geocode/')
 def geocode():
-    check_schedules()
+    if 'Time_Schedules.json' not in os.listdir(os.path.join(os.getcwd(), 'static')):
+        check_schedules()
     return render_template('geocode.html')
 
 
@@ -217,7 +185,7 @@ def department(department):
             department_dict=department_dict, url=request.url_root, department=department,
             in_dict=department in department_dict)
     else:
-        levels = create_tree(catalogs, scan_transcript(), department)
+        levels = create_tree(catalogs, department)
         return render_template('course.html', course=department, 
             course_data=catalogs.loc[department].to_dict(), levels=levels,
             in_dict=department in catalogs.index, url=request.url_root)
@@ -226,6 +194,18 @@ def department(department):
 @app.route('/generate/')
 def generate():
     return render_template('generate.html')
+
+
+@app.route('/update_course_catalog/')
+def update_course_catalog():
+    uwtools.course_catalogs().to_csv(os.path.join(os.getcwd(), 'static', 'Course_Catalogs.csv'))
+    return redirect(url_for('index'))
+
+
+@app.route('/update_time_schedules/')
+def update_time_schedules():
+    check_schedules()
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':

@@ -1,0 +1,16 @@
+// AE513 Prerequisites
+digraph {
+	graph [overlap=scale rankdir=TB splines=ortho]
+	edge [arrowhead=dot]
+	AE513 [label=AE513]
+	node [color=gray30 shape=invtrapezium style="rounded,filled"]
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	AE513 -> AE510
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	AE510 -> AE501
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	AE501 -> POI
+}

@@ -1,24 +1,24 @@
 """Creates a Prerequisite tree for a given course either as a PNG or in the console"""
 
 
-import os, re  
+import os
+import re  
 from graphviz import Digraph
 
 # Change PATH setup for Graphviz folder here:
 # --------------------------GRAPHVIZ PATH SETUP------------------------- #
 os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
 # ---------------------------------------------------------------------- #
-Prerequisite_Trees = os.path.normpath(f'{os.getcwd()}/static/Prerequisite_Trees')
+Prerequisite_Trees = os.path.join(os.getcwd(), 'static', 'Prerequisite_Trees')
 
 level_counter = None
 width_counter = None
-total = []
+total = set()
 
-def create_tree(course_df, courses_taken, course):
+def create_tree(course_df, course):
     """Starts the tree by adding the selected course as the top element
     @params
         'course_df': The dictionary of courses
-        'courses_taken': Courses already taken from the user, scanned in from transcript
         'course': The course in question
     Returns
         The number of levels in the tree
@@ -32,14 +32,14 @@ def create_tree(course_df, courses_taken, course):
     global level_counter, width_counter
     level_counter = set()
     width_counter = set()
-    if course in course_df.index and course not in courses_taken:
+    if course in course_df.index:
         if course_df.loc[course]['Prerequisites'] or course_df.loc[course]['Co-Requisites']:
             tree.node(course, course)
             tree.attr('node', shape='invtrapezium', style='rounded,filled', color='gray30')
             global total
-            total = []
+            total = set()
             # Recursively build up tree
-            create_tree_helper(course_df, course, 0, courses_taken, tree)
+            create_tree_helper(course_df, course, 0, tree)
             levels = max(level_counter)
             if levels:
                 tree.render(os.path.normpath(f'{Prerequisite_Trees}/{course}'), view=False, format='png')
@@ -50,27 +50,25 @@ def create_tree(course_df, courses_taken, course):
 arrowheads = ['box', 'dot', 'normal', 'diamond', 'inv', 'tee', 'crow',
               'icurve', 'curve', 'vee', 'none']
 split_course = re.compile(r'/|,|&&')
-def create_tree_helper(course_df, course, level, courses_taken, tree):
+def create_tree_helper(course_df, course, level, tree):
     """Builds up the prerequisite tree
     @params
         'course_df': The dictionary of courses
         'course': The course in question
         'level': The current level of the tree
-        'courses_taken': Courses already taken from the user, scanned in from transcript
         'tree': The tree being built
     """
     level_counter.add(level)
     if course in course_df.index and course:
         if course not in total:
-            total.append(course)
+            total.add(course)
             for i, requisite_type in enumerate(['Prerequisites', 'Co-Requisites']):
                 for index, crs in enumerate(course_df.loc[course][requisite_type].split(';')):
                     split_crs = split_course.split(crs)
                     width_counter.add(len(split_crs))
-                    if set(split_crs).isdisjoint(courses_taken):
-                        for option in split_course.split(crs):
-                            if option:
-                                tree.attr('edge', arrowhead=arrowheads[index] if not i else f'o{arrowheads[index]}', arrowsize='1.1')
-                                tree.attr('node', fillcolor=f'grey{str(99 - (level * 3))}' if not i else 'cyan')
-                                tree.edge(course, option)
-                                create_tree_helper(course_df, option, level + 1, courses_taken, tree)
+                    for option in split_course.split(crs):
+                        if option:
+                            tree.attr('edge', arrowhead=arrowheads[index] if not i else f'o{arrowheads[index]}', arrowsize='1.1')
+                            tree.attr('node', fillcolor=f'grey{str(99 - (level * 3))}' if not i else 'cyan')
+                            tree.edge(course, option)
+                            create_tree_helper(course_df, option, level + 1, tree)

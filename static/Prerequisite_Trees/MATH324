@@ -1,0 +1,25 @@
+// MATH324 Prerequisites
+digraph {
+	graph [overlap=scale rankdir=TB splines=ortho]
+	edge [arrowhead=dot]
+	MATH324 [label=MATH324]
+	node [color=gray30 shape=invtrapezium style="rounded,filled"]
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	MATH324 -> MATH126
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	MATH126 -> MATH125
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	MATH125 -> MATH124
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	MATH324 -> MATH136
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey96]
+	MATH136 -> MATH135
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey93]
+	MATH135 -> MATH134
+}

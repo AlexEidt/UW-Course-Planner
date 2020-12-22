@@ -1,0 +1,10 @@
+// MATH125 Prerequisites
+digraph {
+	graph [overlap=scale rankdir=TB splines=ortho]
+	edge [arrowhead=dot]
+	MATH125 [label=MATH125]
+	node [color=gray30 shape=invtrapezium style="rounded,filled"]
+	edge [arrowhead=box arrowsize=1.1]
+	node [fillcolor=grey99]
+	MATH125 -> MATH124
+}

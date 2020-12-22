@@ -47,94 +47,19 @@
         <strong>UW Course Planner</strong>
     </h2>
     <img src="{{ url_for('static', filename='Images/UWLogo.png') }}" alt="UW Course Planner Logo" id="headerImg">
-    <br>
+    <br />
     <p>
         The UW Course Planner helps to simplify course searches at UW. It offers a keyword search to search through the descriptions
         of every course offered at UW to give you an idea of what courses could match your interests. 
-        <br>
-        <br>
+        <br /><br />
         Course and Department searching is quick and simple with easily accesible pages for each department/course at every UW Campus through the
         <a href="{{ url_for('departments') }}">Departments</a> page or the Search bar at the top right of the screen.
         All courses in every department are listed in order, showing you everything in one place.
-        <br>
-        <br>
+        <br /><br />
         Prerequisite Trees help give you a better understanding of the courses you need to take and succint course information 
         gives you a quick summary of every course. 
-        <br>
-        <br>
-        Optional Transcript scanning can clarify the Prerequisite Trees even more. The search bar in the top right of the screen allows you to quickly search for courses and departments. 
-        <br>
-        <br>
+        <br /><br />
         An interactive map for each UW Campus also allows you to see where your classes are, so you can avoid those stressful days when you need to go from
         Condon Hall to the Mechanical Engineering Building in 10 minutes.
     </p>
-    <br>
-    <div class="card bg-light text-dark">
-        <div class="card-body">Transcript</div>
-    </div>
-        <p>
-            The <a href="{{ url_for('requirements') }}">Transcript</a> page allows you to scan in your 
-            <a href="https://myplan.uw.edu/" target="_blank">Unofficial Transcript</a> from
-            <strong>MyUW</strong> to eliminate courses you've already taken from Prerequisite Trees. This can be very useful,
-            especially if you're looking at higher level courses with large Prerequisite Trees. Filtering out courses you've taken
-            will make the Tree much more readable and usable. 
-        </p>   
-        <br>  
-        <div id="cardImg" class="card bg-light text-dark">
-            <img id="example" src="{{ url_for('static', filename='Images/requirements.png') }}">
-        </div>
-        <br>
-    <div class="card bg-light text-dark">
-        <div class="card-body">Departments</div>
-    </div>
-        <p>
-            <a href="{{ url_for('departments') }}">Departments</a> shows you all the Departments for each UW Campu. Clicking on the Department
-        abbreviation will lead you to a page with a list of courses in that department. Clicking on any one of those courses will bring you
-        to another page with all the information for that course including its Prerequisite Tree if there are any prerequisites for the course. 
-        </p>
-        <br>  
-        <div id="cardImg" class="card bg-light text-dark">
-            <img id="example" src="{{ url_for('static', filename='Images/departments.png') }}">
-        </div>
-        <br>
-    <div class="card bg-light text-dark">
-        <div class="card-body">Create Tree</div>
-    </div>
-        <p>
-            The <a href="{{ url_for('generate') }}">Tree Generator</a> creates a Prerequisite Tree for any
-        course you enter. Courses must be the department abbreviation followed by the 3 digit course code. Example: <strong>EE235</strong>
-        </p>
-        <br>  
-        <div id="cardImg" class="card bg-light text-dark">
-            <img id="example" src="{{ url_for('static', filename='Images/generator.png') }}">
-        </div>
-        <br>
-    <div class="card bg-light text-dark">
-        <div class="card-body">Keyword Search</div>
-    </div>
-        <p>
-            The <a href="{{ url_for('keyword') }}">Keyword Search</a> shows you all courses with the given keyword in
-            their description (case-insensitive).
-        </p>
-        <br>  
-        <div id="cardImg" class="card bg-light text-dark">
-            <img id="example" src="{{ url_for('static', filename='Images/keyword.png') }}">
-        </div>
-        <br>
-    <div class="card bg-light text-dark">
-        <div class="card-body">MyMap</div>
-    </div>
-        <p>
-            <a href="{{ url_for('geocode') }}">MyMap</a> is a tool you can use to plan out your schedule, on a map! Enter
-            all the courses you want to take and when you are done, click 'Create Schedule'. 
-            <strong>Lectures are included!</strong> All possible combinations of courses
-            without overlapping sections will be shown in the header and their location will be displayed with a pin on the
-            map. You can select which UW Campus you want to create mapped out schedules for: Seattle, Bothell or Tacoma.
-            Clicking on the pins on the map will give you information about the course section(s) in that building. 
-        </p>
-        <br>  
-        <div id="cardImg" class="card bg-light text-dark">
-            <img id="example" src="{{ url_for('static', filename='Images/mymap.png') }}">
-        </div>
-        <br>
 {% endblock content %}

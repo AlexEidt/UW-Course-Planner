@@ -2,7 +2,7 @@
 {% block content%}
     <style>
         p {
-            width: 65%;
+            width: 85%;
             margin-left: auto;
             margin-right: auto;
             padding: 1em;
@@ -17,6 +17,18 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
             padding: 1em;
+        }
+        .github {
+            padding-left: 0.5rem;
+            width: 25%;
+        }
+        @media (min-width: 550px) {
+            .github {
+                width: 7%;
+            }
+            p {
+                width: 65%;
+            }
         }
     </style>
     <h2>
@@ -42,7 +54,7 @@
     <p>
         Check out the Project on GitHub!
         <a href="https://github.com/AlexEidt/UW-Course-Planner" target="_blank">
-            <img style="width:7%; padding-left: 0.5rem" src="../static/Images/github.png">
+            <img class="github" src="../static/Images/github.png">
         </a>
     </p>
 {% endblock content %}

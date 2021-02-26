@@ -6,7 +6,7 @@ import os
 import uwtools
 import pandas as pd
 from datetime import datetime
-from create_tree import create_tree
+from create_tree import create_tree, graph_department
 from schedule import get_combinations
 from schedule import main as check_schedules
 from flask import Flask, redirect, url_for, render_template, jsonify, request
@@ -15,11 +15,16 @@ from flask import Flask, redirect, url_for, render_template, jsonify, request
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
-catalogs = pd.read_csv(os.path.join(os.getcwd(), 'static', 'Course_Catalogs.csv'), index_col=0).fillna('')
-with open(os.path.join(os.getcwd(), 'static', 'departments.json'), mode='r') as f:
+PATH = os.path.join(os.getcwd(), 'static')
+
+catalogs = pd.read_csv(os.path.join(PATH, 'Course_Catalogs.csv'), index_col=0).fillna('')
+with open(os.path.join(PATH, 'departments.json'), mode='r') as f:
     uw_departments = json.loads(f.read())
-with open(os.path.join(os.getcwd(), 'static', 'geocode.json'), mode='r') as f:
+with open(os.path.join(PATH, 'geocode.json'), mode='r') as f:
     geocode_ = json.loads(f.read())
+# Checks course entered in MyMap to verify they are actually offered that quarter
+with open(os.path.join(PATH, 'Time_Schedules.json'), mode='r') as f:
+    current_courses = json.loads(f.read())
 
 
 @app.route('/')
@@ -45,8 +50,13 @@ def search():
     course = request.form['name'].upper().replace(' ', '')
     if course in catalogs.index:
         # Create the Prerequisite Tree if necessary for the course page
-        create_tree(catalogs, course)
-        return render_template('course.html', course=course, course_data=catalogs.loc[course].to_dict())
+        svg = create_tree(catalogs, course, request.url_root)
+        return render_template(
+            'course.html',
+            svg=svg,
+            course=course,
+            course_data=catalogs.loc[course].to_dict()
+        )
     return redirect(url_for('index'))
 
 
@@ -58,15 +68,18 @@ def _get_tree():
     course = course.replace('SEARCHCOURSE', '', 1)
     if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
         if course in {c for v in uw_departments.values() for c in v}:
-            img = course
+            img = graph_department(
+                catalogs[catalogs['Department Name'] == course],
+                course,
+                request.url_root
+            )
         else:
             # ND -> Not a Department
             img = f'ND {course}'
     elif course in catalogs.index:
         if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
             if not search_course:
-                create_tree(catalogs, course)
-                img = f'{course}.png'
+                img = create_tree(catalogs, course, request.url_root)
             else:
                 img = course
         else:
@@ -94,9 +107,6 @@ def get_geocode():
 
 @app.route('/check_course/', methods=['POST'])
 def check_course():
-    # Checks course entered in MyMap to verify they are actually offered that quarter
-    with open(os.path.join(os.getcwd(), 'static', 'Time_Schedules.json'), mode='r') as f:
-        current_courses = json.loads(f.read())
     course = request.form['course'].upper().replace(' ', '')
     planned_course = None
     if re.search(r'[A-Z& ]+\d+ ?[A-Z]?', course):
@@ -159,14 +169,19 @@ def departments():
         return redirect(url_for('index'))
     total = {}
     for campus in sorted(uw_departments):
-        total[campus] = {d: uw_departments[campus][d] for d in sorted(uw_departments[campus])}
-    return render_template('departments.html', department_dict=total,
-        url=request.url_root)
+        total[campus] = {
+            d: uw_departments[campus][d] for d in sorted(uw_departments[campus])
+        }
+    return render_template(
+        'departments.html',
+        department_dict=total,
+        url=request.url_root
+    )
 
 
 @app.route('/geocode/')
 def geocode():
-    if 'Time_Schedules.json' not in os.listdir(os.path.join(os.getcwd(), 'static')):
+    if 'Time_Schedules.json' not in os.listdir(PATH):
         check_schedules()
     return render_template('geocode.html')
 
@@ -177,17 +192,31 @@ def department(department):
         return redirect(url_for('index'))
     if not re.search(r'[A-Z]+\d+', department):
         department_chosen = {}
-        department_dict = {c: d for _, v in uw_departments.items() for c, d in v.items()}
-        for dict_ in catalogs[catalogs['Department Name'] == department].to_dict(orient='records'):
-            department_chosen['{}{}'.format(dict_['Department Name'], dict_['Course Number'])] = dict_
-        return render_template('department.html', course_dict=department_chosen,
-            department_dict=department_dict, url=request.url_root, department=department,
-            in_dict=department in department_dict)
+        department = department.replace('&amp;', '&')
+        department_df = catalogs[catalogs['Department Name'] == department]
+        svg = graph_department(department_df, department, request.url_root)
+        if not department_df.empty:
+            for dict_ in department_df.to_dict(orient='records'):
+                department_chosen[f"{dict_['Department Name']}{dict_['Course Number']}"] = dict_
+        return render_template(
+            'department.html',
+            course_dict=department_chosen,
+            department_dict={c: d for v in uw_departments.values() for c, d in v.items()},
+            url=request.url_root,
+            department=department,
+            in_dict=bool(department_chosen),
+            svg=svg
+        )
     else:
-        create_tree(catalogs, department)
-        return render_template('course.html', course=department, 
+        svg = create_tree(catalogs, department, request.url_root)
+        return render_template(
+            'course.html',
+            svg=svg,
+            course=department, 
             course_data=catalogs.loc[department].to_dict(),
-            in_dict=department in catalogs.index, url=request.url_root)
+            in_dict=department in catalogs.index,
+            url=request.url_root
+        )
     
 
 @app.route('/generate/')
@@ -197,7 +226,7 @@ def generate():
 
 @app.route('/update_course_catalog/')
 def update_course_catalog():
-    uwtools.course_catalogs().to_csv(os.path.join(os.getcwd(), 'static', 'Course_Catalogs.csv'))
+    uwtools.course_catalogs().to_csv(os.path.join(PATH, 'Course_Catalogs.csv'))
     return redirect(url_for('index'))
 
 

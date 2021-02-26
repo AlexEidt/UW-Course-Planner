@@ -32,14 +32,14 @@
                 <th colspan=2>
                     {{ '{} --- {}'.format(course, course_data['Course Name']) }}
                 </th>
-                <tr>
-                    <td colspan=2><img id="display" src="" class="img-responsive"></td>
-                </tr>
-                <script>
-                    var course = "{{ course }}";
-                    var time = new Date();
-                    $('img#display').attr('src', '../static/Prerequisite_Trees/' + course + '.png?none=' + time.getTime());
-                </script>
+                {% if svg %}
+                    <tr>
+                        <td colspan=2>
+                            <object id="display" data="{{ svg }}" type="image/svg+xml">
+                            </object>
+                        </td>
+                    </tr>
+                {% endif %}
                 {% for name, data in course_data.items() %}
                     {% if data %}
                         <tr>
@@ -49,9 +49,9 @@
                                     <strong>{{ data }}</strong></a>
                                 </td>
                             </tr>
-                            {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] %}
+                            {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] and not ('POI' in data and data|length == 3) %}
                                 <td>
-                                    {% set prereqs = data.replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
+                                    {% set prereqs = data.replace(',POI', '').replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
                                     {% for prereq in prereqs %}
                                         <strong>
                                             {% if prereqs.index(prereq) != prereqs|length - 1 %}    

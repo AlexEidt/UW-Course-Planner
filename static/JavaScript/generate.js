@@ -21,10 +21,9 @@ $(document).ready(function() {
             },
         }).done(function(resp) {
             $('#btn').attr('disabled', false);
-            var image = resp.data;
-            if (!image.includes(' ') && image.length > 0) {
-                var time = new Date();
-                $('img#tree').attr('src', "../static/Prerequisite_Trees/" + image + '?none=' + time.getTime())
+            var image = String(resp.data);
+            if (image.endsWith('.svg')) {
+                $('img#tree').attr('src', image);
                 $('img#tree').show();
             } else if (image.length > 0) {
                 var text = image.split(' ')[1];

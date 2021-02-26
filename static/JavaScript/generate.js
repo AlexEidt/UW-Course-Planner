@@ -28,9 +28,13 @@ $(document).ready(function() {
             } else if (image.length > 0) {
                 var text = image.split(' ')[1];
                 if (image.startsWith('NA')) {
-                    alert(text + " is not a course offered at UW");
+                    alert(`${text} is not a course offered at UW`);
                 } else if (image.startsWith('NP')) {
-                    alert(text + " has no Prerequisites");
+                    alert(`${text} has no Prerequisites`);
+                } else if (image.startsWith('ND')) {
+                    alert(`${text} is not a Department`);
+                } else {
+                    alert(`${text} not found`)
                 }
             }
             $('span').removeClass('spinner-border spinner-border-sm');

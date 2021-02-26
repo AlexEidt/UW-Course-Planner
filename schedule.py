@@ -1,4 +1,8 @@
-"""Finds all combinations of classes given a list of courses to search"""
+"""
+Alex Eidt
+
+Finds all combinations of classes given a list of courses to search.
+"""
 
 from json import dump, loads
 from re import search as re_search

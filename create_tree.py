@@ -1,11 +1,13 @@
 """
-Creates a Prerequisite tree for a given course either as a PNG or in the console
+Alex Eidt
+
+Creates a Prerequisite Tree Graph for any course at the University of Washington.
+Creates Department course graphs showing connections between all courses in that department.
 """
 
 
 import os
 import re
-import requests
 from graphviz import Digraph
 
 # Change PATH setup for Graphviz folder here:
@@ -164,7 +166,7 @@ def graph_department(department_df, department, url):
     # Tree used to draw the department tree
     tree = Digraph(
         comment=f'{department} Course Connections by Pre/Co-Requisites',
-        graph_attr={'layout': 'sfdp', 'rankdir': 'TB', 'splines': 'true', 'overlap': 'false'},
+        graph_attr={'layout': 'dot', 'rankdir': 'LR', 'splines': 'true', 'overlap': 'false'},
         edge_attr={'arrowhead': 'normal', 'arrowsize': '0.6'},
     )
     tree.attr('node', shape='rectangle', fontname='helvetica')

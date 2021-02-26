@@ -1,4 +1,9 @@
-"""Runs the Flask Application"""
+"""
+Alex Eidt
+
+Runs the Flask Application.
+"""
+
 
 import re
 import json
@@ -64,24 +69,22 @@ def search():
 def _get_tree():
     # Used to generate trees for the 'Create Tree' page
     course = request.form['name'].upper().replace(' ', '')
+    # SEARCHCOURSE is a flag indicating this request came from the search bar
     search_course = course.endswith('SEARCHCOURSE')
     course = course.replace('SEARCHCOURSE', '', 1)
-    if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course) and search_course:
+    if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course):
         if course in {c for v in uw_departments.values() for c in v}:
             img = graph_department(
                 catalogs[catalogs['Department Name'] == course],
                 course,
                 request.url_root
-            )
+            ) if not search_course else course
         else:
             # ND -> Not a Department
             img = f'ND {course}'
     elif course in catalogs.index:
         if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
-            if not search_course:
-                img = create_tree(catalogs, course, request.url_root)
-            else:
-                img = course
+            img = create_tree(catalogs, course, request.url_root) if not search_course else course
         else:
             # NP -> No Prerequisites
             img = f'NP {course}'

@@ -15,27 +15,36 @@ Check out http://alexeidt.pythonanywhere.com/ for a live demo!
 Script | Purpose
 --- | ---
 `app.py` | Runs the Flask Application on the localhost. Alternatively go to [alexeidt.pythonanywhere.com](http://alexeidt.pythonanywhere.com/) to see the same site.
-`create_tree.py` | Creates Prerequisite Trees on the console and in PNG Form. Not runnable by itself.
+`create_tree.py` | Creates Prerequisite Trees. Not runnable by itself.
 `schedule.py` | Creates an Organized Time Schedule for the courses offered for the current quarter at UW.
 
 #### UW Course Catalogs
+
  >[Bothell](http://www.washington.edu/students/crscatb/)                             
  [Seattle](http://www.washington.edu/students/crscat/)                                
  [Tacoma](http://www.washington.edu/students/crscatt/) 
 
 #### UW Time Schedules
+
  >[Bothell](https://www.uwb.edu/registration/time)                             
  [Seattle](https://www.washington.edu/students/timeschd/)                                
  [Tacoma](https://www.washington.edu/students/timeschd/T/)
 
 ### Prerequisite Tree
+
 A prerequisite tree for any course offered at the UW can be created as a PNG file or in the console (see below).
 The prerequisite tree for **EE235** as a PNG is shown below.
 
 All courses at the same 'level' in the tree are the same color. Courses with the same shape at the end of the arrow
 indicate that **ONE** of those courses is enough to statisfy the prerequisite requirement. 
 
-<img src = "static/Images/SampleTree.png" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="EE235 Prerequisite Tree">
+<img src="static/Images/SampleTree.png" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="EE235 Prerequisite Tree">
+
+### Department Tree
+
+A graph showing the prerequisite connections of all courses in the same department gives a good overview of the department as a whole.
+
+<img src="static/Images/EE.svg" style="margin-left: auto; margin-right: auto; display: block; width: 55%" alt="EE Prerequisite Tree">
 
 ### MyMap
 

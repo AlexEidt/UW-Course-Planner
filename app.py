@@ -22,7 +22,7 @@ app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
 PATH = os.path.join(os.getcwd(), 'static')
 
-catalogs = pd.read_csv(os.path.join(PATH, 'Course_Catalogs.csv'), index_col=0).fillna('')
+catalogs = pd.read_csv(os.path.join(PATH, 'Course_Catalogs.csv'), dtype=str, index_col=0).fillna('')
 with open(os.path.join(PATH, 'departments.json'), mode='r') as f:
     uw_departments = json.loads(f.read())
 with open(os.path.join(PATH, 'geocode.json'), mode='r') as f:

@@ -49,12 +49,11 @@
                                     <strong>{{ data }}</strong></a>
                                 </td>
                             </tr>
-                            {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] and not ('POI' in data and data|length == 3) %}
+                            {% elif name in ['Prerequisites', 'Co-Requisites', 'Offered with'] %}
                                 <td>
-                                    {% set prereqs = data.replace(',POI', '').replace('&&', ';').replace('/', ';').replace(',', ';').split(';') %}
-                                    {% for prereq in prereqs %}
+                                    {% for prereq in data %}
                                         <strong>
-                                            {% if prereqs.index(prereq) != prereqs|length - 1 %}    
+                                            {% if data.index(prereq) != data|length - 1 %}    
                                                 <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>{{ ', ' }}
                                             {% else %}
                                                 <a href="{{ url + prereq }}" target="_blank">{{ prereq }}</a>

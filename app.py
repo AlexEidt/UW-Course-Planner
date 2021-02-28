@@ -83,7 +83,7 @@ def _get_tree():
             # ND -> Not a Department
             img = f'ND {course}'
     elif course in catalogs.index:
-        if catalogs.loc[course]['Prerequisites'] or catalogs.loc[course]['Co-Requisites']:
+        if catalogs.loc[course, 'Prerequisites'] or catalogs.loc[course, 'Co-Requisites']:
             img = create_tree(catalogs, course, request.url_root) if not search_course else course
         else:
             # NP -> No Prerequisites
@@ -193,6 +193,7 @@ def geocode():
 def department(department):
     if request.method == 'POST':
         return redirect(url_for('index'))
+    department = department.upper()
     if not re.search(r'[A-Z]+\d+', department):
         department_chosen = {}
         department = department.replace('&amp;', '&')
@@ -212,12 +213,23 @@ def department(department):
         )
     else:
         svg = create_tree(catalogs, department, request.url_root)
+        in_dict = department in catalogs.index
+        if in_dict:
+            course_data = catalogs.loc[department].to_dict()
+            split_course = re.compile(r'/|,|&&|;')
+            for data in ['Prerequisites', 'Co-Requisites', 'Offered with']:
+                course_data[data] = list(filter(
+                    lambda x: x in catalogs.index and x != 'POI',
+                    split_course.split(course_data[data])
+                ))
+        else:
+            course_data = None
         return render_template(
             'course.html',
             svg=svg,
             course=department, 
-            course_data=catalogs.loc[department].to_dict(),
-            in_dict=department in catalogs.index,
+            course_data=course_data,
+            in_dict=in_dict,
             url=request.url_root
         )
     

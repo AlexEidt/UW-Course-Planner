@@ -18,6 +18,11 @@ os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
 total = set()
 REQUISITE_TYPES = ['Prerequisites', 'Co-Requisites']
 PATH = os.path.join(os.getcwd(), 'static', 'Prerequisite_Trees')
+SPLIT_COURSE = re.compile(r'/|,|&&')
+ARROWHEADS = [
+    'box', 'dot', 'normal', 'diamond', 'inv', 'tee', 'crow',
+    'icurve', 'curve', 'vee', 'none'
+]
 
 
 def create_tree(course_df, course, url):
@@ -38,7 +43,12 @@ def create_tree(course_df, course, url):
     )
     course_df = course_df[course_df['Campus'] == course_df.loc[course, 'Campus']]
     prereqs = set(course_df.loc[course, REQUISITE_TYPES])
-    if any(prereqs) and 'POI' not in prereqs and course in course_df.index:
+    splitted = list(filter(
+        lambda x: x in course_df.index and x != 'POI',
+        re.compile(r'/|,|&&|;').split(','.join(prereqs))
+    ))
+    if any(prereqs) and splitted and course in course_df.index:
+        del splitted
         global total
         total.clear()
         tree.node(course, course, fontname='helvetica')
@@ -52,11 +62,6 @@ def create_tree(course_df, course, url):
     return None
 
 
-arrowheads = [
-    'box', 'dot', 'normal', 'diamond', 'inv', 'tee', 'crow',
-    'icurve', 'curve', 'vee', 'none'
-]
-split_course = re.compile(r'/|,|&&')
 def create_tree_helper(course_df, course, level, tree, url):
     """Builds up the prerequisite tree
     @params
@@ -70,12 +75,12 @@ def create_tree_helper(course_df, course, level, tree, url):
         total.add(course)
         for i, requisite_type in enumerate(REQUISITE_TYPES):
             for index, crs in enumerate(course_df.loc[course.replace('&amp;', '&'), requisite_type].split(';')):
-                for option in split_course.split(crs):
+                for option in SPLIT_COURSE.split(crs):
                     if option and option != 'POI' and option in course_df.index:
                         option = option.replace('&', '&amp;')
                         tree.attr(
                             'edge',
-                            arrowhead=arrowheads[index] if not i else f'o{arrowheads[index]}',
+                            arrowhead=ARROWHEADS[index] if not i else f'o{ARROWHEADS[index]}',
                         )
                         tree.attr(
                             'node',
@@ -155,7 +160,8 @@ def graph_department(department_df, department, url):
             course_prereqs[course] = set()
         for requisite_type in REQUISITE_TYPES:
             for prereq in split_prereqs.split(department_df.loc[course, requisite_type]):
-                if ''.join(filter(lambda x: not x.isdigit() or x == '&', prereq)) == department:
+                if ''.join(filter(lambda x: not x.isdigit() or x == '&', prereq)) == department and \
+                    prereq in department_df.index:
                     course_prereqs[course].add(prereq)
         if not course_prereqs[course]:
             del course_prereqs[course]

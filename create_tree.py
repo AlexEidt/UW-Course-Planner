@@ -10,6 +10,7 @@ import os
 import re
 from graphviz import Digraph
 
+
 # Change PATH setup for Graphviz folder here:
 # --------------------------GRAPHVIZ PATH SETUP------------------------- #
 os.environ['PATH'] += os.pathsep + 'C:\\Graphviz\\bin'
@@ -160,7 +161,7 @@ def graph_department(department_df, department, url):
             course_prereqs[course] = set()
         for requisite_type in REQUISITE_TYPES:
             for prereq in split_prereqs.split(department_df.loc[course, requisite_type]):
-                if ''.join(filter(lambda x: not x.isdigit() or x == '&', prereq)) == department and \
+                if prereq and ''.join(filter(lambda x: not x.isdigit() or x == '&', prereq)) == department and \
                     prereq in department_df.index:
                     course_prereqs[course].add(prereq)
         if not course_prereqs[course]:
@@ -182,11 +183,10 @@ def graph_department(department_df, department, url):
         tree.attr('node', URL=f'{url}{course}', target='_blank')
         tree.node(course)
         for prereq in prereqs:
-            if prereq in department_df.index:
-                prereq = prereq.replace('&', '&amp;')
-                tree.attr('node', URL=f'{url}{prereq}', target='_blank')
-                tree.node(prereq)
-                tree.edge(course, prereq)
+            prereq = prereq.replace('&', '&amp;')
+            tree.attr('node', URL=f'{url}{prereq}', target='_blank')
+            tree.node(prereq)
+            tree.edge(course, prereq)
 
     path = os.path.join(PATH, department)
     tree.render(path, view=False, format='svg')

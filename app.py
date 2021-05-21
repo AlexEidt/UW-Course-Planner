@@ -1,7 +1,7 @@
 """
 Alex Eidt
 
-Runs the Flask Application.
+Runs the Flask Application for the UW Course Planner Web App.
 """
 
 
@@ -10,7 +10,6 @@ import json
 import os
 import uwtools
 import pandas as pd
-from datetime import datetime
 from create_tree import create_tree, graph_department
 from schedule import get_combinations
 from schedule import main as check_schedules
@@ -22,14 +21,14 @@ app.config['SECRET_KEY'] = '\xfaz\xc3\xa8\xd6\xb8\xa0>\x89\x80b'
 
 PATH = os.path.join(os.getcwd(), 'static')
 
-catalogs = pd.read_csv(os.path.join(PATH, 'Course_Catalogs.csv'), dtype=str, index_col=0).fillna('')
+CATALOGS = pd.read_csv(os.path.join(PATH, 'Course_Catalogs.csv'), dtype=str, index_col=0).fillna('')
 with open(os.path.join(PATH, 'departments.json'), mode='r') as f:
-    uw_departments = json.loads(f.read())
+    UW_DEPARTMENTS = json.loads(f.read())
 with open(os.path.join(PATH, 'geocode.json'), mode='r') as f:
-    geocode_ = json.loads(f.read())
-# Checks course entered in MyMap to verify they are actually offered that quarter
+    GEOCODED = json.loads(f.read())
+# Used to check courses entered in MyMap to verify they are actually offered that quarter
 with open(os.path.join(PATH, 'Time_Schedules.json'), mode='r') as f:
-    current_courses = json.loads(f.read())
+    TIME_SCHEDULE = json.loads(f.read())
 
 
 @app.route('/')
@@ -53,14 +52,14 @@ def get_transcript():
 def search():
     # Search used for the Search Bar in right corner of the Nav Bar
     course = request.form['name'].upper().replace(' ', '')
-    if course in catalogs.index:
+    if course in CATALOGS.index:
         # Create the Prerequisite Tree if necessary for the course page
-        svg = create_tree(catalogs, course, request.url_root)
+        svg = create_tree(CATALOGS, course, request.url_root)
         return render_template(
             'course.html',
             svg=svg,
             course=course,
-            course_data=catalogs.loc[course].to_dict()
+            course_data=CATALOGS.loc[course].to_dict()
         )
     return redirect(url_for('index'))
 
@@ -73,18 +72,18 @@ def _get_tree():
     search_course = course.endswith('SEARCHCOURSE')
     course = course.replace('SEARCHCOURSE', '', 1)
     if re.search(r'[A-Z]+', course) and not re.search(r'\d{3}', course):
-        if course in {c for v in uw_departments.values() for c in v}:
+        if course in {c for v in UW_DEPARTMENTS.values() for c in v}:
             img = graph_department(
-                catalogs[catalogs['Department Name'] == course],
+                CATALOGS[CATALOGS['Department Name'] == course],
                 course,
                 request.url_root
             ) if not search_course else course
         else:
             # ND -> Not a Department
             img = f'ND {course}'
-    elif course in catalogs.index:
-        if catalogs.loc[course, 'Prerequisites'] or catalogs.loc[course, 'Co-Requisites']:
-            img = create_tree(catalogs, course, request.url_root) if not search_course else course
+    elif course in CATALOGS.index:
+        if CATALOGS.loc[course, 'Prerequisites'] or CATALOGS.loc[course, 'Co-Requisites']:
+            img = create_tree(CATALOGS, course, request.url_root) if not search_course else course
         else:
             # NP -> No Prerequisites
             img = f'NP {course}'
@@ -98,14 +97,14 @@ def _get_tree():
 def _keyword_search():
     # Used for the case-insensitive keyword search 
     keyword = request.form['keyword'].lower()
-    lower = catalogs['Description'].str.lower()
-    courses = catalogs[lower.str.contains(keyword, regex=False)].to_dict(orient='index')
+    lower = CATALOGS['Description'].str.lower()
+    courses = CATALOGS[lower.str.contains(keyword, regex=False)].to_dict(orient='index')
     return jsonify({'matches': courses})
 
 
 @app.route('/get_geocode/', methods=['POST'])
 def get_geocode():
-    return jsonify({'coords': geocode_}) 
+    return jsonify({'coords': GEOCODED}) 
 
 
 @app.route('/check_course/', methods=['POST'])
@@ -114,20 +113,20 @@ def check_course():
     planned_course = None
     if re.search(r'[A-Z& ]+\d+ ?[A-Z]?', course):
         check_in = course if not course[-1].isalpha() else course[:-1]
-        if check_in in current_courses:
+        if check_in in TIME_SCHEDULE:
             planned_course = course
             check = True
             if course[-1].isalpha():
                 planned_course = f'{course[:-1]} {course[-1]}'
-                if course[:-1] in catalogs.index:
-                    if course[:-1] in current_courses:
-                        check = f'Lecture {course[-1]}' in current_courses[course[:-1]]
+                if course[:-1] in CATALOGS.index:
+                    if course[:-1] in TIME_SCHEDULE:
+                        check = f'Lecture {course[-1]}' in TIME_SCHEDULE[course[:-1]]
                     else:
                         check = False
                 else:
                     check = False
             else:
-                check = course in catalogs.index
+                check = course in CATALOGS.index
         else:
             check = False
     else:
@@ -146,7 +145,7 @@ def create_schedule():
         next_option = next(course_options)
     except StopIteration:
         next_option = None
-    return jsonify({'option': next_option, 'coords': geocode_})
+    return jsonify({'option': next_option, 'coords': GEOCODED})
 
 
 @app.route('/get_schedules/', methods=['POST'])
@@ -157,7 +156,7 @@ def get_schedules():
         next_option = next(course_options)
     except StopIteration:
         next_option = None
-    return jsonify({'option': next_option, 'coords': geocode_})
+    return jsonify({'option': next_option, 'coords': GEOCODED})
 
 
 @app.route('/keyword/')
@@ -171,9 +170,9 @@ def departments():
     if request.method == 'POST':
         return redirect(url_for('index'))
     total = {}
-    for campus in sorted(uw_departments):
+    for campus in sorted(UW_DEPARTMENTS):
         total[campus] = {
-            d: uw_departments[campus][d] for d in sorted(uw_departments[campus])
+            d: UW_DEPARTMENTS[campus][d] for d in sorted(UW_DEPARTMENTS[campus])
         }
     return render_template(
         'departments.html',
@@ -197,7 +196,7 @@ def department(department):
     if not re.search(r'[A-Z]+\d+', department):
         department_chosen = {}
         department = department.replace('&amp;', '&')
-        department_df = catalogs[catalogs['Department Name'] == department]
+        department_df = CATALOGS[CATALOGS['Department Name'] == department]
         svg = graph_department(department_df, department, request.url_root)
         if not department_df.empty:
             for dict_ in department_df.to_dict(orient='records'):
@@ -205,21 +204,21 @@ def department(department):
         return render_template(
             'department.html',
             course_dict=department_chosen,
-            department_dict={c: d for v in uw_departments.values() for c, d in v.items()},
+            department_dict={c: d for v in UW_DEPARTMENTS.values() for c, d in v.items()},
             url=request.url_root,
             department=department,
             in_dict=bool(department_chosen),
             svg=svg
         )
     else:
-        svg = create_tree(catalogs, department, request.url_root)
-        in_dict = department in catalogs.index
+        svg = create_tree(CATALOGS, department, request.url_root)
+        in_dict = department in CATALOGS.index
         if in_dict:
-            course_data = catalogs.loc[department].to_dict()
+            course_data = CATALOGS.loc[department].to_dict()
             split_course = re.compile(r'/|,|&&|;')
             for data in ['Prerequisites', 'Co-Requisites', 'Offered with']:
                 course_data[data] = list(filter(
-                    lambda x: x in catalogs.index and x != 'POI',
+                    lambda x: x in CATALOGS.index and x != 'POI',
                     split_course.split(course_data[data])
                 ))
         else:
@@ -245,9 +244,10 @@ def update_course_catalog():
     return redirect(url_for('index'))
 
 
-@app.route('/update_time_schedules/')
-def update_time_schedules():
-    check_schedules()
+@app.route('/update_time_schedules/<quarter>/')
+def update_time_schedules(quarter):
+    year, q = quarter.split('#', 1)
+    check_schedules(int(year), q.upper())
     return redirect(url_for('index'))
 
 

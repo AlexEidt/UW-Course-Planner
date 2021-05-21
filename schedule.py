@@ -9,7 +9,6 @@ from re import search as re_search
 from os import path, getcwd
 from itertools import chain, combinations, product, filterfalse
 from time import strftime, strptime
-from datetime import datetime
 import uwtools
 
 # --------------------------Time Methods--------------------------#       
@@ -162,37 +161,30 @@ class Sections:
                     section[section_data].append(data[section_data])
 
 
-def main():
+def main(year, quarter):
     """Creates an Organized Time Schedule as a json file with all courses from
     all UW Campuses included for the current UW Quarter. 
     Organized Time Schedules include the Course as the Key. The associated value to 
     this key are all the lectures for this course with quiz, lab and studio sections
-    included as a list
+    included as a list.
+
+    @params
+        'year': Year of Quarter to get time schedules from.
+        'quarter': Quarter to get time schedules from.
     """
     section_times = ['Building', 'Days', 'Room Number', 'Seats', 'Time']
-
-    quarter = uwtools.get_quarter(filter_=True)
-    upcoming_quarter = uwtools.get_quarter(filter_=True, type_='upcoming')
-    year = datetime.now().year    
-    if upcoming_quarter == 'WIN' and datetime.now().month in range(9, 13):
-        year += 1
     
-    df = uwtools.time_schedules(2020, 'WIN', json_ready=True, struct='dict')        
-    #df = uwtools.time_schedules(year, upcoming_quarter, json_ready=True, struct='dict')        
-    # If the time schedule for the upcoming quarter is not available, check if
-    # the time schedule for the current quarter has already been created. 
-    # The time schedule for the current quarter will always be available.
-    if df is None:
-        year = year - 1 if upcoming_quarter == 'WIN' and datetime.now().month in range(9, 13) else year
-        df = uwtools.time_schedules(year, quarter, json_ready=True, struct='dict')
+    # Replace 'year' and 'quarter' with the values for the quarter you'd like to parse.
+    # Make sure that quarter's time schedules are available.
+    df = uwtools.time_schedules(year, quarter, json_ready=True, struct='dict')        
 
     # Create a dictionary with Course Names (i.e EE235) as keys and a list of course sections
     # (as dictionaries) as values. 
     total = {}
     for dict_ in df:
-        course_name = dict_['Course Name']
         # Check if a building exists for the section
         if dict_['Building'] and dict_['Room Number']:
+            course_name = dict_['Course Name']
             if course_name not in total:
                 total[course_name] = []
             total[course_name].append(dict_)
@@ -224,4 +216,6 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    year = input('Year: ')
+    quarter = input('Quarter: ')
+    main(int(year), quarter.upper())
